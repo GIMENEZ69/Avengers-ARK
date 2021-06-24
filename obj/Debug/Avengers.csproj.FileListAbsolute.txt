@@ -1,0 +1,15 @@
+C:\Users\Aizen\source\repos\Avergers-ARK\bin\Debug\Avergers.exe.config
+C:\Users\Aizen\source\repos\Avergers-ARK\bin\Debug\Avergers.exe
+C:\Users\Aizen\source\repos\Avergers-ARK\bin\Debug\Avergers.pdb
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avengers.csproj.AssemblyReference.cache
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Civils.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Menu.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Organisations.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Properties.Resources.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.SuperHeros.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.SuperVilains.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avengers.csproj.GenerateResource.cache
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avengers.csproj.CoreCompileInputs.cache
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.exe
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.pdb
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Form1.resources

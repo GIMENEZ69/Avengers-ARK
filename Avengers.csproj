@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE7BFB7A-33F5-45D2-BDB8-43279F7A857E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Avergers</RootNamespace>
+    <AssemblyName>Avergers</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AvengersDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Civils.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Civils.Designer.cs">
+      <DependentUpon>Civils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organisations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organisations.Designer.cs">
+      <DependentUpon>Organisations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperVilains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperVilains.Designer.cs">
+      <DependentUpon>SuperVilains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperHeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperHeros.Designer.cs">
+      <DependentUpon>SuperHeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Civils.resx">
+      <DependentUpon>Civils.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organisations.resx">
+      <DependentUpon>Organisations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SuperHeros.resx">
+      <DependentUpon>SuperHeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperVilains.resx">
+      <DependentUpon>SuperVilains.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AvengersDBDataSet.xsc">
+      <DependentUpon>AvengersDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSet.xss">
+      <DependentUpon>AvengersDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet1.xsc">
+      <DependentUpon>AvengersDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSet1.xss">
+      <DependentUpon>AvengersDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet10.xsc">
+      <DependentUpon>AvengersDBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSet10.xss">
+      <DependentUpon>AvengersDBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet2.xsc">
+      <DependentUpon>AvengersDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSet2.xss">
+      <DependentUpon>AvengersDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet3.xsc">
+      <DependentUpon>AvengersDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSet3.xss">
+      <DependentUpon>AvengersDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet4.xsc">
+      <DependentUpon>AvengersDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSet4.xss">
+      <DependentUpon>AvengersDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet5.xsc">
+      <DependentUpon>AvengersDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSet5.xss">
+      <DependentUpon>AvengersDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet6.xsc">
+      <DependentUpon>AvengersDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSet6.xss">
+      <DependentUpon>AvengersDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet7.xsc">
+      <DependentUpon>AvengersDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSet7.xss">
+      <DependentUpon>AvengersDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet8.xsc">
+      <DependentUpon>AvengersDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSet8.xss">
+      <DependentUpon>AvengersDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet9.xsc">
+      <DependentUpon>AvengersDBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSet9.xss">
+      <DependentUpon>AvengersDBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avengerslogo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
