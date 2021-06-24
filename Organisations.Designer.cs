@@ -55,9 +55,7 @@ namespace Avergers
             this.Dateajout = new System.Windows.Forms.TextBox();
             this.Datemodif = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.avengersDBDataSet3 = new Avergers.AvengersDBDataSet3();
             this.organisationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.organisationsTableAdapter = new Avergers.AvengersDBDataSet3TableAdapters.OrganisationsTableAdapter();
             this.idOrganisationsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomOrganisationsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adresseOrganisationsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,7 +69,6 @@ namespace Avergers
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -322,17 +319,13 @@ namespace Avergers
             // 
             // avengersDBDataSet3
             // 
-            this.avengersDBDataSet3.DataSetName = "AvengersDBDataSet3";
-            this.avengersDBDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // organisationsBindingSource
             // 
             this.organisationsBindingSource.DataMember = "Organisations";
-            this.organisationsBindingSource.DataSource = this.avengersDBDataSet3;
             // 
             // organisationsTableAdapter
             // 
-            this.organisationsTableAdapter.ClearBeforeFill = true;
             // 
             // idOrganisationsDataGridViewTextBoxColumn
             // 
@@ -414,7 +407,6 @@ namespace Avergers
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -447,9 +439,7 @@ namespace Avergers
         private System.Windows.Forms.TextBox CP;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private AvengersDBDataSet3 avengersDBDataSet3;
         private System.Windows.Forms.BindingSource organisationsBindingSource;
-        private AvengersDBDataSet3TableAdapters.OrganisationsTableAdapter organisationsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idOrganisationsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomOrganisationsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn adresseOrganisationsDataGridViewTextBoxColumn;

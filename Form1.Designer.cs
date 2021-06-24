@@ -32,6 +32,7 @@ namespace Avergers
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.CmbIdCivils = new System.Windows.Forms.ComboBox();
+            this.civilsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Pouvoir = new System.Windows.Forms.TextBox();
             this.Commentaire = new System.Windows.Forms.TextBox();
             this.PointFaible = new System.Windows.Forms.TextBox();
@@ -48,26 +49,29 @@ namespace Avergers
             this.CmdMaj = new System.Windows.Forms.Button();
             this.CmdCréer = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.avengersDBDataSet9 = new Avergers.AvengersDBDataSet9();
             this.superHerosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.superHerosTableAdapter = new Avergers.AvengersDBDataSet9TableAdapters.SuperHerosTableAdapter();
-            this.idSuperHerosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomSuperHerosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pouvoirSuperHerosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pointFaibleSuperHerosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.scoreSuperHerosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.commentaireSuperHerosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idCivilsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.avengersDBDataSet10 = new Avergers.AvengersDBDataSet10();
-            this.civilsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.civilsTableAdapter = new Avergers.AvengersDBDataSet10TableAdapters.CivilsTableAdapter();
+            this.avengersDBDataSet = new Avergers.AvengersDBDataSet();
+            this.civilsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.civilsTableAdapter = new Avergers.AvengersDBDataSetTableAdapters.CivilsTableAdapter();
+            this.avengersDBDataSet1 = new Avergers.AvengersDBDataSet1();
+            this.superHerosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.superHerosTableAdapter = new Avergers.AvengersDBDataSet1TableAdapters.SuperHerosTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -93,7 +97,7 @@ namespace Avergers
             // CmbIdCivils
             // 
             this.CmbIdCivils.AllowDrop = true;
-            this.CmbIdCivils.DataSource = this.civilsBindingSource;
+            this.CmbIdCivils.DataSource = this.civilsBindingSource1;
             this.CmbIdCivils.DisplayMember = "Id_Civils";
             this.CmbIdCivils.FormattingEnabled = true;
             this.CmbIdCivils.Location = new System.Drawing.Point(374, 151);
@@ -102,6 +106,10 @@ namespace Avergers
             this.CmbIdCivils.TabIndex = 37;
             this.CmbIdCivils.ValueMember = "Id_Civils";
             this.CmbIdCivils.SelectedIndexChanged += new System.EventHandler(this.CmbIdCivils_SelectedIndexChanged);
+            // 
+            // civilsBindingSource
+            // 
+            this.civilsBindingSource.DataMember = "Civils";
             // 
             // Pouvoir
             // 
@@ -238,88 +246,92 @@ namespace Avergers
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idSuperHerosDataGridViewTextBoxColumn,
-            this.nomSuperHerosDataGridViewTextBoxColumn,
-            this.pouvoirSuperHerosDataGridViewTextBoxColumn,
-            this.pointFaibleSuperHerosDataGridViewTextBoxColumn,
-            this.scoreSuperHerosDataGridViewTextBoxColumn,
-            this.commentaireSuperHerosDataGridViewTextBoxColumn,
-            this.idCivilsDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.superHerosBindingSource;
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            this.dataGridView1.DataSource = this.superHerosBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(0, 227);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1133, 457);
             this.dataGridView1.TabIndex = 39;
             // 
-            // avengersDBDataSet9
-            // 
-            this.avengersDBDataSet9.DataSetName = "AvengersDBDataSet9";
-            this.avengersDBDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // superHerosBindingSource
             // 
             this.superHerosBindingSource.DataMember = "SuperHeros";
-            this.superHerosBindingSource.DataSource = this.avengersDBDataSet9;
+            // 
+            // avengersDBDataSet
+            // 
+            this.avengersDBDataSet.DataSetName = "AvengersDBDataSet";
+            this.avengersDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // civilsBindingSource1
+            // 
+            this.civilsBindingSource1.DataMember = "Civils";
+            this.civilsBindingSource1.DataSource = this.avengersDBDataSet;
+            // 
+            // civilsTableAdapter
+            // 
+            this.civilsTableAdapter.ClearBeforeFill = true;
+            // 
+            // avengersDBDataSet1
+            // 
+            this.avengersDBDataSet1.DataSetName = "AvengersDBDataSet1";
+            this.avengersDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // superHerosBindingSource1
+            // 
+            this.superHerosBindingSource1.DataMember = "SuperHeros";
+            this.superHerosBindingSource1.DataSource = this.avengersDBDataSet1;
             // 
             // superHerosTableAdapter
             // 
             this.superHerosTableAdapter.ClearBeforeFill = true;
             // 
-            // idSuperHerosDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn1
             // 
-            this.idSuperHerosDataGridViewTextBoxColumn.DataPropertyName = "Id_SuperHeros";
-            this.idSuperHerosDataGridViewTextBoxColumn.HeaderText = "Id_SuperHeros";
-            this.idSuperHerosDataGridViewTextBoxColumn.Name = "idSuperHerosDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_SuperHeros";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id_SuperHeros";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // nomSuperHerosDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn2
             // 
-            this.nomSuperHerosDataGridViewTextBoxColumn.DataPropertyName = "Nom_SuperHeros";
-            this.nomSuperHerosDataGridViewTextBoxColumn.HeaderText = "Nom_SuperHeros";
-            this.nomSuperHerosDataGridViewTextBoxColumn.Name = "nomSuperHerosDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nom_SuperHeros";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nom_SuperHeros";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // pouvoirSuperHerosDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn3
             // 
-            this.pouvoirSuperHerosDataGridViewTextBoxColumn.DataPropertyName = "Pouvoir_SuperHeros";
-            this.pouvoirSuperHerosDataGridViewTextBoxColumn.HeaderText = "Pouvoir_SuperHeros";
-            this.pouvoirSuperHerosDataGridViewTextBoxColumn.Name = "pouvoirSuperHerosDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Pouvoir_SuperHeros";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Pouvoir_SuperHeros";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // pointFaibleSuperHerosDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn4
             // 
-            this.pointFaibleSuperHerosDataGridViewTextBoxColumn.DataPropertyName = "PointFaible_SuperHeros";
-            this.pointFaibleSuperHerosDataGridViewTextBoxColumn.HeaderText = "PointFaible_SuperHeros";
-            this.pointFaibleSuperHerosDataGridViewTextBoxColumn.Name = "pointFaibleSuperHerosDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "PointFaible_SuperHeros";
+            this.dataGridViewTextBoxColumn4.HeaderText = "PointFaible_SuperHeros";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // scoreSuperHerosDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn5
             // 
-            this.scoreSuperHerosDataGridViewTextBoxColumn.DataPropertyName = "Score_SuperHeros";
-            this.scoreSuperHerosDataGridViewTextBoxColumn.HeaderText = "Score_SuperHeros";
-            this.scoreSuperHerosDataGridViewTextBoxColumn.Name = "scoreSuperHerosDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Score_SuperHeros";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Score_SuperHeros";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
-            // commentaireSuperHerosDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn6
             // 
-            this.commentaireSuperHerosDataGridViewTextBoxColumn.DataPropertyName = "Commentaire_SuperHeros";
-            this.commentaireSuperHerosDataGridViewTextBoxColumn.HeaderText = "Commentaire_SuperHeros";
-            this.commentaireSuperHerosDataGridViewTextBoxColumn.Name = "commentaireSuperHerosDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Commentaire_SuperHeros";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Commentaire_SuperHeros";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
-            // idCivilsDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn7
             // 
-            this.idCivilsDataGridViewTextBoxColumn.DataPropertyName = "Id_Civils";
-            this.idCivilsDataGridViewTextBoxColumn.HeaderText = "Id_Civils";
-            this.idCivilsDataGridViewTextBoxColumn.Name = "idCivilsDataGridViewTextBoxColumn";
-            // 
-            // avengersDBDataSet10
-            // 
-            this.avengersDBDataSet10.DataSetName = "AvengersDBDataSet10";
-            this.avengersDBDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // civilsBindingSource
-            // 
-            this.civilsBindingSource.DataMember = "Civils";
-            this.civilsBindingSource.DataSource = this.avengersDBDataSet10;
-            // 
-            // civilsTableAdapter
-            // 
-            this.civilsTableAdapter.ClearBeforeFill = true;
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Id_Civils";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Id_Civils";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // Form1
             // 
@@ -334,12 +346,14 @@ namespace Avergers
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -364,9 +378,7 @@ namespace Avergers
         private System.Windows.Forms.Button CmdMaj;
         private System.Windows.Forms.Button CmdCréer;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private AvengersDBDataSet9 avengersDBDataSet9;
         private System.Windows.Forms.BindingSource superHerosBindingSource;
-        private AvengersDBDataSet9TableAdapters.SuperHerosTableAdapter superHerosTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idSuperHerosDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomSuperHerosDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pouvoirSuperHerosDataGridViewTextBoxColumn;
@@ -374,8 +386,19 @@ namespace Avergers
         private System.Windows.Forms.DataGridViewTextBoxColumn scoreSuperHerosDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn commentaireSuperHerosDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idCivilsDataGridViewTextBoxColumn;
-        private AvengersDBDataSet10 avengersDBDataSet10;
         private System.Windows.Forms.BindingSource civilsBindingSource;
-        private AvengersDBDataSet10TableAdapters.CivilsTableAdapter civilsTableAdapter;
+        private AvengersDBDataSet avengersDBDataSet;
+        private System.Windows.Forms.BindingSource civilsBindingSource1;
+        private AvengersDBDataSetTableAdapters.CivilsTableAdapter civilsTableAdapter;
+        private AvengersDBDataSet1 avengersDBDataSet1;
+        private System.Windows.Forms.BindingSource superHerosBindingSource1;
+        private AvengersDBDataSet1TableAdapters.SuperHerosTableAdapter superHerosTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
     }
 }

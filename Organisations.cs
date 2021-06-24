@@ -20,8 +20,6 @@ namespace Avergers
 
         private void Organisations_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet3.Organisations'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.organisationsTableAdapter.Fill(this.avengersDBDataSet3.Organisations);
 
         }
 

@@ -88,14 +88,11 @@ namespace Avergers
             this.nombreIncidentsDeclaresCivilsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreMissionsCivilVictimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.civilsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.avengersDBDataSet = new Avergers.AvengersDBDataSet();
-            this.civilsTableAdapter = new Avergers.AvengersDBDataSetTableAdapters.CivilsTableAdapter();
             this.CmdQuitter = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -594,16 +591,12 @@ namespace Avergers
             // civilsBindingSource
             // 
             this.civilsBindingSource.DataMember = "Civils";
-            this.civilsBindingSource.DataSource = this.avengersDBDataSet;
             // 
             // avengersDBDataSet
             // 
-            this.avengersDBDataSet.DataSetName = "AvengersDBDataSet";
-            this.avengersDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // civilsTableAdapter
             // 
-            this.civilsTableAdapter.ClearBeforeFill = true;
             // 
             // CmdQuitter
             // 
@@ -632,7 +625,6 @@ namespace Avergers
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -678,9 +670,7 @@ namespace Avergers
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private AvengersDBDataSet avengersDBDataSet;
         private System.Windows.Forms.BindingSource civilsBindingSource;
-        private AvengersDBDataSetTableAdapters.CivilsTableAdapter civilsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idCivilsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomCivilsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prenomCivilsDataGridViewTextBoxColumn;

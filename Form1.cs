@@ -20,14 +20,18 @@ namespace Avergers
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet1.SuperHeros'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.superHerosTableAdapter.Fill(this.avengersDBDataSet1.SuperHeros);
+            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.civilsTableAdapter.Fill(this.avengersDBDataSet.Civils);
             // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet10.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.civilsTableAdapter.Fill(this.avengersDBDataSet10.Civils);
+
             // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet9.SuperHeros'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.superHerosTableAdapter.Fill(this.avengersDBDataSet9.SuperHeros);
+
 
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-TKJHI8I;Initial Catalog=AvengersDB;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=AvengersDB;Integrated Security=True");
 
         private void CmdCréer_Click(object sender, EventArgs e)
         {

@@ -45,9 +45,7 @@ namespace Avergers
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.avengersDBDataSet2 = new Avergers.AvengersDBDataSet2();
             this.superVilainsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.superVilainsTableAdapter = new Avergers.AvengersDBDataSet2TableAdapters.SuperVilainsTableAdapter();
             this.idSuperVilainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomSuperVilainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.degatsSuperVilainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,7 +54,6 @@ namespace Avergers
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -212,17 +209,12 @@ namespace Avergers
             // 
             // avengersDBDataSet2
             // 
-            this.avengersDBDataSet2.DataSetName = "AvengersDBDataSet2";
-            this.avengersDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // superVilainsBindingSource
             // 
             this.superVilainsBindingSource.DataMember = "SuperVilains";
-            this.superVilainsBindingSource.DataSource = this.avengersDBDataSet2;
             // 
             // superVilainsTableAdapter
             // 
-            this.superVilainsTableAdapter.ClearBeforeFill = true;
             // 
             // idSuperVilainsDataGridViewTextBoxColumn
             // 
@@ -274,7 +266,6 @@ namespace Avergers
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -297,9 +288,7 @@ namespace Avergers
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private AvengersDBDataSet2 avengersDBDataSet2;
         private System.Windows.Forms.BindingSource superVilainsBindingSource;
-        private AvengersDBDataSet2TableAdapters.SuperVilainsTableAdapter superVilainsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idSuperVilainsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomSuperVilainsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn degatsSuperVilainsDataGridViewTextBoxColumn;

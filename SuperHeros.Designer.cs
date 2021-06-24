@@ -38,9 +38,7 @@ namespace Avergers
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.CmbIdCivils = new System.Windows.Forms.ComboBox();
             this.civilsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.avengersDBDataSet4 = new Avergers.AvengersDBDataSet4();
             this.civilsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.avengersDBDataSet6 = new Avergers.AvengersDBDataSet6();
             this.Pouvoir = new System.Windows.Forms.TextBox();
             this.Commentaire = new System.Windows.Forms.TextBox();
             this.PointFaible = new System.Windows.Forms.TextBox();
@@ -52,24 +50,13 @@ namespace Avergers
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.superHerosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.avengersDBDataSet5 = new Avergers.AvengersDBDataSet5();
             this.superHerosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.avengersDBDataSet1 = new Avergers.AvengersDBDataSet1();
-            this.superHerosTableAdapter = new Avergers.AvengersDBDataSet1TableAdapters.SuperHerosTableAdapter();
             this.CmdQuitter = new System.Windows.Forms.Button();
-            this.civilsTableAdapter = new Avergers.AvengersDBDataSet4TableAdapters.CivilsTableAdapter();
-            this.superHerosTableAdapter1 = new Avergers.AvengersDBDataSet5TableAdapters.SuperHerosTableAdapter();
             this.civilsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.civilsTableAdapter1 = new Avergers.AvengersDBDataSet6TableAdapters.CivilsTableAdapter();
-            this.avengersDBDataSet7 = new Avergers.AvengersDBDataSet7();
             this.superHerosBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.superHerosTableAdapter2 = new Avergers.AvengersDBDataSet7TableAdapters.SuperHerosTableAdapter();
-            this.avengersDBDataSet51 = new Avergers.AvengersDBDataSet5();
             this.superHerosBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.avengersDBDataSet8 = new Avergers.AvengersDBDataSet8();
             this.superHerosBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.superHerosTableAdapter3 = new Avergers.AvengersDBDataSet8TableAdapters.SuperHerosTableAdapter();
             this.idSuperHerosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomSuperHerosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pouvoirSuperHerosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,20 +67,13 @@ namespace Avergers
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet51)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -187,23 +167,14 @@ namespace Avergers
             // civilsBindingSource
             // 
             this.civilsBindingSource.DataMember = "Civils";
-            this.civilsBindingSource.DataSource = this.avengersDBDataSet4;
             this.civilsBindingSource.CurrentChanged += new System.EventHandler(this.civilsBindingSource_CurrentChanged);
             // 
             // avengersDBDataSet4
             // 
-            this.avengersDBDataSet4.DataSetName = "AvengersDBDataSet4";
-            this.avengersDBDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // civilsBindingSource2
             // 
             this.civilsBindingSource2.DataMember = "Civils";
-            this.civilsBindingSource2.DataSource = this.avengersDBDataSet6;
-            // 
-            // avengersDBDataSet6
-            // 
-            this.avengersDBDataSet6.DataSetName = "AvengersDBDataSet6";
-            this.avengersDBDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Pouvoir
             // 
@@ -288,26 +259,19 @@ namespace Avergers
             // superHerosBindingSource1
             // 
             this.superHerosBindingSource1.DataMember = "SuperHeros";
-            this.superHerosBindingSource1.DataSource = this.avengersDBDataSet5;
             // 
             // avengersDBDataSet5
             // 
-            this.avengersDBDataSet5.DataSetName = "AvengersDBDataSet5";
-            this.avengersDBDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // superHerosBindingSource
             // 
             this.superHerosBindingSource.DataMember = "SuperHeros";
-            this.superHerosBindingSource.DataSource = this.avengersDBDataSet1;
             // 
             // avengersDBDataSet1
             // 
-            this.avengersDBDataSet1.DataSetName = "AvengersDBDataSet1";
-            this.avengersDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // superHerosTableAdapter
             // 
-            this.superHerosTableAdapter.ClearBeforeFill = true;
             // 
             // CmdQuitter
             // 
@@ -321,44 +285,20 @@ namespace Avergers
             // 
             // civilsTableAdapter
             // 
-            this.civilsTableAdapter.ClearBeforeFill = true;
-            // 
-            // superHerosTableAdapter1
-            // 
-            this.superHerosTableAdapter1.ClearBeforeFill = true;
-            // 
             // civilsBindingSource1
             // 
             this.civilsBindingSource1.DataMember = "Civils";
-            this.civilsBindingSource1.DataSource = this.avengersDBDataSet4;
-            // 
-            // civilsTableAdapter1
-            // 
-            this.civilsTableAdapter1.ClearBeforeFill = true;
-            // 
-            // avengersDBDataSet7
-            // 
-            this.avengersDBDataSet7.DataSetName = "AvengersDBDataSet7";
-            this.avengersDBDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // superHerosBindingSource2
             // 
             this.superHerosBindingSource2.DataMember = "SuperHeros";
-            this.superHerosBindingSource2.DataSource = this.avengersDBDataSet7;
             // 
             // superHerosTableAdapter2
             // 
-            this.superHerosTableAdapter2.ClearBeforeFill = true;
-            // 
-            // avengersDBDataSet51
-            // 
-            this.avengersDBDataSet51.DataSetName = "AvengersDBDataSet5";
-            this.avengersDBDataSet51.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // superHerosBindingSource3
             // 
             this.superHerosBindingSource3.DataMember = "SuperHeros";
-            this.superHerosBindingSource3.DataSource = this.avengersDBDataSet51;
             // 
             // dataGridView1
             // 
@@ -380,17 +320,13 @@ namespace Avergers
             // 
             // avengersDBDataSet8
             // 
-            this.avengersDBDataSet8.DataSetName = "AvengersDBDataSet8";
-            this.avengersDBDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // superHerosBindingSource4
             // 
             this.superHerosBindingSource4.DataMember = "SuperHeros";
-            this.superHerosBindingSource4.DataSource = this.avengersDBDataSet8;
             // 
             // superHerosTableAdapter3
             // 
-            this.superHerosTableAdapter3.ClearBeforeFill = true;
             // 
             // idSuperHerosDataGridViewTextBoxColumn
             // 
@@ -450,20 +386,13 @@ namespace Avergers
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet51)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource4)).EndInit();
             this.ResumeLayout(false);
 
@@ -487,30 +416,17 @@ namespace Avergers
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private AvengersDBDataSet1 avengersDBDataSet1;
         private System.Windows.Forms.BindingSource superHerosBindingSource;
-        private AvengersDBDataSet1TableAdapters.SuperHerosTableAdapter superHerosTableAdapter;
         private System.Windows.Forms.Button CmdQuitter;
         private System.Windows.Forms.ComboBox CmbIdCivils;
-        private AvengersDBDataSet4 avengersDBDataSet4;
         private System.Windows.Forms.BindingSource civilsBindingSource;
-        private AvengersDBDataSet4TableAdapters.CivilsTableAdapter civilsTableAdapter;
-        private AvengersDBDataSet5 avengersDBDataSet5;
         private System.Windows.Forms.BindingSource superHerosBindingSource1;
-        private AvengersDBDataSet5TableAdapters.SuperHerosTableAdapter superHerosTableAdapter1;
         private System.Windows.Forms.BindingSource civilsBindingSource1;
-        private AvengersDBDataSet6 avengersDBDataSet6;
         private System.Windows.Forms.BindingSource civilsBindingSource2;
-        private AvengersDBDataSet6TableAdapters.CivilsTableAdapter civilsTableAdapter1;
-        private AvengersDBDataSet7 avengersDBDataSet7;
         private System.Windows.Forms.BindingSource superHerosBindingSource2;
-        private AvengersDBDataSet7TableAdapters.SuperHerosTableAdapter superHerosTableAdapter2;
-        private AvengersDBDataSet5 avengersDBDataSet51;
         private System.Windows.Forms.BindingSource superHerosBindingSource3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private AvengersDBDataSet8 avengersDBDataSet8;
         private System.Windows.Forms.BindingSource superHerosBindingSource4;
-        private AvengersDBDataSet8TableAdapters.SuperHerosTableAdapter superHerosTableAdapter3;
         private System.Windows.Forms.DataGridViewTextBoxColumn idSuperHerosDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomSuperHerosDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pouvoirSuperHerosDataGridViewTextBoxColumn;

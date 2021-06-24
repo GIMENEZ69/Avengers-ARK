@@ -20,9 +20,6 @@ namespace Avergers
 
         private void SuperVilains_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet2.SuperVilains'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.superVilainsTableAdapter.Fill(this.avengersDBDataSet2.SuperVilains);
-
         }
 
         private void CmdQuitter_Click(object sender, EventArgs e)

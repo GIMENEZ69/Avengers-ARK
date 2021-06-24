@@ -20,20 +20,7 @@ namespace Avergers
 
         private void SuperHeros_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet8.SuperHeros'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.superHerosTableAdapter3.Fill(this.avengersDBDataSet8.SuperHeros);
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet51.SuperHeros'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.superHerosTableAdapter1.Fill(this.avengersDBDataSet51.SuperHeros);
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet7.SuperHeros'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.superHerosTableAdapter2.Fill(this.avengersDBDataSet7.SuperHeros);
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet6.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            //this.civilsTableAdapter1.Fill(this.avengersDBDataSet6.Civils);
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet5.SuperHeros'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.superHerosTableAdapter1.Fill(this.avengersDBDataSet5.SuperHeros);
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet4.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.civilsTableAdapter.Fill(this.avengersDBDataSet4.Civils);
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet1.SuperHeros'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.superHerosTableAdapter.Fill(this.avengersDBDataSet1.SuperHeros);
+            
 
         }
 
