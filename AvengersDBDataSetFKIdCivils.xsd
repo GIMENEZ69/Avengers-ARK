@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="AvengersDBDataSet" targetNamespace="http://tempuri.org/AvengersDBDataSet.xsd" xmlns:mstns="http://tempuri.org/AvengersDBDataSet.xsd" xmlns="http://tempuri.org/AvengersDBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="AvengersDBDataSetFKIdCivils" targetNamespace="http://tempuri.org/AvengersDBDataSetFKIdCivils.xsd" xmlns:mstns="http://tempuri.org/AvengersDBDataSetFKIdCivils.xsd" xmlns="http://tempuri.org/AvengersDBDataSetFKIdCivils.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AvengersDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AvengersDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Avergers.Properties.Settings.GlobalReference.Default.AvengersDBConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AvengersDBConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AvengersDBConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Avergers.Properties.Settings.GlobalReference.Default.AvengersDBConnectionString2" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CivilsTableAdapter" GeneratorDataComponentClassName="CivilsTableAdapter" Name="Civils" UserDataComponentName="CivilsTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="AvengersDBConnectionString (Settings)" DbObjectName="AvengersDB.dbo.Civils" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="AvengersDBConnectionString2 (Settings)" DbObjectName="AvengersDB.dbo.Civils" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Civils] WHERE (([Id_Civils] = @Original_Id_Civils))</CommandText>
@@ -55,7 +55,7 @@ SELECT Id_Civils FROM Civils WHERE (Id_Civils = @Id_Civils)</CommandText>
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="AvengersDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AvengersDBDataSet" msprop:Generator_UserDSName="AvengersDBDataSet">
+  <xs:element name="AvengersDBDataSetFKIdCivils" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AvengersDBDataSetFKIdCivils" msprop:Generator_UserDSName="AvengersDBDataSetFKIdCivils">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="Civils" msprop:Generator_TableClassName="CivilsDataTable" msprop:Generator_TableVarName="tableCivils" msprop:Generator_TablePropName="Civils" msprop:Generator_RowDeletingName="CivilsRowDeleting" msprop:Generator_RowChangingName="CivilsRowChanging" msprop:Generator_RowEvHandlerName="CivilsRowChangeEventHandler" msprop:Generator_RowDeletedName="CivilsRowDeleted" msprop:Generator_UserTableName="Civils" msprop:Generator_RowChangedName="CivilsRowChanged" msprop:Generator_RowEvArgName="CivilsRowChangeEvent" msprop:Generator_RowClassName="CivilsRow">

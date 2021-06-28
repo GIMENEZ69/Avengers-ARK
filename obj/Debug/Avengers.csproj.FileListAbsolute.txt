@@ -18,7 +18,6 @@ D:\Cours\POEC.NET\Avengers-ARK\bin\Debug\Avergers.exe
 D:\Cours\POEC.NET\Avengers-ARK\bin\Debug\Avergers.pdb
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avengers.csprojAssemblyReference.cache
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Civils.resources
-D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Form1.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Menu.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Organisations.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Properties.Resources.resources
@@ -28,3 +27,17 @@ D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avengers.csproj.GenerateResource.cache
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avengers.csproj.CoreCompileInputs.cache
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.exe
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.pdb
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\bin\Debug\Avergers.exe.config
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\bin\Debug\Avergers.exe
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\bin\Debug\Avergers.pdb
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avengers.csproj.AssemblyReference.cache
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.Civils.resources
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.SuperHeros.resources
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.Menu.resources
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.Organisations.resources
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.Properties.Resources.resources
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.SuperVilains.resources
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avengers.csproj.GenerateResource.cache
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avengers.csproj.CoreCompileInputs.cache
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.exe
+C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.pdb

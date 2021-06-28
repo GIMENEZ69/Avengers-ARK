@@ -46,15 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AvengersDBDataSet.Designer.cs">
+    <Compile Include="AvengersDBDataSetCivils.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AvengersDBDataSet.xsd</DependentUpon>
+      <DependentUpon>AvengersDBDataSetCivils.xsd</DependentUpon>
     </Compile>
-    <Compile Include="AvengersDBDataSet1.Designer.cs">
+    <Compile Include="AvengersDBDataSetFKIdCivils.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AvengersDBDataSet1.xsd</DependentUpon>
+      <DependentUpon>AvengersDBDataSetFKIdCivils.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSetOrga.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSetOrga.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSetSuperHeros.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSetSuperHeros.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSetVilains.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSetVilains.xsd</DependentUpon>
     </Compile>
     <Compile Include="Civils.cs">
       <SubType>Form</SubType>
@@ -62,11 +77,11 @@
     <Compile Include="Civils.Designer.cs">
       <DependentUpon>Civils.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="SuperHeros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SuperHeros.Designer.cs">
+      <DependentUpon>SuperHeros.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -86,19 +101,13 @@
     <Compile Include="SuperVilains.Designer.cs">
       <DependentUpon>SuperVilains.cs</DependentUpon>
     </Compile>
-    <Compile Include="SuperHeros.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SuperHeros.Designer.cs">
-      <DependentUpon>SuperHeros.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Civils.resx">
       <DependentUpon>Civils.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="SuperHeros.resx">
+      <DependentUpon>SuperHeros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -116,33 +125,63 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SuperHeros.resx">
-      <DependentUpon>SuperHeros.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SuperVilains.resx">
       <DependentUpon>SuperVilains.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="AvengersDBDataSet.xsc">
-      <DependentUpon>AvengersDBDataSet.xsd</DependentUpon>
+    <None Include="AvengersDBDataSetCivils.xsc">
+      <DependentUpon>AvengersDBDataSetCivils.xsd</DependentUpon>
     </None>
-    <None Include="AvengersDBDataSet.xsd">
+    <None Include="AvengersDBDataSetCivils.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>AvengersDBDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>AvengersDBDataSetCivils.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="AvengersDBDataSet.xss">
-      <DependentUpon>AvengersDBDataSet.xsd</DependentUpon>
+    <None Include="AvengersDBDataSetCivils.xss">
+      <DependentUpon>AvengersDBDataSetCivils.xsd</DependentUpon>
     </None>
-    <None Include="AvengersDBDataSet1.xsc">
-      <DependentUpon>AvengersDBDataSet1.xsd</DependentUpon>
+    <None Include="AvengersDBDataSetFKIdCivils.xsc">
+      <DependentUpon>AvengersDBDataSetFKIdCivils.xsd</DependentUpon>
     </None>
-    <None Include="AvengersDBDataSet1.xsd">
+    <None Include="AvengersDBDataSetFKIdCivils.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>AvengersDBDataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>AvengersDBDataSetFKIdCivils.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="AvengersDBDataSet1.xss">
-      <DependentUpon>AvengersDBDataSet1.xsd</DependentUpon>
+    <None Include="AvengersDBDataSetFKIdCivils.xss">
+      <DependentUpon>AvengersDBDataSetFKIdCivils.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSetOrga.xsc">
+      <DependentUpon>AvengersDBDataSetOrga.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSetOrga.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSetOrga.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSetOrga.xss">
+      <DependentUpon>AvengersDBDataSetOrga.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSetSuperHeros.xsc">
+      <DependentUpon>AvengersDBDataSetSuperHeros.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSetSuperHeros.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSetSuperHeros.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSetSuperHeros.xss">
+      <DependentUpon>AvengersDBDataSetSuperHeros.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSetVilains.xsc">
+      <DependentUpon>AvengersDBDataSetVilains.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSetVilains.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSetVilains.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSetVilains.xss">
+      <DependentUpon>AvengersDBDataSetVilains.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

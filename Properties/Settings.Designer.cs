@@ -42,5 +42,16 @@ namespace Avergers.Properties {
                 return ((string)(this["AvengersDBConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-4E03TBFV\\MYSQL;Initial Catalog=AvengersDB;Integrated Security=" +
+            "True")]
+        public string AvengersDBConnectionString2 {
+            get {
+                return ((string)(this["AvengersDBConnectionString2"]));
+            }
+        }
     }
 }

@@ -20,6 +20,10 @@ namespace Avergers
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSetCivils1.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.civilsTableAdapter.Fill(this.avengersDBDataSetCivils1.Civils);
+            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSetCivils.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.civilsTableAdapter.Fill(this.avengersDBDataSetCivils.Civils);
             // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
             //this.civilsTableAdapter.Fill(this.avengersDBDataSet.Civils);
 
@@ -30,7 +34,7 @@ namespace Avergers
             Form.ActiveForm.Close();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-TKJHI8I;Initial Catalog=AvengersDB;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=AvengersDB;Integrated Security=True");
         private void CmdCréer_Click(object sender, EventArgs e)
         {
             conn.Open();
