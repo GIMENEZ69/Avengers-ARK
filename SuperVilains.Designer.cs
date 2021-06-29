@@ -44,17 +44,26 @@ namespace Avergers
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.superVilainsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idSuperVilainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomSuperVilainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.degatsSuperVilainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.commentaireSuperVilainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CmdQuitter = new System.Windows.Forms.Button();
+            this.superVilainsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.avengersDBDataSetVilains = new Avergers.AvengersDBDataSetVilains();
+            this.superVilainsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.superVilainsTableAdapter = new Avergers.AvengersDBDataSetVilainsTableAdapters.SuperVilainsTableAdapter();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDeMefaitsSuperVilainssDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.scoreSuperVilainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetVilains)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -191,54 +200,9 @@ namespace Avergers
             this.label1.TabIndex = 0;
             this.label1.Text = "Id :";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idSuperVilainsDataGridViewTextBoxColumn,
-            this.nomSuperVilainsDataGridViewTextBoxColumn,
-            this.degatsSuperVilainsDataGridViewTextBoxColumn,
-            this.commentaireSuperVilainsDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.superVilainsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 268);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(836, 199);
-            this.dataGridView1.TabIndex = 10;
-            this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
-            // 
-            // avengersDBDataSet2
-            // 
             // superVilainsBindingSource
             // 
             this.superVilainsBindingSource.DataMember = "SuperVilains";
-            // 
-            // superVilainsTableAdapter
-            // 
-            // 
-            // idSuperVilainsDataGridViewTextBoxColumn
-            // 
-            this.idSuperVilainsDataGridViewTextBoxColumn.DataPropertyName = "Id_SuperVilains";
-            this.idSuperVilainsDataGridViewTextBoxColumn.HeaderText = "Id_SuperVilains";
-            this.idSuperVilainsDataGridViewTextBoxColumn.Name = "idSuperVilainsDataGridViewTextBoxColumn";
-            // 
-            // nomSuperVilainsDataGridViewTextBoxColumn
-            // 
-            this.nomSuperVilainsDataGridViewTextBoxColumn.DataPropertyName = "Nom_SuperVilains";
-            this.nomSuperVilainsDataGridViewTextBoxColumn.HeaderText = "Nom_SuperVilains";
-            this.nomSuperVilainsDataGridViewTextBoxColumn.Name = "nomSuperVilainsDataGridViewTextBoxColumn";
-            // 
-            // degatsSuperVilainsDataGridViewTextBoxColumn
-            // 
-            this.degatsSuperVilainsDataGridViewTextBoxColumn.DataPropertyName = "Degats_SuperVilains";
-            this.degatsSuperVilainsDataGridViewTextBoxColumn.HeaderText = "Degats_SuperVilains";
-            this.degatsSuperVilainsDataGridViewTextBoxColumn.Name = "degatsSuperVilainsDataGridViewTextBoxColumn";
-            // 
-            // commentaireSuperVilainsDataGridViewTextBoxColumn
-            // 
-            this.commentaireSuperVilainsDataGridViewTextBoxColumn.DataPropertyName = "Commentaire_SuperVilains";
-            this.commentaireSuperVilainsDataGridViewTextBoxColumn.HeaderText = "Commentaire_SuperVilains";
-            this.commentaireSuperVilainsDataGridViewTextBoxColumn.Name = "commentaireSuperVilainsDataGridViewTextBoxColumn";
             // 
             // CmdQuitter
             // 
@@ -250,13 +214,84 @@ namespace Avergers
             this.CmdQuitter.UseVisualStyleBackColor = true;
             this.CmdQuitter.Click += new System.EventHandler(this.CmdQuitter_Click);
             // 
+            // superVilainsBindingSource1
+            // 
+            this.superVilainsBindingSource1.DataMember = "SuperVilains";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.nombreDeMefaitsSuperVilainssDataGridViewTextBoxColumn,
+            this.dataGridViewTextBoxColumn7,
+            this.scoreSuperVilainsDataGridViewTextBoxColumn,
+            this.dataGridViewTextBoxColumn8});
+            this.dataGridView1.DataSource = this.superVilainsBindingSource2;
+            this.dataGridView1.Location = new System.Drawing.Point(14, 269);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(836, 197);
+            this.dataGridView1.TabIndex = 12;
+            // 
+            // avengersDBDataSetVilains
+            // 
+            this.avengersDBDataSetVilains.DataSetName = "AvengersDBDataSetVilains";
+            this.avengersDBDataSetVilains.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // superVilainsBindingSource2
+            // 
+            this.superVilainsBindingSource2.DataMember = "SuperVilains";
+            this.superVilainsBindingSource2.DataSource = this.avengersDBDataSetVilains;
+            // 
+            // superVilainsTableAdapter
+            // 
+            this.superVilainsTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Id_SuperVilains";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Id_SuperVilains";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Nom_SuperVilains";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Nom_SuperVilains";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // nombreDeMefaitsSuperVilainssDataGridViewTextBoxColumn
+            // 
+            this.nombreDeMefaitsSuperVilainssDataGridViewTextBoxColumn.DataPropertyName = "NombreDeMefaits_SuperVilainss";
+            this.nombreDeMefaitsSuperVilainssDataGridViewTextBoxColumn.HeaderText = "NombreDeMefaits_SuperVilainss";
+            this.nombreDeMefaitsSuperVilainssDataGridViewTextBoxColumn.Name = "nombreDeMefaitsSuperVilainssDataGridViewTextBoxColumn";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Degats_SuperVilains";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Degats_SuperVilains";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // scoreSuperVilainsDataGridViewTextBoxColumn
+            // 
+            this.scoreSuperVilainsDataGridViewTextBoxColumn.DataPropertyName = "Score_SuperVilains";
+            this.scoreSuperVilainsDataGridViewTextBoxColumn.HeaderText = "Score_SuperVilains";
+            this.scoreSuperVilainsDataGridViewTextBoxColumn.Name = "scoreSuperVilainsDataGridViewTextBoxColumn";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Commentaire_SuperVilains";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Commentaire_SuperVilains";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
             // SuperVilains
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(874, 530);
-            this.Controls.Add(this.CmdQuitter);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.CmdQuitter);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "SuperVilains";
@@ -265,8 +300,11 @@ namespace Avergers
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetVilains)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -287,12 +325,26 @@ namespace Avergers
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource superVilainsBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idSuperVilainsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomSuperVilainsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn degatsSuperVilainsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn commentaireSuperVilainsDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button CmdQuitter;
+        private System.Windows.Forms.BindingSource superVilainsBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private AvengersDBDataSetVilains avengersDBDataSetVilains;
+        private System.Windows.Forms.BindingSource superVilainsBindingSource2;
+        private AvengersDBDataSetVilainsTableAdapters.SuperVilainsTableAdapter superVilainsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDeMefaitsSuperVilainssDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn scoreSuperVilainsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }

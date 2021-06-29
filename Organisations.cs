@@ -20,6 +20,10 @@ namespace Avergers
 
         private void Organisations_Load(object sender, EventArgs e)
         {
+            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSetOrga1.Organisations'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.organisationsTableAdapter.Fill(this.avengersDBDataSetOrga1.Organisations);
+            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSetOrga.Organisations'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.organisationsTableAdapter.Fill(this.avengersDBDataSetOrga.Organisations);
 
         }
 
@@ -28,7 +32,7 @@ namespace Avergers
             Form.ActiveForm.Close();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-TKJHI8I;Initial Catalog=AvengersDB;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=AvengersDB;Integrated Security=True");
         private void CmdCréer_Click(object sender, EventArgs e)
         {
             conn.Open();

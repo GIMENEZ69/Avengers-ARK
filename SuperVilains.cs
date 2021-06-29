@@ -20,6 +20,10 @@ namespace Avergers
 
         private void SuperVilains_Load(object sender, EventArgs e)
         {
+            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSetVilains.SuperVilains'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.superVilainsTableAdapter.Fill(this.avengersDBDataSetVilains.SuperVilains);
+            // GRIDVIEW : TODO: cette ligne de code charge les données dans la table 'avengersDBDataSetSuperVilains.SuperVilains'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+
         }
 
         private void CmdQuitter_Click(object sender, EventArgs e)
@@ -27,7 +31,7 @@ namespace Avergers
             Form.ActiveForm.Close();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-TKJHI8I;Initial Catalog=AvengersDB;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=MSI-UBI\MSSQLSERVER01;Initial Catalog=AvengersDB;Integrated Security=True");
         private void CmdCréer_Click(object sender, EventArgs e)
         {
             conn.Open();

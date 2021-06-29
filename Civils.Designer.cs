@@ -68,7 +68,13 @@ namespace Avergers
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.CmdQuitter = new System.Windows.Forms.Button();
+            this.avengersDBDataSetCivils = new Avergers.AvengersDBDataSetCivils();
+            this.civilsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.civilsTableAdapter = new Avergers.AvengersDBDataSetCivilsTableAdapters.CivilsTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.avengersDBDataSetCivils1 = new Avergers.AvengersDBDataSetCivils();
+            this.civilsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.idCivilsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomCivilsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prenomCivilsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,12 +93,13 @@ namespace Avergers
             this.dateDeDerniereModificationCivilsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreIncidentsDeclaresCivilsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreMissionsCivilVictimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.civilsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.CmdQuitter = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetCivils)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetCivils1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -450,6 +457,30 @@ namespace Avergers
             this.label1.TabIndex = 0;
             this.label1.Text = "Id :";
             // 
+            // CmdQuitter
+            // 
+            this.CmdQuitter.Location = new System.Drawing.Point(434, 603);
+            this.CmdQuitter.Name = "CmdQuitter";
+            this.CmdQuitter.Size = new System.Drawing.Size(102, 35);
+            this.CmdQuitter.TabIndex = 7;
+            this.CmdQuitter.Text = "Fermer";
+            this.CmdQuitter.UseVisualStyleBackColor = true;
+            this.CmdQuitter.Click += new System.EventHandler(this.CmdQuitter_Click);
+            // 
+            // avengersDBDataSetCivils
+            // 
+            this.avengersDBDataSetCivils.DataSetName = "AvengersDBDataSetCivils";
+            this.avengersDBDataSetCivils.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // civilsBindingSource
+            // 
+            this.civilsBindingSource.DataMember = "Civils";
+            this.civilsBindingSource.DataSource = this.avengersDBDataSetCivils;
+            // 
+            // civilsTableAdapter
+            // 
+            this.civilsTableAdapter.ClearBeforeFill = true;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
@@ -473,12 +504,21 @@ namespace Avergers
             this.dateDeDerniereModificationCivilsDataGridViewTextBoxColumn,
             this.nombreIncidentsDeclaresCivilsDataGridViewTextBoxColumn,
             this.nombreMissionsCivilVictimeDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.civilsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 413);
+            this.dataGridView1.DataSource = this.civilsBindingSource1;
+            this.dataGridView1.Location = new System.Drawing.Point(34, 385);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(950, 153);
-            this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
+            this.dataGridView1.Size = new System.Drawing.Size(1006, 150);
+            this.dataGridView1.TabIndex = 8;
+            // 
+            // avengersDBDataSetCivils1
+            // 
+            this.avengersDBDataSetCivils1.DataSetName = "AvengersDBDataSetCivils";
+            this.avengersDBDataSetCivils1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // civilsBindingSource1
+            // 
+            this.civilsBindingSource1.DataMember = "Civils";
+            this.civilsBindingSource1.DataSource = this.avengersDBDataSetCivils1;
             // 
             // idCivilsDataGridViewTextBoxColumn
             // 
@@ -588,33 +628,13 @@ namespace Avergers
             this.nombreMissionsCivilVictimeDataGridViewTextBoxColumn.HeaderText = "NombreMissionsCivilVictime";
             this.nombreMissionsCivilVictimeDataGridViewTextBoxColumn.Name = "nombreMissionsCivilVictimeDataGridViewTextBoxColumn";
             // 
-            // civilsBindingSource
-            // 
-            this.civilsBindingSource.DataMember = "Civils";
-            // 
-            // avengersDBDataSet
-            // 
-            // 
-            // civilsTableAdapter
-            // 
-            // 
-            // CmdQuitter
-            // 
-            this.CmdQuitter.Location = new System.Drawing.Point(434, 603);
-            this.CmdQuitter.Name = "CmdQuitter";
-            this.CmdQuitter.Size = new System.Drawing.Size(102, 35);
-            this.CmdQuitter.TabIndex = 7;
-            this.CmdQuitter.Text = "Fermer";
-            this.CmdQuitter.UseVisualStyleBackColor = true;
-            this.CmdQuitter.Click += new System.EventHandler(this.CmdQuitter_Click);
-            // 
             // Civils
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1034, 650);
-            this.Controls.Add(this.CmdQuitter);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.CmdQuitter);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Civils";
@@ -623,8 +643,11 @@ namespace Avergers
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetCivils)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetCivils1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -669,7 +692,7 @@ namespace Avergers
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        /*private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource civilsBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idCivilsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomCivilsDataGridViewTextBoxColumn;
@@ -688,8 +711,32 @@ namespace Avergers
         private System.Windows.Forms.DataGridViewTextBoxColumn dateAjoutCivilsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDeDerniereModificationCivilsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreIncidentsDeclaresCivilsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreMissionsCivilVictimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreMissionsCivilVictimeDataGridViewTextBoxColumn;*/
         private System.Windows.Forms.Button CmdQuitter;
+        private AvengersDBDataSetCivils avengersDBDataSetCivils;
+        private System.Windows.Forms.BindingSource civilsBindingSource;
+        private AvengersDBDataSetCivilsTableAdapters.CivilsTableAdapter civilsTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private AvengersDBDataSetCivils avengersDBDataSetCivils1;
+        private System.Windows.Forms.BindingSource civilsBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenomCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn civiliteCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adresseCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codePostaleCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn villeCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numTelCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDeNaissanceCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nationaliteCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDeDecesCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn appartenanceOrganisationCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn commentaireCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateAjoutCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDeDerniereModificationCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreIncidentsDeclaresCivilsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreMissionsCivilVictimeDataGridViewTextBoxColumn;
     }
 }
 
