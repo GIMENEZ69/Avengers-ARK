@@ -77,6 +77,29 @@
     <Compile Include="Civils.Designer.cs">
       <DependentUpon>Civils.cs</DependentUpon>
     </Compile>
+    <Compile Include="Crise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crise.Designer.cs">
+      <DependentUpon>Crise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Incidents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Incidents.Designer.cs">
+      <DependentUpon>Incidents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Litige.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Litige.Designer.cs">
+      <DependentUpon>Litige.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetvictime.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetvictime.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SuperHeros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +128,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Civils.resx">
       <DependentUpon>Civils.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crise.resx">
+      <DependentUpon>Crise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Incidents.resx">
+      <DependentUpon>Incidents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Litige.resx">
+      <DependentUpon>Litige.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SuperHeros.resx">
       <DependentUpon>SuperHeros.cs</DependentUpon>
@@ -182,6 +214,17 @@
     </None>
     <None Include="AvengersDBDataSetVilains.xss">
       <DependentUpon>AvengersDBDataSetVilains.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetvictime.xsc">
+      <DependentUpon>ProjetHeroDataSetvictime.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetvictime.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetvictime.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetvictime.xss">
+      <DependentUpon>ProjetHeroDataSetvictime.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

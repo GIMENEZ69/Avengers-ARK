@@ -31,11 +31,11 @@ namespace Avergers
             Form.ActiveForm.Close();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=MSI-UBI\MSSQLSERVER01;Initial Catalog=AvengersDB;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=MSI-UBI\MSSQLSERVER01;Initial Catalog=ProjetHero;Integrated Security=True");
         private void CmdCréer_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "INSERT INTO SuperVilains (Id_SuperVilains, Nom_SuperVilains, Degats_SuperVilains, Commentaire_SuperVilains) " +
+            string query = "INSERT INTO SuperVilains (Id_super_vilain, Nom_vilain, Degats_SuperVilain, Commentaire_SuperVilains) " +
                 "VALUES(                      '" + Id.Text + "', '" + Nom.Text + "','" + Degats.Text + "', '" + Commentaire.Text + "')";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
