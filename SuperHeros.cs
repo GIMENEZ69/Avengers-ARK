@@ -20,14 +20,22 @@ namespace Avergers
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'projetHeroDataSet7.Super_hero' table. You can move, or remove it, as needed.
+            this.super_heroTableAdapter3.Fill(this.projetHeroDataSet7.Super_hero);
+            // TODO: This line of code loads data into the 'projetHeroDataSet7civil.Civil' table. You can move, or remove it, as needed.
+            this.civilTableAdapter1.Fill(this.projetHeroDataSet7civil.Civil);
+            // TODO: This line of code loads data into the 'projetHeroDataSet6.Super_hero' table. You can move, or remove it, as needed.
+            this.super_heroTableAdapter2.Fill(this.projetHeroDataSet6.Super_hero);
+            // TODO: This line of code loads data into the 'projetHeroDataSet4.Super_hero' table. You can move, or remove it, as needed.
+            this.super_heroTableAdapter1.Fill(this.projetHeroDataSet4.Super_hero);
             // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet2.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.civilTableAdapter.Fill(this.projetHeroDataSet2.Civil);
+            //this.civilTableAdapter.Fill(this.projetHeroDataSet2.Civil);
             // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet1.Super_hero'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.super_heroTableAdapter.Fill(this.projetHeroDataSet1.Super_hero);
+            //this.super_heroTableAdapter.Fill(this.projetHeroDataSet1.Super_hero);
 
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=ProjetHero;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=MSI-UBI\MSSQLSERVER01;Initial Catalog=ProjetHero;Integrated Security=True");
 
 
         private void CmdCréer_Click(object sender, EventArgs e)

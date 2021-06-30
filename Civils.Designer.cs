@@ -36,6 +36,9 @@ namespace Avergers
             this.CmdMaj = new System.Windows.Forms.Button();
             this.CmdCréer = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.DateTimeModif = new System.Windows.Forms.DateTimePicker();
+            this.DateTimeAjout = new System.Windows.Forms.DateTimePicker();
+            this.DateTimeNaissance = new System.Windows.Forms.DateTimePicker();
             this.Adresse = new System.Windows.Forms.TextBox();
             this.Prenom = new System.Windows.Forms.TextBox();
             this.Nom = new System.Windows.Forms.TextBox();
@@ -43,7 +46,6 @@ namespace Avergers
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,10 +53,6 @@ namespace Avergers
             this.CmdQuitter = new System.Windows.Forms.Button();
             this.civilsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.civilsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.projetHeroDataSetCivil = new Avergers.ProjetHeroDataSetCivil();
-            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.civilTableAdapter = new Avergers.ProjetHeroDataSetCivilTableAdapters.CivilTableAdapter();
             this.idcivilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prenomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,17 +61,22 @@ namespace Avergers
             this.datedecesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateajoutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datemodificationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateTimeNaissance = new System.Windows.Forms.DateTimePicker();
-            this.DateTimeAjout = new System.Windows.Forms.DateTimePicker();
-            this.DateTimeModif = new System.Windows.Forms.DateTimePicker();
-            this.DateTimeDeces = new System.Windows.Forms.DateTimePicker();
+            this.civilBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet3 = new Avergers.ProjetHeroDataSet3();
+            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSetCivil = new Avergers.ProjetHeroDataSetCivil();
+            this.civilsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.civilTableAdapter = new Avergers.ProjetHeroDataSetCivilTableAdapters.CivilTableAdapter();
+            this.civilTableAdapter1 = new Avergers.ProjetHeroDataSet3TableAdapters.CivilTableAdapter();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -131,7 +134,6 @@ namespace Avergers
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.DateTimeDeces);
             this.groupBox1.Controls.Add(this.DateTimeModif);
             this.groupBox1.Controls.Add(this.DateTimeAjout);
             this.groupBox1.Controls.Add(this.DateTimeNaissance);
@@ -142,7 +144,6 @@ namespace Avergers
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -153,6 +154,28 @@ namespace Avergers
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Civils";
+            // 
+            // DateTimeModif
+            // 
+            this.DateTimeModif.Location = new System.Drawing.Point(785, 59);
+            this.DateTimeModif.Name = "DateTimeModif";
+            this.DateTimeModif.Size = new System.Drawing.Size(159, 20);
+            this.DateTimeModif.TabIndex = 41;
+            this.DateTimeModif.ValueChanged += new System.EventHandler(this.DateTimeModif_ValueChanged);
+            // 
+            // DateTimeAjout
+            // 
+            this.DateTimeAjout.Location = new System.Drawing.Point(785, 24);
+            this.DateTimeAjout.Name = "DateTimeAjout";
+            this.DateTimeAjout.Size = new System.Drawing.Size(159, 20);
+            this.DateTimeAjout.TabIndex = 40;
+            // 
+            // DateTimeNaissance
+            // 
+            this.DateTimeNaissance.Location = new System.Drawing.Point(434, 24);
+            this.DateTimeNaissance.Name = "DateTimeNaissance";
+            this.DateTimeNaissance.Size = new System.Drawing.Size(159, 20);
+            this.DateTimeNaissance.TabIndex = 39;
             // 
             // Adresse
             // 
@@ -208,15 +231,6 @@ namespace Avergers
             this.label9.Size = new System.Drawing.Size(104, 13);
             this.label9.TabIndex = 8;
             this.label9.Text = "Date de Naissance :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(345, 91);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Date de décès :";
             // 
             // label5
             // 
@@ -281,30 +295,12 @@ namespace Avergers
             this.datedecesDataGridViewTextBoxColumn,
             this.dateajoutDataGridViewTextBoxColumn,
             this.datemodificationDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.civilBindingSource;
+            this.dataGridView1.DataSource = this.civilBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(72, 295);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(877, 150);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick_1);
-            // 
-            // civilsBindingSource1
-            // 
-            this.civilsBindingSource1.DataMember = "Civils";
-            // 
-            // projetHeroDataSetCivil
-            // 
-            this.projetHeroDataSetCivil.DataSetName = "ProjetHeroDataSetCivil";
-            this.projetHeroDataSetCivil.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // civilBindingSource
-            // 
-            this.civilBindingSource.DataMember = "Civil";
-            this.civilBindingSource.DataSource = this.projetHeroDataSetCivil;
-            // 
-            // civilTableAdapter
-            // 
-            this.civilTableAdapter.ClearBeforeFill = true;
             // 
             // idcivilDataGridViewTextBoxColumn
             // 
@@ -354,33 +350,37 @@ namespace Avergers
             this.datemodificationDataGridViewTextBoxColumn.HeaderText = "Date_modification";
             this.datemodificationDataGridViewTextBoxColumn.Name = "datemodificationDataGridViewTextBoxColumn";
             // 
-            // DateTimeNaissance
+            // civilBindingSource1
             // 
-            this.DateTimeNaissance.Location = new System.Drawing.Point(434, 24);
-            this.DateTimeNaissance.Name = "DateTimeNaissance";
-            this.DateTimeNaissance.Size = new System.Drawing.Size(159, 20);
-            this.DateTimeNaissance.TabIndex = 39;
+            this.civilBindingSource1.DataMember = "Civil";
+            this.civilBindingSource1.DataSource = this.projetHeroDataSet3;
             // 
-            // DateTimeAjout
+            // projetHeroDataSet3
             // 
-            this.DateTimeAjout.Location = new System.Drawing.Point(785, 24);
-            this.DateTimeAjout.Name = "DateTimeAjout";
-            this.DateTimeAjout.Size = new System.Drawing.Size(159, 20);
-            this.DateTimeAjout.TabIndex = 40;
+            this.projetHeroDataSet3.DataSetName = "ProjetHeroDataSet3";
+            this.projetHeroDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // DateTimeModif
+            // civilBindingSource
             // 
-            this.DateTimeModif.Location = new System.Drawing.Point(785, 59);
-            this.DateTimeModif.Name = "DateTimeModif";
-            this.DateTimeModif.Size = new System.Drawing.Size(159, 20);
-            this.DateTimeModif.TabIndex = 41;
+            this.civilBindingSource.DataMember = "Civil";
+            this.civilBindingSource.DataSource = this.projetHeroDataSetCivil;
             // 
-            // DateTimeDeces
+            // projetHeroDataSetCivil
             // 
-            this.DateTimeDeces.Location = new System.Drawing.Point(434, 85);
-            this.DateTimeDeces.Name = "DateTimeDeces";
-            this.DateTimeDeces.Size = new System.Drawing.Size(159, 20);
-            this.DateTimeDeces.TabIndex = 42;
+            this.projetHeroDataSetCivil.DataSetName = "ProjetHeroDataSetCivil";
+            this.projetHeroDataSetCivil.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // civilsBindingSource1
+            // 
+            this.civilsBindingSource1.DataMember = "Civils";
+            // 
+            // civilTableAdapter
+            // 
+            this.civilTableAdapter.ClearBeforeFill = true;
+            // 
+            // civilTableAdapter1
+            // 
+            this.civilTableAdapter1.ClearBeforeFill = true;
             // 
             // Civils
             // 
@@ -399,9 +399,11 @@ namespace Avergers
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilsBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -421,7 +423,6 @@ namespace Avergers
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -479,10 +480,12 @@ namespace Avergers
         private System.Windows.Forms.DataGridViewTextBoxColumn datedecesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateajoutDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn datemodificationDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DateTimePicker DateTimeDeces;
         private System.Windows.Forms.DateTimePicker DateTimeModif;
         private System.Windows.Forms.DateTimePicker DateTimeAjout;
         private System.Windows.Forms.DateTimePicker DateTimeNaissance;
+        private ProjetHeroDataSet3 projetHeroDataSet3;
+        private System.Windows.Forms.BindingSource civilBindingSource1;
+        private ProjetHeroDataSet3TableAdapters.CivilTableAdapter civilTableAdapter1;
     }
 }
 

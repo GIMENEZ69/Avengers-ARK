@@ -36,6 +36,10 @@ namespace Avergers
             this.CmdMaj = new System.Windows.Forms.Button();
             this.CmdCréer = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.CmbIdCivil = new System.Windows.Forms.ComboBox();
+            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSetFKIdCivil = new Avergers.ProjetHeroDataSetFKIdCivil();
             this.Pouvoir = new System.Windows.Forms.TextBox();
             this.Commentaire = new System.Windows.Forms.TextBox();
             this.Nom = new System.Windows.Forms.TextBox();
@@ -49,29 +53,45 @@ namespace Avergers
             this.superVilainsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.superVilainsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.projetHeroDataSetVilain = new Avergers.ProjetHeroDataSetVilain();
-            this.supervilainBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.super_vilainTableAdapter = new Avergers.ProjetHeroDataSetVilainTableAdapters.Super_vilainTableAdapter();
             this.idsupervilainDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idcivilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomvilainDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pouvoirDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.commentaireDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CmbIdCivil = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.projetHeroDataSetFKIdCivil = new Avergers.ProjetHeroDataSetFKIdCivil();
-            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.supervilainBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet5 = new Avergers.ProjetHeroDataSet5();
+            this.supervilainBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSetVilain = new Avergers.ProjetHeroDataSetVilain();
+            this.super_vilainTableAdapter = new Avergers.ProjetHeroDataSetVilainTableAdapters.Super_vilainTableAdapter();
             this.civilTableAdapter = new Avergers.ProjetHeroDataSetFKIdCivilTableAdapters.CivilTableAdapter();
+            this.super_vilainTableAdapter1 = new Avergers.ProjetHeroDataSet5TableAdapters.Super_vilainTableAdapter();
+            this.projetHeroDataSet8 = new Avergers.ProjetHeroDataSet8();
+            this.supervilainBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.super_vilainTableAdapter2 = new Avergers.ProjetHeroDataSet8TableAdapters.Super_vilainTableAdapter();
+            this.projetHeroDataSet9 = new Avergers.ProjetHeroDataSet9();
+            this.civilBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.civilTableAdapter1 = new Avergers.ProjetHeroDataSet9TableAdapters.CivilTableAdapter();
+            this.projetHeroDataSet10 = new Avergers.ProjetHeroDataSet10();
+            this.supervilainBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.super_vilainTableAdapter3 = new Avergers.ProjetHeroDataSet10TableAdapters.Super_vilainTableAdapter();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetFKIdCivil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetVilain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supervilainBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.supervilainBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetFKIdCivil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetVilain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supervilainBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supervilainBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -146,6 +166,36 @@ namespace Avergers
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Super-Vilains";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(669, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "Id Civil:";
+            // 
+            // CmbIdCivil
+            // 
+            this.CmbIdCivil.DataSource = this.civilBindingSource1;
+            this.CmbIdCivil.DisplayMember = "Id_civil";
+            this.CmbIdCivil.FormattingEnabled = true;
+            this.CmbIdCivil.Location = new System.Drawing.Point(716, 45);
+            this.CmbIdCivil.Name = "CmbIdCivil";
+            this.CmbIdCivil.Size = new System.Drawing.Size(117, 21);
+            this.CmbIdCivil.TabIndex = 37;
+            this.CmbIdCivil.ValueMember = "Id_civil";
+            // 
+            // civilBindingSource
+            // 
+            this.civilBindingSource.DataMember = "Civil";
+            this.civilBindingSource.DataSource = this.projetHeroDataSetFKIdCivil;
+            // 
+            // projetHeroDataSetFKIdCivil
+            // 
+            this.projetHeroDataSetFKIdCivil.DataSetName = "ProjetHeroDataSetFKIdCivil";
+            this.projetHeroDataSetFKIdCivil.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Pouvoir
             // 
             this.Pouvoir.Location = new System.Drawing.Point(434, 24);
@@ -173,6 +223,7 @@ namespace Avergers
             this.Id.Name = "Id";
             this.Id.Size = new System.Drawing.Size(161, 20);
             this.Id.TabIndex = 15;
+            this.Id.TextChanged += new System.EventHandler(this.Id_TextChanged);
             // 
             // label13
             // 
@@ -242,26 +293,13 @@ namespace Avergers
             this.nomvilainDataGridViewTextBoxColumn,
             this.pouvoirDataGridViewTextBoxColumn,
             this.commentaireDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.supervilainBindingSource;
+            this.dataGridView1.DataSource = this.supervilainBindingSource3;
             this.dataGridView1.Location = new System.Drawing.Point(12, 265);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(838, 199);
             this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick_1);
-            // 
-            // projetHeroDataSetVilain
-            // 
-            this.projetHeroDataSetVilain.DataSetName = "ProjetHeroDataSetVilain";
-            this.projetHeroDataSetVilain.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // supervilainBindingSource
-            // 
-            this.supervilainBindingSource.DataMember = "Super_vilain";
-            this.supervilainBindingSource.DataSource = this.projetHeroDataSetVilain;
-            // 
-            // super_vilainTableAdapter
-            // 
-            this.super_vilainTableAdapter.ClearBeforeFill = true;
             // 
             // idsupervilainDataGridViewTextBoxColumn
             // 
@@ -293,39 +331,79 @@ namespace Avergers
             this.commentaireDataGridViewTextBoxColumn.HeaderText = "Commentaire";
             this.commentaireDataGridViewTextBoxColumn.Name = "commentaireDataGridViewTextBoxColumn";
             // 
-            // CmbIdCivil
+            // supervilainBindingSource1
             // 
-            this.CmbIdCivil.DataSource = this.civilBindingSource;
-            this.CmbIdCivil.DisplayMember = "Id_civil";
-            this.CmbIdCivil.FormattingEnabled = true;
-            this.CmbIdCivil.Location = new System.Drawing.Point(716, 45);
-            this.CmbIdCivil.Name = "CmbIdCivil";
-            this.CmbIdCivil.Size = new System.Drawing.Size(117, 21);
-            this.CmbIdCivil.TabIndex = 37;
-            this.CmbIdCivil.ValueMember = "Id_civil";
+            this.supervilainBindingSource1.DataMember = "Super_vilain";
+            this.supervilainBindingSource1.DataSource = this.projetHeroDataSet5;
             // 
-            // label3
+            // projetHeroDataSet5
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(669, 48);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "Id Civil:";
+            this.projetHeroDataSet5.DataSetName = "ProjetHeroDataSet5";
+            this.projetHeroDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // projetHeroDataSetFKIdCivil
+            // supervilainBindingSource
             // 
-            this.projetHeroDataSetFKIdCivil.DataSetName = "ProjetHeroDataSetFKIdCivil";
-            this.projetHeroDataSetFKIdCivil.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.supervilainBindingSource.DataMember = "Super_vilain";
+            this.supervilainBindingSource.DataSource = this.projetHeroDataSetVilain;
             // 
-            // civilBindingSource
+            // projetHeroDataSetVilain
             // 
-            this.civilBindingSource.DataMember = "Civil";
-            this.civilBindingSource.DataSource = this.projetHeroDataSetFKIdCivil;
+            this.projetHeroDataSetVilain.DataSetName = "ProjetHeroDataSetVilain";
+            this.projetHeroDataSetVilain.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // super_vilainTableAdapter
+            // 
+            this.super_vilainTableAdapter.ClearBeforeFill = true;
             // 
             // civilTableAdapter
             // 
             this.civilTableAdapter.ClearBeforeFill = true;
+            // 
+            // super_vilainTableAdapter1
+            // 
+            this.super_vilainTableAdapter1.ClearBeforeFill = true;
+            // 
+            // projetHeroDataSet8
+            // 
+            this.projetHeroDataSet8.DataSetName = "ProjetHeroDataSet8";
+            this.projetHeroDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // supervilainBindingSource2
+            // 
+            this.supervilainBindingSource2.DataMember = "Super_vilain";
+            this.supervilainBindingSource2.DataSource = this.projetHeroDataSet8;
+            // 
+            // super_vilainTableAdapter2
+            // 
+            this.super_vilainTableAdapter2.ClearBeforeFill = true;
+            // 
+            // projetHeroDataSet9
+            // 
+            this.projetHeroDataSet9.DataSetName = "ProjetHeroDataSet9";
+            this.projetHeroDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // civilBindingSource1
+            // 
+            this.civilBindingSource1.DataMember = "Civil";
+            this.civilBindingSource1.DataSource = this.projetHeroDataSet9;
+            // 
+            // civilTableAdapter1
+            // 
+            this.civilTableAdapter1.ClearBeforeFill = true;
+            // 
+            // projetHeroDataSet10
+            // 
+            this.projetHeroDataSet10.DataSetName = "ProjetHeroDataSet10";
+            this.projetHeroDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // supervilainBindingSource3
+            // 
+            this.supervilainBindingSource3.DataMember = "Super_vilain";
+            this.supervilainBindingSource3.DataSource = this.projetHeroDataSet10;
+            // 
+            // super_vilainTableAdapter3
+            // 
+            this.super_vilainTableAdapter3.ClearBeforeFill = true;
             // 
             // SuperVilains
             // 
@@ -342,14 +420,22 @@ namespace Avergers
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetFKIdCivil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetVilain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supervilainBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.supervilainBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetFKIdCivil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetVilain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supervilainBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supervilainBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -402,5 +488,17 @@ namespace Avergers
         private ProjetHeroDataSetFKIdCivil projetHeroDataSetFKIdCivil;
         private System.Windows.Forms.BindingSource civilBindingSource;
         private ProjetHeroDataSetFKIdCivilTableAdapters.CivilTableAdapter civilTableAdapter;
+        private ProjetHeroDataSet5 projetHeroDataSet5;
+        private System.Windows.Forms.BindingSource supervilainBindingSource1;
+        private ProjetHeroDataSet5TableAdapters.Super_vilainTableAdapter super_vilainTableAdapter1;
+        private ProjetHeroDataSet8 projetHeroDataSet8;
+        private System.Windows.Forms.BindingSource supervilainBindingSource2;
+        private ProjetHeroDataSet8TableAdapters.Super_vilainTableAdapter super_vilainTableAdapter2;
+        private ProjetHeroDataSet9 projetHeroDataSet9;
+        private System.Windows.Forms.BindingSource civilBindingSource1;
+        private ProjetHeroDataSet9TableAdapters.CivilTableAdapter civilTableAdapter1;
+        private ProjetHeroDataSet10 projetHeroDataSet10;
+        private System.Windows.Forms.BindingSource supervilainBindingSource3;
+        private ProjetHeroDataSet10TableAdapters.Super_vilainTableAdapter super_vilainTableAdapter3;
     }
 }

@@ -20,10 +20,18 @@ namespace Avergers
 
         private void SuperVilains_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'projetHeroDataSet10.Super_vilain' table. You can move, or remove it, as needed.
+            this.super_vilainTableAdapter3.Fill(this.projetHeroDataSet10.Super_vilain);
+            // TODO: This line of code loads data into the 'projetHeroDataSet9.Civil' table. You can move, or remove it, as needed.
+            this.civilTableAdapter1.Fill(this.projetHeroDataSet9.Civil);
+            // TODO: This line of code loads data into the 'projetHeroDataSet8.Super_vilain' table. You can move, or remove it, as needed.
+            this.super_vilainTableAdapter2.Fill(this.projetHeroDataSet8.Super_vilain);
+            // TODO: This line of code loads data into the 'projetHeroDataSet5.Super_vilain' table. You can move, or remove it, as needed.
+            this.super_vilainTableAdapter1.Fill(this.projetHeroDataSet5.Super_vilain);
             // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetFKIdCivil.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.civilTableAdapter.Fill(this.projetHeroDataSetFKIdCivil.Civil);
+            //this.civilTableAdapter.Fill(this.projetHeroDataSetFKIdCivil.Civil);
             // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetVilain.Super_vilain'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.super_vilainTableAdapter.Fill(this.projetHeroDataSetVilain.Super_vilain);
+            //this.super_vilainTableAdapter.Fill(this.projetHeroDataSetVilain.Super_vilain);
 
         }
 
@@ -32,7 +40,7 @@ namespace Avergers
             Form.ActiveForm.Close();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=ProjetHero;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=MSI-UBI\MSSQLSERVER01;Initial Catalog=ProjetHero;Integrated Security=True");
         private void CmdCréer_Click(object sender, EventArgs e)
         {
             conn.Open();
@@ -82,6 +90,16 @@ namespace Avergers
             Nom.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
             Pouvoir.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             Commentaire.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Id_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

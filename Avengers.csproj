@@ -93,15 +93,85 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet10.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSet11.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet11.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSet111.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet111.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet15.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet7civil.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet7civil.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProjetHeroDataSetCivil.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -207,6 +277,17 @@
     <None Include="ProjetHeroDataSet1.xss">
       <DependentUpon>ProjetHeroDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="ProjetHeroDataSet10.xsc">
+      <DependentUpon>ProjetHeroDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet10.xss">
+      <DependentUpon>ProjetHeroDataSet10.xsd</DependentUpon>
+    </None>
     <None Include="ProjetHeroDataSet11.xsc">
       <DependentUpon>ProjetHeroDataSet11.xsd</DependentUpon>
     </None>
@@ -218,6 +299,61 @@
     <None Include="ProjetHeroDataSet11.xss">
       <DependentUpon>ProjetHeroDataSet11.xsd</DependentUpon>
     </None>
+    <None Include="ProjetHeroDataSet111.xsc">
+      <DependentUpon>ProjetHeroDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet111.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet111.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet111.xss">
+      <DependentUpon>ProjetHeroDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet12.xsc">
+      <DependentUpon>ProjetHeroDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet12.xss">
+      <DependentUpon>ProjetHeroDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet13.xsc">
+      <DependentUpon>ProjetHeroDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet13.xss">
+      <DependentUpon>ProjetHeroDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet14.xsc">
+      <DependentUpon>ProjetHeroDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet14.xss">
+      <DependentUpon>ProjetHeroDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet15.xsc">
+      <DependentUpon>ProjetHeroDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet15.xss">
+      <DependentUpon>ProjetHeroDataSet15.xsd</DependentUpon>
+    </None>
     <None Include="ProjetHeroDataSet2.xsc">
       <DependentUpon>ProjetHeroDataSet2.xsd</DependentUpon>
     </None>
@@ -228,6 +364,94 @@
     </None>
     <None Include="ProjetHeroDataSet2.xss">
       <DependentUpon>ProjetHeroDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet3.xsc">
+      <DependentUpon>ProjetHeroDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet3.xss">
+      <DependentUpon>ProjetHeroDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet4.xsc">
+      <DependentUpon>ProjetHeroDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet4.xss">
+      <DependentUpon>ProjetHeroDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet5.xsc">
+      <DependentUpon>ProjetHeroDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet5.xss">
+      <DependentUpon>ProjetHeroDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet6.xsc">
+      <DependentUpon>ProjetHeroDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet6.xss">
+      <DependentUpon>ProjetHeroDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet7.xsc">
+      <DependentUpon>ProjetHeroDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet7.xss">
+      <DependentUpon>ProjetHeroDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet7civil.xsc">
+      <DependentUpon>ProjetHeroDataSet7civil.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet7civil.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet7civil.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet7civil.xss">
+      <DependentUpon>ProjetHeroDataSet7civil.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet8.xsc">
+      <DependentUpon>ProjetHeroDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet8.xss">
+      <DependentUpon>ProjetHeroDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet9.xsc">
+      <DependentUpon>ProjetHeroDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet9.xss">
+      <DependentUpon>ProjetHeroDataSet9.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSetCivil.xsc">
       <DependentUpon>ProjetHeroDataSetCivil.xsd</DependentUpon>
