@@ -35,8 +35,8 @@ namespace Avergers
         private void CmdCréer_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "INSERT INTO Civil (Id_civil,            Nom,                    Prenom,              Adresse,        Date_naissance,            Date_deces,          Date_ajout,                Date_modification) " +
-                "VALUES(                      '" + Id.Text + "', '" + Nom.Text + "','" + Prenom.Text + "', '" + Adresse.Text + "', '" + Convert.ToDateTime(DateTimeNaissance.Value) + "', '" + Convert.ToDateTime(DateTimeDeces.Value) + "', '" + Convert.ToDateTime(DateTimeAjout.Value) + "', '" + Convert.ToDateTime(DateTimeModif.Value) + "')";
+            string query = "INSERT INTO Civil (Id_civil,            Nom,                    Prenom,              Adresse,        Date_naissance,                   Date_ajout,                Date_modification) " +
+                "VALUES(                      '" + Id.Text + "', '" + Nom.Text + "','" + Prenom.Text + "', '" + Adresse.Text + "', '" + Convert.ToDateTime(DateTimeNaissance.Value) + "', '" + Convert.ToDateTime(DateTimeAjout.Value) + "', '" + Convert.ToDateTime(DateTimeModif.Value) + "')";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
@@ -57,7 +57,7 @@ namespace Avergers
         private void CmdMaj_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "UPDATE Civil SET Nom = '" + Nom.Text + "', Prenom = '" + Prenom.Text + "', Adresse = '" + Adresse.Text + "', Date_naissance = '" + Convert.ToDateTime(DateTimeNaissance.Value) + "', Date_deces = '" + Convert.ToDateTime(DateTimeDeces.Value) + "', Date_ajout = '" + Convert.ToDateTime(DateTimeAjout.Value) + "', Date_modification = '" + Convert.ToDateTime(DateTimeModif.Value) + "' WHERE Id_civil = '" + Id.Text + "'";
+            string query = "UPDATE Civil SET Nom = '" + Nom.Text + "', Prenom = '" + Prenom.Text + "', Adresse = '" + Adresse.Text + "', Date_naissance = '" + Convert.ToDateTime(DateTimeNaissance.Value) + "', Date_ajout = '" + Convert.ToDateTime(DateTimeAjout.Value) + "', Date_modification = '" + Convert.ToDateTime(DateTimeModif.Value) + "' WHERE Id_civil = '" + Id.Text + "'";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
@@ -81,7 +81,7 @@ namespace Avergers
             Prenom.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
             Adresse.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             DateTimeNaissance.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-            DateTimeDeces.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+            //DateTimeDeces.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
             DateTimeAjout.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
             DateTimeModif.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
         }

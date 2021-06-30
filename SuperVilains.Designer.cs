@@ -36,6 +36,10 @@ namespace Avergers
             this.CmdMaj = new System.Windows.Forms.Button();
             this.CmdCréer = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.CmbIdCivil = new System.Windows.Forms.ComboBox();
+            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSetFKIdCivil = new Avergers.ProjetHeroDataSetFKIdCivil();
             this.Pouvoir = new System.Windows.Forms.TextBox();
             this.Commentaire = new System.Windows.Forms.TextBox();
             this.Nom = new System.Windows.Forms.TextBox();
@@ -49,29 +53,25 @@ namespace Avergers
             this.superVilainsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.superVilainsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.projetHeroDataSetVilain = new Avergers.ProjetHeroDataSetVilain();
-            this.supervilainBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.super_vilainTableAdapter = new Avergers.ProjetHeroDataSetVilainTableAdapters.Super_vilainTableAdapter();
             this.idsupervilainDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idcivilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomvilainDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pouvoirDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.commentaireDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CmbIdCivil = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.projetHeroDataSetFKIdCivil = new Avergers.ProjetHeroDataSetFKIdCivil();
-            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.supervilainBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSetVilain = new Avergers.ProjetHeroDataSetVilain();
+            this.super_vilainTableAdapter = new Avergers.ProjetHeroDataSetVilainTableAdapters.Super_vilainTableAdapter();
             this.civilTableAdapter = new Avergers.ProjetHeroDataSetFKIdCivilTableAdapters.CivilTableAdapter();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetFKIdCivil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetVilain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.supervilainBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetFKIdCivil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetVilain)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -145,6 +145,36 @@ namespace Avergers
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Super-Vilains";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(669, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "Id Civil:";
+            // 
+            // CmbIdCivil
+            // 
+            this.CmbIdCivil.DataSource = this.civilBindingSource;
+            this.CmbIdCivil.DisplayMember = "Id_civil";
+            this.CmbIdCivil.FormattingEnabled = true;
+            this.CmbIdCivil.Location = new System.Drawing.Point(716, 45);
+            this.CmbIdCivil.Name = "CmbIdCivil";
+            this.CmbIdCivil.Size = new System.Drawing.Size(117, 21);
+            this.CmbIdCivil.TabIndex = 37;
+            this.CmbIdCivil.ValueMember = "Id_civil";
+            // 
+            // civilBindingSource
+            // 
+            this.civilBindingSource.DataMember = "Civil";
+            this.civilBindingSource.DataSource = this.projetHeroDataSetFKIdCivil;
+            // 
+            // projetHeroDataSetFKIdCivil
+            // 
+            this.projetHeroDataSetFKIdCivil.DataSetName = "ProjetHeroDataSetFKIdCivil";
+            this.projetHeroDataSetFKIdCivil.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Pouvoir
             // 
@@ -245,23 +275,10 @@ namespace Avergers
             this.dataGridView1.DataSource = this.supervilainBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 265);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(838, 199);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick_1);
-            // 
-            // projetHeroDataSetVilain
-            // 
-            this.projetHeroDataSetVilain.DataSetName = "ProjetHeroDataSetVilain";
-            this.projetHeroDataSetVilain.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // supervilainBindingSource
-            // 
-            this.supervilainBindingSource.DataMember = "Super_vilain";
-            this.supervilainBindingSource.DataSource = this.projetHeroDataSetVilain;
-            // 
-            // super_vilainTableAdapter
-            // 
-            this.super_vilainTableAdapter.ClearBeforeFill = true;
             // 
             // idsupervilainDataGridViewTextBoxColumn
             // 
@@ -293,35 +310,19 @@ namespace Avergers
             this.commentaireDataGridViewTextBoxColumn.HeaderText = "Commentaire";
             this.commentaireDataGridViewTextBoxColumn.Name = "commentaireDataGridViewTextBoxColumn";
             // 
-            // CmbIdCivil
+            // supervilainBindingSource
             // 
-            this.CmbIdCivil.DataSource = this.civilBindingSource;
-            this.CmbIdCivil.DisplayMember = "Id_civil";
-            this.CmbIdCivil.FormattingEnabled = true;
-            this.CmbIdCivil.Location = new System.Drawing.Point(716, 45);
-            this.CmbIdCivil.Name = "CmbIdCivil";
-            this.CmbIdCivil.Size = new System.Drawing.Size(117, 21);
-            this.CmbIdCivil.TabIndex = 37;
-            this.CmbIdCivil.ValueMember = "Id_civil";
+            this.supervilainBindingSource.DataMember = "Super_vilain";
+            this.supervilainBindingSource.DataSource = this.projetHeroDataSetVilain;
             // 
-            // label3
+            // projetHeroDataSetVilain
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(669, 48);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "Id Civil:";
+            this.projetHeroDataSetVilain.DataSetName = "ProjetHeroDataSetVilain";
+            this.projetHeroDataSetVilain.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // projetHeroDataSetFKIdCivil
+            // super_vilainTableAdapter
             // 
-            this.projetHeroDataSetFKIdCivil.DataSetName = "ProjetHeroDataSetFKIdCivil";
-            this.projetHeroDataSetFKIdCivil.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // civilBindingSource
-            // 
-            this.civilBindingSource.DataMember = "Civil";
-            this.civilBindingSource.DataSource = this.projetHeroDataSetFKIdCivil;
+            this.super_vilainTableAdapter.ClearBeforeFill = true;
             // 
             // civilTableAdapter
             // 
@@ -342,14 +343,14 @@ namespace Avergers
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetFKIdCivil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetVilain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.supervilainBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetFKIdCivil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetVilain)).EndInit();
             this.ResumeLayout(false);
 
         }

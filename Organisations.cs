@@ -20,10 +20,10 @@ namespace Avergers
 
         private void Organisations_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet.Organisation'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.organisationTableAdapter.Fill(this.projetHeroDataSet.Organisation);
-
-
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetCmbIdCivilOrg.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.civilTableAdapter1.Fill(this.projetHeroDataSetCmbIdCivilOrg.Civil);
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetOrganisationGrdv.Organisation'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.organisationTableAdapter1.Fill(this.projetHeroDataSetOrganisationGrdv.Organisation);
         }
 
         private void CmdQuitter_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace Avergers
         {
             conn.Open();
             string query = "INSERT INTO Organisation (Id_organisation,     Nom_org,             Siege_social,           Id_civil_dirigeant,         Membre,                 Ajout_orga,                                         Modification_org) " +
-                "VALUES(                            '" + Id.Text + "', '" + Nom.Text + "','" + SiegeSocial.Text + "', '" + Dirigeant.Text + "','" + Membre.Text + "', '" + Convert.ToDateTime(DateTimeAjout.Value) + "', '" + Convert.ToDateTime(DateTimeModif.Value)+ "')";
+                "VALUES(                            '" + Id.Text + "', '" + Nom.Text + "','" + SiegeSocial.Text + "', '" + CmbIdCivil.Text + "','" + Membre.Text + "', '" + Convert.ToDateTime(DateTimeAjout.Value) + "', '" + Convert.ToDateTime(DateTimeModif.Value)+ "')";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
@@ -57,7 +57,7 @@ namespace Avergers
         private void CmdMaj_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "UPDATE Organisation SET Nom_org = '" + Nom.Text + "', Siege_social = '" + SiegeSocial.Text + "', Id_civil_dirigeant = '" + Dirigeant.Text + "', Membre = '" + Membre.Text + "', Ajout_orga = '" + Convert.ToDateTime(DateTimeAjout.Value) + "', Modification_org = '" + Convert.ToDateTime(DateTimeModif.Value) + "' WHERE Id_Organisation = '" + Id.Text + "'";
+            string query = "UPDATE Organisation SET Nom_org = '" + Nom.Text + "', Siege_social = '" + SiegeSocial.Text + "', Id_civil_dirigeant = '" + CmbIdCivil.Text + "', Membre = '" + Membre.Text + "', Ajout_orga = '" + Convert.ToDateTime(DateTimeAjout.Value) + "', Modification_org = '" + Convert.ToDateTime(DateTimeModif.Value) + "' WHERE Id_Organisation = '" + Id.Text + "'";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
@@ -79,7 +79,7 @@ namespace Avergers
             Id.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             Nom.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             SiegeSocial.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            Dirigeant.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            CmbIdCivil.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             Membre.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
             DateTimeAjout.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
             DateTimeModif.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();

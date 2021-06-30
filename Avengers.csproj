@@ -108,10 +108,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetCivil.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSetCmbIdCivilOrg.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetCmbIdCivilOrg.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSetFKIdCivil.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetFKIdCivil.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetOrganisationGrdv.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetOrganisationGrdv.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProjetHeroDataSetVilain.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -240,6 +250,17 @@
     <None Include="ProjetHeroDataSetCivil.xss">
       <DependentUpon>ProjetHeroDataSetCivil.xsd</DependentUpon>
     </None>
+    <None Include="ProjetHeroDataSetCmbIdCivilOrg.xsc">
+      <DependentUpon>ProjetHeroDataSetCmbIdCivilOrg.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetCmbIdCivilOrg.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetCmbIdCivilOrg.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetCmbIdCivilOrg.xss">
+      <DependentUpon>ProjetHeroDataSetCmbIdCivilOrg.xsd</DependentUpon>
+    </None>
     <None Include="ProjetHeroDataSetFKIdCivil.xsc">
       <DependentUpon>ProjetHeroDataSetFKIdCivil.xsd</DependentUpon>
     </None>
@@ -250,6 +271,17 @@
     </None>
     <None Include="ProjetHeroDataSetFKIdCivil.xss">
       <DependentUpon>ProjetHeroDataSetFKIdCivil.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetOrganisationGrdv.xsc">
+      <DependentUpon>ProjetHeroDataSetOrganisationGrdv.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetOrganisationGrdv.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetOrganisationGrdv.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetOrganisationGrdv.xss">
+      <DependentUpon>ProjetHeroDataSetOrganisationGrdv.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSetVilain.xsc">
       <DependentUpon>ProjetHeroDataSetVilain.xsd</DependentUpon>
