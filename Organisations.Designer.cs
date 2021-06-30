@@ -36,51 +36,53 @@ namespace Avergers
             this.CmdMaj = new System.Windows.Forms.Button();
             this.CmdCréer = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Datemodif = new System.Windows.Forms.TextBox();
-            this.Dateajout = new System.Windows.Forms.TextBox();
-            this.Dirigeant = new System.Windows.Forms.TextBox();
+            this.DateTimeModif = new System.Windows.Forms.DateTimePicker();
+            this.DateTimeAjout = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Membre = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.Ville = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.CP = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Adresse = new System.Windows.Forms.TextBox();
-            this.Commentaire = new System.Windows.Forms.TextBox();
+            this.SiegeSocial = new System.Windows.Forms.TextBox();
             this.Nom = new System.Windows.Forms.TextBox();
             this.Id = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.organisationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.CmdQuitter = new System.Windows.Forms.Button();
-            this.avengersDBDataSetOrga = new Avergers.AvengersDBDataSetOrga();
             this.organisationsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.organisationsTableAdapter = new Avergers.AvengersDBDataSetOrgaTableAdapters.OrganisationsTableAdapter();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.avengersDBDataSetOrga1 = new Avergers.AvengersDBDataSetOrga();
             this.organisationsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreIncidentsDeclaresOrganisationsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreMissionsOrganisationsImpliqueOrganisationsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idorganisationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomorgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.siegesocialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idcivildirigeantDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ajoutorgaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modificationorgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.organisationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet = new Avergers.ProjetHeroDataSet();
+            this.organisationTableAdapter = new Avergers.ProjetHeroDataSetTableAdapters.OrganisationTableAdapter();
+            this.projetHeroDataSetOrganisationDataGridView = new Avergers.ProjetHeroDataSetOrganisationDataGridView();
+            this.organisationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.organisationTableAdapter1 = new Avergers.ProjetHeroDataSetOrganisationDataGridViewTableAdapters.OrganisationTableAdapter();
+            this.Dirigeant = new System.Windows.Forms.ComboBox();
+            this.projetHeroDataSet3OrganisationIdCivilDirigeantCombobox = new Avergers.ProjetHeroDataSet3OrganisationIdCivilDirigeantCombobox();
+            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.civilTableAdapter = new Avergers.ProjetHeroDataSet3OrganisationIdCivilDirigeantComboboxTableAdapters.CivilTableAdapter();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetOrga)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetOrga1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.organisationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetOrganisationDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.organisationBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet3OrganisationIdCivilDirigeantCombobox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -89,7 +91,7 @@ namespace Avergers
             this.groupBox2.Controls.Add(this.CmdSupp);
             this.groupBox2.Controls.Add(this.CmdMaj);
             this.groupBox2.Controls.Add(this.CmdCréer);
-            this.groupBox2.Location = new System.Drawing.Point(12, 263);
+            this.groupBox2.Location = new System.Drawing.Point(12, 228);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(955, 79);
             this.groupBox2.TabIndex = 11;
@@ -138,56 +140,61 @@ namespace Avergers
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.Datemodif);
-            this.groupBox1.Controls.Add(this.Dateajout);
             this.groupBox1.Controls.Add(this.Dirigeant);
+            this.groupBox1.Controls.Add(this.DateTimeModif);
+            this.groupBox1.Controls.Add(this.DateTimeAjout);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.Membre);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.Ville);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.CP);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.Adresse);
-            this.groupBox1.Controls.Add(this.Commentaire);
+            this.groupBox1.Controls.Add(this.SiegeSocial);
             this.groupBox1.Controls.Add(this.Nom);
             this.groupBox1.Controls.Add(this.Id);
-            this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 24);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(955, 233);
+            this.groupBox1.Size = new System.Drawing.Size(955, 198);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Organisations";
             // 
-            // Datemodif
+            // DateTimeModif
             // 
-            this.Datemodif.Location = new System.Drawing.Point(532, 160);
-            this.Datemodif.Name = "Datemodif";
-            this.Datemodif.Size = new System.Drawing.Size(161, 20);
-            this.Datemodif.TabIndex = 46;
+            this.DateTimeModif.Location = new System.Drawing.Point(532, 117);
+            this.DateTimeModif.Name = "DateTimeModif";
+            this.DateTimeModif.Size = new System.Drawing.Size(161, 20);
+            this.DateTimeModif.TabIndex = 50;
             // 
-            // Dateajout
+            // DateTimeAjout
             // 
-            this.Dateajout.Location = new System.Drawing.Point(532, 121);
-            this.Dateajout.Name = "Dateajout";
-            this.Dateajout.Size = new System.Drawing.Size(161, 20);
-            this.Dateajout.TabIndex = 45;
+            this.DateTimeAjout.Location = new System.Drawing.Point(532, 71);
+            this.DateTimeAjout.Name = "DateTimeAjout";
+            this.DateTimeAjout.Size = new System.Drawing.Size(161, 20);
+            this.DateTimeAjout.TabIndex = 49;
             // 
-            // Dirigeant
+            // label3
             // 
-            this.Dirigeant.Location = new System.Drawing.Point(532, 28);
-            this.Dirigeant.Name = "Dirigeant";
-            this.Dirigeant.Size = new System.Drawing.Size(161, 20);
-            this.Dirigeant.TabIndex = 44;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(416, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 13);
+            this.label3.TabIndex = 48;
+            this.label3.Text = "Nombre de membres :";
+            // 
+            // Membre
+            // 
+            this.Membre.Location = new System.Drawing.Point(532, 27);
+            this.Membre.Name = "Membre";
+            this.Membre.Size = new System.Drawing.Size(161, 20);
+            this.Membre.TabIndex = 47;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(364, 163);
+            this.label7.Location = new System.Drawing.Point(364, 120);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(162, 13);
             this.label7.TabIndex = 43;
@@ -196,7 +203,7 @@ namespace Avergers
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(456, 124);
+            this.label6.Location = new System.Drawing.Point(456, 74);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 13);
             this.label6.TabIndex = 42;
@@ -205,94 +212,46 @@ namespace Avergers
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(471, 31);
+            this.label5.Location = new System.Drawing.Point(25, 165);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.Size = new System.Drawing.Size(91, 13);
             this.label5.TabIndex = 41;
-            this.label5.Text = "Dirigeant :";
+            this.label5.Text = "ID Civil Dirigeant :";
             // 
-            // Ville
+            // SiegeSocial
             // 
-            this.Ville.Location = new System.Drawing.Point(93, 196);
-            this.Ville.Name = "Ville";
-            this.Ville.Size = new System.Drawing.Size(161, 20);
-            this.Ville.TabIndex = 40;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(48, 196);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "Ville :";
-            // 
-            // CP
-            // 
-            this.CP.Location = new System.Drawing.Point(93, 156);
-            this.CP.Name = "CP";
-            this.CP.Size = new System.Drawing.Size(161, 20);
-            this.CP.TabIndex = 38;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 159);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 13);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Code Postal :";
-            // 
-            // Adresse
-            // 
-            this.Adresse.Location = new System.Drawing.Point(93, 117);
-            this.Adresse.Name = "Adresse";
-            this.Adresse.Size = new System.Drawing.Size(161, 20);
-            this.Adresse.TabIndex = 36;
-            // 
-            // Commentaire
-            // 
-            this.Commentaire.Location = new System.Drawing.Point(532, 74);
-            this.Commentaire.Name = "Commentaire";
-            this.Commentaire.Size = new System.Drawing.Size(161, 20);
-            this.Commentaire.TabIndex = 27;
+            this.SiegeSocial.Location = new System.Drawing.Point(122, 120);
+            this.SiegeSocial.Name = "SiegeSocial";
+            this.SiegeSocial.Size = new System.Drawing.Size(161, 20);
+            this.SiegeSocial.TabIndex = 36;
             // 
             // Nom
             // 
-            this.Nom.Location = new System.Drawing.Point(93, 70);
+            this.Nom.Location = new System.Drawing.Point(122, 74);
             this.Nom.Name = "Nom";
             this.Nom.Size = new System.Drawing.Size(161, 20);
             this.Nom.TabIndex = 17;
             // 
             // Id
             // 
-            this.Id.Location = new System.Drawing.Point(93, 24);
+            this.Id.Location = new System.Drawing.Point(122, 24);
             this.Id.Name = "Id";
             this.Id.Size = new System.Drawing.Size(161, 20);
             this.Id.TabIndex = 15;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(452, 77);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 13);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "Commentaire :";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(36, 120);
+            this.label9.Location = new System.Drawing.Point(46, 123);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 13);
+            this.label9.Size = new System.Drawing.Size(70, 13);
             this.label9.TabIndex = 8;
-            this.label9.Text = "Adresse :";
+            this.label9.Text = "Siège social :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 74);
+            this.label2.Location = new System.Drawing.Point(81, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 1;
@@ -301,7 +260,7 @@ namespace Avergers
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 27);
+            this.label1.Location = new System.Drawing.Point(94, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(22, 13);
             this.label1.TabIndex = 0;
@@ -321,117 +280,126 @@ namespace Avergers
             this.CmdQuitter.UseVisualStyleBackColor = true;
             this.CmdQuitter.Click += new System.EventHandler(this.CmdQuitter_Click);
             // 
-            // avengersDBDataSetOrga
-            // 
-            this.avengersDBDataSetOrga.DataSetName = "AvengersDBDataSetOrga";
-            this.avengersDBDataSetOrga.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // organisationsBindingSource1
             // 
             this.organisationsBindingSource1.DataMember = "Organisations";
-            this.organisationsBindingSource1.DataSource = this.avengersDBDataSetOrga;
             // 
-            // organisationsTableAdapter
+            // organisationsBindingSource2
             // 
-            this.organisationsTableAdapter.ClearBeforeFill = true;
+            this.organisationsBindingSource2.DataMember = "Organisations";
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.nombreIncidentsDeclaresOrganisationsDataGridViewTextBoxColumn,
-            this.nombreMissionsOrganisationsImpliqueOrganisationsDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.organisationsBindingSource2;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 350);
+            this.idorganisationDataGridViewTextBoxColumn,
+            this.nomorgDataGridViewTextBoxColumn,
+            this.siegesocialDataGridViewTextBoxColumn,
+            this.idcivildirigeantDataGridViewTextBoxColumn,
+            this.membreDataGridViewTextBoxColumn,
+            this.ajoutorgaDataGridViewTextBoxColumn,
+            this.modificationorgDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.organisationBindingSource1;
+            this.dataGridView1.Location = new System.Drawing.Point(13, 318);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(950, 160);
+            this.dataGridView1.Size = new System.Drawing.Size(953, 184);
             this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick_1);
             // 
-            // avengersDBDataSetOrga1
+            // idorganisationDataGridViewTextBoxColumn
             // 
-            this.avengersDBDataSetOrga1.DataSetName = "AvengersDBDataSetOrga";
-            this.avengersDBDataSetOrga1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.idorganisationDataGridViewTextBoxColumn.DataPropertyName = "Id_organisation";
+            this.idorganisationDataGridViewTextBoxColumn.HeaderText = "Id_organisation";
+            this.idorganisationDataGridViewTextBoxColumn.Name = "idorganisationDataGridViewTextBoxColumn";
             // 
-            // organisationsBindingSource2
+            // nomorgDataGridViewTextBoxColumn
             // 
-            this.organisationsBindingSource2.DataMember = "Organisations";
-            this.organisationsBindingSource2.DataSource = this.avengersDBDataSetOrga1;
+            this.nomorgDataGridViewTextBoxColumn.DataPropertyName = "Nom_org";
+            this.nomorgDataGridViewTextBoxColumn.HeaderText = "Nom_org";
+            this.nomorgDataGridViewTextBoxColumn.Name = "nomorgDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn1
+            // siegesocialDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_Organisations";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id_Organisations";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.siegesocialDataGridViewTextBoxColumn.DataPropertyName = "Siege_social";
+            this.siegesocialDataGridViewTextBoxColumn.HeaderText = "Siege_social";
+            this.siegesocialDataGridViewTextBoxColumn.Name = "siegesocialDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn2
+            // idcivildirigeantDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nom_Organisations";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nom_Organisations";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.idcivildirigeantDataGridViewTextBoxColumn.DataPropertyName = "Id_civil_dirigeant";
+            this.idcivildirigeantDataGridViewTextBoxColumn.HeaderText = "Id_civil_dirigeant";
+            this.idcivildirigeantDataGridViewTextBoxColumn.Name = "idcivildirigeantDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn3
+            // membreDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Adresse_Organisations";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Adresse_Organisations";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.membreDataGridViewTextBoxColumn.DataPropertyName = "Membre";
+            this.membreDataGridViewTextBoxColumn.HeaderText = "Membre";
+            this.membreDataGridViewTextBoxColumn.Name = "membreDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn4
+            // ajoutorgaDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "CodePostale_Organisations";
-            this.dataGridViewTextBoxColumn4.HeaderText = "CodePostale_Organisations";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.ajoutorgaDataGridViewTextBoxColumn.DataPropertyName = "Ajout_orga";
+            this.ajoutorgaDataGridViewTextBoxColumn.HeaderText = "Ajout_orga";
+            this.ajoutorgaDataGridViewTextBoxColumn.Name = "ajoutorgaDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn5
+            // modificationorgDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Ville_Organisations";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Ville_Organisations";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.modificationorgDataGridViewTextBoxColumn.DataPropertyName = "Modification_org";
+            this.modificationorgDataGridViewTextBoxColumn.HeaderText = "Modification_org";
+            this.modificationorgDataGridViewTextBoxColumn.Name = "modificationorgDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn6
+            // organisationBindingSource
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Dirigeant_Organisations";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Dirigeant_Organisations";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.organisationBindingSource.DataMember = "Organisation";
+            this.organisationBindingSource.DataSource = this.projetHeroDataSet;
             // 
-            // dataGridViewTextBoxColumn7
+            // projetHeroDataSet
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Commentaire_Organisations";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Commentaire_Organisations";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.projetHeroDataSet.DataSetName = "ProjetHeroDataSet";
+            this.projetHeroDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dataGridViewTextBoxColumn8
+            // organisationTableAdapter
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "DateAjout_Organisations";
-            this.dataGridViewTextBoxColumn8.HeaderText = "DateAjout_Organisations";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.organisationTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn9
+            // projetHeroDataSetOrganisationDataGridView
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "DateDerniereModification_Organisations";
-            this.dataGridViewTextBoxColumn9.HeaderText = "DateDerniereModification_Organisations";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.projetHeroDataSetOrganisationDataGridView.DataSetName = "ProjetHeroDataSetOrganisationDataGridView";
+            this.projetHeroDataSetOrganisationDataGridView.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // nombreIncidentsDeclaresOrganisationsDataGridViewTextBoxColumn
+            // organisationBindingSource1
             // 
-            this.nombreIncidentsDeclaresOrganisationsDataGridViewTextBoxColumn.DataPropertyName = "NombreIncidentsDeclares_Organisations";
-            this.nombreIncidentsDeclaresOrganisationsDataGridViewTextBoxColumn.HeaderText = "NombreIncidentsDeclares_Organisations";
-            this.nombreIncidentsDeclaresOrganisationsDataGridViewTextBoxColumn.Name = "nombreIncidentsDeclaresOrganisationsDataGridViewTextBoxColumn";
+            this.organisationBindingSource1.DataMember = "Organisation";
+            this.organisationBindingSource1.DataSource = this.projetHeroDataSetOrganisationDataGridView;
             // 
-            // nombreMissionsOrganisationsImpliqueOrganisationsDataGridViewTextBoxColumn
+            // organisationTableAdapter1
             // 
-            this.nombreMissionsOrganisationsImpliqueOrganisationsDataGridViewTextBoxColumn.DataPropertyName = "NombreMissionsOrganisationsImplique_Organisations";
-            this.nombreMissionsOrganisationsImpliqueOrganisationsDataGridViewTextBoxColumn.HeaderText = "NombreMissionsOrganisationsImplique_Organisations";
-            this.nombreMissionsOrganisationsImpliqueOrganisationsDataGridViewTextBoxColumn.Name = "nombreMissionsOrganisationsImpliqueOrganisationsDataGridViewTextBoxColumn";
+            this.organisationTableAdapter1.ClearBeforeFill = true;
+            // 
+            // Dirigeant
+            // 
+            this.Dirigeant.DataSource = this.organisationBindingSource;
+            this.Dirigeant.FormattingEnabled = true;
+            this.Dirigeant.Location = new System.Drawing.Point(122, 157);
+            this.Dirigeant.Name = "Dirigeant";
+            this.Dirigeant.Size = new System.Drawing.Size(121, 21);
+            this.Dirigeant.TabIndex = 51;
+            this.Dirigeant.ValueMember = "Id_civil";
+            // 
+            // projetHeroDataSet3OrganisationIdCivilDirigeantCombobox
+            // 
+            this.projetHeroDataSet3OrganisationIdCivilDirigeantCombobox.DataSetName = "ProjetHeroDataSet3OrganisationIdCivilDirigeantCombobox";
+            this.projetHeroDataSet3OrganisationIdCivilDirigeantCombobox.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // civilBindingSource
+            // 
+            this.civilBindingSource.DataMember = "Civil";
+            this.civilBindingSource.DataSource = this.projetHeroDataSet3OrganisationIdCivilDirigeantCombobox;
+            // 
+            // civilTableAdapter
+            // 
+            this.civilTableAdapter.ClearBeforeFill = true;
             // 
             // Organisations
             // 
@@ -449,11 +417,15 @@ namespace Avergers
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetOrga)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetOrga1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.organisationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetOrganisationDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.organisationBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet3OrganisationIdCivilDirigeantCombobox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -466,24 +438,15 @@ namespace Avergers
         private System.Windows.Forms.Button CmdMaj;
         private System.Windows.Forms.Button CmdCréer;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox Adresse;
-        private System.Windows.Forms.TextBox Commentaire;
+        private System.Windows.Forms.TextBox SiegeSocial;
         private System.Windows.Forms.TextBox Nom;
         private System.Windows.Forms.TextBox Id;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Datemodif;
-        private System.Windows.Forms.TextBox Dateajout;
-        private System.Windows.Forms.TextBox Dirigeant;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox Ville;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox CP;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.BindingSource organisationsBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idOrganisationsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomOrganisationsDataGridViewTextBoxColumn;
@@ -495,11 +458,7 @@ namespace Avergers
         private System.Windows.Forms.DataGridViewTextBoxColumn dateAjoutOrganisationsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDerniereModificationOrganisationsDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button CmdQuitter;
-        private AvengersDBDataSetOrga avengersDBDataSetOrga;
         private System.Windows.Forms.BindingSource organisationsBindingSource1;
-        private AvengersDBDataSetOrgaTableAdapters.OrganisationsTableAdapter organisationsTableAdapter;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private AvengersDBDataSetOrga avengersDBDataSetOrga1;
         private System.Windows.Forms.BindingSource organisationsBindingSource2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -512,5 +471,27 @@ namespace Avergers
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreIncidentsDeclaresOrganisationsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreMissionsOrganisationsImpliqueOrganisationsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox Membre;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private ProjetHeroDataSet projetHeroDataSet;
+        private System.Windows.Forms.BindingSource organisationBindingSource;
+        private ProjetHeroDataSetTableAdapters.OrganisationTableAdapter organisationTableAdapter;
+        private System.Windows.Forms.DateTimePicker DateTimeModif;
+        private System.Windows.Forms.DateTimePicker DateTimeAjout;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idorganisationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomorgDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn siegesocialDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idcivildirigeantDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn membreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ajoutorgaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modificationorgDataGridViewTextBoxColumn;
+        private ProjetHeroDataSetOrganisationDataGridView projetHeroDataSetOrganisationDataGridView;
+        private System.Windows.Forms.BindingSource organisationBindingSource1;
+        private ProjetHeroDataSetOrganisationDataGridViewTableAdapters.OrganisationTableAdapter organisationTableAdapter1;
+        private System.Windows.Forms.ComboBox Dirigeant;
+        private ProjetHeroDataSet3OrganisationIdCivilDirigeantCombobox projetHeroDataSet3OrganisationIdCivilDirigeantCombobox;
+        private System.Windows.Forms.BindingSource civilBindingSource;
+        private ProjetHeroDataSet3OrganisationIdCivilDirigeantComboboxTableAdapters.CivilTableAdapter civilTableAdapter;
     }
 }

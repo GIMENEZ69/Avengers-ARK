@@ -18,7 +18,6 @@ D:\Cours\POEC.NET\Avengers-ARK\bin\Debug\Avergers.exe
 D:\Cours\POEC.NET\Avengers-ARK\bin\Debug\Avergers.pdb
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avengers.csprojAssemblyReference.cache
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Civils.resources
-D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Menu.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Organisations.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Properties.Resources.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.SuperHeros.resources
@@ -27,17 +26,32 @@ D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avengers.csproj.GenerateResource.cache
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avengers.csproj.CoreCompileInputs.cache
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.exe
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.pdb
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\bin\Debug\Avergers.exe.config
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\bin\Debug\Avergers.exe
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\bin\Debug\Avergers.pdb
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avengers.csproj.AssemblyReference.cache
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.Civils.resources
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.SuperHeros.resources
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.Menu.resources
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.Organisations.resources
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.Properties.Resources.resources
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.SuperVilains.resources
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avengers.csproj.GenerateResource.cache
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avengers.csproj.CoreCompileInputs.cache
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.exe
-C:\Users\karim cesi\Downloads\Avengers-ARK-Karim\Avengers-ARK-Karim\obj\Debug\Avergers.pdb
+D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.MenuPrincipal.resources
+D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.PageChoixAdmin.resources
+D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.MenuAdminCreat.resources
+D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Utilisateur.resources
+D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Crise.resources
+D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Incident.resources
+D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Litige.resources
+D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Missions.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\bin\Debug\Avergers.exe.config
+C:\Users\karim cesi\source\repos\Avengers-ARK\bin\Debug\Avergers.exe
+C:\Users\karim cesi\source\repos\Avengers-ARK\bin\Debug\Avergers.pdb
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avengers.csproj.AssemblyReference.cache
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.Civils.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.Crise.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.Incident.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.Litige.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.MenuPrincipal.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.Missions.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.PageChoixAdmin.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.SuperHeros.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.MenuAdminCreat.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.Organisations.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.Properties.Resources.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.SuperVilains.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.Utilisateur.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avengers.csproj.GenerateResource.cache
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avengers.csproj.CoreCompileInputs.cache
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.exe
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.pdb

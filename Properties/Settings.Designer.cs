@@ -46,11 +46,21 @@ namespace Avergers.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-4E03TBFV\\MYSQL;Initial Catalog=AvengersDB;Integrated Security=" +
-            "True")]
-        public string AvengersDBConnectionString2 {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=AUDREY;Initial Catalog=ProjetHero;Integrated Security=True")]
+        public string ProjetHeroConnectionString {
             get {
-                return ((string)(this["AvengersDBConnectionString2"]));
+                return ((string)(this["ProjetHeroConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-4E03TBFV\\MYSQL;Initial Catalog=ProjetHero;Integrated Security=" +
+            "True")]
+        public string ProjetHeroConnectionString1 {
+            get {
+                return ((string)(this["ProjetHeroConnectionString1"]));
             }
         }
     }
