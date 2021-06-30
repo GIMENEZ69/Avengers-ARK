@@ -20,17 +20,17 @@ namespace Avergers {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("AvengersDBDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("ProjetHeroDataSetVilain")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class AvengersDBDataSet : global::System.Data.DataSet {
+    public partial class ProjetHeroDataSetVilain : global::System.Data.DataSet {
         
-        private CivilsDataTable tableCivils;
+        private Super_vilainDataTable tableSuper_vilain;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public AvengersDBDataSet() {
+        public ProjetHeroDataSetVilain() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Avergers {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected AvengersDBDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected ProjetHeroDataSetVilain(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Avergers {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Civils"] != null)) {
-                    base.Tables.Add(new CivilsDataTable(ds.Tables["Civils"]));
+                if ((ds.Tables["Super_vilain"] != null)) {
+                    base.Tables.Add(new Super_vilainDataTable(ds.Tables["Super_vilain"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Avergers {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public CivilsDataTable Civils {
+        public Super_vilainDataTable Super_vilain {
             get {
-                return this.tableCivils;
+                return this.tableSuper_vilain;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Avergers {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            AvengersDBDataSet cln = ((AvengersDBDataSet)(base.Clone()));
+            ProjetHeroDataSetVilain cln = ((ProjetHeroDataSetVilain)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Avergers {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Civils"] != null)) {
-                    base.Tables.Add(new CivilsDataTable(ds.Tables["Civils"]));
+                if ((ds.Tables["Super_vilain"] != null)) {
+                    base.Tables.Add(new Super_vilainDataTable(ds.Tables["Super_vilain"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Avergers {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableCivils = ((CivilsDataTable)(base.Tables["Civils"]));
+            this.tableSuper_vilain = ((Super_vilainDataTable)(base.Tables["Super_vilain"]));
             if ((initTable == true)) {
-                if ((this.tableCivils != null)) {
-                    this.tableCivils.InitVars();
+                if ((this.tableSuper_vilain != null)) {
+                    this.tableSuper_vilain.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Avergers {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "AvengersDBDataSet";
+            this.DataSetName = "ProjetHeroDataSetVilain";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/AvengersDBDataSet.xsd";
+            this.Namespace = "http://tempuri.org/ProjetHeroDataSetVilain.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableCivils = new CivilsDataTable();
-            base.Tables.Add(this.tableCivils);
+            this.tableSuper_vilain = new Super_vilainDataTable();
+            base.Tables.Add(this.tableSuper_vilain);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeCivils() {
+        private bool ShouldSerializeSuper_vilain() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Avergers {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            AvengersDBDataSet ds = new AvengersDBDataSet();
+            ProjetHeroDataSetVilain ds = new ProjetHeroDataSetVilain();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,21 +270,29 @@ namespace Avergers {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void CivilsRowChangeEventHandler(object sender, CivilsRowChangeEvent e);
+        public delegate void Super_vilainRowChangeEventHandler(object sender, Super_vilainRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class CivilsDataTable : global::System.Data.TypedTableBase<CivilsRow> {
+        public partial class Super_vilainDataTable : global::System.Data.TypedTableBase<Super_vilainRow> {
             
-            private global::System.Data.DataColumn columnId_Civils;
+            private global::System.Data.DataColumn columnId_super_vilain;
+            
+            private global::System.Data.DataColumn columnId_civil;
+            
+            private global::System.Data.DataColumn columnNom_vilain;
+            
+            private global::System.Data.DataColumn columnPouvoir;
+            
+            private global::System.Data.DataColumn columnCommentaire;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CivilsDataTable() {
-                this.TableName = "Civils";
+            public Super_vilainDataTable() {
+                this.TableName = "Super_vilain";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -292,7 +300,7 @@ namespace Avergers {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal CivilsDataTable(global::System.Data.DataTable table) {
+            internal Super_vilainDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -309,16 +317,48 @@ namespace Avergers {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected CivilsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Super_vilainDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Id_CivilsColumn {
+            public global::System.Data.DataColumn Id_super_vilainColumn {
                 get {
-                    return this.columnId_Civils;
+                    return this.columnId_super_vilain;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Id_civilColumn {
+                get {
+                    return this.columnId_civil;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Nom_vilainColumn {
+                get {
+                    return this.columnNom_vilain;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PouvoirColumn {
+                get {
+                    return this.columnPouvoir;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CommentaireColumn {
+                get {
+                    return this.columnCommentaire;
                 }
             }
             
@@ -333,52 +373,56 @@ namespace Avergers {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CivilsRow this[int index] {
+            public Super_vilainRow this[int index] {
                 get {
-                    return ((CivilsRow)(this.Rows[index]));
+                    return ((Super_vilainRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event CivilsRowChangeEventHandler CivilsRowChanging;
+            public event Super_vilainRowChangeEventHandler Super_vilainRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event CivilsRowChangeEventHandler CivilsRowChanged;
+            public event Super_vilainRowChangeEventHandler Super_vilainRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event CivilsRowChangeEventHandler CivilsRowDeleting;
+            public event Super_vilainRowChangeEventHandler Super_vilainRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event CivilsRowChangeEventHandler CivilsRowDeleted;
+            public event Super_vilainRowChangeEventHandler Super_vilainRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddCivilsRow(CivilsRow row) {
+            public void AddSuper_vilainRow(Super_vilainRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CivilsRow AddCivilsRow(int Id_Civils) {
-                CivilsRow rowCivilsRow = ((CivilsRow)(this.NewRow()));
+            public Super_vilainRow AddSuper_vilainRow(int Id_super_vilain, int Id_civil, string Nom_vilain, string Pouvoir, string Commentaire) {
+                Super_vilainRow rowSuper_vilainRow = ((Super_vilainRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Id_Civils};
-                rowCivilsRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowCivilsRow);
-                return rowCivilsRow;
+                        Id_super_vilain,
+                        Id_civil,
+                        Nom_vilain,
+                        Pouvoir,
+                        Commentaire};
+                rowSuper_vilainRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowSuper_vilainRow);
+                return rowSuper_vilainRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CivilsRow FindById_Civils(int Id_Civils) {
-                return ((CivilsRow)(this.Rows.Find(new object[] {
-                            Id_Civils})));
+            public Super_vilainRow FindById_super_vilain(int Id_super_vilain) {
+                return ((Super_vilainRow)(this.Rows.Find(new object[] {
+                            Id_super_vilain})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                CivilsDataTable cln = ((CivilsDataTable)(base.Clone()));
+                Super_vilainDataTable cln = ((Super_vilainDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -386,50 +430,68 @@ namespace Avergers {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new CivilsDataTable();
+                return new Super_vilainDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnId_Civils = base.Columns["Id_Civils"];
+                this.columnId_super_vilain = base.Columns["Id_super_vilain"];
+                this.columnId_civil = base.Columns["Id_civil"];
+                this.columnNom_vilain = base.Columns["Nom_vilain"];
+                this.columnPouvoir = base.Columns["Pouvoir"];
+                this.columnCommentaire = base.Columns["Commentaire"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnId_Civils = new global::System.Data.DataColumn("Id_Civils", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnId_Civils);
+                this.columnId_super_vilain = new global::System.Data.DataColumn("Id_super_vilain", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId_super_vilain);
+                this.columnId_civil = new global::System.Data.DataColumn("Id_civil", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId_civil);
+                this.columnNom_vilain = new global::System.Data.DataColumn("Nom_vilain", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNom_vilain);
+                this.columnPouvoir = new global::System.Data.DataColumn("Pouvoir", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPouvoir);
+                this.columnCommentaire = new global::System.Data.DataColumn("Commentaire", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCommentaire);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnId_Civils}, true));
-                this.columnId_Civils.AllowDBNull = false;
-                this.columnId_Civils.Unique = true;
+                                this.columnId_super_vilain}, true));
+                this.columnId_super_vilain.AllowDBNull = false;
+                this.columnId_super_vilain.Unique = true;
+                this.columnNom_vilain.AllowDBNull = false;
+                this.columnNom_vilain.MaxLength = 50;
+                this.columnPouvoir.AllowDBNull = false;
+                this.columnPouvoir.MaxLength = 50;
+                this.columnCommentaire.AllowDBNull = false;
+                this.columnCommentaire.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CivilsRow NewCivilsRow() {
-                return ((CivilsRow)(this.NewRow()));
+            public Super_vilainRow NewSuper_vilainRow() {
+                return ((Super_vilainRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new CivilsRow(builder);
+                return new Super_vilainRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(CivilsRow);
+                return typeof(Super_vilainRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.CivilsRowChanged != null)) {
-                    this.CivilsRowChanged(this, new CivilsRowChangeEvent(((CivilsRow)(e.Row)), e.Action));
+                if ((this.Super_vilainRowChanged != null)) {
+                    this.Super_vilainRowChanged(this, new Super_vilainRowChangeEvent(((Super_vilainRow)(e.Row)), e.Action));
                 }
             }
             
@@ -437,8 +499,8 @@ namespace Avergers {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.CivilsRowChanging != null)) {
-                    this.CivilsRowChanging(this, new CivilsRowChangeEvent(((CivilsRow)(e.Row)), e.Action));
+                if ((this.Super_vilainRowChanging != null)) {
+                    this.Super_vilainRowChanging(this, new Super_vilainRowChangeEvent(((Super_vilainRow)(e.Row)), e.Action));
                 }
             }
             
@@ -446,8 +508,8 @@ namespace Avergers {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.CivilsRowDeleted != null)) {
-                    this.CivilsRowDeleted(this, new CivilsRowChangeEvent(((CivilsRow)(e.Row)), e.Action));
+                if ((this.Super_vilainRowDeleted != null)) {
+                    this.Super_vilainRowDeleted(this, new Super_vilainRowChangeEvent(((Super_vilainRow)(e.Row)), e.Action));
                 }
             }
             
@@ -455,14 +517,14 @@ namespace Avergers {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.CivilsRowDeleting != null)) {
-                    this.CivilsRowDeleting(this, new CivilsRowChangeEvent(((CivilsRow)(e.Row)), e.Action));
+                if ((this.Super_vilainRowDeleting != null)) {
+                    this.Super_vilainRowDeleting(this, new Super_vilainRowChangeEvent(((Super_vilainRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveCivilsRow(CivilsRow row) {
+            public void RemoveSuper_vilainRow(Super_vilainRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -471,7 +533,7 @@ namespace Avergers {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                AvengersDBDataSet ds = new AvengersDBDataSet();
+                ProjetHeroDataSetVilain ds = new ProjetHeroDataSetVilain();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -489,7 +551,7 @@ namespace Avergers {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "CivilsDataTable";
+                attribute2.FixedValue = "Super_vilainDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -533,26 +595,87 @@ namespace Avergers {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class CivilsRow : global::System.Data.DataRow {
+        public partial class Super_vilainRow : global::System.Data.DataRow {
             
-            private CivilsDataTable tableCivils;
+            private Super_vilainDataTable tableSuper_vilain;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal CivilsRow(global::System.Data.DataRowBuilder rb) : 
+            internal Super_vilainRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableCivils = ((CivilsDataTable)(this.Table));
+                this.tableSuper_vilain = ((Super_vilainDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Id_Civils {
+            public int Id_super_vilain {
                 get {
-                    return ((int)(this[this.tableCivils.Id_CivilsColumn]));
+                    return ((int)(this[this.tableSuper_vilain.Id_super_vilainColumn]));
                 }
                 set {
-                    this[this.tableCivils.Id_CivilsColumn] = value;
+                    this[this.tableSuper_vilain.Id_super_vilainColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Id_civil {
+                get {
+                    try {
+                        return ((int)(this[this.tableSuper_vilain.Id_civilColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Id_civil\' dans la table \'Super_vilain\' est DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSuper_vilain.Id_civilColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Nom_vilain {
+                get {
+                    return ((string)(this[this.tableSuper_vilain.Nom_vilainColumn]));
+                }
+                set {
+                    this[this.tableSuper_vilain.Nom_vilainColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Pouvoir {
+                get {
+                    return ((string)(this[this.tableSuper_vilain.PouvoirColumn]));
+                }
+                set {
+                    this[this.tableSuper_vilain.PouvoirColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Commentaire {
+                get {
+                    return ((string)(this[this.tableSuper_vilain.CommentaireColumn]));
+                }
+                set {
+                    this[this.tableSuper_vilain.CommentaireColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsId_civilNull() {
+                return this.IsNull(this.tableSuper_vilain.Id_civilColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetId_civilNull() {
+                this[this.tableSuper_vilain.Id_civilColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -560,22 +683,22 @@ namespace Avergers {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class CivilsRowChangeEvent : global::System.EventArgs {
+        public class Super_vilainRowChangeEvent : global::System.EventArgs {
             
-            private CivilsRow eventRow;
+            private Super_vilainRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CivilsRowChangeEvent(CivilsRow row, global::System.Data.DataRowAction action) {
+            public Super_vilainRowChangeEvent(Super_vilainRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CivilsRow Row {
+            public Super_vilainRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -591,7 +714,7 @@ namespace Avergers {
         }
     }
 }
-namespace Avergers.AvengersDBDataSetTableAdapters {
+namespace Avergers.ProjetHeroDataSetVilainTableAdapters {
     
     
     /// <summary>
@@ -603,7 +726,7 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class CivilsTableAdapter : global::System.ComponentModel.Component {
+    public partial class Super_vilainTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -617,7 +740,7 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public CivilsTableAdapter() {
+        public Super_vilainTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -714,34 +837,57 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Civils";
-            tableMapping.ColumnMappings.Add("Id_Civils", "Id_Civils");
+            tableMapping.DataSetTable = "Super_vilain";
+            tableMapping.ColumnMappings.Add("Id_super_vilain", "Id_super_vilain");
+            tableMapping.ColumnMappings.Add("Id_civil", "Id_civil");
+            tableMapping.ColumnMappings.Add("Nom_vilain", "Nom_vilain");
+            tableMapping.ColumnMappings.Add("Pouvoir", "Pouvoir");
+            tableMapping.ColumnMappings.Add("Commentaire", "Commentaire");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Civils] WHERE (([Id_Civils] = @Original_Id_Civils))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Super_vilain] WHERE (([Id_super_vilain] = @Original_Id_super_v" +
+                "ilain) AND ((@IsNull_Id_civil = 1 AND [Id_civil] IS NULL) OR ([Id_civil] = @Orig" +
+                "inal_Id_civil)) AND ([Nom_vilain] = @Original_Nom_vilain) AND ([Pouvoir] = @Orig" +
+                "inal_Pouvoir))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Civils", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Civils", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_super_vilain", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_super_vilain", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Id_civil", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_civil", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_civil", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_civil", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nom_vilain", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_vilain", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Pouvoir", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pouvoir", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Civils] ([Id_Civils]) VALUES (@Id_Civils);\r\nSELECT Id_Civils F" +
-                "ROM Civils WHERE (Id_Civils = @Id_Civils)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Super_vilain] ([Id_super_vilain], [Id_civil], [Nom_vilain], [Pouvoir], [Commentaire]) VALUES (@Id_super_vilain, @Id_civil, @Nom_vilain, @Pouvoir, @Commentaire);
+SELECT Id_super_vilain, Id_civil, Nom_vilain, Pouvoir, Commentaire FROM Super_vilain WHERE (Id_super_vilain = @Id_super_vilain)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_Civils", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Civils", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_super_vilain", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_super_vilain", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_civil", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_civil", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nom_vilain", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_vilain", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pouvoir", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pouvoir", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Commentaire", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Commentaire", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Civils] SET [Id_Civils] = @Id_Civils WHERE (([Id_Civils] = @Origina" +
-                "l_Id_Civils));\r\nSELECT Id_Civils FROM Civils WHERE (Id_Civils = @Id_Civils)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Super_vilain] SET [Id_super_vilain] = @Id_super_vilain, [Id_civil] = @Id_civil, [Nom_vilain] = @Nom_vilain, [Pouvoir] = @Pouvoir, [Commentaire] = @Commentaire WHERE (([Id_super_vilain] = @Original_Id_super_vilain) AND ((@IsNull_Id_civil = 1 AND [Id_civil] IS NULL) OR ([Id_civil] = @Original_Id_civil)) AND ([Nom_vilain] = @Original_Nom_vilain) AND ([Pouvoir] = @Original_Pouvoir));
+SELECT Id_super_vilain, Id_civil, Nom_vilain, Pouvoir, Commentaire FROM Super_vilain WHERE (Id_super_vilain = @Id_super_vilain)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_Civils", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Civils", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Civils", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Civils", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_super_vilain", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_super_vilain", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_civil", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_civil", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nom_vilain", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_vilain", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pouvoir", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pouvoir", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Commentaire", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Commentaire", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_super_vilain", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_super_vilain", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Id_civil", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_civil", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_civil", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_civil", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nom_vilain", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_vilain", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Pouvoir", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pouvoir", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Avergers.Properties.Settings.Default.AvengersDBConnectionString;
+            this._connection.ConnectionString = global::Avergers.Properties.Settings.Default.ProjetHeroConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -750,7 +896,8 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id_Civils FROM dbo.Civils";
+            this._commandCollection[0].CommandText = "SELECT Id_super_vilain, Id_civil, Nom_vilain, Pouvoir, Commentaire FROM dbo.Super" +
+                "_vilain";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -758,7 +905,7 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(AvengersDBDataSet.CivilsDataTable dataTable) {
+        public virtual int Fill(ProjetHeroDataSetVilain.Super_vilainDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -771,9 +918,9 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual AvengersDBDataSet.CivilsDataTable GetData() {
+        public virtual ProjetHeroDataSetVilain.Super_vilainDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            AvengersDBDataSet.CivilsDataTable dataTable = new AvengersDBDataSet.CivilsDataTable();
+            ProjetHeroDataSetVilain.Super_vilainDataTable dataTable = new ProjetHeroDataSetVilain.Super_vilainDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -781,15 +928,15 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(AvengersDBDataSet.CivilsDataTable dataTable) {
+        public virtual int Update(ProjetHeroDataSetVilain.Super_vilainDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(AvengersDBDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Civils");
+        public virtual int Update(ProjetHeroDataSetVilain dataSet) {
+            return this.Adapter.Update(dataSet, "Super_vilain");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -811,8 +958,28 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id_Civils) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id_Civils));
+        public virtual int Delete(int Original_Id_super_vilain, global::System.Nullable<int> Original_Id_civil, string Original_Nom_vilain, string Original_Pouvoir) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id_super_vilain));
+            if ((Original_Id_civil.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_Id_civil.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((Original_Nom_vilain == null)) {
+                throw new global::System.ArgumentNullException("Original_Nom_vilain");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_Nom_vilain));
+            }
+            if ((Original_Pouvoir == null)) {
+                throw new global::System.ArgumentNullException("Original_Pouvoir");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Pouvoir));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -833,8 +1000,32 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int Id_Civils) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Id_Civils));
+        public virtual int Insert(int Id_super_vilain, global::System.Nullable<int> Id_civil, string Nom_vilain, string Pouvoir, string Commentaire) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Id_super_vilain));
+            if ((Id_civil.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Id_civil.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((Nom_vilain == null)) {
+                throw new global::System.ArgumentNullException("Nom_vilain");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Nom_vilain));
+            }
+            if ((Pouvoir == null)) {
+                throw new global::System.ArgumentNullException("Pouvoir");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Pouvoir));
+            }
+            if ((Commentaire == null)) {
+                throw new global::System.ArgumentNullException("Commentaire");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Commentaire));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -855,9 +1046,53 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int Id_Civils, int Original_Id_Civils) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Id_Civils));
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Original_Id_Civils));
+        public virtual int Update(int Id_super_vilain, global::System.Nullable<int> Id_civil, string Nom_vilain, string Pouvoir, string Commentaire, int Original_Id_super_vilain, global::System.Nullable<int> Original_Id_civil, string Original_Nom_vilain, string Original_Pouvoir) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Id_super_vilain));
+            if ((Id_civil.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Id_civil.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((Nom_vilain == null)) {
+                throw new global::System.ArgumentNullException("Nom_vilain");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Nom_vilain));
+            }
+            if ((Pouvoir == null)) {
+                throw new global::System.ArgumentNullException("Pouvoir");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Pouvoir));
+            }
+            if ((Commentaire == null)) {
+                throw new global::System.ArgumentNullException("Commentaire");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Commentaire));
+            }
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Id_super_vilain));
+            if ((Original_Id_civil.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_Id_civil.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((Original_Nom_vilain == null)) {
+                throw new global::System.ArgumentNullException("Original_Nom_vilain");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_Nom_vilain));
+            }
+            if ((Original_Pouvoir == null)) {
+                throw new global::System.ArgumentNullException("Original_Pouvoir");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_Pouvoir));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -878,8 +1113,8 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int Original_Id_Civils) {
-            return this.Update(Original_Id_Civils, Original_Id_Civils);
+        public virtual int Update(global::System.Nullable<int> Id_civil, string Nom_vilain, string Pouvoir, string Commentaire, int Original_Id_super_vilain, global::System.Nullable<int> Original_Id_civil, string Original_Nom_vilain, string Original_Pouvoir) {
+            return this.Update(Original_Id_super_vilain, Id_civil, Nom_vilain, Pouvoir, Commentaire, Original_Id_super_vilain, Original_Id_civil, Original_Nom_vilain, Original_Pouvoir);
         }
     }
     
@@ -895,7 +1130,7 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private CivilsTableAdapter _civilsTableAdapter;
+        private Super_vilainTableAdapter _super_vilainTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -917,12 +1152,12 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public CivilsTableAdapter CivilsTableAdapter {
+        public Super_vilainTableAdapter Super_vilainTableAdapter {
             get {
-                return this._civilsTableAdapter;
+                return this._super_vilainTableAdapter;
             }
             set {
-                this._civilsTableAdapter = value;
+                this._super_vilainTableAdapter = value;
             }
         }
         
@@ -945,9 +1180,9 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._civilsTableAdapter != null) 
-                            && (this._civilsTableAdapter.Connection != null))) {
-                    return this._civilsTableAdapter.Connection;
+                if (((this._super_vilainTableAdapter != null) 
+                            && (this._super_vilainTableAdapter.Connection != null))) {
+                    return this._super_vilainTableAdapter.Connection;
                 }
                 return null;
             }
@@ -962,7 +1197,7 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._civilsTableAdapter != null)) {
+                if ((this._super_vilainTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -974,14 +1209,14 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(AvengersDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(ProjetHeroDataSetVilain dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._civilsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Civils.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._super_vilainTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Super_vilain.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._civilsTableAdapter.Update(updatedRows));
+                    result = (result + this._super_vilainTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -993,13 +1228,13 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(AvengersDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(ProjetHeroDataSetVilain dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._civilsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Civils.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._super_vilainTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Super_vilain.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._civilsTableAdapter.Update(addedRows));
+                    result = (result + this._super_vilainTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1011,13 +1246,13 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(AvengersDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(ProjetHeroDataSetVilain dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._civilsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Civils.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._super_vilainTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Super_vilain.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._civilsTableAdapter.Update(deletedRows));
+                    result = (result + this._super_vilainTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1053,15 +1288,15 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(AvengersDBDataSet dataSet) {
+        public virtual int UpdateAll(ProjetHeroDataSetVilain dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._civilsTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._civilsTableAdapter.Connection) == false))) {
+            if (((this._super_vilainTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._super_vilainTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Tous les TableAdapters managés par un TableAdapterManager doivent utiliser la mêm" +
                         "e chaîne de connexion.");
             }
@@ -1099,13 +1334,13 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._civilsTableAdapter != null)) {
-                    revertConnections.Add(this._civilsTableAdapter, this._civilsTableAdapter.Connection);
-                    this._civilsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._civilsTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._civilsTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._civilsTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._civilsTableAdapter.Adapter);
+                if ((this._super_vilainTableAdapter != null)) {
+                    revertConnections.Add(this._super_vilainTableAdapter, this._super_vilainTableAdapter.Connection);
+                    this._super_vilainTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._super_vilainTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._super_vilainTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._super_vilainTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._super_vilainTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1166,9 +1401,9 @@ namespace Avergers.AvengersDBDataSetTableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._civilsTableAdapter != null)) {
-                    this._civilsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._civilsTableAdapter]));
-                    this._civilsTableAdapter.Transaction = null;
+                if ((this._super_vilainTableAdapter != null)) {
+                    this._super_vilainTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._super_vilainTableAdapter]));
+                    this._super_vilainTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

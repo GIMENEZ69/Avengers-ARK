@@ -20,9 +20,10 @@ namespace Avergers
 
         private void SuperVilains_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSetVilains.SuperVilains'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.superVilainsTableAdapter.Fill(this.avengersDBDataSetVilains.SuperVilains);
-            // GRIDVIEW : TODO: cette ligne de code charge les données dans la table 'avengersDBDataSetSuperVilains.SuperVilains'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetFKIdCivil.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.civilTableAdapter.Fill(this.projetHeroDataSetFKIdCivil.Civil);
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetVilain.Super_vilain'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.super_vilainTableAdapter.Fill(this.projetHeroDataSetVilain.Super_vilain);
 
         }
 
@@ -31,12 +32,12 @@ namespace Avergers
             Form.ActiveForm.Close();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=MSI-UBI\MSSQLSERVER01;Initial Catalog=ProjetHero;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=ProjetHero;Integrated Security=True");
         private void CmdCréer_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "INSERT INTO SuperVilains (Id_super_vilain, Nom_vilain, Degats_SuperVilain, Commentaire_SuperVilains) " +
-                "VALUES(                      '" + Id.Text + "', '" + Nom.Text + "','" + Degats.Text + "', '" + Commentaire.Text + "')";
+            string query = "INSERT INTO Super_vilain (Id_super_vilain, Id_civil,                Nom_vilain,         Pouvoir,                Commentaire) " +
+                "VALUES(                      '" + Id.Text + "', '" + CmbIdCivil.Text + "', '" + Nom.Text + "','" + Pouvoir.Text + "', '" + Commentaire.Text + "')";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
@@ -46,7 +47,7 @@ namespace Avergers
         private void CmdRead_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "SELECT * FROM SuperVilains";
+            string query = "SELECT * FROM Super_vilain";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
@@ -57,7 +58,7 @@ namespace Avergers
         private void CmdMaj_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "UPDATE SuperVilains SET Nom_SuperVilains = '"+ Nom.Text+"', Degats_SuperVilains = '"+Degats.Text+"', Commentaire_SuperVilains = '"+Commentaire.Text+"' WHERE Id_SuperVilains = '" + Id.Text + "'";
+            string query = "UPDATE Super_vilain SET Id_civil = '" + CmbIdCivil.Text + "', Nom_vilain = '" + Nom.Text+"', Pouvoir = '"+Pouvoir.Text+"', Commentaire = '"+Commentaire.Text+"' WHERE Id_super_vilain = '" + Id.Text + "'";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
@@ -67,20 +68,20 @@ namespace Avergers
         private void CmdSupp_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "DELETE FROM SuperVilains where Id_SuperVilains = '" + Id.Text + "'";
+            string query = "DELETE FROM Super_vilain where Id_super_vilain = '" + Id.Text + "'";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show(" L'identifiant a bien été supprimé");
         }
 
-        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void dataGridView1_MouseDoubleClick_1(object sender, MouseEventArgs e)
         {
             Id.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            Nom.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            Degats.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            Commentaire.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-           
+            CmbIdCivil.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            Nom.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            Pouvoir.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            Commentaire.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
         }
     }
 }

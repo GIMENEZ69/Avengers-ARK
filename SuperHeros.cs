@@ -20,19 +20,20 @@ namespace Avergers
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet1.SuperHeros'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.superHerosTableAdapter.Fill(this.avengersDBDataSet1.SuperHeros);
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.civilsTableAdapter.Fill(this.avengersDBDataSet.Civils);
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet2.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.civilTableAdapter.Fill(this.projetHeroDataSet2.Civil);
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet1.Super_hero'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.super_heroTableAdapter.Fill(this.projetHeroDataSet1.Super_hero);
+
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=AvengersDB;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=ProjetHero;Integrated Security=True");
 
 
         private void CmdCréer_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "INSERT INTO SuperHeros (Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros,          PointFaible_SuperHeros,     Commentaire_SuperHeros, Id_Civils) " +
+            string query = "INSERT INTO Super_hero (Id_super_hero,      Nom_hero,         Pouvoir,               Point_faible,               Commentaire,                   Id_civil) " +
                 "VALUES(                      '" + Id.Text + "', '" + Nom.Text + "','" + Pouvoir.Text + "', '" + PointFaible.Text + "', '" + Commentaire.Text + "', '" + CmbIdCivils.Text + "')";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
@@ -48,7 +49,7 @@ namespace Avergers
         private void CmdRead_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "SELECT * FROM SuperHeros";
+            string query = "SELECT * FROM Super_hero";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
@@ -59,7 +60,7 @@ namespace Avergers
         private void CmdMaj_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "UPDATE SuperHeros SET Id_SuperHeros = '" + Id.Text + "', Nom_SuperHeros = '" + Nom.Text + "', Pouvoir_SuperHeros = '" + Pouvoir.Text + "', PointFaible_SuperHeros = '" + PointFaible.Text + "', Commentaire_SuperHeros = '" + Commentaire.Text + "', Id_Civils = '" + CmbIdCivils.Text + "' WHERE Id_SuperHeros = '" + Id.Text + "'";
+            string query = "UPDATE Super_hero SET Nom_hero = '" + Nom.Text + "', Pouvoir = '" + Pouvoir.Text + "', Point_faible = '" + PointFaible.Text + "', Commentaire = '" + Commentaire.Text + "', Id_civil = '" + CmbIdCivils.Text + "' WHERE Id_super_hero = '" + Id.Text + "'";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
@@ -69,7 +70,7 @@ namespace Avergers
         private void CmdSupp_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "DELETE FROM SuperHeros where Id_SuperHeros = '" + Id.Text + "'";
+            string query = "DELETE FROM Super_hero where Id_super_hero = '" + Id.Text + "'";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
@@ -81,14 +82,14 @@ namespace Avergers
             Form.ActiveForm.Close();
         }
 
-        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void dataGridView1_MouseDoubleClick_1(object sender, MouseEventArgs e)
         {
             Id.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            Nom.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            Pouvoir.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            PointFaible.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            Nom.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            Pouvoir.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            PointFaible.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
             Commentaire.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-            CmbIdCivils.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+            CmbIdCivils.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
         }
     }
 }

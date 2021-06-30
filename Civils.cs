@@ -20,12 +20,9 @@ namespace Avergers
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSetCivils1.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.civilsTableAdapter.Fill(this.avengersDBDataSetCivils1.Civils);
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSetCivils.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.civilsTableAdapter.Fill(this.avengersDBDataSetCivils.Civils);
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            //this.civilsTableAdapter.Fill(this.avengersDBDataSet.Civils);
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetCivil.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.civilTableAdapter.Fill(this.projetHeroDataSetCivil.Civil);
+
 
         }
 
@@ -34,12 +31,12 @@ namespace Avergers
             Form.ActiveForm.Close();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=AvengersDB;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=ProjetHero;Integrated Security=True");
         private void CmdCréer_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "INSERT INTO Civils (Id_Civils, Nom_Civils,                  Prenom_Civils,         Civilite_Civils,         Adresse_Civils, CodePostale_Civils, Ville_Civils,           Email_Civils,       NumTel_Civils,      DateDeNaissance_Civils, Nationalite_Civils,         DateDeDeces_Civils,         AppartenanceOrganisation_Civils, Commentaire_Civils,        DateAjout_Civils,       DateDeDerniereModification_Civils) " +
-                "VALUES(                      '" + Id.Text + "', '" + Nom.Text + "','" + Prenom.Text + "','" + Civilite.Text + "', '" + Adresse.Text + "','" + CP.Text + "','" + Ville.Text + "','" + Email.Text + "', '" + Tel.Text + "', '" + Ddn.Text + "', '" + Nationalite.Text + "',     '" + DateDeces.Text + "', '" + Appartenanceorg.Text + "', '" + Commentaire.Text + "', '" + Dateajout.Text + "', '" + Datemodif.Text + "')";
+            string query = "INSERT INTO Civil (Id_civil,            Nom,                    Prenom,              Adresse,        Date_naissance,            Date_deces,          Date_ajout,                Date_modification) " +
+                "VALUES(                      '" + Id.Text + "', '" + Nom.Text + "','" + Prenom.Text + "', '" + Adresse.Text + "', '" + Convert.ToDateTime(DateTimeNaissance.Value) + "', '" + Convert.ToDateTime(DateTimeDeces.Value) + "', '" + Convert.ToDateTime(DateTimeAjout.Value) + "', '" + Convert.ToDateTime(DateTimeModif.Value) + "')";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
@@ -49,7 +46,7 @@ namespace Avergers
         private void CmdRead_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "SELECT * FROM Civils";
+            string query = "SELECT * FROM Civil";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
@@ -60,41 +57,33 @@ namespace Avergers
         private void CmdMaj_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "UPDATE Civils SET Nom_Civils = '" + Nom.Text + "', Prenom_Civils = '" + Prenom.Text + "', Civilite_Civils = '" + Civilite.Text + "', Adresse_Civils = '" + Adresse.Text + "', CodePostale_Civils = '" + CP.Text + "', Ville_Civils = '" + Ville.Text + "', Email_Civils = '" + Email.Text + "', NumTel_Civils = '" + Tel.Text + "', DateDeNaissance_Civils = '" + Ddn.Text + "', Nationalite_Civils = '" + Nationalite.Text + "', DateDeDeces_Civils = '" + DateDeces.Text + "', AppartenanceOrganisation_Civils = '" + Appartenanceorg.Text + "', Commentaire_Civils = '" + Commentaire.Text + "', DateAjout_Civils = '" + Dateajout.Text + "', DateDeDerniereModification_Civils = '" + Datemodif.Text + "' WHERE Id_Civils = '" + Id.Text + "'";
+            string query = "UPDATE Civil SET Nom = '" + Nom.Text + "', Prenom = '" + Prenom.Text + "', Adresse = '" + Adresse.Text + "', Date_naissance = '" + Convert.ToDateTime(DateTimeNaissance.Value) + "', Date_deces = '" + Convert.ToDateTime(DateTimeDeces.Value) + "', Date_ajout = '" + Convert.ToDateTime(DateTimeAjout.Value) + "', Date_modification = '" + Convert.ToDateTime(DateTimeModif.Value) + "' WHERE Id_civil = '" + Id.Text + "'";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("La modification a bien été prise en compte.");
         }
 
-        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            Id.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            Nom.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            Prenom.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            Civilite.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-            Adresse.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-            CP.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-            Ville.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-            Email.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
-            Tel.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
-            Ddn.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
-            Nationalite.Text = dataGridView1.SelectedRows[0].Cells[10].Value.ToString();
-            DateDeces.Text = dataGridView1.SelectedRows[0].Cells[11].Value.ToString();
-            Appartenanceorg.Text = dataGridView1.SelectedRows[0].Cells[12].Value.ToString();
-            Commentaire.Text = dataGridView1.SelectedRows[0].Cells[13].Value.ToString();
-            Dateajout.Text = dataGridView1.SelectedRows[0].Cells[14].Value.ToString();
-            Datemodif.Text = dataGridView1.SelectedRows[0].Cells[15].Value.ToString();
-        }
-
         private void CmdSupp_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "DELETE FROM Civils where Id_Civils = '" + Id.Text + "'";
+            string query = "DELETE FROM Civil where Id_civil = '" + Id.Text + "'";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("L'identifiant a bien été supprimé");
+        }
+
+        private void dataGridView1_MouseDoubleClick_1(object sender, MouseEventArgs e)
+        {
+            Id.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            Nom.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            Prenom.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            Adresse.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            DateTimeNaissance.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            DateTimeDeces.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+            DateTimeAjout.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+            DateTimeModif.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
         }
     }
 }

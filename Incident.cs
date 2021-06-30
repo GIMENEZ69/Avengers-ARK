@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Avergers
 {
-    public partial class Incidents : Form
+    public partial class Incident : Form
     {
-        public Incidents()
+        public Incident()
         {
             InitializeComponent();
         }

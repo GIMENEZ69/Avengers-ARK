@@ -29,142 +29,115 @@ namespace Avergers
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.labeldescription = new System.Windows.Forms.Label();
-            this.textBoxdescription = new System.Windows.Forms.TextBox();
-            this.labeltype = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.labelcout = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.labelcivil = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.projetHeroDataSetvictime = new Avergers.ProjetHeroDataSetvictime();
-            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.civilTableAdapter = new Avergers.ProjetHeroDataSetvictimeTableAdapters.CivilTableAdapter();
-            this.buttonvalider = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetvictime)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.CmbTypeLitige = new System.Windows.Forms.ComboBox();
+            this.CmbNomVictime = new System.Windows.Forms.ComboBox();
+            this.CoutLitige = new System.Windows.Forms.TextBox();
+            this.CausesLitiges = new System.Windows.Forms.TextBox();
+            this.CmdProceder = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // labeldescription
+            // label1
             // 
-            this.labeldescription.AutoSize = true;
-            this.labeldescription.Location = new System.Drawing.Point(30, 261);
-            this.labeldescription.Name = "labeldescription";
-            this.labeldescription.Size = new System.Drawing.Size(239, 13);
-            this.labeldescription.TabIndex = 0;
-            this.labeldescription.Text = "Veuillez d\'ecrire les causes et demandes du litige:";
-            this.labeldescription.Click += new System.EventHandler(this.labeldescription_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Type de litige :";
             // 
-            // textBoxdescription
+            // label2
             // 
-            this.textBoxdescription.Location = new System.Drawing.Point(359, 261);
-            this.textBoxdescription.Multiline = true;
-            this.textBoxdescription.Name = "textBoxdescription";
-            this.textBoxdescription.Size = new System.Drawing.Size(355, 113);
-            this.textBoxdescription.TabIndex = 1;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(35, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Coût du litige :";
             // 
-            // labeltype
+            // label3
             // 
-            this.labeltype.AutoSize = true;
-            this.labeltype.Location = new System.Drawing.Point(38, 41);
-            this.labeltype.Name = "labeltype";
-            this.labeltype.Size = new System.Drawing.Size(73, 13);
-            this.labeltype.TabIndex = 2;
-            this.labeltype.Text = "Type de litige:";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 106);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Nom de la victime :";
             // 
-            // comboBox1
+            // label4
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Mortalite",
-            "Materiel",
-            "Propriete privee",
-            "Propriete public ",
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 145);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(256, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Veuillez décrire les causes et les demandes du litige :";
+            // 
+            // CmbTypeLitige
+            // 
+            this.CmbTypeLitige.FormattingEnabled = true;
+            this.CmbTypeLitige.Items.AddRange(new object[] {
+            "Mortalité",
+            "Matériel",
+            "Propriété privée",
+            "Propriété publique",
             "Autres"});
-            this.comboBox1.Location = new System.Drawing.Point(157, 33);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 21);
-            this.comboBox1.TabIndex = 3;
+            this.CmbTypeLitige.Location = new System.Drawing.Point(114, 28);
+            this.CmbTypeLitige.Name = "CmbTypeLitige";
+            this.CmbTypeLitige.Size = new System.Drawing.Size(149, 21);
+            this.CmbTypeLitige.TabIndex = 4;
             // 
-            // labelcout
+            // CmbNomVictime
             // 
-            this.labelcout.AutoSize = true;
-            this.labelcout.Location = new System.Drawing.Point(38, 99);
-            this.labelcout.Name = "labelcout";
-            this.labelcout.Size = new System.Drawing.Size(71, 13);
-            this.labelcout.TabIndex = 4;
-            this.labelcout.Text = "Cout du litige:";
+            this.CmbNomVictime.FormattingEnabled = true;
+            this.CmbNomVictime.Location = new System.Drawing.Point(115, 103);
+            this.CmbNomVictime.Name = "CmbNomVictime";
+            this.CmbNomVictime.Size = new System.Drawing.Size(149, 21);
+            this.CmbNomVictime.TabIndex = 5;
             // 
-            // textBox1
+            // CoutLitige
             // 
-            this.textBox1.Location = new System.Drawing.Point(157, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(146, 20);
-            this.textBox1.TabIndex = 5;
+            this.CoutLitige.Location = new System.Drawing.Point(115, 67);
+            this.CoutLitige.Name = "CoutLitige";
+            this.CoutLitige.Size = new System.Drawing.Size(149, 20);
+            this.CoutLitige.TabIndex = 6;
             // 
-            // labelcivil
+            // CausesLitiges
             // 
-            this.labelcivil.AutoSize = true;
-            this.labelcivil.Location = new System.Drawing.Point(38, 161);
-            this.labelcivil.Name = "labelcivil";
-            this.labelcivil.Size = new System.Drawing.Size(94, 13);
-            this.labelcivil.TabIndex = 6;
-            this.labelcivil.Text = "Nom de la victime:";
+            this.CausesLitiges.Location = new System.Drawing.Point(15, 174);
+            this.CausesLitiges.Multiline = true;
+            this.CausesLitiges.Name = "CausesLitiges";
+            this.CausesLitiges.Size = new System.Drawing.Size(429, 133);
+            this.CausesLitiges.TabIndex = 7;
             // 
-            // comboBox2
+            // CmdProceder
             // 
-            this.comboBox2.DataSource = this.civilBindingSource;
-            this.comboBox2.DisplayMember = "Id_civil";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(157, 153);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 21);
-            this.comboBox2.TabIndex = 7;
-            this.comboBox2.ValueMember = "Id_civil";
-            // 
-            // projetHeroDataSetvictime
-            // 
-            this.projetHeroDataSetvictime.DataSetName = "ProjetHeroDataSetvictime";
-            this.projetHeroDataSetvictime.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // civilBindingSource
-            // 
-            this.civilBindingSource.DataMember = "Civil";
-            this.civilBindingSource.DataSource = this.projetHeroDataSetvictime;
-            // 
-            // civilTableAdapter
-            // 
-            this.civilTableAdapter.ClearBeforeFill = true;
-            // 
-            // buttonvalider
-            // 
-            this.buttonvalider.Location = new System.Drawing.Point(157, 385);
-            this.buttonvalider.Name = "buttonvalider";
-            this.buttonvalider.Size = new System.Drawing.Size(129, 42);
-            this.buttonvalider.TabIndex = 8;
-            this.buttonvalider.Text = "Proceder";
-            this.buttonvalider.UseVisualStyleBackColor = true;
+            this.CmdProceder.Location = new System.Drawing.Point(167, 329);
+            this.CmdProceder.Name = "CmdProceder";
+            this.CmdProceder.Size = new System.Drawing.Size(142, 45);
+            this.CmdProceder.TabIndex = 8;
+            this.CmdProceder.Text = "Procéder";
+            this.CmdProceder.UseVisualStyleBackColor = true;
             // 
             // Litige
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonvalider);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.labelcivil);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.labelcout);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.labeltype);
-            this.Controls.Add(this.textBoxdescription);
-            this.Controls.Add(this.labeldescription);
+            this.ClientSize = new System.Drawing.Size(483, 394);
+            this.Controls.Add(this.CmdProceder);
+            this.Controls.Add(this.CausesLitiges);
+            this.Controls.Add(this.CoutLitige);
+            this.Controls.Add(this.CmbNomVictime);
+            this.Controls.Add(this.CmbTypeLitige);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Name = "Litige";
             this.Text = "Litige";
-            this.Load += new System.EventHandler(this.Litige_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetvictime)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,17 +145,14 @@ namespace Avergers
 
         #endregion
 
-        private System.Windows.Forms.Label labeldescription;
-        private System.Windows.Forms.TextBox textBoxdescription;
-        private System.Windows.Forms.Label labeltype;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label labelcout;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label labelcivil;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private ProjetHeroDataSetvictime projetHeroDataSetvictime;
-        private System.Windows.Forms.BindingSource civilBindingSource;
-        private ProjetHeroDataSetvictimeTableAdapters.CivilTableAdapter civilTableAdapter;
-        private System.Windows.Forms.Button buttonvalider;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox CmbTypeLitige;
+        private System.Windows.Forms.ComboBox CmbNomVictime;
+        private System.Windows.Forms.TextBox CoutLitige;
+        private System.Windows.Forms.TextBox CausesLitiges;
+        private System.Windows.Forms.Button CmdProceder;
     }
 }
