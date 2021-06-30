@@ -42,5 +42,15 @@ namespace Avergers.Properties {
                 return ((string)(this["AvengersDBConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-TKJHI8I;Initial Catalog=ProjetHero;Integrated Security=True")]
+        public string ProjetHeroConnectionString {
+            get {
+                return ((string)(this["ProjetHeroConnectionString"]));
+            }
+        }
     }
 }

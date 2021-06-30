@@ -18,81 +18,94 @@ namespace Avergers
             InitializeComponent();
         }
 
-        private void SuperHeros_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet2FkIdCivil.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.civilTableAdapter.Fill(this.projetHeroDataSet2FkIdCivil.Civil);
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet1.Super_hero'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.super_heroTableAdapter.Fill(this.projetHeroDataSet1.Super_hero);
+            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSetCmbIdCivils.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            //this.civilsTableAdapter1.Fill(this.avengersDBDataSetCmbIdCivils.Civils);
+            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSetGridViewCivils2.SuperHeros'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            //this.superHerosTableAdapter.Fill(this.avengersDBDataSetGridViewCivils2.SuperHeros);
+            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet1.SuperHeros'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            //this.superHerosTableAdapter.Fill(this.avengersDBDataSet1.SuperHeros);
+            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            //this.civilsTableAdapter.Fill(this.avengersDBDataSet.Civils);
+
+
 
         }
 
-        private void CmdQuitter_Click(object sender, EventArgs e)
-        {
-            Form.ActiveForm.Close();
-        }
+        //SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=AvengersDB;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-TKJHI8I;Initial Catalog=ProjetHero;Integrated Security=True");
 
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-TKJHI8I;Initial Catalog=AvengersDB;Integrated Security=True");
+
         private void CmdCréer_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "INSERT INTO SuperHeros (Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros,          PointFaible_SuperHeros,     Commentaire_SuperHeros, Id_Civils) " +
-                "VALUES(                      '" + Id.Text + "', '" + Nom.Text + "','" + Pouvoir.Text + "', '" + PointFaible.Text + "', '" + Commentaire.Text + "', '"+CmbIdCivils.Text+"')";
+            string query = "INSERT INTO Super_hero (Id_super_hero, Nom_hero, Pouvoir,Point_faible,Commentaire,Id_civil) " +
+                "VALUES(                      '" + Id.Text + "', '" + Nom.Text + "','" + Pouvoir.Text + "', '" + PointFaible.Text + "', '" + Commentaire.Text + "','" + comboBox1.Text +"')";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("Le Super-Héros a bien été créé");
         }
 
+        private void CmbIdCivils_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void CmdRead_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "SELECT * FROM SuperHeros";
+            string query = "SELECT * FROM Super_hero";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
-            dataGridView1.DataSource = dt;
+            dataGridViewSuperHeros.DataSource = dt;
             conn.Close();
+        }
+
+        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Id.Text = dataGridViewSuperHeros.SelectedRows[0].Cells[0].Value.ToString();
+            comboBox1.Text = dataGridViewSuperHeros.SelectedRows[0].Cells[1].Value.ToString();
+            Nom.Text = dataGridViewSuperHeros.SelectedRows[0].Cells[2].Value.ToString();
+            Pouvoir.Text = dataGridViewSuperHeros.SelectedRows[0].Cells[3].Value.ToString();
+            PointFaible.Text = dataGridViewSuperHeros.SelectedRows[0].Cells[4].Value.ToString();
+            Commentaire.Text = dataGridViewSuperHeros.SelectedRows[0].Cells[5].Value.ToString();
+            
+            
         }
 
         private void CmdMaj_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "UPDATE SuperHeros SET Nom_SuperHeros = '" + Nom.Text + "', Pouvoir_SuperHeros = '" + Pouvoir.Text + "', PointFaible_SuperHeros = '" + PointFaible.Text+ "', Commentaire_SuperHeros = '" + Commentaire.Text + "', Id_Civils = '"+int.Parse(CmbIdCivils.Text)+"' WHERE Id_SuperHeros = '" + Id.Text + "'";
+            string query = "UPDATE Super_hero SET Nom_hero = '" + Nom.Text + "', Pouvoir = '" + Pouvoir.Text + "', Point_Faible = '" + PointFaible.Text + "', Commentaire = '" + Commentaire.Text + "', Id_Civil = '" + comboBox1.Text + "' WHERE Id_Super_hero = '" + Id.Text + "'";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("La modification a bien été prise en compte.");
         }
 
-        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            Id.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            Nom.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            Pouvoir.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-            PointFaible.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-            Commentaire.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-            CmbIdCivils.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-        }
-
         private void CmdSupp_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "DELETE FROM SuperHeros where Id_SuperHeros = '" + Id.Text + "'";
+            string query = "DELETE FROM Super_hero WHERE Id_super_hero = '" + Id.Text + "'";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
-            MessageBox.Show("L'identifiant a bien été supprimé");
+            MessageBox.Show(" L'identifiant a bien été supprimé");
         }
 
-        private void CmbIdCivils_SelectedIndexChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            string query = "SELECT Id_Civils FROM Civils";
-            SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
-            DataTable dt = new DataTable();
-            SDA.Fill(dt);
-            CmbIdCivils.DataSource = dt;
-            conn.Close();
+            this.Close();
         }
 
-        private void civilsBindingSource_CurrentChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

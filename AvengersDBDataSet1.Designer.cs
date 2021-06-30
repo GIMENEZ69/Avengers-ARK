@@ -24,7 +24,7 @@ namespace Avergers {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class AvengersDBDataSet1 : global::System.Data.DataSet {
         
-        private SuperHerosDataTable tableSuperHeros;
+        private OrganisationsDataTable tableOrganisations;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace Avergers {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["SuperHeros"] != null)) {
-                    base.Tables.Add(new SuperHerosDataTable(ds.Tables["SuperHeros"]));
+                if ((ds.Tables["Organisations"] != null)) {
+                    base.Tables.Add(new OrganisationsDataTable(ds.Tables["Organisations"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Avergers {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public SuperHerosDataTable SuperHeros {
+        public OrganisationsDataTable Organisations {
             get {
-                return this.tableSuperHeros;
+                return this.tableOrganisations;
             }
         }
         
@@ -152,8 +152,8 @@ namespace Avergers {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["SuperHeros"] != null)) {
-                    base.Tables.Add(new SuperHerosDataTable(ds.Tables["SuperHeros"]));
+                if ((ds.Tables["Organisations"] != null)) {
+                    base.Tables.Add(new OrganisationsDataTable(ds.Tables["Organisations"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Avergers {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableSuperHeros = ((SuperHerosDataTable)(base.Tables["SuperHeros"]));
+            this.tableOrganisations = ((OrganisationsDataTable)(base.Tables["Organisations"]));
             if ((initTable == true)) {
-                if ((this.tableSuperHeros != null)) {
-                    this.tableSuperHeros.InitVars();
+                if ((this.tableOrganisations != null)) {
+                    this.tableOrganisations.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace Avergers {
             this.Namespace = "http://tempuri.org/AvengersDBDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableSuperHeros = new SuperHerosDataTable();
-            base.Tables.Add(this.tableSuperHeros);
+            this.tableOrganisations = new OrganisationsDataTable();
+            base.Tables.Add(this.tableOrganisations);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeSuperHeros() {
+        private bool ShouldSerializeOrganisations() {
             return false;
         }
         
@@ -270,33 +270,37 @@ namespace Avergers {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void SuperHerosRowChangeEventHandler(object sender, SuperHerosRowChangeEvent e);
+        public delegate void OrganisationsRowChangeEventHandler(object sender, OrganisationsRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class SuperHerosDataTable : global::System.Data.TypedTableBase<SuperHerosRow> {
+        public partial class OrganisationsDataTable : global::System.Data.TypedTableBase<OrganisationsRow> {
             
-            private global::System.Data.DataColumn columnId_SuperHeros;
+            private global::System.Data.DataColumn columnId_Organisations;
             
-            private global::System.Data.DataColumn columnNom_SuperHeros;
+            private global::System.Data.DataColumn columnNom_Organisations;
             
-            private global::System.Data.DataColumn columnPouvoir_SuperHeros;
+            private global::System.Data.DataColumn columnAdresse_Organisations;
             
-            private global::System.Data.DataColumn columnPointFaible_SuperHeros;
+            private global::System.Data.DataColumn columnCodePostale_Organisations;
             
-            private global::System.Data.DataColumn columnScore_SuperHeros;
+            private global::System.Data.DataColumn columnVille_Organisations;
             
-            private global::System.Data.DataColumn columnCommentaire_SuperHeros;
+            private global::System.Data.DataColumn columnDirigeant_Organisations;
             
-            private global::System.Data.DataColumn columnId_Civils;
+            private global::System.Data.DataColumn columnCommentaire_Organisations;
+            
+            private global::System.Data.DataColumn columnDateAjout_Organisations;
+            
+            private global::System.Data.DataColumn columnDateDerniereModification_Organisations;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperHerosDataTable() {
-                this.TableName = "SuperHeros";
+            public OrganisationsDataTable() {
+                this.TableName = "Organisations";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -304,7 +308,7 @@ namespace Avergers {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal SuperHerosDataTable(global::System.Data.DataTable table) {
+            internal OrganisationsDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -321,64 +325,80 @@ namespace Avergers {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected SuperHerosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected OrganisationsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Id_SuperHerosColumn {
+            public global::System.Data.DataColumn Id_OrganisationsColumn {
                 get {
-                    return this.columnId_SuperHeros;
+                    return this.columnId_Organisations;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Nom_SuperHerosColumn {
+            public global::System.Data.DataColumn Nom_OrganisationsColumn {
                 get {
-                    return this.columnNom_SuperHeros;
+                    return this.columnNom_Organisations;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Pouvoir_SuperHerosColumn {
+            public global::System.Data.DataColumn Adresse_OrganisationsColumn {
                 get {
-                    return this.columnPouvoir_SuperHeros;
+                    return this.columnAdresse_Organisations;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn PointFaible_SuperHerosColumn {
+            public global::System.Data.DataColumn CodePostale_OrganisationsColumn {
                 get {
-                    return this.columnPointFaible_SuperHeros;
+                    return this.columnCodePostale_Organisations;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Score_SuperHerosColumn {
+            public global::System.Data.DataColumn Ville_OrganisationsColumn {
                 get {
-                    return this.columnScore_SuperHeros;
+                    return this.columnVille_Organisations;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Commentaire_SuperHerosColumn {
+            public global::System.Data.DataColumn Dirigeant_OrganisationsColumn {
                 get {
-                    return this.columnCommentaire_SuperHeros;
+                    return this.columnDirigeant_Organisations;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Id_CivilsColumn {
+            public global::System.Data.DataColumn Commentaire_OrganisationsColumn {
                 get {
-                    return this.columnId_Civils;
+                    return this.columnCommentaire_Organisations;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DateAjout_OrganisationsColumn {
+                get {
+                    return this.columnDateAjout_Organisations;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DateDerniereModification_OrganisationsColumn {
+                get {
+                    return this.columnDateDerniereModification_Organisations;
                 }
             }
             
@@ -393,58 +413,60 @@ namespace Avergers {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperHerosRow this[int index] {
+            public OrganisationsRow this[int index] {
                 get {
-                    return ((SuperHerosRow)(this.Rows[index]));
+                    return ((OrganisationsRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event SuperHerosRowChangeEventHandler SuperHerosRowChanging;
+            public event OrganisationsRowChangeEventHandler OrganisationsRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event SuperHerosRowChangeEventHandler SuperHerosRowChanged;
+            public event OrganisationsRowChangeEventHandler OrganisationsRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event SuperHerosRowChangeEventHandler SuperHerosRowDeleting;
+            public event OrganisationsRowChangeEventHandler OrganisationsRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event SuperHerosRowChangeEventHandler SuperHerosRowDeleted;
+            public event OrganisationsRowChangeEventHandler OrganisationsRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddSuperHerosRow(SuperHerosRow row) {
+            public void AddOrganisationsRow(OrganisationsRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperHerosRow AddSuperHerosRow(int Id_SuperHeros, string Nom_SuperHeros, string Pouvoir_SuperHeros, string PointFaible_SuperHeros, int Score_SuperHeros, string Commentaire_SuperHeros, int Id_Civils) {
-                SuperHerosRow rowSuperHerosRow = ((SuperHerosRow)(this.NewRow()));
+            public OrganisationsRow AddOrganisationsRow(int Id_Organisations, string Nom_Organisations, string Adresse_Organisations, string CodePostale_Organisations, string Ville_Organisations, string Dirigeant_Organisations, string Commentaire_Organisations, string DateAjout_Organisations, string DateDerniereModification_Organisations) {
+                OrganisationsRow rowOrganisationsRow = ((OrganisationsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Id_SuperHeros,
-                        Nom_SuperHeros,
-                        Pouvoir_SuperHeros,
-                        PointFaible_SuperHeros,
-                        Score_SuperHeros,
-                        Commentaire_SuperHeros,
-                        Id_Civils};
-                rowSuperHerosRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowSuperHerosRow);
-                return rowSuperHerosRow;
+                        Id_Organisations,
+                        Nom_Organisations,
+                        Adresse_Organisations,
+                        CodePostale_Organisations,
+                        Ville_Organisations,
+                        Dirigeant_Organisations,
+                        Commentaire_Organisations,
+                        DateAjout_Organisations,
+                        DateDerniereModification_Organisations};
+                rowOrganisationsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowOrganisationsRow);
+                return rowOrganisationsRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperHerosRow FindById_SuperHeros(int Id_SuperHeros) {
-                return ((SuperHerosRow)(this.Rows.Find(new object[] {
-                            Id_SuperHeros})));
+            public OrganisationsRow FindById_Organisations(int Id_Organisations) {
+                return ((OrganisationsRow)(this.Rows.Find(new object[] {
+                            Id_Organisations})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                SuperHerosDataTable cln = ((SuperHerosDataTable)(base.Clone()));
+                OrganisationsDataTable cln = ((OrganisationsDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -452,73 +474,82 @@ namespace Avergers {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new SuperHerosDataTable();
+                return new OrganisationsDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnId_SuperHeros = base.Columns["Id_SuperHeros"];
-                this.columnNom_SuperHeros = base.Columns["Nom_SuperHeros"];
-                this.columnPouvoir_SuperHeros = base.Columns["Pouvoir_SuperHeros"];
-                this.columnPointFaible_SuperHeros = base.Columns["PointFaible_SuperHeros"];
-                this.columnScore_SuperHeros = base.Columns["Score_SuperHeros"];
-                this.columnCommentaire_SuperHeros = base.Columns["Commentaire_SuperHeros"];
-                this.columnId_Civils = base.Columns["Id_Civils"];
+                this.columnId_Organisations = base.Columns["Id_Organisations"];
+                this.columnNom_Organisations = base.Columns["Nom_Organisations"];
+                this.columnAdresse_Organisations = base.Columns["Adresse_Organisations"];
+                this.columnCodePostale_Organisations = base.Columns["CodePostale_Organisations"];
+                this.columnVille_Organisations = base.Columns["Ville_Organisations"];
+                this.columnDirigeant_Organisations = base.Columns["Dirigeant_Organisations"];
+                this.columnCommentaire_Organisations = base.Columns["Commentaire_Organisations"];
+                this.columnDateAjout_Organisations = base.Columns["DateAjout_Organisations"];
+                this.columnDateDerniereModification_Organisations = base.Columns["DateDerniereModification_Organisations"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnId_SuperHeros = new global::System.Data.DataColumn("Id_SuperHeros", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnId_SuperHeros);
-                this.columnNom_SuperHeros = new global::System.Data.DataColumn("Nom_SuperHeros", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNom_SuperHeros);
-                this.columnPouvoir_SuperHeros = new global::System.Data.DataColumn("Pouvoir_SuperHeros", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPouvoir_SuperHeros);
-                this.columnPointFaible_SuperHeros = new global::System.Data.DataColumn("PointFaible_SuperHeros", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPointFaible_SuperHeros);
-                this.columnScore_SuperHeros = new global::System.Data.DataColumn("Score_SuperHeros", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnScore_SuperHeros);
-                this.columnCommentaire_SuperHeros = new global::System.Data.DataColumn("Commentaire_SuperHeros", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCommentaire_SuperHeros);
-                this.columnId_Civils = new global::System.Data.DataColumn("Id_Civils", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnId_Civils);
+                this.columnId_Organisations = new global::System.Data.DataColumn("Id_Organisations", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId_Organisations);
+                this.columnNom_Organisations = new global::System.Data.DataColumn("Nom_Organisations", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNom_Organisations);
+                this.columnAdresse_Organisations = new global::System.Data.DataColumn("Adresse_Organisations", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAdresse_Organisations);
+                this.columnCodePostale_Organisations = new global::System.Data.DataColumn("CodePostale_Organisations", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCodePostale_Organisations);
+                this.columnVille_Organisations = new global::System.Data.DataColumn("Ville_Organisations", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVille_Organisations);
+                this.columnDirigeant_Organisations = new global::System.Data.DataColumn("Dirigeant_Organisations", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDirigeant_Organisations);
+                this.columnCommentaire_Organisations = new global::System.Data.DataColumn("Commentaire_Organisations", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCommentaire_Organisations);
+                this.columnDateAjout_Organisations = new global::System.Data.DataColumn("DateAjout_Organisations", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDateAjout_Organisations);
+                this.columnDateDerniereModification_Organisations = new global::System.Data.DataColumn("DateDerniereModification_Organisations", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDateDerniereModification_Organisations);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnId_SuperHeros}, true));
-                this.columnId_SuperHeros.AllowDBNull = false;
-                this.columnId_SuperHeros.Unique = true;
-                this.columnNom_SuperHeros.MaxLength = 50;
-                this.columnPouvoir_SuperHeros.MaxLength = 50;
-                this.columnPointFaible_SuperHeros.MaxLength = 50;
-                this.columnCommentaire_SuperHeros.MaxLength = 2147483647;
-                this.columnId_Civils.AllowDBNull = false;
+                                this.columnId_Organisations}, true));
+                this.columnId_Organisations.AllowDBNull = false;
+                this.columnId_Organisations.Unique = true;
+                this.columnNom_Organisations.MaxLength = 50;
+                this.columnAdresse_Organisations.MaxLength = 50;
+                this.columnCodePostale_Organisations.MaxLength = 5;
+                this.columnVille_Organisations.MaxLength = 50;
+                this.columnDirigeant_Organisations.MaxLength = 50;
+                this.columnCommentaire_Organisations.MaxLength = 2147483647;
+                this.columnDateAjout_Organisations.MaxLength = 50;
+                this.columnDateDerniereModification_Organisations.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperHerosRow NewSuperHerosRow() {
-                return ((SuperHerosRow)(this.NewRow()));
+            public OrganisationsRow NewOrganisationsRow() {
+                return ((OrganisationsRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new SuperHerosRow(builder);
+                return new OrganisationsRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(SuperHerosRow);
+                return typeof(OrganisationsRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.SuperHerosRowChanged != null)) {
-                    this.SuperHerosRowChanged(this, new SuperHerosRowChangeEvent(((SuperHerosRow)(e.Row)), e.Action));
+                if ((this.OrganisationsRowChanged != null)) {
+                    this.OrganisationsRowChanged(this, new OrganisationsRowChangeEvent(((OrganisationsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -526,8 +557,8 @@ namespace Avergers {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.SuperHerosRowChanging != null)) {
-                    this.SuperHerosRowChanging(this, new SuperHerosRowChangeEvent(((SuperHerosRow)(e.Row)), e.Action));
+                if ((this.OrganisationsRowChanging != null)) {
+                    this.OrganisationsRowChanging(this, new OrganisationsRowChangeEvent(((OrganisationsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -535,8 +566,8 @@ namespace Avergers {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.SuperHerosRowDeleted != null)) {
-                    this.SuperHerosRowDeleted(this, new SuperHerosRowChangeEvent(((SuperHerosRow)(e.Row)), e.Action));
+                if ((this.OrganisationsRowDeleted != null)) {
+                    this.OrganisationsRowDeleted(this, new OrganisationsRowChangeEvent(((OrganisationsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -544,14 +575,14 @@ namespace Avergers {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.SuperHerosRowDeleting != null)) {
-                    this.SuperHerosRowDeleting(this, new SuperHerosRowChangeEvent(((SuperHerosRow)(e.Row)), e.Action));
+                if ((this.OrganisationsRowDeleting != null)) {
+                    this.OrganisationsRowDeleting(this, new OrganisationsRowChangeEvent(((OrganisationsRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveSuperHerosRow(SuperHerosRow row) {
+            public void RemoveOrganisationsRow(OrganisationsRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -578,7 +609,7 @@ namespace Avergers {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "SuperHerosDataTable";
+                attribute2.FixedValue = "OrganisationsDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -622,182 +653,258 @@ namespace Avergers {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class SuperHerosRow : global::System.Data.DataRow {
+        public partial class OrganisationsRow : global::System.Data.DataRow {
             
-            private SuperHerosDataTable tableSuperHeros;
+            private OrganisationsDataTable tableOrganisations;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal SuperHerosRow(global::System.Data.DataRowBuilder rb) : 
+            internal OrganisationsRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableSuperHeros = ((SuperHerosDataTable)(this.Table));
+                this.tableOrganisations = ((OrganisationsDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Id_SuperHeros {
+            public int Id_Organisations {
                 get {
-                    return ((int)(this[this.tableSuperHeros.Id_SuperHerosColumn]));
+                    return ((int)(this[this.tableOrganisations.Id_OrganisationsColumn]));
                 }
                 set {
-                    this[this.tableSuperHeros.Id_SuperHerosColumn] = value;
+                    this[this.tableOrganisations.Id_OrganisationsColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Nom_SuperHeros {
+            public string Nom_Organisations {
                 get {
                     try {
-                        return ((string)(this[this.tableSuperHeros.Nom_SuperHerosColumn]));
+                        return ((string)(this[this.tableOrganisations.Nom_OrganisationsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Nom_SuperHeros\' dans la table \'SuperHeros\' est DBNull." +
-                                "", e);
-                    }
-                }
-                set {
-                    this[this.tableSuperHeros.Nom_SuperHerosColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Pouvoir_SuperHeros {
-                get {
-                    try {
-                        return ((string)(this[this.tableSuperHeros.Pouvoir_SuperHerosColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Pouvoir_SuperHeros\' dans la table \'SuperHeros\' est DBN" +
-                                "ull.", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Nom_Organisations\' dans la table \'Organisations\' est D" +
+                                "BNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSuperHeros.Pouvoir_SuperHerosColumn] = value;
+                    this[this.tableOrganisations.Nom_OrganisationsColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string PointFaible_SuperHeros {
+            public string Adresse_Organisations {
                 get {
                     try {
-                        return ((string)(this[this.tableSuperHeros.PointFaible_SuperHerosColumn]));
+                        return ((string)(this[this.tableOrganisations.Adresse_OrganisationsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'PointFaible_SuperHeros\' dans la table \'SuperHeros\' est" +
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Adresse_Organisations\' dans la table \'Organisations\' e" +
+                                "st DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableOrganisations.Adresse_OrganisationsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CodePostale_Organisations {
+                get {
+                    try {
+                        return ((string)(this[this.tableOrganisations.CodePostale_OrganisationsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'CodePostale_Organisations\' dans la table \'Organisation" +
+                                "s\' est DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableOrganisations.CodePostale_OrganisationsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Ville_Organisations {
+                get {
+                    try {
+                        return ((string)(this[this.tableOrganisations.Ville_OrganisationsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Ville_Organisations\' dans la table \'Organisations\' est" +
                                 " DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSuperHeros.PointFaible_SuperHerosColumn] = value;
+                    this[this.tableOrganisations.Ville_OrganisationsColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Score_SuperHeros {
+            public string Dirigeant_Organisations {
                 get {
                     try {
-                        return ((int)(this[this.tableSuperHeros.Score_SuperHerosColumn]));
+                        return ((string)(this[this.tableOrganisations.Dirigeant_OrganisationsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Score_SuperHeros\' dans la table \'SuperHeros\' est DBNul" +
-                                "l.", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Dirigeant_Organisations\' dans la table \'Organisations\'" +
+                                " est DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSuperHeros.Score_SuperHerosColumn] = value;
+                    this[this.tableOrganisations.Dirigeant_OrganisationsColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Commentaire_SuperHeros {
+            public string Commentaire_Organisations {
                 get {
                     try {
-                        return ((string)(this[this.tableSuperHeros.Commentaire_SuperHerosColumn]));
+                        return ((string)(this[this.tableOrganisations.Commentaire_OrganisationsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Commentaire_SuperHeros\' dans la table \'SuperHeros\' est" +
-                                " DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Commentaire_Organisations\' dans la table \'Organisation" +
+                                "s\' est DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSuperHeros.Commentaire_SuperHerosColumn] = value;
+                    this[this.tableOrganisations.Commentaire_OrganisationsColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Id_Civils {
+            public string DateAjout_Organisations {
                 get {
-                    return ((int)(this[this.tableSuperHeros.Id_CivilsColumn]));
+                    try {
+                        return ((string)(this[this.tableOrganisations.DateAjout_OrganisationsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'DateAjout_Organisations\' dans la table \'Organisations\'" +
+                                " est DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableSuperHeros.Id_CivilsColumn] = value;
+                    this[this.tableOrganisations.DateAjout_OrganisationsColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNom_SuperHerosNull() {
-                return this.IsNull(this.tableSuperHeros.Nom_SuperHerosColumn);
+            public string DateDerniereModification_Organisations {
+                get {
+                    try {
+                        return ((string)(this[this.tableOrganisations.DateDerniereModification_OrganisationsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'DateDerniereModification_Organisations\' dans la table " +
+                                "\'Organisations\' est DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableOrganisations.DateDerniereModification_OrganisationsColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNom_SuperHerosNull() {
-                this[this.tableSuperHeros.Nom_SuperHerosColumn] = global::System.Convert.DBNull;
+            public bool IsNom_OrganisationsNull() {
+                return this.IsNull(this.tableOrganisations.Nom_OrganisationsColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsPouvoir_SuperHerosNull() {
-                return this.IsNull(this.tableSuperHeros.Pouvoir_SuperHerosColumn);
+            public void SetNom_OrganisationsNull() {
+                this[this.tableOrganisations.Nom_OrganisationsColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetPouvoir_SuperHerosNull() {
-                this[this.tableSuperHeros.Pouvoir_SuperHerosColumn] = global::System.Convert.DBNull;
+            public bool IsAdresse_OrganisationsNull() {
+                return this.IsNull(this.tableOrganisations.Adresse_OrganisationsColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsPointFaible_SuperHerosNull() {
-                return this.IsNull(this.tableSuperHeros.PointFaible_SuperHerosColumn);
+            public void SetAdresse_OrganisationsNull() {
+                this[this.tableOrganisations.Adresse_OrganisationsColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetPointFaible_SuperHerosNull() {
-                this[this.tableSuperHeros.PointFaible_SuperHerosColumn] = global::System.Convert.DBNull;
+            public bool IsCodePostale_OrganisationsNull() {
+                return this.IsNull(this.tableOrganisations.CodePostale_OrganisationsColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsScore_SuperHerosNull() {
-                return this.IsNull(this.tableSuperHeros.Score_SuperHerosColumn);
+            public void SetCodePostale_OrganisationsNull() {
+                this[this.tableOrganisations.CodePostale_OrganisationsColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetScore_SuperHerosNull() {
-                this[this.tableSuperHeros.Score_SuperHerosColumn] = global::System.Convert.DBNull;
+            public bool IsVille_OrganisationsNull() {
+                return this.IsNull(this.tableOrganisations.Ville_OrganisationsColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsCommentaire_SuperHerosNull() {
-                return this.IsNull(this.tableSuperHeros.Commentaire_SuperHerosColumn);
+            public void SetVille_OrganisationsNull() {
+                this[this.tableOrganisations.Ville_OrganisationsColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetCommentaire_SuperHerosNull() {
-                this[this.tableSuperHeros.Commentaire_SuperHerosColumn] = global::System.Convert.DBNull;
+            public bool IsDirigeant_OrganisationsNull() {
+                return this.IsNull(this.tableOrganisations.Dirigeant_OrganisationsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDirigeant_OrganisationsNull() {
+                this[this.tableOrganisations.Dirigeant_OrganisationsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCommentaire_OrganisationsNull() {
+                return this.IsNull(this.tableOrganisations.Commentaire_OrganisationsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCommentaire_OrganisationsNull() {
+                this[this.tableOrganisations.Commentaire_OrganisationsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDateAjout_OrganisationsNull() {
+                return this.IsNull(this.tableOrganisations.DateAjout_OrganisationsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDateAjout_OrganisationsNull() {
+                this[this.tableOrganisations.DateAjout_OrganisationsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDateDerniereModification_OrganisationsNull() {
+                return this.IsNull(this.tableOrganisations.DateDerniereModification_OrganisationsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDateDerniereModification_OrganisationsNull() {
+                this[this.tableOrganisations.DateDerniereModification_OrganisationsColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -805,22 +912,22 @@ namespace Avergers {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class SuperHerosRowChangeEvent : global::System.EventArgs {
+        public class OrganisationsRowChangeEvent : global::System.EventArgs {
             
-            private SuperHerosRow eventRow;
+            private OrganisationsRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperHerosRowChangeEvent(SuperHerosRow row, global::System.Data.DataRowAction action) {
+            public OrganisationsRowChangeEvent(OrganisationsRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperHerosRow Row {
+            public OrganisationsRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -848,7 +955,7 @@ namespace Avergers.AvengersDBDataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class SuperHerosTableAdapter : global::System.ComponentModel.Component {
+    public partial class OrganisationsTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -862,7 +969,7 @@ namespace Avergers.AvengersDBDataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public SuperHerosTableAdapter() {
+        public OrganisationsTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -959,70 +1066,109 @@ namespace Avergers.AvengersDBDataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "SuperHeros";
-            tableMapping.ColumnMappings.Add("Id_SuperHeros", "Id_SuperHeros");
-            tableMapping.ColumnMappings.Add("Nom_SuperHeros", "Nom_SuperHeros");
-            tableMapping.ColumnMappings.Add("Pouvoir_SuperHeros", "Pouvoir_SuperHeros");
-            tableMapping.ColumnMappings.Add("PointFaible_SuperHeros", "PointFaible_SuperHeros");
-            tableMapping.ColumnMappings.Add("Score_SuperHeros", "Score_SuperHeros");
-            tableMapping.ColumnMappings.Add("Commentaire_SuperHeros", "Commentaire_SuperHeros");
-            tableMapping.ColumnMappings.Add("Id_Civils", "Id_Civils");
+            tableMapping.DataSetTable = "Organisations";
+            tableMapping.ColumnMappings.Add("Id_Organisations", "Id_Organisations");
+            tableMapping.ColumnMappings.Add("Nom_Organisations", "Nom_Organisations");
+            tableMapping.ColumnMappings.Add("Adresse_Organisations", "Adresse_Organisations");
+            tableMapping.ColumnMappings.Add("CodePostale_Organisations", "CodePostale_Organisations");
+            tableMapping.ColumnMappings.Add("Ville_Organisations", "Ville_Organisations");
+            tableMapping.ColumnMappings.Add("Dirigeant_Organisations", "Dirigeant_Organisations");
+            tableMapping.ColumnMappings.Add("Commentaire_Organisations", "Commentaire_Organisations");
+            tableMapping.ColumnMappings.Add("DateAjout_Organisations", "DateAjout_Organisations");
+            tableMapping.ColumnMappings.Add("DateDerniereModification_Organisations", "DateDerniereModification_Organisations");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[SuperHeros] WHERE (([Id_SuperHeros] = @Original_Id_SuperHeros) AND ((@IsNull_Nom_SuperHeros = 1 AND [Nom_SuperHeros] IS NULL) OR ([Nom_SuperHeros] = @Original_Nom_SuperHeros)) AND ((@IsNull_Pouvoir_SuperHeros = 1 AND [Pouvoir_SuperHeros] IS NULL) OR ([Pouvoir_SuperHeros] = @Original_Pouvoir_SuperHeros)) AND ((@IsNull_PointFaible_SuperHeros = 1 AND [PointFaible_SuperHeros] IS NULL) OR ([PointFaible_SuperHeros] = @Original_PointFaible_SuperHeros)) AND ((@IsNull_Score_SuperHeros = 1 AND [Score_SuperHeros] IS NULL) OR ([Score_SuperHeros] = @Original_Score_SuperHeros)) AND ([Id_Civils] = @Original_Id_Civils))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Organisations] WHERE (([Id_Organisations] = @Original_Id_Organisations) AND ((@IsNull_Nom_Organisations = 1 AND [Nom_Organisations] IS NULL) OR ([Nom_Organisations] = @Original_Nom_Organisations)) AND ((@IsNull_Adresse_Organisations = 1 AND [Adresse_Organisations] IS NULL) OR ([Adresse_Organisations] = @Original_Adresse_Organisations)) AND ((@IsNull_CodePostale_Organisations = 1 AND [CodePostale_Organisations] IS NULL) OR ([CodePostale_Organisations] = @Original_CodePostale_Organisations)) AND ((@IsNull_Ville_Organisations = 1 AND [Ville_Organisations] IS NULL) OR ([Ville_Organisations] = @Original_Ville_Organisations)) AND ((@IsNull_Dirigeant_Organisations = 1 AND [Dirigeant_Organisations] IS NULL) OR ([Dirigeant_Organisations] = @Original_Dirigeant_Organisations)) AND ((@IsNull_DateAjout_Organisations = 1 AND [DateAjout_Organisations] IS NULL) OR ([DateAjout_Organisations] = @Original_DateAjout_Organisations)) AND ((@IsNull_DateDerniereModification_Organisations = 1 AND [DateDerniereModification_Organisations] IS NULL) OR ([DateDerniereModification_Organisations] = @Original_DateDerniereModification_Organisations)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_SuperHeros", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Nom_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_SuperHeros", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nom_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_SuperHeros", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Pouvoir_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pouvoir_SuperHeros", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Pouvoir_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pouvoir_SuperHeros", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_PointFaible_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PointFaible_SuperHeros", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PointFaible_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PointFaible_SuperHeros", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Score_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Score_SuperHeros", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Score_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Score_SuperHeros", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Civils", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Civils", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Nom_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nom_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Adresse_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adresse_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Adresse_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adresse_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CodePostale_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodePostale_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CodePostale_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodePostale_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ville_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ville_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ville_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ville_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Dirigeant_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dirigeant_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Dirigeant_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dirigeant_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DateAjout_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateAjout_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DateAjout_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateAjout_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DateDerniereModification_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateDerniereModification_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DateDerniereModification_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateDerniereModification_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[SuperHeros] ([Id_SuperHeros], [Nom_SuperHeros], [Pouvoir_SuperHeros], [PointFaible_SuperHeros], [Score_SuperHeros], [Commentaire_SuperHeros], [Id_Civils]) VALUES (@Id_SuperHeros, @Nom_SuperHeros, @Pouvoir_SuperHeros, @PointFaible_SuperHeros, @Score_SuperHeros, @Commentaire_SuperHeros, @Id_Civils);
-SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros, Score_SuperHeros, Commentaire_SuperHeros, Id_Civils FROM SuperHeros WHERE (Id_SuperHeros = @Id_SuperHeros)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Organisations] ([Id_Organisations], [Nom_Organisations], [Adresse_Organisations], [CodePostale_Organisations], [Ville_Organisations], [Dirigeant_Organisations], [Commentaire_Organisations], [DateAjout_Organisations], [DateDerniereModification_Organisations]) VALUES (@Id_Organisations, @Nom_Organisations, @Adresse_Organisations, @CodePostale_Organisations, @Ville_Organisations, @Dirigeant_Organisations, @Commentaire_Organisations, @DateAjout_Organisations, @DateDerniereModification_Organisations);
+SELECT Id_Organisations, Nom_Organisations, Adresse_Organisations, CodePostale_Organisations, Ville_Organisations, Dirigeant_Organisations, Commentaire_Organisations, DateAjout_Organisations, DateDerniereModification_Organisations FROM Organisations WHERE (Id_Organisations = @Id_Organisations)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_SuperHeros", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nom_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_SuperHeros", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pouvoir_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pouvoir_SuperHeros", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PointFaible_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PointFaible_SuperHeros", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Score_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Score_SuperHeros", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Commentaire_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Commentaire_SuperHeros", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_Civils", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Civils", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nom_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Adresse_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adresse_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodePostale_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodePostale_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ville_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ville_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Dirigeant_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dirigeant_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Commentaire_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Commentaire_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DateAjout_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateAjout_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DateDerniereModification_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateDerniereModification_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[SuperHeros] SET [Id_SuperHeros] = @Id_SuperHeros, [Nom_SuperHeros] = @Nom_SuperHeros, [Pouvoir_SuperHeros] = @Pouvoir_SuperHeros, [PointFaible_SuperHeros] = @PointFaible_SuperHeros, [Score_SuperHeros] = @Score_SuperHeros, [Commentaire_SuperHeros] = @Commentaire_SuperHeros, [Id_Civils] = @Id_Civils WHERE (([Id_SuperHeros] = @Original_Id_SuperHeros) AND ((@IsNull_Nom_SuperHeros = 1 AND [Nom_SuperHeros] IS NULL) OR ([Nom_SuperHeros] = @Original_Nom_SuperHeros)) AND ((@IsNull_Pouvoir_SuperHeros = 1 AND [Pouvoir_SuperHeros] IS NULL) OR ([Pouvoir_SuperHeros] = @Original_Pouvoir_SuperHeros)) AND ((@IsNull_PointFaible_SuperHeros = 1 AND [PointFaible_SuperHeros] IS NULL) OR ([PointFaible_SuperHeros] = @Original_PointFaible_SuperHeros)) AND ((@IsNull_Score_SuperHeros = 1 AND [Score_SuperHeros] IS NULL) OR ([Score_SuperHeros] = @Original_Score_SuperHeros)) AND ([Id_Civils] = @Original_Id_Civils));
-SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros, Score_SuperHeros, Commentaire_SuperHeros, Id_Civils FROM SuperHeros WHERE (Id_SuperHeros = @Id_SuperHeros)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Organisations] SET [Id_Organisations] = @Id_Organisations, [Nom_Org" +
+                "anisations] = @Nom_Organisations, [Adresse_Organisations] = @Adresse_Organisatio" +
+                "ns, [CodePostale_Organisations] = @CodePostale_Organisations, [Ville_Organisatio" +
+                "ns] = @Ville_Organisations, [Dirigeant_Organisations] = @Dirigeant_Organisations" +
+                ", [Commentaire_Organisations] = @Commentaire_Organisations, [DateAjout_Organisat" +
+                "ions] = @DateAjout_Organisations, [DateDerniereModification_Organisations] = @Da" +
+                "teDerniereModification_Organisations WHERE (([Id_Organisations] = @Original_Id_O" +
+                "rganisations) AND ((@IsNull_Nom_Organisations = 1 AND [Nom_Organisations] IS NUL" +
+                "L) OR ([Nom_Organisations] = @Original_Nom_Organisations)) AND ((@IsNull_Adresse" +
+                "_Organisations = 1 AND [Adresse_Organisations] IS NULL) OR ([Adresse_Organisatio" +
+                "ns] = @Original_Adresse_Organisations)) AND ((@IsNull_CodePostale_Organisations " +
+                "= 1 AND [CodePostale_Organisations] IS NULL) OR ([CodePostale_Organisations] = @" +
+                "Original_CodePostale_Organisations)) AND ((@IsNull_Ville_Organisations = 1 AND [" +
+                "Ville_Organisations] IS NULL) OR ([Ville_Organisations] = @Original_Ville_Organi" +
+                "sations)) AND ((@IsNull_Dirigeant_Organisations = 1 AND [Dirigeant_Organisations" +
+                "] IS NULL) OR ([Dirigeant_Organisations] = @Original_Dirigeant_Organisations)) A" +
+                "ND ((@IsNull_DateAjout_Organisations = 1 AND [DateAjout_Organisations] IS NULL) " +
+                "OR ([DateAjout_Organisations] = @Original_DateAjout_Organisations)) AND ((@IsNul" +
+                "l_DateDerniereModification_Organisations = 1 AND [DateDerniereModification_Organ" +
+                "isations] IS NULL) OR ([DateDerniereModification_Organisations] = @Original_Date" +
+                "DerniereModification_Organisations)));\r\nSELECT Id_Organisations, Nom_Organisatio" +
+                "ns, Adresse_Organisations, CodePostale_Organisations, Ville_Organisations, Dirig" +
+                "eant_Organisations, Commentaire_Organisations, DateAjout_Organisations, DateDern" +
+                "iereModification_Organisations FROM Organisations WHERE (Id_Organisations = @Id_" +
+                "Organisations)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_SuperHeros", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nom_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_SuperHeros", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pouvoir_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pouvoir_SuperHeros", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PointFaible_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PointFaible_SuperHeros", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Score_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Score_SuperHeros", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Commentaire_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Commentaire_SuperHeros", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_Civils", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Civils", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_SuperHeros", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Nom_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_SuperHeros", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nom_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_SuperHeros", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Pouvoir_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pouvoir_SuperHeros", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Pouvoir_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Pouvoir_SuperHeros", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_PointFaible_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PointFaible_SuperHeros", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PointFaible_SuperHeros", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PointFaible_SuperHeros", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Score_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Score_SuperHeros", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Score_SuperHeros", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Score_SuperHeros", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Civils", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Civils", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nom_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Adresse_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adresse_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodePostale_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodePostale_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ville_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ville_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Dirigeant_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dirigeant_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Commentaire_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Commentaire_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DateAjout_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateAjout_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DateDerniereModification_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateDerniereModification_Organisations", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Nom_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nom_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Adresse_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adresse_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Adresse_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Adresse_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CodePostale_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodePostale_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CodePostale_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodePostale_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ville_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ville_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ville_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ville_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Dirigeant_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dirigeant_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Dirigeant_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dirigeant_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DateAjout_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateAjout_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DateAjout_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateAjout_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DateDerniereModification_Organisations", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateDerniereModification_Organisations", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DateDerniereModification_Organisations", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateDerniereModification_Organisations", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Avergers.Properties.Settings.Default.AvengersDBConnectionString;
+            this._connection.ConnectionString = global::Avergers.Properties.Settings.Default.AvengersDBConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1031,8 +1177,10 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros," +
-                " Score_SuperHeros, Commentaire_SuperHeros, Id_Civils FROM dbo.SuperHeros";
+            this._commandCollection[0].CommandText = "SELECT Id_Organisations, Nom_Organisations, Adresse_Organisations, CodePostale_Or" +
+                "ganisations, Ville_Organisations, Dirigeant_Organisations, Commentaire_Organisat" +
+                "ions, DateAjout_Organisations, DateDerniereModification_Organisations FROM dbo.O" +
+                "rganisations";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1040,7 +1188,7 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(AvengersDBDataSet1.SuperHerosDataTable dataTable) {
+        public virtual int Fill(AvengersDBDataSet1.OrganisationsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1053,9 +1201,9 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual AvengersDBDataSet1.SuperHerosDataTable GetData() {
+        public virtual AvengersDBDataSet1.OrganisationsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            AvengersDBDataSet1.SuperHerosDataTable dataTable = new AvengersDBDataSet1.SuperHerosDataTable();
+            AvengersDBDataSet1.OrganisationsDataTable dataTable = new AvengersDBDataSet1.OrganisationsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1063,7 +1211,7 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(AvengersDBDataSet1.SuperHerosDataTable dataTable) {
+        public virtual int Update(AvengersDBDataSet1.OrganisationsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -1071,7 +1219,7 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(AvengersDBDataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "SuperHeros");
+            return this.Adapter.Update(dataSet, "Organisations");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1093,41 +1241,64 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id_SuperHeros, string Original_Nom_SuperHeros, string Original_Pouvoir_SuperHeros, string Original_PointFaible_SuperHeros, global::System.Nullable<int> Original_Score_SuperHeros, int Original_Id_Civils) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id_SuperHeros));
-            if ((Original_Nom_SuperHeros == null)) {
+        public virtual int Delete(int Original_Id_Organisations, string Original_Nom_Organisations, string Original_Adresse_Organisations, string Original_CodePostale_Organisations, string Original_Ville_Organisations, string Original_Dirigeant_Organisations, string Original_DateAjout_Organisations, string Original_DateDerniereModification_Organisations) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id_Organisations));
+            if ((Original_Nom_Organisations == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Nom_SuperHeros));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Nom_Organisations));
             }
-            if ((Original_Pouvoir_SuperHeros == null)) {
+            if ((Original_Adresse_Organisations == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Pouvoir_SuperHeros));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Adresse_Organisations));
             }
-            if ((Original_PointFaible_SuperHeros == null)) {
+            if ((Original_CodePostale_Organisations == null)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_PointFaible_SuperHeros));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_CodePostale_Organisations));
             }
-            if ((Original_Score_SuperHeros.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_Score_SuperHeros.Value));
-            }
-            else {
+            if ((Original_Ville_Organisations == null)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            this.Adapter.DeleteCommand.Parameters[9].Value = ((int)(Original_Id_Civils));
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_Ville_Organisations));
+            }
+            if ((Original_Dirigeant_Organisations == null)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Dirigeant_Organisations));
+            }
+            if ((Original_DateAjout_Organisations == null)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_DateAjout_Organisations));
+            }
+            if ((Original_DateDerniereModification_Organisations == null)) {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_DateDerniereModification_Organisations));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1148,39 +1319,56 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int Id_SuperHeros, string Nom_SuperHeros, string Pouvoir_SuperHeros, string PointFaible_SuperHeros, global::System.Nullable<int> Score_SuperHeros, string Commentaire_SuperHeros, int Id_Civils) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Id_SuperHeros));
-            if ((Nom_SuperHeros == null)) {
+        public virtual int Insert(int Id_Organisations, string Nom_Organisations, string Adresse_Organisations, string CodePostale_Organisations, string Ville_Organisations, string Dirigeant_Organisations, string Commentaire_Organisations, string DateAjout_Organisations, string DateDerniereModification_Organisations) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Id_Organisations));
+            if ((Nom_Organisations == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Nom_SuperHeros));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Nom_Organisations));
             }
-            if ((Pouvoir_SuperHeros == null)) {
+            if ((Adresse_Organisations == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Pouvoir_SuperHeros));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Adresse_Organisations));
             }
-            if ((PointFaible_SuperHeros == null)) {
+            if ((CodePostale_Organisations == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(PointFaible_SuperHeros));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(CodePostale_Organisations));
             }
-            if ((Score_SuperHeros.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(Score_SuperHeros.Value));
-            }
-            else {
+            if ((Ville_Organisations == null)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((Commentaire_SuperHeros == null)) {
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Ville_Organisations));
+            }
+            if ((Dirigeant_Organisations == null)) {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Commentaire_SuperHeros));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Dirigeant_Organisations));
             }
-            this.Adapter.InsertCommand.Parameters[6].Value = ((int)(Id_Civils));
+            if ((Commentaire_Organisations == null)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Commentaire_Organisations));
+            }
+            if ((DateAjout_Organisations == null)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(DateAjout_Organisations));
+            }
+            if ((DateDerniereModification_Organisations == null)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(DateDerniereModification_Organisations));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1201,73 +1389,130 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int Id_SuperHeros, string Nom_SuperHeros, string Pouvoir_SuperHeros, string PointFaible_SuperHeros, global::System.Nullable<int> Score_SuperHeros, string Commentaire_SuperHeros, int Id_Civils, int Original_Id_SuperHeros, string Original_Nom_SuperHeros, string Original_Pouvoir_SuperHeros, string Original_PointFaible_SuperHeros, global::System.Nullable<int> Original_Score_SuperHeros, int Original_Id_Civils) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Id_SuperHeros));
-            if ((Nom_SuperHeros == null)) {
+        public virtual int Update(
+                    int Id_Organisations, 
+                    string Nom_Organisations, 
+                    string Adresse_Organisations, 
+                    string CodePostale_Organisations, 
+                    string Ville_Organisations, 
+                    string Dirigeant_Organisations, 
+                    string Commentaire_Organisations, 
+                    string DateAjout_Organisations, 
+                    string DateDerniereModification_Organisations, 
+                    int Original_Id_Organisations, 
+                    string Original_Nom_Organisations, 
+                    string Original_Adresse_Organisations, 
+                    string Original_CodePostale_Organisations, 
+                    string Original_Ville_Organisations, 
+                    string Original_Dirigeant_Organisations, 
+                    string Original_DateAjout_Organisations, 
+                    string Original_DateDerniereModification_Organisations) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Id_Organisations));
+            if ((Nom_Organisations == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Nom_SuperHeros));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Nom_Organisations));
             }
-            if ((Pouvoir_SuperHeros == null)) {
+            if ((Adresse_Organisations == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Pouvoir_SuperHeros));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Adresse_Organisations));
             }
-            if ((PointFaible_SuperHeros == null)) {
+            if ((CodePostale_Organisations == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(PointFaible_SuperHeros));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(CodePostale_Organisations));
             }
-            if ((Score_SuperHeros.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Score_SuperHeros.Value));
-            }
-            else {
+            if ((Ville_Organisations == null)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((Commentaire_SuperHeros == null)) {
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Ville_Organisations));
+            }
+            if ((Dirigeant_Organisations == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Commentaire_SuperHeros));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Dirigeant_Organisations));
             }
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Id_Civils));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_Id_SuperHeros));
-            if ((Original_Nom_SuperHeros == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            if ((Commentaire_Organisations == null)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_Nom_SuperHeros));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Commentaire_Organisations));
             }
-            if ((Original_Pouvoir_SuperHeros == null)) {
+            if ((DateAjout_Organisations == null)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(DateAjout_Organisations));
+            }
+            if ((DateDerniereModification_Organisations == null)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(DateDerniereModification_Organisations));
+            }
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_Id_Organisations));
+            if ((Original_Nom_Organisations == null)) {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_Pouvoir_SuperHeros));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_Nom_Organisations));
             }
-            if ((Original_PointFaible_SuperHeros == null)) {
+            if ((Original_Adresse_Organisations == null)) {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_PointFaible_SuperHeros));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_Adresse_Organisations));
             }
-            if ((Original_Score_SuperHeros.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Original_Score_SuperHeros.Value));
-            }
-            else {
+            if ((Original_CodePostale_Organisations == null)) {
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Original_Id_Civils));
+            else {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_CodePostale_Organisations));
+            }
+            if ((Original_Ville_Organisations == null)) {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_Ville_Organisations));
+            }
+            if ((Original_Dirigeant_Organisations == null)) {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_Dirigeant_Organisations));
+            }
+            if ((Original_DateAjout_Organisations == null)) {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_DateAjout_Organisations));
+            }
+            if ((Original_DateDerniereModification_Organisations == null)) {
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_DateDerniereModification_Organisations));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1288,8 +1533,24 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Nom_SuperHeros, string Pouvoir_SuperHeros, string PointFaible_SuperHeros, global::System.Nullable<int> Score_SuperHeros, string Commentaire_SuperHeros, int Id_Civils, int Original_Id_SuperHeros, string Original_Nom_SuperHeros, string Original_Pouvoir_SuperHeros, string Original_PointFaible_SuperHeros, global::System.Nullable<int> Original_Score_SuperHeros, int Original_Id_Civils) {
-            return this.Update(Original_Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros, Score_SuperHeros, Commentaire_SuperHeros, Id_Civils, Original_Id_SuperHeros, Original_Nom_SuperHeros, Original_Pouvoir_SuperHeros, Original_PointFaible_SuperHeros, Original_Score_SuperHeros, Original_Id_Civils);
+        public virtual int Update(
+                    string Nom_Organisations, 
+                    string Adresse_Organisations, 
+                    string CodePostale_Organisations, 
+                    string Ville_Organisations, 
+                    string Dirigeant_Organisations, 
+                    string Commentaire_Organisations, 
+                    string DateAjout_Organisations, 
+                    string DateDerniereModification_Organisations, 
+                    int Original_Id_Organisations, 
+                    string Original_Nom_Organisations, 
+                    string Original_Adresse_Organisations, 
+                    string Original_CodePostale_Organisations, 
+                    string Original_Ville_Organisations, 
+                    string Original_Dirigeant_Organisations, 
+                    string Original_DateAjout_Organisations, 
+                    string Original_DateDerniereModification_Organisations) {
+            return this.Update(Original_Id_Organisations, Nom_Organisations, Adresse_Organisations, CodePostale_Organisations, Ville_Organisations, Dirigeant_Organisations, Commentaire_Organisations, DateAjout_Organisations, DateDerniereModification_Organisations, Original_Id_Organisations, Original_Nom_Organisations, Original_Adresse_Organisations, Original_CodePostale_Organisations, Original_Ville_Organisations, Original_Dirigeant_Organisations, Original_DateAjout_Organisations, Original_DateDerniereModification_Organisations);
         }
     }
     
@@ -1305,7 +1566,7 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         
         private UpdateOrderOption _updateOrder;
         
-        private SuperHerosTableAdapter _superHerosTableAdapter;
+        private OrganisationsTableAdapter _organisationsTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1327,12 +1588,12 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public SuperHerosTableAdapter SuperHerosTableAdapter {
+        public OrganisationsTableAdapter OrganisationsTableAdapter {
             get {
-                return this._superHerosTableAdapter;
+                return this._organisationsTableAdapter;
             }
             set {
-                this._superHerosTableAdapter = value;
+                this._organisationsTableAdapter = value;
             }
         }
         
@@ -1355,9 +1616,9 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._superHerosTableAdapter != null) 
-                            && (this._superHerosTableAdapter.Connection != null))) {
-                    return this._superHerosTableAdapter.Connection;
+                if (((this._organisationsTableAdapter != null) 
+                            && (this._organisationsTableAdapter.Connection != null))) {
+                    return this._organisationsTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1372,7 +1633,7 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._superHerosTableAdapter != null)) {
+                if ((this._organisationsTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1386,12 +1647,12 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateUpdatedRows(AvengersDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._superHerosTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.SuperHeros.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._organisationsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Organisations.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._superHerosTableAdapter.Update(updatedRows));
+                    result = (result + this._organisationsTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1405,11 +1666,11 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateInsertedRows(AvengersDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._superHerosTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.SuperHeros.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._organisationsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Organisations.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._superHerosTableAdapter.Update(addedRows));
+                    result = (result + this._organisationsTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1423,11 +1684,11 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateDeletedRows(AvengersDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._superHerosTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.SuperHeros.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._organisationsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Organisations.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._superHerosTableAdapter.Update(deletedRows));
+                    result = (result + this._organisationsTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1470,8 +1731,8 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._superHerosTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._superHerosTableAdapter.Connection) == false))) {
+            if (((this._organisationsTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._organisationsTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Tous les TableAdapters managés par un TableAdapterManager doivent utiliser la mêm" +
                         "e chaîne de connexion.");
             }
@@ -1509,13 +1770,13 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._superHerosTableAdapter != null)) {
-                    revertConnections.Add(this._superHerosTableAdapter, this._superHerosTableAdapter.Connection);
-                    this._superHerosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._superHerosTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._superHerosTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._superHerosTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._superHerosTableAdapter.Adapter);
+                if ((this._organisationsTableAdapter != null)) {
+                    revertConnections.Add(this._organisationsTableAdapter, this._organisationsTableAdapter.Connection);
+                    this._organisationsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._organisationsTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._organisationsTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._organisationsTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._organisationsTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1576,9 +1837,9 @@ SELECT Id_SuperHeros, Nom_SuperHeros, Pouvoir_SuperHeros, PointFaible_SuperHeros
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._superHerosTableAdapter != null)) {
-                    this._superHerosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._superHerosTableAdapter]));
-                    this._superHerosTableAdapter.Transaction = null;
+                if ((this._organisationsTableAdapter != null)) {
+                    this._organisationsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._organisationsTableAdapter]));
+                    this._organisationsTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

@@ -30,242 +30,338 @@ namespace Avergers
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.CmdRead = new System.Windows.Forms.Button();
-            this.CmdSupp = new System.Windows.Forms.Button();
-            this.CmdMaj = new System.Windows.Forms.Button();
-            this.CmdCréer = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Degats = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet2FkIdCivil_2 = new Avergers.ProjetHeroDataSet2FkIdCivil_2();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Pouvoir = new System.Windows.Forms.TextBox();
             this.Commentaire = new System.Windows.Forms.TextBox();
             this.Nom = new System.Windows.Forms.TextBox();
             this.Id = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.CmdSupp = new System.Windows.Forms.Button();
+            this.CmdMaj = new System.Windows.Forms.Button();
+            this.CmdRead = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridViewSuperVilains = new System.Windows.Forms.DataGridView();
+            this.idsupervilainDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idcivilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomvilainDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pouvoirDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.commentaireDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supervilainBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet2 = new Avergers.ProjetHeroDataSet2();
+            this.superVilainsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.avengersDBDataSet = new Avergers.AvengersDBDataSet();
+            this.superVilainsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.superVilainsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idSuperVilainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomSuperVilainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.degatsSuperVilainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.commentaireSuperVilainsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CmdQuitter = new System.Windows.Forms.Button();
-            this.groupBox2.SuspendLayout();
+            this.button2 = new System.Windows.Forms.Button();
+            this.superVilainsTableAdapter = new Avergers.AvengersDBDataSetTableAdapters.SuperVilainsTableAdapter();
+            this.civilTableAdapter = new Avergers.ProjetHeroDataSet2FkIdCivil_2TableAdapters.CivilTableAdapter();
+            this.super_vilainTableAdapter = new Avergers.ProjetHeroDataSet2TableAdapters.Super_vilainTableAdapter();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet2FkIdCivil_2)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSuperVilains)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supervilainBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.CmdRead);
-            this.groupBox2.Controls.Add(this.CmdSupp);
-            this.groupBox2.Controls.Add(this.CmdMaj);
-            this.groupBox2.Controls.Add(this.CmdCréer);
-            this.groupBox2.Location = new System.Drawing.Point(12, 175);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(839, 79);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Opérations";
-            // 
-            // CmdRead
-            // 
-            this.CmdRead.Location = new System.Drawing.Point(237, 29);
-            this.CmdRead.Name = "CmdRead";
-            this.CmdRead.Size = new System.Drawing.Size(109, 40);
-            this.CmdRead.TabIndex = 3;
-            this.CmdRead.Text = "Lire le Super-Vilain";
-            this.CmdRead.UseVisualStyleBackColor = true;
-            this.CmdRead.Click += new System.EventHandler(this.CmdRead_Click);
-            // 
-            // CmdSupp
-            // 
-            this.CmdSupp.Location = new System.Drawing.Point(680, 29);
-            this.CmdSupp.Name = "CmdSupp";
-            this.CmdSupp.Size = new System.Drawing.Size(142, 40);
-            this.CmdSupp.TabIndex = 2;
-            this.CmdSupp.Text = "Supprimer le Super-Vilain";
-            this.CmdSupp.UseVisualStyleBackColor = true;
-            this.CmdSupp.Click += new System.EventHandler(this.CmdSupp_Click);
-            // 
-            // CmdMaj
-            // 
-            this.CmdMaj.Location = new System.Drawing.Point(434, 29);
-            this.CmdMaj.Name = "CmdMaj";
-            this.CmdMaj.Size = new System.Drawing.Size(161, 40);
-            this.CmdMaj.TabIndex = 1;
-            this.CmdMaj.Text = "Mettre à jour le Super-Vilain";
-            this.CmdMaj.UseVisualStyleBackColor = true;
-            this.CmdMaj.Click += new System.EventHandler(this.CmdMaj_Click);
-            // 
-            // CmdCréer
-            // 
-            this.CmdCréer.Location = new System.Drawing.Point(26, 29);
-            this.CmdCréer.Name = "CmdCréer";
-            this.CmdCréer.Size = new System.Drawing.Size(131, 40);
-            this.CmdCréer.TabIndex = 0;
-            this.CmdCréer.Text = "Créer le Super-Vilain";
-            this.CmdCréer.UseVisualStyleBackColor = true;
-            this.CmdCréer.Click += new System.EventHandler(this.CmdCréer_Click);
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.Degats);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.Pouvoir);
             this.groupBox1.Controls.Add(this.Commentaire);
             this.groupBox1.Controls.Add(this.Nom);
             this.groupBox1.Controls.Add(this.Id);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 26);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(9, 8);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(839, 125);
-            this.groupBox1.TabIndex = 8;
+            this.groupBox1.Size = new System.Drawing.Size(772, 201);
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Super-Vilains";
+            this.groupBox1.Text = "Super Vilains";
             // 
-            // Degats
+            // comboBox1
             // 
-            this.Degats.Location = new System.Drawing.Point(434, 24);
-            this.Degats.Name = "Degats";
-            this.Degats.Size = new System.Drawing.Size(161, 20);
-            this.Degats.TabIndex = 36;
+            this.comboBox1.DataSource = this.civilBindingSource;
+            this.comboBox1.DisplayMember = "Id_civil";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(561, 31);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.ValueMember = "Id_civil";
+            // 
+            // civilBindingSource
+            // 
+            this.civilBindingSource.DataMember = "Civil";
+            this.civilBindingSource.DataSource = this.projetHeroDataSet2FkIdCivil_2;
+            // 
+            // projetHeroDataSet2FkIdCivil_2
+            // 
+            this.projetHeroDataSet2FkIdCivil_2.DataSetName = "ProjetHeroDataSet2FkIdCivil_2";
+            this.projetHeroDataSet2FkIdCivil_2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(9, 151);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 16);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Pouvoir";
+            // 
+            // Pouvoir
+            // 
+            this.Pouvoir.Location = new System.Drawing.Point(143, 150);
+            this.Pouvoir.Name = "Pouvoir";
+            this.Pouvoir.Size = new System.Drawing.Size(162, 22);
+            this.Pouvoir.TabIndex = 8;
             // 
             // Commentaire
             // 
-            this.Commentaire.Location = new System.Drawing.Point(434, 67);
+            this.Commentaire.Location = new System.Drawing.Point(561, 150);
             this.Commentaire.Name = "Commentaire";
-            this.Commentaire.Size = new System.Drawing.Size(161, 20);
-            this.Commentaire.TabIndex = 27;
+            this.Commentaire.Size = new System.Drawing.Size(162, 22);
+            this.Commentaire.TabIndex = 7;
             // 
             // Nom
             // 
-            this.Nom.Location = new System.Drawing.Point(89, 70);
+            this.Nom.Location = new System.Drawing.Point(143, 90);
             this.Nom.Name = "Nom";
-            this.Nom.Size = new System.Drawing.Size(161, 20);
-            this.Nom.TabIndex = 17;
+            this.Nom.Size = new System.Drawing.Size(162, 22);
+            this.Nom.TabIndex = 5;
             // 
             // Id
             // 
-            this.Id.Location = new System.Drawing.Point(89, 24);
+            this.Id.Location = new System.Drawing.Point(143, 30);
             this.Id.Name = "Id";
-            this.Id.Size = new System.Drawing.Size(161, 20);
-            this.Id.TabIndex = 15;
+            this.Id.Size = new System.Drawing.Size(162, 22);
+            this.Id.TabIndex = 4;
             // 
-            // label13
+            // label4
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(332, 70);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 13);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "Commentaire :";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(359, 27);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(47, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Dégâts :";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(456, 151);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(94, 16);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Commentaire :";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 74);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(97, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(43, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nom :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 27);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(116, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 13);
+            this.label1.Size = new System.Drawing.Size(25, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Id :";
             // 
-            // dataGridView1
+            // groupBox2
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idSuperVilainsDataGridViewTextBoxColumn,
-            this.nomSuperVilainsDataGridViewTextBoxColumn,
-            this.degatsSuperVilainsDataGridViewTextBoxColumn,
-            this.commentaireSuperVilainsDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.superVilainsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 268);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(836, 199);
-            this.dataGridView1.TabIndex = 10;
-            this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
+            this.groupBox2.Controls.Add(this.CmdSupp);
+            this.groupBox2.Controls.Add(this.CmdMaj);
+            this.groupBox2.Controls.Add(this.CmdRead);
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(12, 215);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(769, 100);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Opérations";
             // 
-            // avengersDBDataSet2
+            // CmdSupp
+            // 
+            this.CmdSupp.Location = new System.Drawing.Point(589, 31);
+            this.CmdSupp.Name = "CmdSupp";
+            this.CmdSupp.Size = new System.Drawing.Size(157, 36);
+            this.CmdSupp.TabIndex = 3;
+            this.CmdSupp.Text = "Supprimer  Super Vilains";
+            this.CmdSupp.UseVisualStyleBackColor = true;
+            this.CmdSupp.Click += new System.EventHandler(this.CmdSupp_Click);
+            // 
+            // CmdMaj
+            // 
+            this.CmdMaj.Location = new System.Drawing.Point(382, 31);
+            this.CmdMaj.Name = "CmdMaj";
+            this.CmdMaj.Size = new System.Drawing.Size(156, 36);
+            this.CmdMaj.TabIndex = 2;
+            this.CmdMaj.Text = "Modifier  Super Vilains";
+            this.CmdMaj.UseVisualStyleBackColor = true;
+            this.CmdMaj.Click += new System.EventHandler(this.CmdMaj_Click);
+            // 
+            // CmdRead
+            // 
+            this.CmdRead.Location = new System.Drawing.Point(213, 31);
+            this.CmdRead.Name = "CmdRead";
+            this.CmdRead.Size = new System.Drawing.Size(118, 36);
+            this.CmdRead.TabIndex = 1;
+            this.CmdRead.Text = "Lire Super Vilains";
+            this.CmdRead.UseVisualStyleBackColor = true;
+            this.CmdRead.Click += new System.EventHandler(this.CmdRead_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(37, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 36);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Créer Super-Vilains";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.CmdCreer_Clickk);
+            // 
+            // dataGridViewSuperVilains
+            // 
+            this.dataGridViewSuperVilains.AllowUserToOrderColumns = true;
+            this.dataGridViewSuperVilains.AutoGenerateColumns = false;
+            this.dataGridViewSuperVilains.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSuperVilains.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idsupervilainDataGridViewTextBoxColumn,
+            this.idcivilDataGridViewTextBoxColumn,
+            this.nomvilainDataGridViewTextBoxColumn,
+            this.pouvoirDataGridViewTextBoxColumn,
+            this.commentaireDataGridViewTextBoxColumn});
+            this.dataGridViewSuperVilains.DataSource = this.supervilainBindingSource;
+            this.dataGridViewSuperVilains.Location = new System.Drawing.Point(16, 321);
+            this.dataGridViewSuperVilains.Name = "dataGridViewSuperVilains";
+            this.dataGridViewSuperVilains.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewSuperVilains.Size = new System.Drawing.Size(765, 162);
+            this.dataGridViewSuperVilains.TabIndex = 2;
+            this.dataGridViewSuperVilains.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
+            // 
+            // idsupervilainDataGridViewTextBoxColumn
+            // 
+            this.idsupervilainDataGridViewTextBoxColumn.DataPropertyName = "Id_super_vilain";
+            this.idsupervilainDataGridViewTextBoxColumn.HeaderText = "Id_super_vilain";
+            this.idsupervilainDataGridViewTextBoxColumn.Name = "idsupervilainDataGridViewTextBoxColumn";
+            // 
+            // idcivilDataGridViewTextBoxColumn
+            // 
+            this.idcivilDataGridViewTextBoxColumn.DataPropertyName = "Id_civil";
+            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id_civil";
+            this.idcivilDataGridViewTextBoxColumn.Name = "idcivilDataGridViewTextBoxColumn";
+            // 
+            // nomvilainDataGridViewTextBoxColumn
+            // 
+            this.nomvilainDataGridViewTextBoxColumn.DataPropertyName = "Nom_vilain";
+            this.nomvilainDataGridViewTextBoxColumn.HeaderText = "Nom_vilain";
+            this.nomvilainDataGridViewTextBoxColumn.Name = "nomvilainDataGridViewTextBoxColumn";
+            // 
+            // pouvoirDataGridViewTextBoxColumn
+            // 
+            this.pouvoirDataGridViewTextBoxColumn.DataPropertyName = "Pouvoir";
+            this.pouvoirDataGridViewTextBoxColumn.HeaderText = "Pouvoir";
+            this.pouvoirDataGridViewTextBoxColumn.Name = "pouvoirDataGridViewTextBoxColumn";
+            // 
+            // commentaireDataGridViewTextBoxColumn
+            // 
+            this.commentaireDataGridViewTextBoxColumn.DataPropertyName = "Commentaire";
+            this.commentaireDataGridViewTextBoxColumn.HeaderText = "Commentaire";
+            this.commentaireDataGridViewTextBoxColumn.Name = "commentaireDataGridViewTextBoxColumn";
+            // 
+            // supervilainBindingSource
+            // 
+            this.supervilainBindingSource.DataMember = "Super_vilain";
+            this.supervilainBindingSource.DataSource = this.projetHeroDataSet2;
+            // 
+            // projetHeroDataSet2
+            // 
+            this.projetHeroDataSet2.DataSetName = "ProjetHeroDataSet2";
+            this.projetHeroDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // superVilainsBindingSource2
+            // 
+            this.superVilainsBindingSource2.DataMember = "SuperVilains";
+            this.superVilainsBindingSource2.DataSource = this.avengersDBDataSet;
+            // 
+            // avengersDBDataSet
+            // 
+            this.avengersDBDataSet.DataSetName = "AvengersDBDataSet";
+            this.avengersDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // superVilainsBindingSource1
+            // 
+            this.superVilainsBindingSource1.DataMember = "SuperVilains";
             // 
             // superVilainsBindingSource
             // 
             this.superVilainsBindingSource.DataMember = "SuperVilains";
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(227, 514);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(150, 47);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Quitter";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // superVilainsTableAdapter
             // 
+            this.superVilainsTableAdapter.ClearBeforeFill = true;
             // 
-            // idSuperVilainsDataGridViewTextBoxColumn
+            // civilTableAdapter
             // 
-            this.idSuperVilainsDataGridViewTextBoxColumn.DataPropertyName = "Id_SuperVilains";
-            this.idSuperVilainsDataGridViewTextBoxColumn.HeaderText = "Id_SuperVilains";
-            this.idSuperVilainsDataGridViewTextBoxColumn.Name = "idSuperVilainsDataGridViewTextBoxColumn";
+            this.civilTableAdapter.ClearBeforeFill = true;
             // 
-            // nomSuperVilainsDataGridViewTextBoxColumn
+            // super_vilainTableAdapter
             // 
-            this.nomSuperVilainsDataGridViewTextBoxColumn.DataPropertyName = "Nom_SuperVilains";
-            this.nomSuperVilainsDataGridViewTextBoxColumn.HeaderText = "Nom_SuperVilains";
-            this.nomSuperVilainsDataGridViewTextBoxColumn.Name = "nomSuperVilainsDataGridViewTextBoxColumn";
-            // 
-            // degatsSuperVilainsDataGridViewTextBoxColumn
-            // 
-            this.degatsSuperVilainsDataGridViewTextBoxColumn.DataPropertyName = "Degats_SuperVilains";
-            this.degatsSuperVilainsDataGridViewTextBoxColumn.HeaderText = "Degats_SuperVilains";
-            this.degatsSuperVilainsDataGridViewTextBoxColumn.Name = "degatsSuperVilainsDataGridViewTextBoxColumn";
-            // 
-            // commentaireSuperVilainsDataGridViewTextBoxColumn
-            // 
-            this.commentaireSuperVilainsDataGridViewTextBoxColumn.DataPropertyName = "Commentaire_SuperVilains";
-            this.commentaireSuperVilainsDataGridViewTextBoxColumn.HeaderText = "Commentaire_SuperVilains";
-            this.commentaireSuperVilainsDataGridViewTextBoxColumn.Name = "commentaireSuperVilainsDataGridViewTextBoxColumn";
-            // 
-            // CmdQuitter
-            // 
-            this.CmdQuitter.Location = new System.Drawing.Point(383, 483);
-            this.CmdQuitter.Name = "CmdQuitter";
-            this.CmdQuitter.Size = new System.Drawing.Size(102, 35);
-            this.CmdQuitter.TabIndex = 11;
-            this.CmdQuitter.Text = "Fermer";
-            this.CmdQuitter.UseVisualStyleBackColor = true;
-            this.CmdQuitter.Click += new System.EventHandler(this.CmdQuitter_Click);
+            this.super_vilainTableAdapter.ClearBeforeFill = true;
             // 
             // SuperVilains
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(874, 530);
-            this.Controls.Add(this.CmdQuitter);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(881, 582);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.dataGridViewSuperVilains);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "SuperVilains";
-            this.Text = "Création d\'un Super-Vilain";
-            this.Load += new System.EventHandler(this.SuperVilains_Load);
-            this.groupBox2.ResumeLayout(false);
+            this.Text = "Création Super Vilains";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet2FkIdCivil_2)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSuperVilains)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supervilainBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superVilainsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -273,26 +369,48 @@ namespace Avergers
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button CmdRead;
-        private System.Windows.Forms.Button CmdSupp;
-        private System.Windows.Forms.Button CmdMaj;
-        private System.Windows.Forms.Button CmdCréer;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox Degats;
+        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox Commentaire;
         private System.Windows.Forms.TextBox Nom;
         private System.Windows.Forms.TextBox Id;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button CmdSupp;
+        private System.Windows.Forms.Button CmdMaj;
+        private System.Windows.Forms.Button CmdRead;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridViewSuperVilains;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.BindingSource superVilainsBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idSuperVilainsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomSuperVilainsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn degatsSuperVilainsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn commentaireSuperVilainsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button CmdQuitter;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn idSuperVilainsDataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn nomSuperVilainsDataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn degatsSuperVilainsDataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn commentaireSuperVilainsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource superVilainsBindingSource1;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn nombreDeMefaitsSuperVilainsDataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn scoreSuperVilainsDataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private AvengersDBDataSet avengersDBDataSet;
+        private System.Windows.Forms.BindingSource superVilainsBindingSource2;
+        private AvengersDBDataSetTableAdapters.SuperVilainsTableAdapter superVilainsTableAdapter;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private ProjetHeroDataSet2FkIdCivil_2 projetHeroDataSet2FkIdCivil_2;
+        private System.Windows.Forms.BindingSource civilBindingSource;
+        private ProjetHeroDataSet2FkIdCivil_2TableAdapters.CivilTableAdapter civilTableAdapter;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox Pouvoir;
+        private ProjetHeroDataSet2 projetHeroDataSet2;
+        private System.Windows.Forms.BindingSource supervilainBindingSource;
+        private ProjetHeroDataSet2TableAdapters.Super_vilainTableAdapter super_vilainTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idsupervilainDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idcivilDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomvilainDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pouvoirDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn commentaireDataGridViewTextBoxColumn;
     }
 }

@@ -3,7 +3,6 @@ C:\Users\Aizen\source\repos\Avergers-ARK\bin\Debug\Avergers.exe
 C:\Users\Aizen\source\repos\Avergers-ARK\bin\Debug\Avergers.pdb
 C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avengers.csproj.AssemblyReference.cache
 C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Civils.resources
-C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Menu.resources
 C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Organisations.resources
 C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Properties.Resources.resources
 C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.SuperHeros.resources
@@ -12,7 +11,6 @@ C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avengers.csproj.GenerateResou
 C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avengers.csproj.CoreCompileInputs.cache
 C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.exe
 C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.pdb
-C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Form1.resources
 D:\Cours\POEC.NET\Avengers-ARK\bin\Debug\Avergers.exe.config
 D:\Cours\POEC.NET\Avengers-ARK\bin\Debug\Avergers.exe
 D:\Cours\POEC.NET\Avengers-ARK\bin\Debug\Avergers.pdb
@@ -28,3 +26,12 @@ D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avengers.csproj.GenerateResource.cache
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avengers.csproj.CoreCompileInputs.cache
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.exe
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.pdb
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Crise.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Incident.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Litige.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Missions.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.PageChoixAdmin.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Satisfaction.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.MenuAdminCreat.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Utilisateur.resources
+C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.MenuPrincipal.resources

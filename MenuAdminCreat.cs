@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Avergers
 {
-    public partial class Menu : Form
+    public partial class MenuAdminCreat : Form
     {
-        public Menu()
+        public MenuAdminCreat()
         {
             InitializeComponent();
         }
@@ -30,8 +30,9 @@ namespace Avergers
 
         private void CmdSH_Click(object sender, EventArgs e)
         {
-            SuperHeros superheros = new SuperHeros();
-            superheros.ShowDialog();
+            
+            SuperHeros superHeros = new SuperHeros();
+            superHeros.ShowDialog();
         }
 
         private void CmdSV_Click(object sender, EventArgs e)

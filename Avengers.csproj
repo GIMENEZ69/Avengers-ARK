@@ -56,35 +56,103 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AvengersDBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="AvengersDBDataSetCmbIdCivils.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSetCmbIdCivils.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSetGridViewCivils.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSetGridViewCivils.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AvengersDBDataSetGridViewCivils2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvengersDBDataSetGridViewCivils2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Civils.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Civils.Designer.cs">
       <DependentUpon>Civils.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Crise.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Crise.Designer.cs">
+      <DependentUpon>Crise.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
+    <Compile Include="Incident.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="Incident.Designer.cs">
+      <DependentUpon>Incident.cs</DependentUpon>
     </Compile>
-    <Compile Include="Organisations.cs">
+    <Compile Include="Litige.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Organisations.Designer.cs">
-      <DependentUpon>Organisations.cs</DependentUpon>
+    <Compile Include="Litige.Designer.cs">
+      <DependentUpon>Litige.cs</DependentUpon>
     </Compile>
-    <Compile Include="SuperVilains.cs">
+    <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SuperVilains.Designer.cs">
-      <DependentUpon>SuperVilains.cs</DependentUpon>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Missions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Missions.Designer.cs">
+      <DependentUpon>Missions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageChoixAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageChoixAdmin.Designer.cs">
+      <DependentUpon>PageChoixAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet2FkIdCivil.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet2FkIdCivil.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet2FkIdCivil_2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet2FkIdCivil_2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Satisfaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satisfaction.Designer.cs">
+      <DependentUpon>Satisfaction.cs</DependentUpon>
     </Compile>
     <Compile Include="SuperHeros.cs">
       <SubType>Form</SubType>
@@ -92,16 +160,64 @@
     <Compile Include="SuperHeros.Designer.cs">
       <DependentUpon>SuperHeros.cs</DependentUpon>
     </Compile>
+    <Compile Include="SuperVilains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperVilains.Designer.cs">
+      <DependentUpon>SuperVilains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdminCreat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAdminCreat.Designer.cs">
+      <DependentUpon>MenuAdminCreat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organisations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organisations.Designer.cs">
+      <DependentUpon>Organisations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilisateur.Designer.cs">
+      <DependentUpon>Utilisateur.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Civils.resx">
       <DependentUpon>Civils.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Crise.resx">
+      <DependentUpon>Crise.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="Incident.resx">
+      <DependentUpon>Incident.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Litige.resx">
+      <DependentUpon>Litige.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Missions.resx">
+      <DependentUpon>Missions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageChoixAdmin.resx">
+      <DependentUpon>PageChoixAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satisfaction.resx">
+      <DependentUpon>Satisfaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperHeros.resx">
+      <DependentUpon>SuperHeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperVilains.resx">
+      <DependentUpon>SuperVilains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdminCreat.resx">
+      <DependentUpon>MenuAdminCreat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Organisations.resx">
       <DependentUpon>Organisations.cs</DependentUpon>
@@ -116,11 +232,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SuperHeros.resx">
-      <DependentUpon>SuperHeros.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SuperVilains.resx">
-      <DependentUpon>SuperVilains.cs</DependentUpon>
+    <EmbeddedResource Include="Utilisateur.resx">
+      <DependentUpon>Utilisateur.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="AvengersDBDataSet.xsc">
       <DependentUpon>AvengersDBDataSet.xsd</DependentUpon>
@@ -144,6 +257,116 @@
     <None Include="AvengersDBDataSet1.xss">
       <DependentUpon>AvengersDBDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="AvengersDBDataSetCmbIdCivils.xsc">
+      <DependentUpon>AvengersDBDataSetCmbIdCivils.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSetCmbIdCivils.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSetCmbIdCivils.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSetCmbIdCivils.xss">
+      <DependentUpon>AvengersDBDataSetCmbIdCivils.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSetGridViewCivils.xsc">
+      <DependentUpon>AvengersDBDataSetGridViewCivils.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSetGridViewCivils.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSetGridViewCivils.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSetGridViewCivils.xss">
+      <DependentUpon>AvengersDBDataSetGridViewCivils.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSetGridViewCivils2.xsc">
+      <DependentUpon>AvengersDBDataSetGridViewCivils2.xsd</DependentUpon>
+    </None>
+    <None Include="AvengersDBDataSetGridViewCivils2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvengersDBDataSetGridViewCivils2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AvengersDBDataSetGridViewCivils2.xss">
+      <DependentUpon>AvengersDBDataSetGridViewCivils2.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet.xsc">
+      <DependentUpon>ProjetHeroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet.xss">
+      <DependentUpon>ProjetHeroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet1.xsc">
+      <DependentUpon>ProjetHeroDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet1.xss">
+      <DependentUpon>ProjetHeroDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet2.xsc">
+      <DependentUpon>ProjetHeroDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet2.xss">
+      <DependentUpon>ProjetHeroDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet2FkIdCivil.xsc">
+      <DependentUpon>ProjetHeroDataSet2FkIdCivil.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet2FkIdCivil.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet2FkIdCivil.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet2FkIdCivil.xss">
+      <DependentUpon>ProjetHeroDataSet2FkIdCivil.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet2FkIdCivil_2.xsc">
+      <DependentUpon>ProjetHeroDataSet2FkIdCivil_2.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet2FkIdCivil_2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet2FkIdCivil_2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet2FkIdCivil_2.xss">
+      <DependentUpon>ProjetHeroDataSet2FkIdCivil_2.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet3.xsc">
+      <DependentUpon>ProjetHeroDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet3.xss">
+      <DependentUpon>ProjetHeroDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet4.xsc">
+      <DependentUpon>ProjetHeroDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet4.xss">
+      <DependentUpon>ProjetHeroDataSet4.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -159,6 +382,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Avengerslogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avengerslogo1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

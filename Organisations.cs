@@ -20,7 +20,11 @@ namespace Avergers
 
         private void Organisations_Load(object sender, EventArgs e)
         {
-
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet4.Organisation'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.organisationTableAdapter.Fill(this.projetHeroDataSet4.Organisation);
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet3.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.civilTableAdapter.Fill(this.projetHeroDataSet3.Civil);
+            
         }
 
         private void CmdQuitter_Click(object sender, EventArgs e)
@@ -28,12 +32,12 @@ namespace Avergers
             Form.ActiveForm.Close();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-TKJHI8I;Initial Catalog=AvengersDB;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-TKJHI8I;Initial Catalog=ProjetHero;Integrated Security=True");
         private void CmdCréer_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "INSERT INTO Organisations (Id_Organisations, Nom_Organisations, Adresse_Organisations, CodePostale_Organisations, Ville_Organisations, Dirigeant_Organisations, Commentaire_Organisations, DateAjout_Organisations, DateDerniereModification_Organisations) " +
-                "VALUES(                            '" + Id.Text + "', '" + Nom.Text + "','" + Adresse.Text + "', '" + CP.Text + "',            '" + Ville.Text + "', '" + Dirigeant.Text + "','" + Commentaire.Text + "', '" + Dateajout.Text + "', '" + Datemodif.Text + "')";
+            string query = "INSERT INTO Organisation (Id_organisation, Nom_org, Siege_social, Id_civil_dirigeant, Membre, Ajout_orga, Modification_org) " +
+                "VALUES(                            '" + Id.Text + "','" + Nom.Text +"', '" + Siegesocial.Text + "','" + comboBox1.Text + "', '" + Dirigeant.Text + "','" + Convert.ToDateTime(dateajout.Text) + "', '" + Convert.ToDateTime (datemodif.Text) + "')";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
@@ -43,7 +47,7 @@ namespace Avergers
         private void CmdRead_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "SELECT * FROM Organisations";
+            string query = "SELECT * FROM Organisation";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
@@ -54,7 +58,7 @@ namespace Avergers
         private void CmdMaj_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "UPDATE Organisations SET Nom_Organisations = '" + Nom.Text + "', Adresse_Organisations = '" + Adresse.Text + "', CodePostale_Organisations = '" + CP.Text + "', Ville_Organisations = '" + Ville.Text + "', Dirigeant_Organisations = '" + Dirigeant.Text + "', Commentaire_Organisations = '" + Commentaire.Text + "', DateAjout_Organisations = '" + Dateajout.Text + "', DateDerniereModification_Organisations = '" + Datemodif.Text + "' WHERE Id_Organisations = '" + Id.Text + "'";
+            string query = "UPDATE Organisation SET Nom_org = '" + Nom.Text +"', Siege_social ='" + Siegesocial.Text + "',Id_civil_dirigeant = '" + comboBox1.Text + "', Membre = '" + Dirigeant.Text + "', Ajout_orga = '" + Convert.ToDateTime(dateajout.Text) + "', Modification_org = '" + Convert.ToDateTime(datemodif.Text) + "' WHERE Id_organisation = '" + Id.Text + "'";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
@@ -64,25 +68,22 @@ namespace Avergers
         private void CmdSupp_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "DELETE FROM Organisations where Id_Organisations = '" + Id.Text + "'";
+            string query = "DELETE FROM Organisation where Id_organisation = '" + Id.Text + "'";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show(" L'identifiant a bien été supprimé");
         }
 
-        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void dataGridView1_MouseDoubleClick_1(object sender, MouseEventArgs e)
         {
             Id.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             Nom.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            Adresse.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            CP.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-            Ville.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-            Dirigeant.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-            Commentaire.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-            Dateajout.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
-            Datemodif.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
-
+            Siegesocial.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            comboBox1.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            Dirigeant.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            dateajout.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+            datemodif.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
         }
     }
 }
