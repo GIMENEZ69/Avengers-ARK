@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Avergers
 {
-    public partial class Menu : Form
+    public partial class MenuAdminCreat : Form
     {
-        public Menu()
+        public MenuAdminCreat()
         {
             InitializeComponent();
         }

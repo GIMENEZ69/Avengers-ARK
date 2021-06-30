@@ -1,7 +1,7 @@
 ﻿
 namespace Avergers
 {
-    partial class Menu
+    partial class MenuAdminCreat
     {
         /// <summary>
         /// Required designer variable.

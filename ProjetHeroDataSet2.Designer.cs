@@ -20,17 +20,17 @@ namespace Avergers {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("AvengersDBDataSetVilains")]
+    [global::System.Xml.Serialization.XmlRootAttribute("ProjetHeroDataSet2")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class AvengersDBDataSetVilains : global::System.Data.DataSet {
+    public partial class ProjetHeroDataSet2 : global::System.Data.DataSet {
         
-        private SuperVilainsDataTable tableSuperVilains;
+        private CivilDataTable tableCivil;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public AvengersDBDataSetVilains() {
+        public ProjetHeroDataSet2() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Avergers {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected AvengersDBDataSetVilains(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected ProjetHeroDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Avergers {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["SuperVilains"] != null)) {
-                    base.Tables.Add(new SuperVilainsDataTable(ds.Tables["SuperVilains"]));
+                if ((ds.Tables["Civil"] != null)) {
+                    base.Tables.Add(new CivilDataTable(ds.Tables["Civil"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Avergers {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public SuperVilainsDataTable SuperVilains {
+        public CivilDataTable Civil {
             get {
-                return this.tableSuperVilains;
+                return this.tableCivil;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Avergers {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            AvengersDBDataSetVilains cln = ((AvengersDBDataSetVilains)(base.Clone()));
+            ProjetHeroDataSet2 cln = ((ProjetHeroDataSet2)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Avergers {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["SuperVilains"] != null)) {
-                    base.Tables.Add(new SuperVilainsDataTable(ds.Tables["SuperVilains"]));
+                if ((ds.Tables["Civil"] != null)) {
+                    base.Tables.Add(new CivilDataTable(ds.Tables["Civil"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Avergers {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableSuperVilains = ((SuperVilainsDataTable)(base.Tables["SuperVilains"]));
+            this.tableCivil = ((CivilDataTable)(base.Tables["Civil"]));
             if ((initTable == true)) {
-                if ((this.tableSuperVilains != null)) {
-                    this.tableSuperVilains.InitVars();
+                if ((this.tableCivil != null)) {
+                    this.tableCivil.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Avergers {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "AvengersDBDataSetVilains";
+            this.DataSetName = "ProjetHeroDataSet2";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/AvengersDBDataSetVilains.xsd";
+            this.Namespace = "http://tempuri.org/ProjetHeroDataSet2.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableSuperVilains = new SuperVilainsDataTable();
-            base.Tables.Add(this.tableSuperVilains);
+            this.tableCivil = new CivilDataTable();
+            base.Tables.Add(this.tableCivil);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeSuperVilains() {
+        private bool ShouldSerializeCivil() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Avergers {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            AvengersDBDataSetVilains ds = new AvengersDBDataSetVilains();
+            ProjetHeroDataSet2 ds = new ProjetHeroDataSet2();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,31 +270,21 @@ namespace Avergers {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void SuperVilainsRowChangeEventHandler(object sender, SuperVilainsRowChangeEvent e);
+        public delegate void CivilRowChangeEventHandler(object sender, CivilRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class SuperVilainsDataTable : global::System.Data.TypedTableBase<SuperVilainsRow> {
+        public partial class CivilDataTable : global::System.Data.TypedTableBase<CivilRow> {
             
-            private global::System.Data.DataColumn columnId_SuperVilains;
-            
-            private global::System.Data.DataColumn columnNom_SuperVilains;
-            
-            private global::System.Data.DataColumn columnNombreDeMefaits_SuperVilainss;
-            
-            private global::System.Data.DataColumn columnDegats_SuperVilains;
-            
-            private global::System.Data.DataColumn columnScore_SuperVilains;
-            
-            private global::System.Data.DataColumn columnCommentaire_SuperVilains;
+            private global::System.Data.DataColumn columnId_civil;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperVilainsDataTable() {
-                this.TableName = "SuperVilains";
+            public CivilDataTable() {
+                this.TableName = "Civil";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +292,7 @@ namespace Avergers {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal SuperVilainsDataTable(global::System.Data.DataTable table) {
+            internal CivilDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,56 +309,16 @@ namespace Avergers {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected SuperVilainsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected CivilDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Id_SuperVilainsColumn {
+            public global::System.Data.DataColumn Id_civilColumn {
                 get {
-                    return this.columnId_SuperVilains;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Nom_SuperVilainsColumn {
-                get {
-                    return this.columnNom_SuperVilains;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn NombreDeMefaits_SuperVilainssColumn {
-                get {
-                    return this.columnNombreDeMefaits_SuperVilainss;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Degats_SuperVilainsColumn {
-                get {
-                    return this.columnDegats_SuperVilains;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Score_SuperVilainsColumn {
-                get {
-                    return this.columnScore_SuperVilains;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Commentaire_SuperVilainsColumn {
-                get {
-                    return this.columnCommentaire_SuperVilains;
+                    return this.columnId_civil;
                 }
             }
             
@@ -383,57 +333,52 @@ namespace Avergers {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperVilainsRow this[int index] {
+            public CivilRow this[int index] {
                 get {
-                    return ((SuperVilainsRow)(this.Rows[index]));
+                    return ((CivilRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event SuperVilainsRowChangeEventHandler SuperVilainsRowChanging;
+            public event CivilRowChangeEventHandler CivilRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event SuperVilainsRowChangeEventHandler SuperVilainsRowChanged;
+            public event CivilRowChangeEventHandler CivilRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event SuperVilainsRowChangeEventHandler SuperVilainsRowDeleting;
+            public event CivilRowChangeEventHandler CivilRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event SuperVilainsRowChangeEventHandler SuperVilainsRowDeleted;
+            public event CivilRowChangeEventHandler CivilRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddSuperVilainsRow(SuperVilainsRow row) {
+            public void AddCivilRow(CivilRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperVilainsRow AddSuperVilainsRow(int Id_SuperVilains, string Nom_SuperVilains, int NombreDeMefaits_SuperVilainss, string Degats_SuperVilains, int Score_SuperVilains, string Commentaire_SuperVilains) {
-                SuperVilainsRow rowSuperVilainsRow = ((SuperVilainsRow)(this.NewRow()));
+            public CivilRow AddCivilRow(int Id_civil) {
+                CivilRow rowCivilRow = ((CivilRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Id_SuperVilains,
-                        Nom_SuperVilains,
-                        NombreDeMefaits_SuperVilainss,
-                        Degats_SuperVilains,
-                        Score_SuperVilains,
-                        Commentaire_SuperVilains};
-                rowSuperVilainsRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowSuperVilainsRow);
-                return rowSuperVilainsRow;
+                        Id_civil};
+                rowCivilRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowCivilRow);
+                return rowCivilRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperVilainsRow FindById_SuperVilains(int Id_SuperVilains) {
-                return ((SuperVilainsRow)(this.Rows.Find(new object[] {
-                            Id_SuperVilains})));
+            public CivilRow FindById_civil(int Id_civil) {
+                return ((CivilRow)(this.Rows.Find(new object[] {
+                            Id_civil})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                SuperVilainsDataTable cln = ((SuperVilainsDataTable)(base.Clone()));
+                CivilDataTable cln = ((CivilDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -441,68 +386,50 @@ namespace Avergers {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new SuperVilainsDataTable();
+                return new CivilDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnId_SuperVilains = base.Columns["Id_SuperVilains"];
-                this.columnNom_SuperVilains = base.Columns["Nom_SuperVilains"];
-                this.columnNombreDeMefaits_SuperVilainss = base.Columns["NombreDeMefaits_SuperVilainss"];
-                this.columnDegats_SuperVilains = base.Columns["Degats_SuperVilains"];
-                this.columnScore_SuperVilains = base.Columns["Score_SuperVilains"];
-                this.columnCommentaire_SuperVilains = base.Columns["Commentaire_SuperVilains"];
+                this.columnId_civil = base.Columns["Id_civil"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnId_SuperVilains = new global::System.Data.DataColumn("Id_SuperVilains", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnId_SuperVilains);
-                this.columnNom_SuperVilains = new global::System.Data.DataColumn("Nom_SuperVilains", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNom_SuperVilains);
-                this.columnNombreDeMefaits_SuperVilainss = new global::System.Data.DataColumn("NombreDeMefaits_SuperVilainss", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombreDeMefaits_SuperVilainss);
-                this.columnDegats_SuperVilains = new global::System.Data.DataColumn("Degats_SuperVilains", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDegats_SuperVilains);
-                this.columnScore_SuperVilains = new global::System.Data.DataColumn("Score_SuperVilains", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnScore_SuperVilains);
-                this.columnCommentaire_SuperVilains = new global::System.Data.DataColumn("Commentaire_SuperVilains", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCommentaire_SuperVilains);
+                this.columnId_civil = new global::System.Data.DataColumn("Id_civil", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId_civil);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnId_SuperVilains}, true));
-                this.columnId_SuperVilains.AllowDBNull = false;
-                this.columnId_SuperVilains.Unique = true;
-                this.columnNom_SuperVilains.MaxLength = 50;
-                this.columnDegats_SuperVilains.MaxLength = 50;
-                this.columnCommentaire_SuperVilains.MaxLength = 2147483647;
+                                this.columnId_civil}, true));
+                this.columnId_civil.AllowDBNull = false;
+                this.columnId_civil.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperVilainsRow NewSuperVilainsRow() {
-                return ((SuperVilainsRow)(this.NewRow()));
+            public CivilRow NewCivilRow() {
+                return ((CivilRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new SuperVilainsRow(builder);
+                return new CivilRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(SuperVilainsRow);
+                return typeof(CivilRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.SuperVilainsRowChanged != null)) {
-                    this.SuperVilainsRowChanged(this, new SuperVilainsRowChangeEvent(((SuperVilainsRow)(e.Row)), e.Action));
+                if ((this.CivilRowChanged != null)) {
+                    this.CivilRowChanged(this, new CivilRowChangeEvent(((CivilRow)(e.Row)), e.Action));
                 }
             }
             
@@ -510,8 +437,8 @@ namespace Avergers {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.SuperVilainsRowChanging != null)) {
-                    this.SuperVilainsRowChanging(this, new SuperVilainsRowChangeEvent(((SuperVilainsRow)(e.Row)), e.Action));
+                if ((this.CivilRowChanging != null)) {
+                    this.CivilRowChanging(this, new CivilRowChangeEvent(((CivilRow)(e.Row)), e.Action));
                 }
             }
             
@@ -519,8 +446,8 @@ namespace Avergers {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.SuperVilainsRowDeleted != null)) {
-                    this.SuperVilainsRowDeleted(this, new SuperVilainsRowChangeEvent(((SuperVilainsRow)(e.Row)), e.Action));
+                if ((this.CivilRowDeleted != null)) {
+                    this.CivilRowDeleted(this, new CivilRowChangeEvent(((CivilRow)(e.Row)), e.Action));
                 }
             }
             
@@ -528,14 +455,14 @@ namespace Avergers {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.SuperVilainsRowDeleting != null)) {
-                    this.SuperVilainsRowDeleting(this, new SuperVilainsRowChangeEvent(((SuperVilainsRow)(e.Row)), e.Action));
+                if ((this.CivilRowDeleting != null)) {
+                    this.CivilRowDeleting(this, new CivilRowChangeEvent(((CivilRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveSuperVilainsRow(SuperVilainsRow row) {
+            public void RemoveCivilRow(CivilRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -544,7 +471,7 @@ namespace Avergers {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                AvengersDBDataSetVilains ds = new AvengersDBDataSetVilains();
+                ProjetHeroDataSet2 ds = new ProjetHeroDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -562,7 +489,7 @@ namespace Avergers {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "SuperVilainsDataTable";
+                attribute2.FixedValue = "CivilDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -606,171 +533,26 @@ namespace Avergers {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class SuperVilainsRow : global::System.Data.DataRow {
+        public partial class CivilRow : global::System.Data.DataRow {
             
-            private SuperVilainsDataTable tableSuperVilains;
+            private CivilDataTable tableCivil;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal SuperVilainsRow(global::System.Data.DataRowBuilder rb) : 
+            internal CivilRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableSuperVilains = ((SuperVilainsDataTable)(this.Table));
+                this.tableCivil = ((CivilDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Id_SuperVilains {
+            public int Id_civil {
                 get {
-                    return ((int)(this[this.tableSuperVilains.Id_SuperVilainsColumn]));
+                    return ((int)(this[this.tableCivil.Id_civilColumn]));
                 }
                 set {
-                    this[this.tableSuperVilains.Id_SuperVilainsColumn] = value;
+                    this[this.tableCivil.Id_civilColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Nom_SuperVilains {
-                get {
-                    try {
-                        return ((string)(this[this.tableSuperVilains.Nom_SuperVilainsColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Nom_SuperVilains\' dans la table \'SuperVilains\' est DBN" +
-                                "ull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSuperVilains.Nom_SuperVilainsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int NombreDeMefaits_SuperVilainss {
-                get {
-                    try {
-                        return ((int)(this[this.tableSuperVilains.NombreDeMefaits_SuperVilainssColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'NombreDeMefaits_SuperVilainss\' dans la table \'SuperVil" +
-                                "ains\' est DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSuperVilains.NombreDeMefaits_SuperVilainssColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Degats_SuperVilains {
-                get {
-                    try {
-                        return ((string)(this[this.tableSuperVilains.Degats_SuperVilainsColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Degats_SuperVilains\' dans la table \'SuperVilains\' est " +
-                                "DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSuperVilains.Degats_SuperVilainsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Score_SuperVilains {
-                get {
-                    try {
-                        return ((int)(this[this.tableSuperVilains.Score_SuperVilainsColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Score_SuperVilains\' dans la table \'SuperVilains\' est D" +
-                                "BNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSuperVilains.Score_SuperVilainsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Commentaire_SuperVilains {
-                get {
-                    try {
-                        return ((string)(this[this.tableSuperVilains.Commentaire_SuperVilainsColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("La valeur pour la colonne \'Commentaire_SuperVilains\' dans la table \'SuperVilains\'" +
-                                " est DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSuperVilains.Commentaire_SuperVilainsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNom_SuperVilainsNull() {
-                return this.IsNull(this.tableSuperVilains.Nom_SuperVilainsColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNom_SuperVilainsNull() {
-                this[this.tableSuperVilains.Nom_SuperVilainsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNombreDeMefaits_SuperVilainssNull() {
-                return this.IsNull(this.tableSuperVilains.NombreDeMefaits_SuperVilainssColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNombreDeMefaits_SuperVilainssNull() {
-                this[this.tableSuperVilains.NombreDeMefaits_SuperVilainssColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsDegats_SuperVilainsNull() {
-                return this.IsNull(this.tableSuperVilains.Degats_SuperVilainsColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetDegats_SuperVilainsNull() {
-                this[this.tableSuperVilains.Degats_SuperVilainsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsScore_SuperVilainsNull() {
-                return this.IsNull(this.tableSuperVilains.Score_SuperVilainsColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetScore_SuperVilainsNull() {
-                this[this.tableSuperVilains.Score_SuperVilainsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsCommentaire_SuperVilainsNull() {
-                return this.IsNull(this.tableSuperVilains.Commentaire_SuperVilainsColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetCommentaire_SuperVilainsNull() {
-                this[this.tableSuperVilains.Commentaire_SuperVilainsColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -778,22 +560,22 @@ namespace Avergers {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class SuperVilainsRowChangeEvent : global::System.EventArgs {
+        public class CivilRowChangeEvent : global::System.EventArgs {
             
-            private SuperVilainsRow eventRow;
+            private CivilRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperVilainsRowChangeEvent(SuperVilainsRow row, global::System.Data.DataRowAction action) {
+            public CivilRowChangeEvent(CivilRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public SuperVilainsRow Row {
+            public CivilRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -809,7 +591,7 @@ namespace Avergers {
         }
     }
 }
-namespace Avergers.AvengersDBDataSetVilainsTableAdapters {
+namespace Avergers.ProjetHeroDataSet2TableAdapters {
     
     
     /// <summary>
@@ -821,7 +603,7 @@ namespace Avergers.AvengersDBDataSetVilainsTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class SuperVilainsTableAdapter : global::System.ComponentModel.Component {
+    public partial class CivilTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -835,7 +617,7 @@ namespace Avergers.AvengersDBDataSetVilainsTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public SuperVilainsTableAdapter() {
+        public CivilTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -932,65 +714,28 @@ namespace Avergers.AvengersDBDataSetVilainsTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "SuperVilains";
-            tableMapping.ColumnMappings.Add("Id_SuperVilains", "Id_SuperVilains");
-            tableMapping.ColumnMappings.Add("Nom_SuperVilains", "Nom_SuperVilains");
-            tableMapping.ColumnMappings.Add("NombreDeMefaits_SuperVilainss", "NombreDeMefaits_SuperVilainss");
-            tableMapping.ColumnMappings.Add("Degats_SuperVilains", "Degats_SuperVilains");
-            tableMapping.ColumnMappings.Add("Score_SuperVilains", "Score_SuperVilains");
-            tableMapping.ColumnMappings.Add("Commentaire_SuperVilains", "Commentaire_SuperVilains");
+            tableMapping.DataSetTable = "Civil";
+            tableMapping.ColumnMappings.Add("Id_civil", "Id_civil");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[SuperVilains] WHERE (([Id_SuperVilains] = @Original_Id_SuperVilains) AND ((@IsNull_Nom_SuperVilains = 1 AND [Nom_SuperVilains] IS NULL) OR ([Nom_SuperVilains] = @Original_Nom_SuperVilains)) AND ((@IsNull_NombreDeMefaits_SuperVilainss = 1 AND [NombreDeMefaits_SuperVilainss] IS NULL) OR ([NombreDeMefaits_SuperVilainss] = @Original_NombreDeMefaits_SuperVilainss)) AND ((@IsNull_Degats_SuperVilains = 1 AND [Degats_SuperVilains] IS NULL) OR ([Degats_SuperVilains] = @Original_Degats_SuperVilains)) AND ((@IsNull_Score_SuperVilains = 1 AND [Score_SuperVilains] IS NULL) OR ([Score_SuperVilains] = @Original_Score_SuperVilains)))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Civil] WHERE (([Id_civil] = @Original_Id_civil))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_SuperVilains", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Nom_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_SuperVilains", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nom_SuperVilains", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_SuperVilains", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NombreDeMefaits_SuperVilainss", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NombreDeMefaits_SuperVilainss", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NombreDeMefaits_SuperVilainss", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NombreDeMefaits_SuperVilainss", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Degats_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Degats_SuperVilains", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Degats_SuperVilains", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Degats_SuperVilains", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Score_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Score_SuperVilains", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Score_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Score_SuperVilains", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[SuperVilains] ([Id_SuperVilains], [Nom_SuperVilains], [NombreDeMefaits_SuperVilainss], [Degats_SuperVilains], [Score_SuperVilains], [Commentaire_SuperVilains]) VALUES (@Id_SuperVilains, @Nom_SuperVilains, @NombreDeMefaits_SuperVilainss, @Degats_SuperVilains, @Score_SuperVilains, @Commentaire_SuperVilains);
-SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_SuperVilains, Score_SuperVilains, Commentaire_SuperVilains FROM SuperVilains WHERE (Id_SuperVilains = @Id_SuperVilains)";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_SuperVilains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nom_SuperVilains", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_SuperVilains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NombreDeMefaits_SuperVilainss", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NombreDeMefaits_SuperVilainss", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Degats_SuperVilains", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Degats_SuperVilains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Score_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Score_SuperVilains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Commentaire_SuperVilains", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Commentaire_SuperVilains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_civil", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_civil", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[SuperVilains] SET [Id_SuperVilains] = @Id_SuperVilains, [Nom_SuperVilains] = @Nom_SuperVilains, [NombreDeMefaits_SuperVilainss] = @NombreDeMefaits_SuperVilainss, [Degats_SuperVilains] = @Degats_SuperVilains, [Score_SuperVilains] = @Score_SuperVilains, [Commentaire_SuperVilains] = @Commentaire_SuperVilains WHERE (([Id_SuperVilains] = @Original_Id_SuperVilains) AND ((@IsNull_Nom_SuperVilains = 1 AND [Nom_SuperVilains] IS NULL) OR ([Nom_SuperVilains] = @Original_Nom_SuperVilains)) AND ((@IsNull_NombreDeMefaits_SuperVilainss = 1 AND [NombreDeMefaits_SuperVilainss] IS NULL) OR ([NombreDeMefaits_SuperVilainss] = @Original_NombreDeMefaits_SuperVilainss)) AND ((@IsNull_Degats_SuperVilains = 1 AND [Degats_SuperVilains] IS NULL) OR ([Degats_SuperVilains] = @Original_Degats_SuperVilains)) AND ((@IsNull_Score_SuperVilains = 1 AND [Score_SuperVilains] IS NULL) OR ([Score_SuperVilains] = @Original_Score_SuperVilains)));
-SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_SuperVilains, Score_SuperVilains, Commentaire_SuperVilains FROM SuperVilains WHERE (Id_SuperVilains = @Id_SuperVilains)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Civil] SET [Id_civil] = @Id_civil WHERE (([Id_civil] = @Original_Id" +
+                "_civil));\r\nSELECT Id_civil FROM Civil WHERE (Id_civil = @Id_civil)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_SuperVilains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nom_SuperVilains", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_SuperVilains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NombreDeMefaits_SuperVilainss", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NombreDeMefaits_SuperVilainss", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Degats_SuperVilains", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Degats_SuperVilains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Score_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Score_SuperVilains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Commentaire_SuperVilains", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Commentaire_SuperVilains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_SuperVilains", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Nom_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_SuperVilains", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nom_SuperVilains", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nom_SuperVilains", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NombreDeMefaits_SuperVilainss", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NombreDeMefaits_SuperVilainss", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NombreDeMefaits_SuperVilainss", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NombreDeMefaits_SuperVilainss", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Degats_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Degats_SuperVilains", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Degats_SuperVilains", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Degats_SuperVilains", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Score_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Score_SuperVilains", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Score_SuperVilains", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Score_SuperVilains", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id_civil", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_civil", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id_civil", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id_civil", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Avergers.Properties.Settings.Default.AvengersDBConnectionString;
+            this._connection.ConnectionString = global::Avergers.Properties.Settings.Default.ProjetHeroConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -999,8 +744,7 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_S" +
-                "uperVilains, Score_SuperVilains, Commentaire_SuperVilains FROM dbo.SuperVilains";
+            this._commandCollection[0].CommandText = "SELECT Id_civil FROM dbo.Civil";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1008,7 +752,7 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(AvengersDBDataSetVilains.SuperVilainsDataTable dataTable) {
+        public virtual int Fill(ProjetHeroDataSet2.CivilDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1021,9 +765,9 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual AvengersDBDataSetVilains.SuperVilainsDataTable GetData() {
+        public virtual ProjetHeroDataSet2.CivilDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            AvengersDBDataSetVilains.SuperVilainsDataTable dataTable = new AvengersDBDataSetVilains.SuperVilainsDataTable();
+            ProjetHeroDataSet2.CivilDataTable dataTable = new ProjetHeroDataSet2.CivilDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1031,15 +775,15 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(AvengersDBDataSetVilains.SuperVilainsDataTable dataTable) {
+        public virtual int Update(ProjetHeroDataSet2.CivilDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(AvengersDBDataSetVilains dataSet) {
-            return this.Adapter.Update(dataSet, "SuperVilains");
+        public virtual int Update(ProjetHeroDataSet2 dataSet) {
+            return this.Adapter.Update(dataSet, "Civil");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1061,40 +805,8 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id_SuperVilains, string Original_Nom_SuperVilains, global::System.Nullable<int> Original_NombreDeMefaits_SuperVilainss, string Original_Degats_SuperVilains, global::System.Nullable<int> Original_Score_SuperVilains) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id_SuperVilains));
-            if ((Original_Nom_SuperVilains == null)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Nom_SuperVilains));
-            }
-            if ((Original_NombreDeMefaits_SuperVilainss.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_NombreDeMefaits_SuperVilainss.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Degats_SuperVilains == null)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Degats_SuperVilains));
-            }
-            if ((Original_Score_SuperVilains.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_Score_SuperVilains.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
+        public virtual int Delete(int Original_Id_civil) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id_civil));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1114,124 +826,10 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int Id_SuperVilains, string Nom_SuperVilains, global::System.Nullable<int> NombreDeMefaits_SuperVilainss, string Degats_SuperVilains, global::System.Nullable<int> Score_SuperVilains, string Commentaire_SuperVilains) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Id_SuperVilains));
-            if ((Nom_SuperVilains == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Nom_SuperVilains));
-            }
-            if ((NombreDeMefaits_SuperVilainss.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((int)(NombreDeMefaits_SuperVilainss.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            if ((Degats_SuperVilains == null)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Degats_SuperVilains));
-            }
-            if ((Score_SuperVilains.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(Score_SuperVilains.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((Commentaire_SuperVilains == null)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Commentaire_SuperVilains));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int Id_SuperVilains, string Nom_SuperVilains, global::System.Nullable<int> NombreDeMefaits_SuperVilainss, string Degats_SuperVilains, global::System.Nullable<int> Score_SuperVilains, string Commentaire_SuperVilains, int Original_Id_SuperVilains, string Original_Nom_SuperVilains, global::System.Nullable<int> Original_NombreDeMefaits_SuperVilainss, string Original_Degats_SuperVilains, global::System.Nullable<int> Original_Score_SuperVilains) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Id_SuperVilains));
-            if ((Nom_SuperVilains == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Nom_SuperVilains));
-            }
-            if ((NombreDeMefaits_SuperVilainss.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(NombreDeMefaits_SuperVilainss.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            if ((Degats_SuperVilains == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Degats_SuperVilains));
-            }
-            if ((Score_SuperVilains.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Score_SuperVilains.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((Commentaire_SuperVilains == null)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Commentaire_SuperVilains));
-            }
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_Id_SuperVilains));
-            if ((Original_Nom_SuperVilains == null)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_Nom_SuperVilains));
-            }
-            if ((Original_NombreDeMefaits_SuperVilainss.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_NombreDeMefaits_SuperVilainss.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Degats_SuperVilains == null)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_Degats_SuperVilains));
-            }
-            if ((Original_Score_SuperVilains.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_Score_SuperVilains.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
-            }
+        public virtual int Update(int Id_civil, int Original_Id_civil) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Id_civil));
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Original_Id_civil));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1252,8 +850,8 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Nom_SuperVilains, global::System.Nullable<int> NombreDeMefaits_SuperVilainss, string Degats_SuperVilains, global::System.Nullable<int> Score_SuperVilains, string Commentaire_SuperVilains, int Original_Id_SuperVilains, string Original_Nom_SuperVilains, global::System.Nullable<int> Original_NombreDeMefaits_SuperVilainss, string Original_Degats_SuperVilains, global::System.Nullable<int> Original_Score_SuperVilains) {
-            return this.Update(Original_Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_SuperVilains, Score_SuperVilains, Commentaire_SuperVilains, Original_Id_SuperVilains, Original_Nom_SuperVilains, Original_NombreDeMefaits_SuperVilainss, Original_Degats_SuperVilains, Original_Score_SuperVilains);
+        public virtual int Update(int Original_Id_civil) {
+            return this.Update(Original_Id_civil, Original_Id_civil);
         }
     }
     
@@ -1269,7 +867,7 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
         
         private UpdateOrderOption _updateOrder;
         
-        private SuperVilainsTableAdapter _superVilainsTableAdapter;
+        private CivilTableAdapter _civilTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1291,12 +889,12 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public SuperVilainsTableAdapter SuperVilainsTableAdapter {
+        public CivilTableAdapter CivilTableAdapter {
             get {
-                return this._superVilainsTableAdapter;
+                return this._civilTableAdapter;
             }
             set {
-                this._superVilainsTableAdapter = value;
+                this._civilTableAdapter = value;
             }
         }
         
@@ -1319,9 +917,9 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._superVilainsTableAdapter != null) 
-                            && (this._superVilainsTableAdapter.Connection != null))) {
-                    return this._superVilainsTableAdapter.Connection;
+                if (((this._civilTableAdapter != null) 
+                            && (this._civilTableAdapter.Connection != null))) {
+                    return this._civilTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1336,7 +934,7 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._superVilainsTableAdapter != null)) {
+                if ((this._civilTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1348,14 +946,14 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(AvengersDBDataSetVilains dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(ProjetHeroDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._superVilainsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.SuperVilains.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._civilTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Civil.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._superVilainsTableAdapter.Update(updatedRows));
+                    result = (result + this._civilTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1367,13 +965,13 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(AvengersDBDataSetVilains dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(ProjetHeroDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._superVilainsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.SuperVilains.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._civilTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Civil.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._superVilainsTableAdapter.Update(addedRows));
+                    result = (result + this._civilTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1385,13 +983,13 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(AvengersDBDataSetVilains dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(ProjetHeroDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._superVilainsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.SuperVilains.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._civilTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Civil.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._superVilainsTableAdapter.Update(deletedRows));
+                    result = (result + this._civilTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1427,15 +1025,15 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(AvengersDBDataSetVilains dataSet) {
+        public virtual int UpdateAll(ProjetHeroDataSet2 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._superVilainsTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._superVilainsTableAdapter.Connection) == false))) {
+            if (((this._civilTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._civilTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Tous les TableAdapters managés par un TableAdapterManager doivent utiliser la mêm" +
                         "e chaîne de connexion.");
             }
@@ -1473,13 +1071,13 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._superVilainsTableAdapter != null)) {
-                    revertConnections.Add(this._superVilainsTableAdapter, this._superVilainsTableAdapter.Connection);
-                    this._superVilainsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._superVilainsTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._superVilainsTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._superVilainsTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._superVilainsTableAdapter.Adapter);
+                if ((this._civilTableAdapter != null)) {
+                    revertConnections.Add(this._civilTableAdapter, this._civilTableAdapter.Connection);
+                    this._civilTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._civilTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._civilTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._civilTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._civilTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1540,9 +1138,9 @@ SELECT Id_SuperVilains, Nom_SuperVilains, NombreDeMefaits_SuperVilainss, Degats_
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._superVilainsTableAdapter != null)) {
-                    this._superVilainsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._superVilainsTableAdapter]));
-                    this._superVilainsTableAdapter.Transaction = null;
+                if ((this._civilTableAdapter != null)) {
+                    this._civilTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._civilTableAdapter]));
+                    this._civilTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
