@@ -38,9 +38,22 @@ namespace Avergers
             
         }
 
-        private void Prenom_TextChanged(object sender, EventArgs e)
+        private void search_Click(object sender, EventArgs e)
         {
-            //if(e.)
+            try
+            {
+                if(comboSearchBy.Text == "Id")
+                {
+                    conn.Open();
+                    string query = "SELECT Id_civil, Nom, Prenom, Adresse, Date_Naissance FROM Civil WHERE Prenom = '"+input+"'";
+                    SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
+
+                }
+            }
+            catch(Exception e1)
+            {
+                MessageBox.Show(e1.Message);
+            }
         }
     }
 }
