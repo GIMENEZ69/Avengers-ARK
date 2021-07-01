@@ -108,6 +108,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetCivil.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSetCivilDatagriedIncident.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetCivilDatagriedIncident.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSetCmbIdCivilOrg.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -249,6 +254,17 @@
     </None>
     <None Include="ProjetHeroDataSetCivil.xss">
       <DependentUpon>ProjetHeroDataSetCivil.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetCivilDatagriedIncident.xsc">
+      <DependentUpon>ProjetHeroDataSetCivilDatagriedIncident.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetCivilDatagriedIncident.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetCivilDatagriedIncident.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetCivilDatagriedIncident.xss">
+      <DependentUpon>ProjetHeroDataSetCivilDatagriedIncident.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSetCmbIdCivilOrg.xsc">
       <DependentUpon>ProjetHeroDataSetCmbIdCivilOrg.xsd</DependentUpon>

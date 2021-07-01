@@ -54,6 +54,7 @@ namespace Avergers
             this.CmdGestion.TabIndex = 4;
             this.CmdGestion.Text = "Gérer les missions et les incidents";
             this.CmdGestion.UseVisualStyleBackColor = true;
+            this.CmdGestion.Click += new System.EventHandler(this.CmdGestion_Click);
             // 
             // CmdCreation
             // 
