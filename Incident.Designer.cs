@@ -1,4 +1,6 @@
-﻿namespace Avergers
+﻿using System;
+
+namespace Avergers
 {
     partial class Incident
     {
@@ -28,6 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.GroupBoxInci = new System.Windows.Forms.GroupBox();
             this.CmbInterSH = new System.Windows.Forms.ComboBox();
             this.CmbTypeIncident = new System.Windows.Forms.ComboBox();
@@ -42,16 +45,45 @@
             this.CmdValider = new System.Windows.Forms.Button();
             this.CmdQuitter = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Prenom = new System.Windows.Forms.TextBox();
-            this.Adresse = new System.Windows.Forms.TextBox();
-            this.Nom = new System.Windows.Forms.TextBox();
-            this.IdDéclarant = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtsearch = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idcivilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prenomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datenaissanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.civilBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSetok = new Avergers.ProjetHeroDataSetok();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.search = new System.Windows.Forms.Label();
+            this.ColonneId = new System.Windows.Forms.Label();
+            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSetlabraize = new Avergers.ProjetHeroDataSetlabraize();
+            this.civilBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet16 = new Avergers.ProjetHeroDataSet16();
+            this.civilBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSetnum = new Avergers.ProjetHeroDataSetnum();
+            this.civilTableAdapter = new Avergers.ProjetHeroDataSetlabraizeTableAdapters.CivilTableAdapter();
+            this.civilTableAdapter1 = new Avergers.ProjetHeroDataSetnumTableAdapters.CivilTableAdapter();
+            this.civilTableAdapter2 = new Avergers.ProjetHeroDataSet16TableAdapters.CivilTableAdapter();
+            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
+            this.civilTableAdapter3 = new Avergers.ProjetHeroDataSetokTableAdapters.CivilTableAdapter();
+            this.projetHeroDataSet17 = new Avergers.ProjetHeroDataSet17();
+            this.civilBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.civilTableAdapter4 = new Avergers.ProjetHeroDataSet17TableAdapters.CivilTableAdapter();
             this.GroupBoxInci.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetok)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetlabraize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetnum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // GroupBoxInci
@@ -66,7 +98,7 @@
             this.GroupBoxInci.Controls.Add(this.label9);
             this.GroupBoxInci.Controls.Add(this.label10);
             this.GroupBoxInci.Controls.Add(this.label11);
-            this.GroupBoxInci.Location = new System.Drawing.Point(12, 146);
+            this.GroupBoxInci.Location = new System.Drawing.Point(47, 337);
             this.GroupBoxInci.Name = "GroupBoxInci";
             this.GroupBoxInci.Size = new System.Drawing.Size(685, 194);
             this.GroupBoxInci.TabIndex = 14;
@@ -121,6 +153,7 @@
             this.AdresseIncident.Name = "AdresseIncident";
             this.AdresseIncident.Size = new System.Drawing.Size(123, 20);
             this.AdresseIncident.TabIndex = 8;
+            this.AdresseIncident.TextChanged += new System.EventHandler(this.AdresseIncident_TextChanged);
             // 
             // label7
             // 
@@ -169,7 +202,7 @@
             // 
             // CmdValider
             // 
-            this.CmdValider.Location = new System.Drawing.Point(121, 370);
+            this.CmdValider.Location = new System.Drawing.Point(106, 570);
             this.CmdValider.Name = "CmdValider";
             this.CmdValider.Size = new System.Drawing.Size(125, 43);
             this.CmdValider.TabIndex = 13;
@@ -178,7 +211,7 @@
             // 
             // CmdQuitter
             // 
-            this.CmdQuitter.Location = new System.Drawing.Point(499, 370);
+            this.CmdQuitter.Location = new System.Drawing.Point(481, 570);
             this.CmdQuitter.Name = "CmdQuitter";
             this.CmdQuitter.Size = new System.Drawing.Size(125, 43);
             this.CmdQuitter.TabIndex = 12;
@@ -187,101 +220,219 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.Prenom);
-            this.groupBox1.Controls.Add(this.Adresse);
-            this.groupBox1.Controls.Add(this.Nom);
-            this.groupBox1.Controls.Add(this.IdDéclarant);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.txtsearch);
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.search);
+            this.groupBox1.Controls.Add(this.ColonneId);
             this.groupBox1.Location = new System.Drawing.Point(12, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(685, 108);
+            this.groupBox1.Size = new System.Drawing.Size(684, 261);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Le déclarant";
             // 
-            // Prenom
+            // txtsearch
             // 
-            this.Prenom.Location = new System.Drawing.Point(425, 26);
-            this.Prenom.Name = "Prenom";
-            this.Prenom.Size = new System.Drawing.Size(126, 20);
-            this.Prenom.TabIndex = 8;
+            this.txtsearch.Location = new System.Drawing.Point(519, 20);
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Size = new System.Drawing.Size(119, 20);
+            this.txtsearch.TabIndex = 11;
+            this.txtsearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtsearch_KeyDown);
             // 
-            // Adresse
+            // dataGridView1
             // 
-            this.Adresse.Location = new System.Drawing.Point(425, 63);
-            this.Adresse.Name = "Adresse";
-            this.Adresse.Size = new System.Drawing.Size(126, 20);
-            this.Adresse.TabIndex = 8;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idcivilDataGridViewTextBoxColumn,
+            this.nomDataGridViewTextBoxColumn,
+            this.prenomDataGridViewTextBoxColumn,
+            this.adresseDataGridViewTextBoxColumn,
+            this.datenaissanceDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.civilBindingSource4;
+            this.dataGridView1.Location = new System.Drawing.Point(55, 72);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(584, 169);
+            this.dataGridView1.TabIndex = 10;
             // 
-            // Nom
+            // idcivilDataGridViewTextBoxColumn
             // 
-            this.Nom.Location = new System.Drawing.Point(142, 63);
-            this.Nom.Name = "Nom";
-            this.Nom.Size = new System.Drawing.Size(126, 20);
-            this.Nom.TabIndex = 7;
+            this.idcivilDataGridViewTextBoxColumn.DataPropertyName = "Id_civil";
+            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id civil";
+            this.idcivilDataGridViewTextBoxColumn.Name = "idcivilDataGridViewTextBoxColumn";
+            this.idcivilDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // IdDéclarant
+            // nomDataGridViewTextBoxColumn
             // 
-            this.IdDéclarant.Location = new System.Drawing.Point(142, 26);
-            this.IdDéclarant.Name = "IdDéclarant";
-            this.IdDéclarant.Size = new System.Drawing.Size(126, 20);
-            this.IdDéclarant.TabIndex = 6;
+            this.nomDataGridViewTextBoxColumn.DataPropertyName = "Nom";
+            this.nomDataGridViewTextBoxColumn.HeaderText = "Nom";
+            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
+            this.nomDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // label4
+            // prenomDataGridViewTextBoxColumn
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(365, 66);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Adresse  :";
+            this.prenomDataGridViewTextBoxColumn.DataPropertyName = "Prenom";
+            this.prenomDataGridViewTextBoxColumn.HeaderText = "Prenom";
+            this.prenomDataGridViewTextBoxColumn.Name = "prenomDataGridViewTextBoxColumn";
+            this.prenomDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // label3
+            // adresseDataGridViewTextBoxColumn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(308, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Prénom du déclarant :";
+            this.adresseDataGridViewTextBoxColumn.DataPropertyName = "Adresse";
+            this.adresseDataGridViewTextBoxColumn.HeaderText = "Adresse";
+            this.adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
+            this.adresseDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // label2
+            // datenaissanceDataGridViewTextBoxColumn
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nom du déclarant :";
+            this.datenaissanceDataGridViewTextBoxColumn.DataPropertyName = "Date_naissance";
+            this.datenaissanceDataGridViewTextBoxColumn.HeaderText = "Date naissance";
+            this.datenaissanceDataGridViewTextBoxColumn.Name = "datenaissanceDataGridViewTextBoxColumn";
+            this.datenaissanceDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // label1
+            // civilBindingSource3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Id du déclarant :";
+            this.civilBindingSource3.DataMember = "Civil";
+            this.civilBindingSource3.DataSource = this.projetHeroDataSetok;
+            // 
+            // projetHeroDataSetok
+            // 
+            this.projetHeroDataSetok.DataSetName = "ProjetHeroDataSetok";
+            this.projetHeroDataSetok.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Nom",
+            "Prenom",
+            "Adresse"});
+            this.comboBox1.Location = new System.Drawing.Point(189, 23);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(79, 21);
+            this.comboBox1.TabIndex = 9;
+            // 
+            // search
+            // 
+            this.search.AutoSize = true;
+            this.search.Location = new System.Drawing.Point(365, 26);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(128, 13);
+            this.search.TabIndex = 2;
+            this.search.Text = "Definition de la recherche";
+            // 
+            // ColonneId
+            // 
+            this.ColonneId.AutoSize = true;
+            this.ColonneId.Location = new System.Drawing.Point(52, 29);
+            this.ColonneId.Name = "ColonneId";
+            this.ColonneId.Size = new System.Drawing.Size(120, 13);
+            this.ColonneId.TabIndex = 0;
+            this.ColonneId.Text = "Selection de recherche:";
+            // 
+            // civilBindingSource
+            // 
+            this.civilBindingSource.DataMember = "Civil";
+            this.civilBindingSource.DataSource = this.projetHeroDataSetlabraize;
+            // 
+            // projetHeroDataSetlabraize
+            // 
+            this.projetHeroDataSetlabraize.DataSetName = "ProjetHeroDataSetlabraize";
+            this.projetHeroDataSetlabraize.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // civilBindingSource2
+            // 
+            this.civilBindingSource2.DataMember = "Civil";
+            this.civilBindingSource2.DataSource = this.projetHeroDataSet16;
+            // 
+            // projetHeroDataSet16
+            // 
+            this.projetHeroDataSet16.DataSetName = "ProjetHeroDataSet16";
+            this.projetHeroDataSet16.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // civilBindingSource1
+            // 
+            this.civilBindingSource1.DataMember = "Civil";
+            this.civilBindingSource1.DataSource = this.projetHeroDataSetnum;
+            // 
+            // projetHeroDataSetnum
+            // 
+            this.projetHeroDataSetnum.DataSetName = "ProjetHeroDataSetnum";
+            this.projetHeroDataSetnum.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // civilTableAdapter
+            // 
+            this.civilTableAdapter.ClearBeforeFill = true;
+            // 
+            // civilTableAdapter1
+            // 
+            this.civilTableAdapter1.ClearBeforeFill = true;
+            // 
+            // civilTableAdapter2
+            // 
+            this.civilTableAdapter2.ClearBeforeFill = true;
+            // 
+            // fillByToolStrip
+            // 
+            this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.fillByToolStrip.Name = "fillByToolStrip";
+            this.fillByToolStrip.Size = new System.Drawing.Size(762, 25);
+            this.fillByToolStrip.TabIndex = 15;
+            this.fillByToolStrip.Text = "fillByToolStrip";
+            // 
+            // civilTableAdapter3
+            // 
+            this.civilTableAdapter3.ClearBeforeFill = true;
+            // 
+            // projetHeroDataSet17
+            // 
+            this.projetHeroDataSet17.DataSetName = "ProjetHeroDataSet17";
+            this.projetHeroDataSet17.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // civilBindingSource4
+            // 
+            this.civilBindingSource4.DataMember = "Civil";
+            this.civilBindingSource4.DataSource = this.projetHeroDataSet17;
+            // 
+            // civilTableAdapter4
+            // 
+            this.civilTableAdapter4.ClearBeforeFill = true;
             // 
             // Incident
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 428);
+            this.ClientSize = new System.Drawing.Size(762, 672);
+            this.Controls.Add(this.fillByToolStrip);
             this.Controls.Add(this.GroupBoxInci);
             this.Controls.Add(this.CmdValider);
             this.Controls.Add(this.CmdQuitter);
             this.Controls.Add(this.groupBox1);
             this.Name = "Incident";
             this.Text = "Incident";
+            this.Load += new System.EventHandler(this.Incident_Load_1);
             this.GroupBoxInci.ResumeLayout(false);
             this.GroupBoxInci.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetok)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetlabraize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetnum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource4)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -301,13 +452,33 @@
         private System.Windows.Forms.Button CmdValider;
         private System.Windows.Forms.Button CmdQuitter;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox Prenom;
-        private System.Windows.Forms.TextBox Adresse;
-        private System.Windows.Forms.TextBox Nom;
-        private System.Windows.Forms.TextBox IdDéclarant;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label search;
+        private System.Windows.Forms.Label ColonneId;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private ProjetHeroDataSetlabraize projetHeroDataSetlabraize;
+        private System.Windows.Forms.BindingSource civilBindingSource;
+        private ProjetHeroDataSetlabraizeTableAdapters.CivilTableAdapter civilTableAdapter;
+        private ProjetHeroDataSetnum projetHeroDataSetnum;
+        private System.Windows.Forms.BindingSource civilBindingSource1;
+        private ProjetHeroDataSetnumTableAdapters.CivilTableAdapter civilTableAdapter1;
+        private ProjetHeroDataSet16 projetHeroDataSet16;
+        private System.Windows.Forms.BindingSource civilBindingSource2;
+        private ProjetHeroDataSet16TableAdapters.CivilTableAdapter civilTableAdapter2;
+        private System.Windows.Forms.ToolStrip fillByToolStrip;
+        private System.Windows.Forms.TextBox txtsearch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idcivilDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenomDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adresseDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datenaissanceDataGridViewTextBoxColumn;
+        private ProjetHeroDataSetok projetHeroDataSetok;
+        private System.Windows.Forms.BindingSource civilBindingSource3;
+        private ProjetHeroDataSetokTableAdapters.CivilTableAdapter civilTableAdapter3;
+        private ProjetHeroDataSet17 projetHeroDataSet17;
+        private System.Windows.Forms.BindingSource civilBindingSource4;
+        private ProjetHeroDataSet17TableAdapters.CivilTableAdapter civilTableAdapter4;
+
+        public EventHandler txtsearch_TextChanged { get; private set; }
     }
 }

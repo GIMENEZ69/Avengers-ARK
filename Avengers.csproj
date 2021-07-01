@@ -128,6 +128,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet15.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet17.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -182,6 +192,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetFKIdCivil.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetlabraize.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetlabraize.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetnum.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetnum.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetok.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetok.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProjetHeroDataSetVilain.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -354,6 +379,28 @@
     <None Include="ProjetHeroDataSet15.xss">
       <DependentUpon>ProjetHeroDataSet15.xsd</DependentUpon>
     </None>
+    <None Include="ProjetHeroDataSet16.xsc">
+      <DependentUpon>ProjetHeroDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet16.xss">
+      <DependentUpon>ProjetHeroDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet17.xsc">
+      <DependentUpon>ProjetHeroDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet17.xss">
+      <DependentUpon>ProjetHeroDataSet17.xsd</DependentUpon>
+    </None>
     <None Include="ProjetHeroDataSet2.xsc">
       <DependentUpon>ProjetHeroDataSet2.xsd</DependentUpon>
     </None>
@@ -474,6 +521,39 @@
     </None>
     <None Include="ProjetHeroDataSetFKIdCivil.xss">
       <DependentUpon>ProjetHeroDataSetFKIdCivil.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetlabraize.xsc">
+      <DependentUpon>ProjetHeroDataSetlabraize.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetlabraize.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetlabraize.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetlabraize.xss">
+      <DependentUpon>ProjetHeroDataSetlabraize.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetnum.xsc">
+      <DependentUpon>ProjetHeroDataSetnum.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetnum.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetnum.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetnum.xss">
+      <DependentUpon>ProjetHeroDataSetnum.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetok.xsc">
+      <DependentUpon>ProjetHeroDataSetok.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetok.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetok.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetok.xss">
+      <DependentUpon>ProjetHeroDataSetok.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSetVilain.xsc">
       <DependentUpon>ProjetHeroDataSetVilain.xsd</DependentUpon>

@@ -87,5 +87,15 @@ namespace Avergers
             DateTimeAjout.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
             DateTimeModif.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
         }
+
+        private void Nom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Membre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
