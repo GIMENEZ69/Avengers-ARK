@@ -39,8 +39,8 @@ namespace Avergers
             try
             {
                 conn.Open();
-                string query = "INSERT INTO Civil (Id_civil,            Nom,                    Prenom,              Adresse,        Date_naissance,            Date_deces,          Date_ajout,                Date_modification) " +
-                    "VALUES(                      '" + Id.Text + "', '" + Nom.Text + "','" + Prenom.Text + "', '" + Adresse.Text + "', '" + DateTimeNaissance.Text + "', '" + DateTimeDeces.Text + "', '" + DateTimeAjout.Text + "', '" + DateTimeModif.Text + "')";
+                string query = "INSERT INTO Civil (Id_civil,            Nom,                    Prenom,                 Adresse,                           Date_naissance,                                    Date_ajout,                       Date_modification) " +
+                    "VALUES(                      '" +      Id.Text + "', '" + Nom.Text + "','" + Prenom.Text + "', '" + Adresse.Text + "', '" + DateTimeNaissance.Text + "', '" + DateTimeAjout.Text + "', '" + DateTimeModif.Text + "')";
                 SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
                 SDA.SelectCommand.ExecuteNonQuery();
                 conn.Close();
@@ -66,7 +66,7 @@ namespace Avergers
         private void CmdMaj_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "UPDATE Civil SET Nom = '" + Nom.Text + "', Prenom = '" + Prenom.Text + "', Adresse = '" + Adresse.Text + "', Date_naissance = '" +DateTimeNaissance.Text + "', Date_deces = '" + DateTimeDeces.Text + "', Date_ajout = '" + DateTimeAjout.Text + "', Date_modification = '" + DateTimeModif.Text + "' WHERE Id_civil = '" + Id.Text + "'";
+            string query = "UPDATE Civil SET Nom = '" + Nom.Text + "', Prenom = '" + Prenom.Text + "', Adresse = '" + Adresse.Text + "', Date_naissance = '" +DateTimeNaissance.Text + "', Date_ajout = '" + DateTimeAjout.Text + "', Date_modification = '" + DateTimeModif.Text + "' WHERE Id_civil = '" + Id.Text + "'";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();

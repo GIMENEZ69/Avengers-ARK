@@ -36,7 +36,6 @@ namespace Avergers
             this.CmdMaj = new System.Windows.Forms.Button();
             this.CmdCréer = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.DateTimeDeces = new System.Windows.Forms.DateTimePicker();
             this.DateTimeModif = new System.Windows.Forms.DateTimePicker();
             this.DateTimeAjout = new System.Windows.Forms.DateTimePicker();
             this.DateTimeNaissance = new System.Windows.Forms.DateTimePicker();
@@ -47,7 +46,6 @@ namespace Avergers
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -136,7 +134,6 @@ namespace Avergers
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.DateTimeDeces);
             this.groupBox1.Controls.Add(this.DateTimeModif);
             this.groupBox1.Controls.Add(this.DateTimeAjout);
             this.groupBox1.Controls.Add(this.DateTimeNaissance);
@@ -147,7 +144,6 @@ namespace Avergers
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -158,14 +154,6 @@ namespace Avergers
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Civils";
-            // 
-            // DateTimeDeces
-            // 
-            this.DateTimeDeces.Location = new System.Drawing.Point(434, 85);
-            this.DateTimeDeces.Name = "DateTimeDeces";
-            this.DateTimeDeces.Size = new System.Drawing.Size(159, 20);
-            this.DateTimeDeces.TabIndex = 42;
-            this.DateTimeDeces.Value = new System.DateTime(2021, 6, 30, 0, 0, 0, 0);
             // 
             // DateTimeModif
             // 
@@ -245,15 +233,6 @@ namespace Avergers
             this.label9.Size = new System.Drawing.Size(104, 13);
             this.label9.TabIndex = 8;
             this.label9.Text = "Date de Naissance :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(345, 91);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Date de décès :";
             // 
             // label5
             // 
@@ -446,7 +425,6 @@ namespace Avergers
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -504,7 +482,6 @@ namespace Avergers
         private System.Windows.Forms.DataGridViewTextBoxColumn datedecesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateajoutDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn datemodificationDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DateTimePicker DateTimeDeces;
         private System.Windows.Forms.DateTimePicker DateTimeModif;
         private System.Windows.Forms.DateTimePicker DateTimeAjout;
         private System.Windows.Forms.DateTimePicker DateTimeNaissance;

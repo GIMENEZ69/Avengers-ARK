@@ -20,6 +20,8 @@ namespace Avergers
 
         private void Organisations_Load(object sender, EventArgs e)
         {
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet3OrganisationComboIdCivilDirigeant.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.civilTableAdapter1.Fill(this.projetHeroDataSet3OrganisationComboIdCivilDirigeant.Civil);
             // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet3OrganisationIdCivilDirigeantCombobox.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
             this.civilTableAdapter.Fill(this.projetHeroDataSet3OrganisationIdCivilDirigeantCombobox.Civil);
             // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetOrganisationDataGridView.Organisation'. Vous pouvez la déplacer ou la supprimer selon les besoins.

@@ -113,6 +113,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet3ComboIdCivilSuperVilain.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSet3OrganisationIdCivilDirigeantCombobox.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -285,6 +290,17 @@
     </None>
     <None Include="ProjetHeroDataSet3ComboIdCivilSuperVilain.xss">
       <DependentUpon>ProjetHeroDataSet3ComboIdCivilSuperVilain.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.xsc">
+      <DependentUpon>ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.xss">
+      <DependentUpon>ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSet3OrganisationIdCivilDirigeantCombobox.xsc">
       <DependentUpon>ProjetHeroDataSet3OrganisationIdCivilDirigeantCombobox.xsd</DependentUpon>
