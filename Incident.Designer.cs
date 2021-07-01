@@ -79,7 +79,7 @@
             this.CmbInterSH.Items.AddRange(new object[] {
             "Oui",
             "Non"});
-            this.CmbInterSH.Location = new System.Drawing.Point(109, 103);
+            this.CmbInterSH.Location = new System.Drawing.Point(21, 98);
             this.CmbInterSH.Name = "CmbInterSH";
             this.CmbInterSH.Size = new System.Drawing.Size(139, 21);
             this.CmbInterSH.TabIndex = 13;
@@ -103,21 +103,21 @@
             this.CmbSV.Items.AddRange(new object[] {
             "Oui",
             "Non"});
-            this.CmbSV.Location = new System.Drawing.Point(514, 103);
+            this.CmbSV.Location = new System.Drawing.Point(383, 98);
             this.CmbSV.Name = "CmbSV";
             this.CmbSV.Size = new System.Drawing.Size(123, 21);
             this.CmbSV.TabIndex = 11;
             // 
             // DateTimeIncident
             // 
-            this.DateTimeIncident.Location = new System.Drawing.Point(514, 63);
+            this.DateTimeIncident.Location = new System.Drawing.Point(368, 63);
             this.DateTimeIncident.Name = "DateTimeIncident";
             this.DateTimeIncident.Size = new System.Drawing.Size(123, 20);
             this.DateTimeIncident.TabIndex = 10;
             // 
             // AdresseIncident
             // 
-            this.AdresseIncident.Location = new System.Drawing.Point(514, 27);
+            this.AdresseIncident.Location = new System.Drawing.Point(368, 19);
             this.AdresseIncident.Name = "AdresseIncident";
             this.AdresseIncident.Size = new System.Drawing.Size(123, 20);
             this.AdresseIncident.TabIndex = 8;
@@ -125,7 +125,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(328, 106);
+            this.label7.Location = new System.Drawing.Point(197, 101);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(180, 13);
             this.label7.TabIndex = 5;
@@ -134,7 +134,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(410, 70);
+            this.label8.Location = new System.Drawing.Point(264, 70);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(98, 13);
             this.label8.TabIndex = 4;
@@ -143,7 +143,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(454, 29);
+            this.label9.Location = new System.Drawing.Point(308, 26);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(54, 13);
             this.label9.TabIndex = 3;
@@ -175,6 +175,7 @@
             this.CmdValider.TabIndex = 13;
             this.CmdValider.Text = "Valider";
             this.CmdValider.UseVisualStyleBackColor = true;
+            this.CmdValider.Click += new System.EventHandler(this.CmdValider_Click);
             // 
             // CmdQuitter
             // 
