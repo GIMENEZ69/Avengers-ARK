@@ -39,9 +39,9 @@ namespace Avergers
             // CmdCivils
             // 
             this.CmdCivils.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.CmdCivils.Font = new System.Drawing.Font("Tempus Sans ITC", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdCivils.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmdCivils.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.CmdCivils.Location = new System.Drawing.Point(249, 226);
+            this.CmdCivils.Location = new System.Drawing.Point(226, 200);
             this.CmdCivils.Name = "CmdCivils";
             this.CmdCivils.Size = new System.Drawing.Size(194, 73);
             this.CmdCivils.TabIndex = 0;
@@ -52,9 +52,9 @@ namespace Avergers
             // CmdSH
             // 
             this.CmdSH.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.CmdSH.Font = new System.Drawing.Font("Tempus Sans ITC", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdSH.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmdSH.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.CmdSH.Location = new System.Drawing.Point(546, 226);
+            this.CmdSH.Location = new System.Drawing.Point(572, 200);
             this.CmdSH.Name = "CmdSH";
             this.CmdSH.Size = new System.Drawing.Size(194, 73);
             this.CmdSH.TabIndex = 1;
@@ -65,9 +65,9 @@ namespace Avergers
             // CmdOrg
             // 
             this.CmdOrg.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.CmdOrg.Font = new System.Drawing.Font("Tempus Sans ITC", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdOrg.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmdOrg.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.CmdOrg.Location = new System.Drawing.Point(249, 351);
+            this.CmdOrg.Location = new System.Drawing.Point(226, 351);
             this.CmdOrg.Name = "CmdOrg";
             this.CmdOrg.Size = new System.Drawing.Size(194, 73);
             this.CmdOrg.TabIndex = 2;
@@ -78,9 +78,9 @@ namespace Avergers
             // CmdSV
             // 
             this.CmdSV.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.CmdSV.Font = new System.Drawing.Font("Tempus Sans ITC", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdSV.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmdSV.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.CmdSV.Location = new System.Drawing.Point(546, 351);
+            this.CmdSV.Location = new System.Drawing.Point(572, 351);
             this.CmdSV.Name = "CmdSV";
             this.CmdSV.Size = new System.Drawing.Size(194, 73);
             this.CmdSV.TabIndex = 3;
@@ -90,7 +90,7 @@ namespace Avergers
             // 
             // CmdQuitter
             // 
-            this.CmdQuitter.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdQuitter.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmdQuitter.Location = new System.Drawing.Point(432, 517);
             this.CmdQuitter.Name = "CmdQuitter";
             this.CmdQuitter.Size = new System.Drawing.Size(102, 35);
@@ -99,7 +99,7 @@ namespace Avergers
             this.CmdQuitter.UseVisualStyleBackColor = true;
             this.CmdQuitter.Click += new System.EventHandler(this.CmdQuitter_Click);
             // 
-            // Menu
+            // MenuAdminCreat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -112,7 +112,7 @@ namespace Avergers
             this.Controls.Add(this.CmdSH);
             this.Controls.Add(this.CmdCivils);
             this.DoubleBuffered = true;
-            this.Name = "Menu";
+            this.Name = "MenuAdminCreat";
             this.Text = "Menu";
             this.ResumeLayout(false);
 

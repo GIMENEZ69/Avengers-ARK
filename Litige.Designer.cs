@@ -43,36 +43,40 @@ namespace Avergers
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 31);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(66, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.Size = new System.Drawing.Size(92, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Type de litige :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 70);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(69, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.Size = new System.Drawing.Size(90, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Coût du litige :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 106);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(46, 98);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 13);
+            this.label3.Size = new System.Drawing.Size(116, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nom de la victime :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(12, 145);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(256, 13);
+            this.label4.Size = new System.Drawing.Size(311, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Veuillez décrire les causes et les demandes du litige :";
             // 
@@ -85,7 +89,7 @@ namespace Avergers
             "Propriété privée",
             "Propriété publique",
             "Autres"});
-            this.CmbTypeLitige.Location = new System.Drawing.Point(114, 28);
+            this.CmbTypeLitige.Location = new System.Drawing.Point(164, 20);
             this.CmbTypeLitige.Name = "CmbTypeLitige";
             this.CmbTypeLitige.Size = new System.Drawing.Size(149, 21);
             this.CmbTypeLitige.TabIndex = 4;
@@ -93,14 +97,14 @@ namespace Avergers
             // CmbNomVictime
             // 
             this.CmbNomVictime.FormattingEnabled = true;
-            this.CmbNomVictime.Location = new System.Drawing.Point(115, 103);
+            this.CmbNomVictime.Location = new System.Drawing.Point(164, 95);
             this.CmbNomVictime.Name = "CmbNomVictime";
             this.CmbNomVictime.Size = new System.Drawing.Size(149, 21);
             this.CmbNomVictime.TabIndex = 5;
             // 
             // CoutLitige
             // 
-            this.CoutLitige.Location = new System.Drawing.Point(115, 67);
+            this.CoutLitige.Location = new System.Drawing.Point(164, 59);
             this.CoutLitige.Name = "CoutLitige";
             this.CoutLitige.Size = new System.Drawing.Size(149, 20);
             this.CoutLitige.TabIndex = 6;
@@ -115,6 +119,7 @@ namespace Avergers
             // 
             // CmdProceder
             // 
+            this.CmdProceder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmdProceder.Location = new System.Drawing.Point(167, 329);
             this.CmdProceder.Name = "CmdProceder";
             this.CmdProceder.Size = new System.Drawing.Size(142, 45);

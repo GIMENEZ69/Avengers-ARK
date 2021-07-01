@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.GroupBoxInci = new System.Windows.Forms.GroupBox();
             this.CmbInterSH = new System.Windows.Forms.ComboBox();
             this.CmbTypeIncident = new System.Windows.Forms.ComboBox();
@@ -42,16 +43,41 @@
             this.CmdValider = new System.Windows.Forms.Button();
             this.CmdQuitter = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Prenom = new System.Windows.Forms.TextBox();
-            this.Adresse = new System.Windows.Forms.TextBox();
-            this.Nom = new System.Windows.Forms.TextBox();
-            this.IdDéclarant = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.textSearch = new System.Windows.Forms.TextBox();
+            this.cboColonne = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet5 = new Avergers.ProjetHeroDataSet5();
+            this.civilTableAdapter = new Avergers.ProjetHeroDataSet5TableAdapters.CivilTableAdapter();
+            this.Id_civil = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date_naissance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.projetHeroDataSet5BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet4 = new Avergers.ProjetHeroDataSet4();
+            this.projetHeroDataSet4BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet = new Avergers.ProjetHeroDataSet();
+            this.projetHeroDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet_incident = new Avergers.ProjetHeroDataSet_incident();
+            this.civilBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.civilTableAdapter1 = new Avergers.ProjetHeroDataSet_incidentTableAdapters.CivilTableAdapter();
+            this.idcivilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prenomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datenaissanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GroupBoxInci.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet5BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet4BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet_incident)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // GroupBoxInci
@@ -66,7 +92,7 @@
             this.GroupBoxInci.Controls.Add(this.label9);
             this.GroupBoxInci.Controls.Add(this.label10);
             this.GroupBoxInci.Controls.Add(this.label11);
-            this.GroupBoxInci.Location = new System.Drawing.Point(12, 146);
+            this.GroupBoxInci.Location = new System.Drawing.Point(36, 348);
             this.GroupBoxInci.Name = "GroupBoxInci";
             this.GroupBoxInci.Size = new System.Drawing.Size(685, 194);
             this.GroupBoxInci.TabIndex = 14;
@@ -79,7 +105,7 @@
             this.CmbInterSH.Items.AddRange(new object[] {
             "Oui",
             "Non"});
-            this.CmbInterSH.Location = new System.Drawing.Point(109, 103);
+            this.CmbInterSH.Location = new System.Drawing.Point(412, 152);
             this.CmbInterSH.Name = "CmbInterSH";
             this.CmbInterSH.Size = new System.Drawing.Size(139, 21);
             this.CmbInterSH.TabIndex = 13;
@@ -103,73 +129,79 @@
             this.CmbSV.Items.AddRange(new object[] {
             "Oui",
             "Non"});
-            this.CmbSV.Location = new System.Drawing.Point(514, 103);
+            this.CmbSV.Location = new System.Drawing.Point(511, 76);
             this.CmbSV.Name = "CmbSV";
             this.CmbSV.Size = new System.Drawing.Size(123, 21);
             this.CmbSV.TabIndex = 11;
             // 
             // DateTimeIncident
             // 
-            this.DateTimeIncident.Location = new System.Drawing.Point(514, 63);
+            this.DateTimeIncident.Location = new System.Drawing.Point(490, 23);
             this.DateTimeIncident.Name = "DateTimeIncident";
-            this.DateTimeIncident.Size = new System.Drawing.Size(123, 20);
+            this.DateTimeIncident.Size = new System.Drawing.Size(179, 20);
             this.DateTimeIncident.TabIndex = 10;
             // 
             // AdresseIncident
             // 
-            this.AdresseIncident.Location = new System.Drawing.Point(514, 27);
+            this.AdresseIncident.Location = new System.Drawing.Point(109, 76);
             this.AdresseIncident.Name = "AdresseIncident";
-            this.AdresseIncident.Size = new System.Drawing.Size(123, 20);
+            this.AdresseIncident.Size = new System.Drawing.Size(139, 20);
             this.AdresseIncident.TabIndex = 8;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(328, 106);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(287, 76);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(180, 13);
+            this.label7.Size = new System.Drawing.Size(218, 13);
             this.label7.TabIndex = 5;
             this.label7.Text = "Causé par un Super Vilain identifié ? ";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(410, 70);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(365, 29);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 13);
+            this.label8.Size = new System.Drawing.Size(119, 13);
             this.label8.TabIndex = 4;
             this.label8.Text = "Date de l\'incident  :";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(454, 29);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(44, 79);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 13);
+            this.label9.Size = new System.Drawing.Size(64, 13);
             this.label9.TabIndex = 3;
             this.label9.Text = "Adresse  :";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(18, 70);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(153, 155);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(209, 13);
+            this.label10.Size = new System.Drawing.Size(253, 13);
             this.label10.TabIndex = 2;
-            this.label10.Text = "Nécessite l\'intervention s\'un Super-Héros ?";
+            this.label10.Text = "Nécessite l\'intervention d\'un Super-Héros ?";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(18, 29);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(6, 29);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(85, 13);
+            this.label11.Size = new System.Drawing.Size(102, 13);
             this.label11.TabIndex = 1;
             this.label11.Text = "Type d\'incident :";
             // 
             // CmdValider
             // 
-            this.CmdValider.Location = new System.Drawing.Point(121, 370);
+            this.CmdValider.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdValider.Location = new System.Drawing.Point(36, 580);
             this.CmdValider.Name = "CmdValider";
             this.CmdValider.Size = new System.Drawing.Size(125, 43);
             this.CmdValider.TabIndex = 13;
@@ -178,7 +210,8 @@
             // 
             // CmdQuitter
             // 
-            this.CmdQuitter.Location = new System.Drawing.Point(499, 370);
+            this.CmdQuitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdQuitter.Location = new System.Drawing.Point(596, 580);
             this.CmdQuitter.Name = "CmdQuitter";
             this.CmdQuitter.Size = new System.Drawing.Size(125, 43);
             this.CmdQuitter.TabIndex = 12;
@@ -187,13 +220,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.Prenom);
-            this.groupBox1.Controls.Add(this.Adresse);
-            this.groupBox1.Controls.Add(this.Nom);
-            this.groupBox1.Controls.Add(this.IdDéclarant);
-            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.textSearch);
+            this.groupBox1.Controls.Add(this.cboColonne);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 21);
             this.groupBox1.Name = "groupBox1";
@@ -202,85 +231,200 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Le déclarant";
             // 
-            // Prenom
+            // textSearch
             // 
-            this.Prenom.Location = new System.Drawing.Point(425, 26);
-            this.Prenom.Name = "Prenom";
-            this.Prenom.Size = new System.Drawing.Size(126, 20);
-            this.Prenom.TabIndex = 8;
+            this.textSearch.Location = new System.Drawing.Point(436, 26);
+            this.textSearch.Name = "textSearch";
+            this.textSearch.Size = new System.Drawing.Size(157, 20);
+            this.textSearch.TabIndex = 4;
+            this.textSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textSearch_KeyDown);
             // 
-            // Adresse
+            // cboColonne
             // 
-            this.Adresse.Location = new System.Drawing.Point(425, 63);
-            this.Adresse.Name = "Adresse";
-            this.Adresse.Size = new System.Drawing.Size(126, 20);
-            this.Adresse.TabIndex = 8;
-            // 
-            // Nom
-            // 
-            this.Nom.Location = new System.Drawing.Point(142, 63);
-            this.Nom.Name = "Nom";
-            this.Nom.Size = new System.Drawing.Size(126, 20);
-            this.Nom.TabIndex = 7;
-            // 
-            // IdDéclarant
-            // 
-            this.IdDéclarant.Location = new System.Drawing.Point(142, 26);
-            this.IdDéclarant.Name = "IdDéclarant";
-            this.IdDéclarant.Size = new System.Drawing.Size(126, 20);
-            this.IdDéclarant.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(365, 66);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Adresse  :";
+            this.cboColonne.FormattingEnabled = true;
+            this.cboColonne.Items.AddRange(new object[] {
+            "Id_Civil",
+            "Nom",
+            "Prenom",
+            "Adresse",
+            "Date_naissance"});
+            this.cboColonne.Location = new System.Drawing.Point(142, 26);
+            this.cboColonne.Name = "cboColonne";
+            this.cboColonne.Size = new System.Drawing.Size(137, 21);
+            this.cboColonne.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(308, 29);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(349, 29);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 13);
+            this.label3.Size = new System.Drawing.Size(77, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Prénom du déclarant :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nom du déclarant :";
+            this.label3.Text = "Recherche :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 29);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.Size = new System.Drawing.Size(101, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Id du déclarant :";
+            // 
+            // dataGridView
+            // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
+            this.dataGridView.AutoGenerateColumns = false;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id_civil,
+            this.Date_naissance,
+            this.idcivilDataGridViewTextBoxColumn,
+            this.nomDataGridViewTextBoxColumn,
+            this.prenomDataGridViewTextBoxColumn,
+            this.adresseDataGridViewTextBoxColumn,
+            this.datenaissanceDataGridViewTextBoxColumn});
+            this.dataGridView.DataSource = this.civilBindingSource1;
+            this.dataGridView.Location = new System.Drawing.Point(12, 144);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
+            this.dataGridView.Size = new System.Drawing.Size(685, 150);
+            this.dataGridView.TabIndex = 15;
+            // 
+            // civilBindingSource
+            // 
+            this.civilBindingSource.DataMember = "Civil";
+            this.civilBindingSource.DataSource = this.projetHeroDataSet5;
+            // 
+            // projetHeroDataSet5
+            // 
+            this.projetHeroDataSet5.DataSetName = "ProjetHeroDataSet5";
+            this.projetHeroDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // civilTableAdapter
+            // 
+            this.civilTableAdapter.ClearBeforeFill = true;
+            // 
+            // Id_civil
+            // 
+            this.Id_civil.DataPropertyName = "Id_civil";
+            this.Id_civil.HeaderText = "Id Civil";
+            this.Id_civil.Name = "Id_civil";
+            this.Id_civil.Width = 135;
+            // 
+            // Date_naissance
+            // 
+            this.Date_naissance.DataPropertyName = "Date_naissance";
+            this.Date_naissance.HeaderText = "Date de Naissance";
+            this.Date_naissance.Name = "Date_naissance";
+            // 
+            // projetHeroDataSet5BindingSource
+            // 
+            this.projetHeroDataSet5BindingSource.DataSource = this.projetHeroDataSet5;
+            this.projetHeroDataSet5BindingSource.Position = 0;
+            // 
+            // projetHeroDataSet4
+            // 
+            this.projetHeroDataSet4.DataSetName = "ProjetHeroDataSet4";
+            this.projetHeroDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // projetHeroDataSet4BindingSource
+            // 
+            this.projetHeroDataSet4BindingSource.DataSource = this.projetHeroDataSet4;
+            this.projetHeroDataSet4BindingSource.Position = 0;
+            // 
+            // projetHeroDataSet
+            // 
+            this.projetHeroDataSet.DataSetName = "ProjetHeroDataSet";
+            this.projetHeroDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // projetHeroDataSetBindingSource
+            // 
+            this.projetHeroDataSetBindingSource.DataSource = this.projetHeroDataSet;
+            this.projetHeroDataSetBindingSource.Position = 0;
+            // 
+            // projetHeroDataSet_incident
+            // 
+            this.projetHeroDataSet_incident.DataSetName = "ProjetHeroDataSet_incident";
+            this.projetHeroDataSet_incident.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // civilBindingSource1
+            // 
+            this.civilBindingSource1.DataMember = "Civil";
+            this.civilBindingSource1.DataSource = this.projetHeroDataSet_incident;
+            // 
+            // civilTableAdapter1
+            // 
+            this.civilTableAdapter1.ClearBeforeFill = true;
+            // 
+            // idcivilDataGridViewTextBoxColumn
+            // 
+            this.idcivilDataGridViewTextBoxColumn.DataPropertyName = "Id_civil";
+            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id_civil";
+            this.idcivilDataGridViewTextBoxColumn.Name = "idcivilDataGridViewTextBoxColumn";
+            this.idcivilDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomDataGridViewTextBoxColumn
+            // 
+            this.nomDataGridViewTextBoxColumn.DataPropertyName = "Nom";
+            this.nomDataGridViewTextBoxColumn.HeaderText = "Nom";
+            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
+            this.nomDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // prenomDataGridViewTextBoxColumn
+            // 
+            this.prenomDataGridViewTextBoxColumn.DataPropertyName = "Prenom";
+            this.prenomDataGridViewTextBoxColumn.HeaderText = "Prenom";
+            this.prenomDataGridViewTextBoxColumn.Name = "prenomDataGridViewTextBoxColumn";
+            this.prenomDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // adresseDataGridViewTextBoxColumn
+            // 
+            this.adresseDataGridViewTextBoxColumn.DataPropertyName = "Adresse";
+            this.adresseDataGridViewTextBoxColumn.HeaderText = "Adresse";
+            this.adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
+            this.adresseDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // datenaissanceDataGridViewTextBoxColumn
+            // 
+            this.datenaissanceDataGridViewTextBoxColumn.DataPropertyName = "Date_naissance";
+            this.datenaissanceDataGridViewTextBoxColumn.HeaderText = "Date_naissance";
+            this.datenaissanceDataGridViewTextBoxColumn.Name = "datenaissanceDataGridViewTextBoxColumn";
+            this.datenaissanceDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Incident
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 428);
+            this.BackgroundImage = global::Avergers.Properties.Resources.Avengerslogo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(791, 635);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.GroupBoxInci);
             this.Controls.Add(this.CmdValider);
             this.Controls.Add(this.CmdQuitter);
             this.Controls.Add(this.groupBox1);
+            this.DoubleBuffered = true;
             this.Name = "Incident";
             this.Text = "Incident";
+            this.Load += new System.EventHandler(this.Incident_Load);
             this.GroupBoxInci.ResumeLayout(false);
             this.GroupBoxInci.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet5BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet4BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet_incident)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -301,13 +445,28 @@
         private System.Windows.Forms.Button CmdValider;
         private System.Windows.Forms.Button CmdQuitter;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox Prenom;
-        private System.Windows.Forms.TextBox Adresse;
-        private System.Windows.Forms.TextBox Nom;
-        private System.Windows.Forms.TextBox IdDéclarant;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textSearch;
+        private System.Windows.Forms.ComboBox cboColonne;
+        private System.Windows.Forms.DataGridView dataGridView;
+        private ProjetHeroDataSet5 projetHeroDataSet5;
+        private System.Windows.Forms.BindingSource civilBindingSource;
+        private ProjetHeroDataSet5TableAdapters.CivilTableAdapter civilTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id_civil;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date_naissance;
+        private System.Windows.Forms.BindingSource projetHeroDataSetBindingSource;
+        private ProjetHeroDataSet projetHeroDataSet;
+        private System.Windows.Forms.BindingSource projetHeroDataSet5BindingSource;
+        private ProjetHeroDataSet4 projetHeroDataSet4;
+        private System.Windows.Forms.BindingSource projetHeroDataSet4BindingSource;
+        private ProjetHeroDataSet_incident projetHeroDataSet_incident;
+        private System.Windows.Forms.BindingSource civilBindingSource1;
+        private ProjetHeroDataSet_incidentTableAdapters.CivilTableAdapter civilTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idcivilDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenomDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adresseDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datenaissanceDataGridViewTextBoxColumn;
     }
 }

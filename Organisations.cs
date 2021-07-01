@@ -85,5 +85,9 @@ namespace Avergers
             dateajout.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
             datemodif.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
         }
+
+        
+            
+        
     }
 }

@@ -1,7 +1,6 @@
 C:\Users\Aizen\source\repos\Avergers-ARK\bin\Debug\Avergers.exe.config
 C:\Users\Aizen\source\repos\Avergers-ARK\bin\Debug\Avergers.exe
 C:\Users\Aizen\source\repos\Avergers-ARK\bin\Debug\Avergers.pdb
-C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avengers.csproj.AssemblyReference.cache
 C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Civils.resources
 C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Organisations.resources
 C:\Users\Aizen\source\repos\Avergers-ARK\obj\Debug\Avergers.Properties.Resources.resources

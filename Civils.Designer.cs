@@ -92,41 +92,45 @@ namespace Avergers
             // 
             // CmdRead
             // 
+            this.CmdRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmdRead.Location = new System.Drawing.Point(299, 23);
             this.CmdRead.Name = "CmdRead";
             this.CmdRead.Size = new System.Drawing.Size(109, 40);
             this.CmdRead.TabIndex = 3;
-            this.CmdRead.Text = "Lire le civil";
+            this.CmdRead.Text = "Lire civil";
             this.CmdRead.UseVisualStyleBackColor = true;
             this.CmdRead.Click += new System.EventHandler(this.CmdRead_Click);
             // 
             // CmdSupp
             // 
-            this.CmdSupp.Location = new System.Drawing.Point(759, 24);
+            this.CmdSupp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdSupp.Location = new System.Drawing.Point(745, 23);
             this.CmdSupp.Name = "CmdSupp";
-            this.CmdSupp.Size = new System.Drawing.Size(109, 40);
+            this.CmdSupp.Size = new System.Drawing.Size(113, 40);
             this.CmdSupp.TabIndex = 2;
-            this.CmdSupp.Text = "Supprimer le Civil";
+            this.CmdSupp.Text = "Supprimer Civil";
             this.CmdSupp.UseVisualStyleBackColor = true;
             this.CmdSupp.Click += new System.EventHandler(this.CmdSupp_Click);
             // 
             // CmdMaj
             // 
+            this.CmdMaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmdMaj.Location = new System.Drawing.Point(533, 21);
             this.CmdMaj.Name = "CmdMaj";
             this.CmdMaj.Size = new System.Drawing.Size(109, 40);
             this.CmdMaj.TabIndex = 1;
-            this.CmdMaj.Text = "Modifier le Civil";
+            this.CmdMaj.Text = "Modifier Civil";
             this.CmdMaj.UseVisualStyleBackColor = true;
             this.CmdMaj.Click += new System.EventHandler(this.CmdMaj_Click);
             // 
             // CmdCréer
             // 
+            this.CmdCréer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmdCréer.Location = new System.Drawing.Point(83, 20);
             this.CmdCréer.Name = "CmdCréer";
             this.CmdCréer.Size = new System.Drawing.Size(109, 40);
             this.CmdCréer.TabIndex = 0;
-            this.CmdCréer.Text = "Créer le Civil";
+            this.CmdCréer.Text = "Créer Civil";
             this.CmdCréer.UseVisualStyleBackColor = true;
             this.CmdCréer.Click += new System.EventHandler(this.CmdCréer_Click);
             // 
@@ -155,21 +159,21 @@ namespace Avergers
             // 
             // Datemodif2
             // 
-            this.Datemodif2.Location = new System.Drawing.Point(572, 200);
+            this.Datemodif2.Location = new System.Drawing.Point(572, 180);
             this.Datemodif2.Name = "Datemodif2";
             this.Datemodif2.Size = new System.Drawing.Size(200, 20);
             this.Datemodif2.TabIndex = 42;
             // 
             // Dateajout2
             // 
-            this.Dateajout2.Location = new System.Drawing.Point(572, 146);
+            this.Dateajout2.Location = new System.Drawing.Point(572, 123);
             this.Dateajout2.Name = "Dateajout2";
             this.Dateajout2.Size = new System.Drawing.Size(200, 20);
             this.Dateajout2.TabIndex = 41;
             // 
             // Ddn2
             // 
-            this.Ddn2.Location = new System.Drawing.Point(572, 24);
+            this.Ddn2.Location = new System.Drawing.Point(572, 66);
             this.Ddn2.Name = "Ddn2";
             this.Ddn2.Size = new System.Drawing.Size(200, 20);
             this.Ddn2.TabIndex = 39;
@@ -205,63 +209,70 @@ namespace Avergers
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(415, 206);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(384, 186);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(151, 13);
+            this.label15.Size = new System.Drawing.Size(182, 13);
             this.label15.TabIndex = 14;
             this.label15.Text = "Date de dernière modification :";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(496, 149);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(482, 129);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(70, 13);
+            this.label14.Size = new System.Drawing.Size(84, 13);
             this.label14.TabIndex = 13;
             this.label14.Text = "Date d\'ajout :";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(462, 27);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(443, 72);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 13);
+            this.label9.Size = new System.Drawing.Size(123, 13);
             this.label9.TabIndex = 8;
             this.label9.Text = "Date de Naissance :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 203);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(23, 203);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 13);
+            this.label5.Size = new System.Drawing.Size(60, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Adresse :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 148);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(26, 149);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.Size = new System.Drawing.Size(57, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Prénom :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 82);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(43, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nom :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 27);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(57, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 13);
+            this.label1.Size = new System.Drawing.Size(26, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Id :";
             // 
@@ -269,6 +280,7 @@ namespace Avergers
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idcivilDataGridViewTextBoxColumn,
@@ -282,6 +294,7 @@ namespace Avergers
             this.dataGridView1.DataSource = this.civilBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(38, 413);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 148;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(950, 153);
             this.dataGridView1.TabIndex = 6;
@@ -361,11 +374,12 @@ namespace Avergers
             // 
             // CmdQuitter
             // 
-            this.CmdQuitter.Location = new System.Drawing.Point(434, 603);
+            this.CmdQuitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdQuitter.Location = new System.Drawing.Point(466, 603);
             this.CmdQuitter.Name = "CmdQuitter";
             this.CmdQuitter.Size = new System.Drawing.Size(102, 35);
             this.CmdQuitter.TabIndex = 7;
-            this.CmdQuitter.Text = "Fermer";
+            this.CmdQuitter.Text = "Quitter";
             this.CmdQuitter.UseVisualStyleBackColor = true;
             this.CmdQuitter.Click += new System.EventHandler(this.CmdQuitter_Click);
             // 
@@ -381,11 +395,14 @@ namespace Avergers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Avergers.Properties.Resources.Avengerslogo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1034, 650);
             this.Controls.Add(this.CmdQuitter);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.DoubleBuffered = true;
             this.Name = "Civils";
             this.Text = "Création d\'un Civil";
             this.Load += new System.EventHandler(this.Form1_Load);

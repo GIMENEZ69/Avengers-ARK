@@ -63,6 +63,7 @@ namespace Avergers
             this.superVilainsTableAdapter = new Avergers.AvengersDBDataSetTableAdapters.SuperVilainsTableAdapter();
             this.civilTableAdapter = new Avergers.ProjetHeroDataSet2FkIdCivil_2TableAdapters.CivilTableAdapter();
             this.super_vilainTableAdapter = new Avergers.ProjetHeroDataSet2TableAdapters.Super_vilainTableAdapter();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet2FkIdCivil_2)).BeginInit();
@@ -78,6 +79,7 @@ namespace Avergers
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.Pouvoir);
@@ -88,9 +90,9 @@ namespace Avergers
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(9, 8);
+            this.groupBox1.Location = new System.Drawing.Point(12, 8);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(772, 201);
+            this.groupBox1.Size = new System.Drawing.Size(804, 201);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Super Vilains";
@@ -100,9 +102,9 @@ namespace Avergers
             this.comboBox1.DataSource = this.civilBindingSource;
             this.comboBox1.DisplayMember = "Id_civil";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(561, 31);
+            this.comboBox1.Location = new System.Drawing.Point(532, 60);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(162, 24);
             this.comboBox1.TabIndex = 11;
             this.comboBox1.ValueMember = "Id_civil";
             // 
@@ -119,37 +121,37 @@ namespace Avergers
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(9, 151);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(84, 152);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 16);
+            this.label5.Size = new System.Drawing.Size(69, 16);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Pouvoir";
+            this.label5.Text = "Pouvoir :";
             // 
             // Pouvoir
             // 
-            this.Pouvoir.Location = new System.Drawing.Point(143, 150);
+            this.Pouvoir.Location = new System.Drawing.Point(159, 149);
             this.Pouvoir.Name = "Pouvoir";
             this.Pouvoir.Size = new System.Drawing.Size(162, 22);
             this.Pouvoir.TabIndex = 8;
             // 
             // Commentaire
             // 
-            this.Commentaire.Location = new System.Drawing.Point(561, 150);
+            this.Commentaire.Location = new System.Drawing.Point(532, 124);
             this.Commentaire.Name = "Commentaire";
             this.Commentaire.Size = new System.Drawing.Size(162, 22);
             this.Commentaire.TabIndex = 7;
             // 
             // Nom
             // 
-            this.Nom.Location = new System.Drawing.Point(143, 90);
+            this.Nom.Location = new System.Drawing.Point(159, 89);
             this.Nom.Name = "Nom";
             this.Nom.Size = new System.Drawing.Size(162, 22);
             this.Nom.TabIndex = 5;
             // 
             // Id
             // 
-            this.Id.Location = new System.Drawing.Point(143, 30);
+            this.Id.Location = new System.Drawing.Point(159, 29);
             this.Id.Name = "Id";
             this.Id.Size = new System.Drawing.Size(162, 22);
             this.Id.TabIndex = 4;
@@ -157,10 +159,10 @@ namespace Avergers
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(456, 151);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(419, 127);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 16);
+            this.label4.Size = new System.Drawing.Size(107, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Commentaire :";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -168,22 +170,22 @@ namespace Avergers
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(97, 91);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(105, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 16);
+            this.label2.Size = new System.Drawing.Size(48, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nom :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(116, 31);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(37, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 16);
+            this.label1.Size = new System.Drawing.Size(116, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Id :";
+            this.label1.Text = "Id Super Vilains :";
             // 
             // groupBox2
             // 
@@ -194,34 +196,37 @@ namespace Avergers
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(12, 215);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(769, 100);
+            this.groupBox2.Size = new System.Drawing.Size(804, 100);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Opérations";
             // 
             // CmdSupp
             // 
-            this.CmdSupp.Location = new System.Drawing.Point(589, 31);
+            this.CmdSupp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdSupp.Location = new System.Drawing.Point(600, 31);
             this.CmdSupp.Name = "CmdSupp";
             this.CmdSupp.Size = new System.Drawing.Size(157, 36);
             this.CmdSupp.TabIndex = 3;
-            this.CmdSupp.Text = "Supprimer  Super Vilains";
+            this.CmdSupp.Text = "Supprimer Super Vilains";
             this.CmdSupp.UseVisualStyleBackColor = true;
             this.CmdSupp.Click += new System.EventHandler(this.CmdSupp_Click);
             // 
             // CmdMaj
             // 
-            this.CmdMaj.Location = new System.Drawing.Point(382, 31);
+            this.CmdMaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdMaj.Location = new System.Drawing.Point(393, 31);
             this.CmdMaj.Name = "CmdMaj";
             this.CmdMaj.Size = new System.Drawing.Size(156, 36);
             this.CmdMaj.TabIndex = 2;
-            this.CmdMaj.Text = "Modifier  Super Vilains";
+            this.CmdMaj.Text = "Modifier Super Vilains";
             this.CmdMaj.UseVisualStyleBackColor = true;
             this.CmdMaj.Click += new System.EventHandler(this.CmdMaj_Click);
             // 
             // CmdRead
             // 
-            this.CmdRead.Location = new System.Drawing.Point(213, 31);
+            this.CmdRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdRead.Location = new System.Drawing.Point(224, 31);
             this.CmdRead.Name = "CmdRead";
             this.CmdRead.Size = new System.Drawing.Size(118, 36);
             this.CmdRead.TabIndex = 1;
@@ -231,7 +236,8 @@ namespace Avergers
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(37, 31);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(48, 31);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 36);
             this.button1.TabIndex = 0;
@@ -251,10 +257,10 @@ namespace Avergers
             this.pouvoirDataGridViewTextBoxColumn,
             this.commentaireDataGridViewTextBoxColumn});
             this.dataGridViewSuperVilains.DataSource = this.supervilainBindingSource;
-            this.dataGridViewSuperVilains.Location = new System.Drawing.Point(16, 321);
+            this.dataGridViewSuperVilains.Location = new System.Drawing.Point(12, 321);
             this.dataGridViewSuperVilains.Name = "dataGridViewSuperVilains";
             this.dataGridViewSuperVilains.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewSuperVilains.Size = new System.Drawing.Size(765, 162);
+            this.dataGridViewSuperVilains.Size = new System.Drawing.Size(804, 162);
             this.dataGridViewSuperVilains.TabIndex = 2;
             this.dataGridViewSuperVilains.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
             // 
@@ -319,7 +325,7 @@ namespace Avergers
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(227, 514);
+            this.button2.Location = new System.Drawing.Point(339, 514);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 47);
             this.button2.TabIndex = 3;
@@ -339,15 +345,28 @@ namespace Avergers
             // 
             this.super_vilainTableAdapter.ClearBeforeFill = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(463, 63);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 16);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Id Civil :";
+            // 
             // SuperVilains
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 582);
+            this.BackgroundImage = global::Avergers.Properties.Resources.Avengerslogo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(828, 582);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridViewSuperVilains);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.DoubleBuffered = true;
             this.Name = "SuperVilains";
             this.Text = "Création Super Vilains";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -412,5 +431,6 @@ namespace Avergers
         private System.Windows.Forms.DataGridViewTextBoxColumn nomvilainDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pouvoirDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn commentaireDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label3;
     }
 }

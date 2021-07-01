@@ -37,7 +37,7 @@ namespace Avergers
             // CmdQuitter
             // 
             this.CmdQuitter.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdQuitter.Location = new System.Drawing.Point(311, 313);
+            this.CmdQuitter.Location = new System.Drawing.Point(270, 313);
             this.CmdQuitter.Name = "CmdQuitter";
             this.CmdQuitter.Size = new System.Drawing.Size(119, 45);
             this.CmdQuitter.TabIndex = 5;
@@ -48,7 +48,7 @@ namespace Avergers
             // CmdGestion
             // 
             this.CmdGestion.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdGestion.Location = new System.Drawing.Point(430, 161);
+            this.CmdGestion.Location = new System.Drawing.Point(381, 147);
             this.CmdGestion.Name = "CmdGestion";
             this.CmdGestion.Size = new System.Drawing.Size(165, 77);
             this.CmdGestion.TabIndex = 4;
@@ -58,7 +58,7 @@ namespace Avergers
             // CmdCreation
             // 
             this.CmdCreation.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdCreation.Location = new System.Drawing.Point(146, 161);
+            this.CmdCreation.Location = new System.Drawing.Point(113, 147);
             this.CmdCreation.Name = "CmdCreation";
             this.CmdCreation.Size = new System.Drawing.Size(165, 77);
             this.CmdCreation.TabIndex = 3;

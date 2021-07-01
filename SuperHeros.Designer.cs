@@ -31,6 +31,7 @@ namespace Avergers
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.projetHeroDataSet2FkIdCivil = new Avergers.ProjetHeroDataSet2FkIdCivil();
@@ -73,7 +74,6 @@ namespace Avergers
             this.button1 = new System.Windows.Forms.Button();
             this.super_heroTableAdapter = new Avergers.ProjetHeroDataSet1TableAdapters.Super_heroTableAdapter();
             this.civilTableAdapter = new Avergers.ProjetHeroDataSet2FkIdCivilTableAdapters.CivilTableAdapter();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet2FkIdCivil)).BeginInit();
@@ -113,12 +113,22 @@ namespace Avergers
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Super-Héros";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(378, 165);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "Id Civil :";
+            // 
             // comboBox1
             // 
             this.comboBox1.DataSource = this.civilBindingSource;
             this.comboBox1.DisplayMember = "Id_civil";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(358, 126);
+            this.comboBox1.Location = new System.Drawing.Point(438, 162);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(161, 21);
             this.comboBox1.TabIndex = 37;
@@ -137,35 +147,35 @@ namespace Avergers
             // 
             // Pouvoir
             // 
-            this.Pouvoir.Location = new System.Drawing.Point(89, 112);
+            this.Pouvoir.Location = new System.Drawing.Point(89, 161);
             this.Pouvoir.Name = "Pouvoir";
             this.Pouvoir.Size = new System.Drawing.Size(161, 20);
             this.Pouvoir.TabIndex = 36;
             // 
             // Commentaire
             // 
-            this.Commentaire.Location = new System.Drawing.Point(358, 70);
+            this.Commentaire.Location = new System.Drawing.Point(438, 103);
             this.Commentaire.Name = "Commentaire";
             this.Commentaire.Size = new System.Drawing.Size(161, 20);
             this.Commentaire.TabIndex = 27;
             // 
             // PointFaible
             // 
-            this.PointFaible.Location = new System.Drawing.Point(89, 151);
+            this.PointFaible.Location = new System.Drawing.Point(438, 39);
             this.PointFaible.Name = "PointFaible";
             this.PointFaible.Size = new System.Drawing.Size(161, 20);
             this.PointFaible.TabIndex = 21;
             // 
             // Nom
             // 
-            this.Nom.Location = new System.Drawing.Point(89, 70);
+            this.Nom.Location = new System.Drawing.Point(89, 101);
             this.Nom.Name = "Nom";
             this.Nom.Size = new System.Drawing.Size(161, 20);
             this.Nom.TabIndex = 17;
             // 
             // Id
             // 
-            this.Id.Location = new System.Drawing.Point(89, 24);
+            this.Id.Location = new System.Drawing.Point(89, 39);
             this.Id.Name = "Id";
             this.Id.Size = new System.Drawing.Size(161, 20);
             this.Id.TabIndex = 15;
@@ -173,45 +183,50 @@ namespace Avergers
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(278, 73);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(345, 106);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 13);
+            this.label13.Size = new System.Drawing.Size(87, 13);
             this.label13.TabIndex = 12;
             this.label13.Text = "Commentaire :";
             // 
             // labelPointfaible
             // 
             this.labelPointfaible.AutoSize = true;
-            this.labelPointfaible.Location = new System.Drawing.Point(15, 154);
+            this.labelPointfaible.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPointfaible.Location = new System.Drawing.Point(350, 43);
             this.labelPointfaible.Name = "labelPointfaible";
-            this.labelPointfaible.Size = new System.Drawing.Size(68, 13);
+            this.labelPointfaible.Size = new System.Drawing.Size(82, 13);
             this.labelPointfaible.TabIndex = 10;
             this.labelPointfaible.Text = "Point Faible :";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(34, 115);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(34, 165);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.Size = new System.Drawing.Size(58, 13);
             this.label9.TabIndex = 8;
             this.label9.Text = "Pouvoir :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 74);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(48, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nom :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 27);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(61, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 13);
+            this.label1.Size = new System.Drawing.Size(26, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Id :";
             // 
@@ -254,9 +269,10 @@ namespace Avergers
             // 
             // CmdRead
             // 
-            this.CmdRead.Location = new System.Drawing.Point(367, 33);
+            this.CmdRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdRead.Location = new System.Drawing.Point(381, 25);
             this.CmdRead.Name = "CmdRead";
-            this.CmdRead.Size = new System.Drawing.Size(142, 40);
+            this.CmdRead.Size = new System.Drawing.Size(151, 40);
             this.CmdRead.TabIndex = 3;
             this.CmdRead.Text = "Lire le Super-Héros";
             this.CmdRead.UseVisualStyleBackColor = true;
@@ -264,17 +280,19 @@ namespace Avergers
             // 
             // CmdSupp
             // 
-            this.CmdSupp.Location = new System.Drawing.Point(367, 130);
+            this.CmdSupp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdSupp.Location = new System.Drawing.Point(381, 122);
             this.CmdSupp.Name = "CmdSupp";
-            this.CmdSupp.Size = new System.Drawing.Size(142, 40);
+            this.CmdSupp.Size = new System.Drawing.Size(151, 40);
             this.CmdSupp.TabIndex = 2;
-            this.CmdSupp.Text = "Supprimer le Super-Héros";
+            this.CmdSupp.Text = "Supprimer Super-Héros";
             this.CmdSupp.UseVisualStyleBackColor = true;
             this.CmdSupp.Click += new System.EventHandler(this.CmdSupp_Click);
             // 
             // CmdMaj
             // 
-            this.CmdMaj.Location = new System.Drawing.Point(18, 130);
+            this.CmdMaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdMaj.Location = new System.Drawing.Point(80, 122);
             this.CmdMaj.Name = "CmdMaj";
             this.CmdMaj.Size = new System.Drawing.Size(161, 40);
             this.CmdMaj.TabIndex = 1;
@@ -284,7 +302,8 @@ namespace Avergers
             // 
             // CmdCréer
             // 
-            this.CmdCréer.Location = new System.Drawing.Point(18, 33);
+            this.CmdCréer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdCréer.Location = new System.Drawing.Point(80, 25);
             this.CmdCréer.Name = "CmdCréer";
             this.CmdCréer.Size = new System.Drawing.Size(161, 40);
             this.CmdCréer.TabIndex = 0;
@@ -390,11 +409,12 @@ namespace Avergers
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(231, 633);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(285, 633);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 41);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Fermer";
+            this.button1.Text = "Quitter";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -406,24 +426,18 @@ namespace Avergers
             // 
             this.civilTableAdapter.ClearBeforeFill = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(308, 129);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "Id Civil :";
-            // 
             // SuperHeros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Avergers.Properties.Resources.Avengerslogo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(692, 701);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridViewSuperHeros);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.DoubleBuffered = true;
             this.Name = "SuperHeros";
             this.Text = "Super Heros";
             this.Load += new System.EventHandler(this.Form1_Load);

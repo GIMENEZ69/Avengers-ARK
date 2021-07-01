@@ -148,6 +148,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet_incident.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet_incident.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Satisfaction.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -366,6 +376,28 @@
     </None>
     <None Include="ProjetHeroDataSet4.xss">
       <DependentUpon>ProjetHeroDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet5.xsc">
+      <DependentUpon>ProjetHeroDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet5.xss">
+      <DependentUpon>ProjetHeroDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet_incident.xsc">
+      <DependentUpon>ProjetHeroDataSet_incident.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet_incident.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet_incident.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet_incident.xss">
+      <DependentUpon>ProjetHeroDataSet_incident.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -37,7 +37,7 @@ namespace Avergers
             // 
             // CmdAdmin
             // 
-            this.CmdAdmin.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdAdmin.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmdAdmin.Location = new System.Drawing.Point(97, 183);
             this.CmdAdmin.Name = "CmdAdmin";
             this.CmdAdmin.Size = new System.Drawing.Size(167, 59);
@@ -48,7 +48,7 @@ namespace Avergers
             // 
             // CmdQuitter
             // 
-            this.CmdQuitter.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdQuitter.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmdQuitter.Location = new System.Drawing.Point(298, 328);
             this.CmdQuitter.Name = "CmdQuitter";
             this.CmdQuitter.Size = new System.Drawing.Size(172, 60);
@@ -59,7 +59,7 @@ namespace Avergers
             // 
             // CmdUtilisateur
             // 
-            this.CmdUtilisateur.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmdUtilisateur.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmdUtilisateur.Location = new System.Drawing.Point(500, 183);
             this.CmdUtilisateur.Name = "CmdUtilisateur";
             this.CmdUtilisateur.Size = new System.Drawing.Size(180, 59);
@@ -71,10 +71,10 @@ namespace Avergers
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(231, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(339, 28);
+            this.label1.Size = new System.Drawing.Size(366, 30);
             this.label1.TabIndex = 3;
             this.label1.Text = "Veuillez choisir votre mode de conexion :";
             // 
