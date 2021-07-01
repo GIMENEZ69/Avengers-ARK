@@ -21,16 +21,26 @@ namespace Avergers
 
         private void CmdValider_Click(object sender, EventArgs e)
         {
-            try
-            {
-                conn.Open();
-                //string query = "INSERT INTO Incident(Id_incident, Id_Organisation_declarant, Id_super_hero_declarant, Adresse, Commentaire, Date_ajout, Flag_transforme_en_mission)"+
-                //    "VALUES('"+
-            }
-            catch(Exception e1)
-            {
-                MessageBox.Show(e1.Message);
-            }
+            //try
+            //{
+            //    conn.Open();
+            //    string query = "INSERT INTO Incident(Id_incident, Id_Organisation_declarant, Id_super_hero_declarant, Adresse, Commentaire, Date_ajout, Flag_transforme_en_mission)"+
+            //        "VALUES('"+ IdDéclarant.Text+"','"+Nom.Text+"','"+Prenom.Text+"','"+
+            //}
+            //catch(Exception e1)
+            //{
+            //    MessageBox.Show(e1.Message);
+            //}
+        }
+
+        private void Incident_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Prenom_TextChanged(object sender, EventArgs e)
+        {
+            //if(e.)
         }
     }
 }

@@ -43,12 +43,8 @@
             this.CmdQuitter = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Prenom = new System.Windows.Forms.TextBox();
-            this.Adresse = new System.Windows.Forms.TextBox();
-            this.Nom = new System.Windows.Forms.TextBox();
             this.IdDéclarant = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.GroupBoxInci.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -66,7 +62,7 @@
             this.GroupBoxInci.Controls.Add(this.label9);
             this.GroupBoxInci.Controls.Add(this.label10);
             this.GroupBoxInci.Controls.Add(this.label11);
-            this.GroupBoxInci.Location = new System.Drawing.Point(12, 146);
+            this.GroupBoxInci.Location = new System.Drawing.Point(12, 170);
             this.GroupBoxInci.Name = "GroupBoxInci";
             this.GroupBoxInci.Size = new System.Drawing.Size(685, 194);
             this.GroupBoxInci.TabIndex = 14;
@@ -189,16 +185,12 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.Prenom);
-            this.groupBox1.Controls.Add(this.Adresse);
-            this.groupBox1.Controls.Add(this.Nom);
             this.groupBox1.Controls.Add(this.IdDéclarant);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(685, 108);
+            this.groupBox1.Size = new System.Drawing.Size(685, 149);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Le déclarant";
@@ -209,20 +201,7 @@
             this.Prenom.Name = "Prenom";
             this.Prenom.Size = new System.Drawing.Size(126, 20);
             this.Prenom.TabIndex = 8;
-            // 
-            // Adresse
-            // 
-            this.Adresse.Location = new System.Drawing.Point(425, 63);
-            this.Adresse.Name = "Adresse";
-            this.Adresse.Size = new System.Drawing.Size(126, 20);
-            this.Adresse.TabIndex = 8;
-            // 
-            // Nom
-            // 
-            this.Nom.Location = new System.Drawing.Point(142, 63);
-            this.Nom.Name = "Nom";
-            this.Nom.Size = new System.Drawing.Size(126, 20);
-            this.Nom.TabIndex = 7;
+            this.Prenom.TextChanged += new System.EventHandler(this.Prenom_TextChanged);
             // 
             // IdDéclarant
             // 
@@ -230,15 +209,6 @@
             this.IdDéclarant.Name = "IdDéclarant";
             this.IdDéclarant.Size = new System.Drawing.Size(126, 20);
             this.IdDéclarant.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(365, 66);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Adresse  :";
             // 
             // label3
             // 
@@ -248,15 +218,6 @@
             this.label3.Size = new System.Drawing.Size(111, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Prénom du déclarant :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nom du déclarant :";
             // 
             // label1
             // 
@@ -278,6 +239,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Incident";
             this.Text = "Incident";
+            this.Load += new System.EventHandler(this.Incident_Load);
             this.GroupBoxInci.ResumeLayout(false);
             this.GroupBoxInci.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -303,12 +265,8 @@
         private System.Windows.Forms.Button CmdQuitter;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox Prenom;
-        private System.Windows.Forms.TextBox Adresse;
-        private System.Windows.Forms.TextBox Nom;
         private System.Windows.Forms.TextBox IdDéclarant;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }
 }

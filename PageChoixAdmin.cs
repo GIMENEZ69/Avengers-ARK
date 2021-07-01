@@ -27,5 +27,11 @@ namespace Avergers
         {
             Form.ActiveForm.Close();
         }
+
+        private void CmdGestion_Click(object sender, EventArgs e)
+        {
+            Incident incident = new Incident();
+            incident.ShowDialog();
+        }
     }
 }

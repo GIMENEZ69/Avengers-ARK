@@ -58,6 +58,12 @@
     <Compile Include="Crise.Designer.cs">
       <DependentUpon>Crise.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Incident.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet3ComboIdCivilSuperVilain.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet3Form1Test.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet3Form1Test.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -195,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Crise.resx">
       <DependentUpon>Crise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Incident.resx">
       <DependentUpon>Incident.cs</DependentUpon>
@@ -290,6 +304,17 @@
     </None>
     <None Include="ProjetHeroDataSet3ComboIdCivilSuperVilain.xss">
       <DependentUpon>ProjetHeroDataSet3ComboIdCivilSuperVilain.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet3Form1Test.xsc">
+      <DependentUpon>ProjetHeroDataSet3Form1Test.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet3Form1Test.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet3Form1Test.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet3Form1Test.xss">
+      <DependentUpon>ProjetHeroDataSet3Form1Test.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.xsc">
       <DependentUpon>ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.xsd</DependentUpon>
