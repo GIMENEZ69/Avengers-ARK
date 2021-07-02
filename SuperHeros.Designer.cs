@@ -327,6 +327,7 @@ namespace Avergers
             // 
             this.dataGridViewSuperHeros.AllowUserToOrderColumns = true;
             this.dataGridViewSuperHeros.AutoGenerateColumns = false;
+            this.dataGridViewSuperHeros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewSuperHeros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSuperHeros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idsuperheroDataGridViewTextBoxColumn,

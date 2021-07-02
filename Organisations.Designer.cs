@@ -315,6 +315,7 @@ namespace Avergers
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idorganisationDataGridViewTextBoxColumn,
@@ -338,49 +339,42 @@ namespace Avergers
             this.idorganisationDataGridViewTextBoxColumn.DataPropertyName = "Id_organisation";
             this.idorganisationDataGridViewTextBoxColumn.HeaderText = "Id organisation";
             this.idorganisationDataGridViewTextBoxColumn.Name = "idorganisationDataGridViewTextBoxColumn";
-            this.idorganisationDataGridViewTextBoxColumn.Width = 125;
             // 
             // nomorgDataGridViewTextBoxColumn
             // 
             this.nomorgDataGridViewTextBoxColumn.DataPropertyName = "Nom_org";
             this.nomorgDataGridViewTextBoxColumn.HeaderText = "Nom ";
             this.nomorgDataGridViewTextBoxColumn.Name = "nomorgDataGridViewTextBoxColumn";
-            this.nomorgDataGridViewTextBoxColumn.Width = 130;
             // 
             // siegesocialDataGridViewTextBoxColumn
             // 
             this.siegesocialDataGridViewTextBoxColumn.DataPropertyName = "Siege_social";
             this.siegesocialDataGridViewTextBoxColumn.HeaderText = "Siege social";
             this.siegesocialDataGridViewTextBoxColumn.Name = "siegesocialDataGridViewTextBoxColumn";
-            this.siegesocialDataGridViewTextBoxColumn.Width = 130;
             // 
             // idcivildirigeantDataGridViewTextBoxColumn
             // 
             this.idcivildirigeantDataGridViewTextBoxColumn.DataPropertyName = "Id_civil_dirigeant";
             this.idcivildirigeantDataGridViewTextBoxColumn.HeaderText = "Id civil du dirigeant";
             this.idcivildirigeantDataGridViewTextBoxColumn.Name = "idcivildirigeantDataGridViewTextBoxColumn";
-            this.idcivildirigeantDataGridViewTextBoxColumn.Width = 130;
             // 
             // membreDataGridViewTextBoxColumn
             // 
             this.membreDataGridViewTextBoxColumn.DataPropertyName = "Membre";
             this.membreDataGridViewTextBoxColumn.HeaderText = "Membre";
             this.membreDataGridViewTextBoxColumn.Name = "membreDataGridViewTextBoxColumn";
-            this.membreDataGridViewTextBoxColumn.Width = 130;
             // 
             // ajoutorgaDataGridViewTextBoxColumn
             // 
             this.ajoutorgaDataGridViewTextBoxColumn.DataPropertyName = "Ajout_orga";
             this.ajoutorgaDataGridViewTextBoxColumn.HeaderText = "Ajout";
             this.ajoutorgaDataGridViewTextBoxColumn.Name = "ajoutorgaDataGridViewTextBoxColumn";
-            this.ajoutorgaDataGridViewTextBoxColumn.Width = 130;
             // 
             // modificationorgDataGridViewTextBoxColumn
             // 
             this.modificationorgDataGridViewTextBoxColumn.DataPropertyName = "Modification_org";
             this.modificationorgDataGridViewTextBoxColumn.HeaderText = "Modification";
             this.modificationorgDataGridViewTextBoxColumn.Name = "modificationorgDataGridViewTextBoxColumn";
-            this.modificationorgDataGridViewTextBoxColumn.Width = 130;
             // 
             // organisationBindingSource
             // 

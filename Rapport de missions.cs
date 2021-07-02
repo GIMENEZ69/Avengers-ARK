@@ -16,5 +16,12 @@ namespace Avergers
         {
             InitializeComponent();
         }
+
+        private void Rapport_de_missions_Load(object sender, EventArgs e)
+        {
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetNomSVRapportMission.Super_vilain'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.super_vilainTableAdapter.Fill(this.projetHeroDataSetNomSVRapportMission.Super_vilain);
+
+        }
     }
 }

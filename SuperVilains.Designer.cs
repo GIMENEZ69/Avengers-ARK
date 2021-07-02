@@ -103,7 +103,7 @@ namespace Avergers
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(463, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 16);
+            this.label3.Size = new System.Drawing.Size(69, 16);
             this.label3.TabIndex = 12;
             this.label3.Text = "Id Civil :";
             // 
@@ -134,7 +134,7 @@ namespace Avergers
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(84, 152);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 16);
+            this.label5.Size = new System.Drawing.Size(72, 16);
             this.label5.TabIndex = 10;
             this.label5.Text = "Pouvoir :";
             // 
@@ -172,7 +172,7 @@ namespace Avergers
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(419, 127);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 16);
+            this.label4.Size = new System.Drawing.Size(111, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Commentaire :";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -183,7 +183,7 @@ namespace Avergers
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(105, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 16);
+            this.label2.Size = new System.Drawing.Size(51, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nom :";
             // 
@@ -259,6 +259,7 @@ namespace Avergers
             // 
             this.dataGridViewSuperVilains.AllowUserToOrderColumns = true;
             this.dataGridViewSuperVilains.AutoGenerateColumns = false;
+            this.dataGridViewSuperVilains.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewSuperVilains.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSuperVilains.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idsupervilainDataGridViewTextBoxColumn,
@@ -291,21 +292,18 @@ namespace Avergers
             this.nomvilainDataGridViewTextBoxColumn.DataPropertyName = "Nom_vilain";
             this.nomvilainDataGridViewTextBoxColumn.HeaderText = "Nom du Vilain";
             this.nomvilainDataGridViewTextBoxColumn.Name = "nomvilainDataGridViewTextBoxColumn";
-            this.nomvilainDataGridViewTextBoxColumn.Width = 187;
             // 
             // pouvoirDataGridViewTextBoxColumn
             // 
             this.pouvoirDataGridViewTextBoxColumn.DataPropertyName = "Pouvoir";
             this.pouvoirDataGridViewTextBoxColumn.HeaderText = "Pouvoir";
             this.pouvoirDataGridViewTextBoxColumn.Name = "pouvoirDataGridViewTextBoxColumn";
-            this.pouvoirDataGridViewTextBoxColumn.Width = 187;
             // 
             // commentaireDataGridViewTextBoxColumn
             // 
             this.commentaireDataGridViewTextBoxColumn.DataPropertyName = "Commentaire";
             this.commentaireDataGridViewTextBoxColumn.HeaderText = "Commentaire";
             this.commentaireDataGridViewTextBoxColumn.Name = "commentaireDataGridViewTextBoxColumn";
-            this.commentaireDataGridViewTextBoxColumn.Width = 187;
             // 
             // supervilainBindingSource
             // 

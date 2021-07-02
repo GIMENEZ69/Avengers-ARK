@@ -168,6 +168,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetIdIncident.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSetNomSVRapportMission.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetNomSVRapportMission.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSet_incident.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -444,6 +449,17 @@
     </None>
     <None Include="ProjetHeroDataSetIdIncident.xss">
       <DependentUpon>ProjetHeroDataSetIdIncident.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetNomSVRapportMission.xsc">
+      <DependentUpon>ProjetHeroDataSetNomSVRapportMission.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetNomSVRapportMission.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetNomSVRapportMission.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetNomSVRapportMission.xss">
+      <DependentUpon>ProjetHeroDataSetNomSVRapportMission.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSet_incident.xsc">
       <DependentUpon>ProjetHeroDataSet_incident.xsd</DependentUpon>

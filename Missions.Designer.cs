@@ -33,9 +33,14 @@
             this.CmdAnnuler = new System.Windows.Forms.Button();
             this.CmdValider = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CmbUrgence = new System.Windows.Forms.ComboBox();
+            this.DateDebut = new System.Windows.Forms.DateTimePicker();
+            this.DateFin = new System.Windows.Forms.DateTimePicker();
             this.TitreIncident = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.CmbInterSH = new System.Windows.Forms.ComboBox();
+            this.superheroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet7 = new Avergers.ProjetHeroDataSet7();
             this.CmbNivGravite = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -43,6 +48,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idincidentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateajoutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.natureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.incidentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.projetHeroDataSet6 = new Avergers.ProjetHeroDataSet6();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -51,23 +60,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.incidentTableAdapter = new Avergers.ProjetHeroDataSet6TableAdapters.IncidentTableAdapter();
-            this.DateFin = new System.Windows.Forms.DateTimePicker();
-            this.DateDebut = new System.Windows.Forms.DateTimePicker();
-            this.CmbUrgence = new System.Windows.Forms.ComboBox();
-            this.projetHeroDataSet7 = new Avergers.ProjetHeroDataSet7();
-            this.superheroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.super_heroTableAdapter = new Avergers.ProjetHeroDataSet7TableAdapters.Super_heroTableAdapter();
-            this.idincidentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateajoutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.natureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.superheroBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.incidentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet6)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.superheroBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // CmdAnnuler
@@ -113,6 +113,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mission :";
             // 
+            // CmbUrgence
+            // 
+            this.CmbUrgence.FormattingEnabled = true;
+            this.CmbUrgence.Items.AddRange(new object[] {
+            "Faible ",
+            "Moyenne ",
+            "Importante",
+            "Urgente"});
+            this.CmbUrgence.Location = new System.Drawing.Point(659, 69);
+            this.CmbUrgence.Name = "CmbUrgence";
+            this.CmbUrgence.Size = new System.Drawing.Size(115, 21);
+            this.CmbUrgence.TabIndex = 27;
+            // 
+            // DateDebut
+            // 
+            this.DateDebut.Location = new System.Drawing.Point(170, 86);
+            this.DateDebut.Name = "DateDebut";
+            this.DateDebut.Size = new System.Drawing.Size(200, 20);
+            this.DateDebut.TabIndex = 26;
+            // 
+            // DateFin
+            // 
+            this.DateFin.Location = new System.Drawing.Point(188, 131);
+            this.DateFin.Name = "DateFin";
+            this.DateFin.Size = new System.Drawing.Size(200, 20);
+            this.DateFin.TabIndex = 25;
+            // 
             // TitreIncident
             // 
             this.TitreIncident.Location = new System.Drawing.Point(133, 33);
@@ -140,6 +167,16 @@
             this.CmbInterSH.Size = new System.Drawing.Size(116, 21);
             this.CmbInterSH.TabIndex = 22;
             this.CmbInterSH.ValueMember = "Nom_hero";
+            // 
+            // superheroBindingSource
+            // 
+            this.superheroBindingSource.DataMember = "Super_hero";
+            this.superheroBindingSource.DataSource = this.projetHeroDataSet7;
+            // 
+            // projetHeroDataSet7
+            // 
+            this.projetHeroDataSet7.DataSetName = "ProjetHeroDataSet7";
+            this.projetHeroDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // CmbNivGravite
             // 
@@ -207,6 +244,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idincidentDataGridViewTextBoxColumn,
@@ -218,6 +256,31 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(763, 134);
             this.dataGridView1.TabIndex = 7;
+            // 
+            // idincidentDataGridViewTextBoxColumn
+            // 
+            this.idincidentDataGridViewTextBoxColumn.DataPropertyName = "Id_incident";
+            this.idincidentDataGridViewTextBoxColumn.HeaderText = "Id de l\'incident";
+            this.idincidentDataGridViewTextBoxColumn.Name = "idincidentDataGridViewTextBoxColumn";
+            this.idincidentDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // adresseDataGridViewTextBoxColumn
+            // 
+            this.adresseDataGridViewTextBoxColumn.DataPropertyName = "Adresse";
+            this.adresseDataGridViewTextBoxColumn.HeaderText = "Adresse";
+            this.adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
+            // 
+            // dateajoutDataGridViewTextBoxColumn
+            // 
+            this.dateajoutDataGridViewTextBoxColumn.DataPropertyName = "Date_ajout";
+            this.dateajoutDataGridViewTextBoxColumn.HeaderText = "Date de l\'ajout";
+            this.dateajoutDataGridViewTextBoxColumn.Name = "dateajoutDataGridViewTextBoxColumn";
+            // 
+            // natureDataGridViewTextBoxColumn
+            // 
+            this.natureDataGridViewTextBoxColumn.DataPropertyName = "Nature";
+            this.natureDataGridViewTextBoxColumn.HeaderText = "Nature";
+            this.natureDataGridViewTextBoxColumn.Name = "natureDataGridViewTextBoxColumn";
             // 
             // incidentBindingSource
             // 
@@ -288,75 +351,9 @@
             // 
             this.incidentTableAdapter.ClearBeforeFill = true;
             // 
-            // DateFin
-            // 
-            this.DateFin.Location = new System.Drawing.Point(188, 131);
-            this.DateFin.Name = "DateFin";
-            this.DateFin.Size = new System.Drawing.Size(200, 20);
-            this.DateFin.TabIndex = 25;
-            // 
-            // DateDebut
-            // 
-            this.DateDebut.Location = new System.Drawing.Point(170, 86);
-            this.DateDebut.Name = "DateDebut";
-            this.DateDebut.Size = new System.Drawing.Size(200, 20);
-            this.DateDebut.TabIndex = 26;
-            // 
-            // CmbUrgence
-            // 
-            this.CmbUrgence.FormattingEnabled = true;
-            this.CmbUrgence.Items.AddRange(new object[] {
-            "Faible ",
-            "Moyenne ",
-            "Importante",
-            "Urgente"});
-            this.CmbUrgence.Location = new System.Drawing.Point(659, 69);
-            this.CmbUrgence.Name = "CmbUrgence";
-            this.CmbUrgence.Size = new System.Drawing.Size(115, 21);
-            this.CmbUrgence.TabIndex = 27;
-            // 
-            // projetHeroDataSet7
-            // 
-            this.projetHeroDataSet7.DataSetName = "ProjetHeroDataSet7";
-            this.projetHeroDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // superheroBindingSource
-            // 
-            this.superheroBindingSource.DataMember = "Super_hero";
-            this.superheroBindingSource.DataSource = this.projetHeroDataSet7;
-            // 
             // super_heroTableAdapter
             // 
             this.super_heroTableAdapter.ClearBeforeFill = true;
-            // 
-            // idincidentDataGridViewTextBoxColumn
-            // 
-            this.idincidentDataGridViewTextBoxColumn.DataPropertyName = "Id_incident";
-            this.idincidentDataGridViewTextBoxColumn.HeaderText = "Id de l\'incident";
-            this.idincidentDataGridViewTextBoxColumn.Name = "idincidentDataGridViewTextBoxColumn";
-            this.idincidentDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idincidentDataGridViewTextBoxColumn.Width = 180;
-            // 
-            // adresseDataGridViewTextBoxColumn
-            // 
-            this.adresseDataGridViewTextBoxColumn.DataPropertyName = "Adresse";
-            this.adresseDataGridViewTextBoxColumn.HeaderText = "Adresse";
-            this.adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
-            this.adresseDataGridViewTextBoxColumn.Width = 180;
-            // 
-            // dateajoutDataGridViewTextBoxColumn
-            // 
-            this.dateajoutDataGridViewTextBoxColumn.DataPropertyName = "Date_ajout";
-            this.dateajoutDataGridViewTextBoxColumn.HeaderText = "Date de l\'ajout";
-            this.dateajoutDataGridViewTextBoxColumn.Name = "dateajoutDataGridViewTextBoxColumn";
-            this.dateajoutDataGridViewTextBoxColumn.Width = 180;
-            // 
-            // natureDataGridViewTextBoxColumn
-            // 
-            this.natureDataGridViewTextBoxColumn.DataPropertyName = "Nature";
-            this.natureDataGridViewTextBoxColumn.HeaderText = "Nature";
-            this.natureDataGridViewTextBoxColumn.Name = "natureDataGridViewTextBoxColumn";
-            this.natureDataGridViewTextBoxColumn.Width = 180;
             // 
             // Missions
             // 
@@ -375,13 +372,13 @@
             this.Load += new System.EventHandler(this.Missions_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.superheroBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.incidentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet6)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.superheroBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

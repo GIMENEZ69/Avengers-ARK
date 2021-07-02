@@ -263,6 +263,7 @@
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.AutoGenerateColumns = false;
+            this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idcivilDataGridViewTextBoxColumn,
@@ -290,7 +291,6 @@
             this.nomDataGridViewTextBoxColumn.HeaderText = "Nom";
             this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
             this.nomDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomDataGridViewTextBoxColumn.Width = 135;
             // 
             // prenomDataGridViewTextBoxColumn
             // 
@@ -298,7 +298,6 @@
             this.prenomDataGridViewTextBoxColumn.HeaderText = "Prenom";
             this.prenomDataGridViewTextBoxColumn.Name = "prenomDataGridViewTextBoxColumn";
             this.prenomDataGridViewTextBoxColumn.ReadOnly = true;
-            this.prenomDataGridViewTextBoxColumn.Width = 135;
             // 
             // adresseDataGridViewTextBoxColumn
             // 
@@ -306,7 +305,6 @@
             this.adresseDataGridViewTextBoxColumn.HeaderText = "Adresse";
             this.adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
             this.adresseDataGridViewTextBoxColumn.ReadOnly = true;
-            this.adresseDataGridViewTextBoxColumn.Width = 135;
             // 
             // datenaissanceDataGridViewTextBoxColumn
             // 
@@ -314,7 +312,6 @@
             this.datenaissanceDataGridViewTextBoxColumn.HeaderText = "Date de naissance";
             this.datenaissanceDataGridViewTextBoxColumn.Name = "datenaissanceDataGridViewTextBoxColumn";
             this.datenaissanceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.datenaissanceDataGridViewTextBoxColumn.Width = 135;
             // 
             // civilBindingSource1
             // 
