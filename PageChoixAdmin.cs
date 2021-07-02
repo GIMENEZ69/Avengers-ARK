@@ -30,8 +30,8 @@ namespace Avergers
 
         private void CmdGestion_Click(object sender, EventArgs e)
         {
-            Incident incident = new Incident();
-            incident.ShowDialog();
+            Missions mission = new Missions();
+            mission.ShowDialog();
         }
     }
 }

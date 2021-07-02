@@ -63,7 +63,7 @@ namespace Avergers
             this.CmdUtilisateur.Name = "CmdUtilisateur";
             this.CmdUtilisateur.Size = new System.Drawing.Size(154, 55);
             this.CmdUtilisateur.TabIndex = 5;
-            this.CmdUtilisateur.Text = "Utilisateur";
+            this.CmdUtilisateur.Text = "Civils";
             this.CmdUtilisateur.UseVisualStyleBackColor = true;
             this.CmdUtilisateur.Click += new System.EventHandler(this.CmdUtilisateur_Click);
             // 
@@ -74,7 +74,7 @@ namespace Avergers
             this.CmdAdmin.Name = "CmdAdmin";
             this.CmdAdmin.Size = new System.Drawing.Size(154, 55);
             this.CmdAdmin.TabIndex = 4;
-            this.CmdAdmin.Text = "Administrateur";
+            this.CmdAdmin.Text = "Avengers";
             this.CmdAdmin.UseVisualStyleBackColor = true;
             this.CmdAdmin.Click += new System.EventHandler(this.CmdAdmin_Click);
             // 

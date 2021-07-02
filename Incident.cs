@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -38,6 +39,27 @@ namespace Avergers
         private void CmdQuitter_Click(object sender, EventArgs e)
         {
             Form.ActiveForm.Close();
+        }
+
+        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=ProjetHero;Integrated Security=True");
+        private void CmdValider_Click(object sender, EventArgs e)
+        {
+            if (CmbSV.SelectedIndex==1)
+            {
+                MessageBox.Show("Nous vous remercions pour votre déclaration. Votre demande a été transmises aux autorités locales.");
+                //AutoriteLocale autorite = new AutoriteLocale();
+                //autorite.ShowDialog();
+            } else
+            {
+                conn.Open();
+                string query = "INSERT INTO Incident (Nature, Adresse, Date_ajout)" +
+                    "VALUES(   '" + CmbNatureIncident.Text + "', '" + AdresseIncident.Text + "', '" + Convert.ToDateTime(DateTimeIncident.Text) + "')";
+                SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
+                SDA.SelectCommand.ExecuteNonQuery();
+                conn.Close();
+
+                MessageBox.Show("Votre incident a bien été déclaré. Un Avenger va se rendre sur les lieux");
+            }
         }
     }
 }

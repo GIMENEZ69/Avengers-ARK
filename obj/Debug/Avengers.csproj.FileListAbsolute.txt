@@ -34,3 +34,4 @@ D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Crise.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Incident.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Litige.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Missions.resources
+D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.RapportMissions.resources
