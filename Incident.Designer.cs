@@ -32,7 +32,6 @@ namespace Avergers
         {
             this.components = new System.ComponentModel.Container();
             this.GroupBoxInci = new System.Windows.Forms.GroupBox();
-            this.CmbInterSH = new System.Windows.Forms.ComboBox();
             this.CmbTypeIncident = new System.Windows.Forms.ComboBox();
             this.CmbSV = new System.Windows.Forms.ComboBox();
             this.DateTimeIncident = new System.Windows.Forms.DateTimePicker();
@@ -40,7 +39,6 @@ namespace Avergers
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.CmdValider = new System.Windows.Forms.Button();
             this.CmdQuitter = new System.Windows.Forms.Button();
@@ -52,11 +50,13 @@ namespace Avergers
             this.prenomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datenaissanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.civilBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.projetHeroDataSetok = new Avergers.ProjetHeroDataSetok();
+            this.civilBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet17 = new Avergers.ProjetHeroDataSet17();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.search = new System.Windows.Forms.Label();
             this.ColonneId = new System.Windows.Forms.Label();
+            this.civilBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSetok = new Avergers.ProjetHeroDataSetok();
             this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.projetHeroDataSetlabraize = new Avergers.ProjetHeroDataSetlabraize();
             this.civilBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -68,12 +68,12 @@ namespace Avergers
             this.civilTableAdapter2 = new Avergers.ProjetHeroDataSet16TableAdapters.CivilTableAdapter();
             this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
             this.civilTableAdapter3 = new Avergers.ProjetHeroDataSetokTableAdapters.CivilTableAdapter();
-            this.projetHeroDataSet17 = new Avergers.ProjetHeroDataSet17();
-            this.civilBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.civilTableAdapter4 = new Avergers.ProjetHeroDataSet17TableAdapters.CivilTableAdapter();
             this.GroupBoxInci.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetok)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
@@ -82,13 +82,10 @@ namespace Avergers
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetnum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // GroupBoxInci
             // 
-            this.GroupBoxInci.Controls.Add(this.CmbInterSH);
             this.GroupBoxInci.Controls.Add(this.CmbTypeIncident);
             this.GroupBoxInci.Controls.Add(this.CmbSV);
             this.GroupBoxInci.Controls.Add(this.DateTimeIncident);
@@ -96,7 +93,6 @@ namespace Avergers
             this.GroupBoxInci.Controls.Add(this.label7);
             this.GroupBoxInci.Controls.Add(this.label8);
             this.GroupBoxInci.Controls.Add(this.label9);
-            this.GroupBoxInci.Controls.Add(this.label10);
             this.GroupBoxInci.Controls.Add(this.label11);
             this.GroupBoxInci.Location = new System.Drawing.Point(47, 337);
             this.GroupBoxInci.Name = "GroupBoxInci";
@@ -104,17 +100,6 @@ namespace Avergers
             this.GroupBoxInci.TabIndex = 14;
             this.GroupBoxInci.TabStop = false;
             this.GroupBoxInci.Text = "L\'incident";
-            // 
-            // CmbInterSH
-            // 
-            this.CmbInterSH.FormattingEnabled = true;
-            this.CmbInterSH.Items.AddRange(new object[] {
-            "Oui",
-            "Non"});
-            this.CmbInterSH.Location = new System.Drawing.Point(109, 103);
-            this.CmbInterSH.Name = "CmbInterSH";
-            this.CmbInterSH.Size = new System.Drawing.Size(139, 21);
-            this.CmbInterSH.TabIndex = 13;
             // 
             // CmbTypeIncident
             // 
@@ -124,7 +109,7 @@ namespace Avergers
             "Braquage",
             "Coup de feu",
             "Autres"});
-            this.CmbTypeIncident.Location = new System.Drawing.Point(109, 26);
+            this.CmbTypeIncident.Location = new System.Drawing.Point(128, 21);
             this.CmbTypeIncident.Name = "CmbTypeIncident";
             this.CmbTypeIncident.Size = new System.Drawing.Size(139, 21);
             this.CmbTypeIncident.TabIndex = 12;
@@ -135,7 +120,7 @@ namespace Avergers
             this.CmbSV.Items.AddRange(new object[] {
             "Oui",
             "Non"});
-            this.CmbSV.Location = new System.Drawing.Point(514, 103);
+            this.CmbSV.Location = new System.Drawing.Point(217, 123);
             this.CmbSV.Name = "CmbSV";
             this.CmbSV.Size = new System.Drawing.Size(123, 21);
             this.CmbSV.TabIndex = 11;
@@ -158,7 +143,7 @@ namespace Avergers
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(328, 106);
+            this.label7.Location = new System.Drawing.Point(6, 131);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(180, 13);
             this.label7.TabIndex = 5;
@@ -182,23 +167,14 @@ namespace Avergers
             this.label9.TabIndex = 3;
             this.label9.Text = "Adresse  :";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(18, 70);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(209, 13);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Nécessite l\'intervention s\'un Super-Héros ?";
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(18, 29);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(85, 13);
+            this.label11.Size = new System.Drawing.Size(104, 13);
             this.label11.TabIndex = 1;
-            this.label11.Text = "Type d\'incident :";
+            this.label11.Text = "Nature de l\'incident :";
             // 
             // CmdValider
             // 
@@ -208,6 +184,7 @@ namespace Avergers
             this.CmdValider.TabIndex = 13;
             this.CmdValider.Text = "Valider";
             this.CmdValider.UseVisualStyleBackColor = true;
+            this.CmdValider.Click += new System.EventHandler(this.CmdValider_Click);
             // 
             // CmdQuitter
             // 
@@ -217,6 +194,7 @@ namespace Avergers
             this.CmdQuitter.TabIndex = 12;
             this.CmdQuitter.Text = "Quitter";
             this.CmdQuitter.UseVisualStyleBackColor = true;
+            this.CmdQuitter.Click += new System.EventHandler(this.CmdQuitter_Click);
             // 
             // groupBox1
             // 
@@ -295,15 +273,15 @@ namespace Avergers
             this.datenaissanceDataGridViewTextBoxColumn.Name = "datenaissanceDataGridViewTextBoxColumn";
             this.datenaissanceDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // civilBindingSource3
+            // civilBindingSource4
             // 
-            this.civilBindingSource3.DataMember = "Civil";
-            this.civilBindingSource3.DataSource = this.projetHeroDataSetok;
+            this.civilBindingSource4.DataMember = "Civil";
+            this.civilBindingSource4.DataSource = this.projetHeroDataSet17;
             // 
-            // projetHeroDataSetok
+            // projetHeroDataSet17
             // 
-            this.projetHeroDataSetok.DataSetName = "ProjetHeroDataSetok";
-            this.projetHeroDataSetok.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.projetHeroDataSet17.DataSetName = "ProjetHeroDataSet17";
+            this.projetHeroDataSet17.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // comboBox1
             // 
@@ -334,6 +312,16 @@ namespace Avergers
             this.ColonneId.Size = new System.Drawing.Size(120, 13);
             this.ColonneId.TabIndex = 0;
             this.ColonneId.Text = "Selection de recherche:";
+            // 
+            // civilBindingSource3
+            // 
+            this.civilBindingSource3.DataMember = "Civil";
+            this.civilBindingSource3.DataSource = this.projetHeroDataSetok;
+            // 
+            // projetHeroDataSetok
+            // 
+            this.projetHeroDataSetok.DataSetName = "ProjetHeroDataSetok";
+            this.projetHeroDataSetok.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // civilBindingSource
             // 
@@ -389,16 +377,6 @@ namespace Avergers
             // 
             this.civilTableAdapter3.ClearBeforeFill = true;
             // 
-            // projetHeroDataSet17
-            // 
-            this.projetHeroDataSet17.DataSetName = "ProjetHeroDataSet17";
-            this.projetHeroDataSet17.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // civilBindingSource4
-            // 
-            this.civilBindingSource4.DataMember = "Civil";
-            this.civilBindingSource4.DataSource = this.projetHeroDataSet17;
-            // 
             // civilTableAdapter4
             // 
             this.civilTableAdapter4.ClearBeforeFill = true;
@@ -421,6 +399,8 @@ namespace Avergers
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetok)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
@@ -429,8 +409,6 @@ namespace Avergers
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetnum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -439,7 +417,6 @@ namespace Avergers
         #endregion
 
         private System.Windows.Forms.GroupBox GroupBoxInci;
-        private System.Windows.Forms.ComboBox CmbInterSH;
         private System.Windows.Forms.ComboBox CmbTypeIncident;
         private System.Windows.Forms.ComboBox CmbSV;
         private System.Windows.Forms.DateTimePicker DateTimeIncident;
@@ -447,7 +424,6 @@ namespace Avergers
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button CmdValider;
         private System.Windows.Forms.Button CmdQuitter;

@@ -58,6 +58,12 @@
     <Compile Include="Crise.Designer.cs">
       <DependentUpon>Crise.cs</DependentUpon>
     </Compile>
+    <Compile Include="AutoriteLocale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoriteLocale.Designer.cs">
+      <DependentUpon>AutoriteLocale.cs</DependentUpon>
+    </Compile>
     <Compile Include="Incident.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,15 +194,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetCivil.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSetCivilMort.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetCivilMort.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSetFKIdCivil.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetFKIdCivil.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSetGridMission.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetGridMission.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetHeroMission.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetHeroMission.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSetlabraize.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetlabraize.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetMission.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetMission.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProjetHeroDataSetnum.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -212,6 +238,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetVilain.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapport.Designer.cs">
+      <DependentUpon>Rapport.cs</DependentUpon>
     </Compile>
     <Compile Include="SuperHeros.cs">
       <SubType>Form</SubType>
@@ -245,6 +277,9 @@
     <Compile Include="Utilisateur.Designer.cs">
       <DependentUpon>Utilisateur.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AutoriteLocale.resx">
+      <DependentUpon>AutoriteLocale.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Civils.resx">
       <DependentUpon>Civils.cs</DependentUpon>
     </EmbeddedResource>
@@ -265,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PageChoixAdmin.resx">
       <DependentUpon>PageChoixAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport.resx">
+      <DependentUpon>Rapport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SuperHeros.resx">
       <DependentUpon>SuperHeros.cs</DependentUpon>
@@ -511,6 +549,17 @@
     <None Include="ProjetHeroDataSetCivil.xss">
       <DependentUpon>ProjetHeroDataSetCivil.xsd</DependentUpon>
     </None>
+    <None Include="ProjetHeroDataSetCivilMort.xsc">
+      <DependentUpon>ProjetHeroDataSetCivilMort.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetCivilMort.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetCivilMort.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetCivilMort.xss">
+      <DependentUpon>ProjetHeroDataSetCivilMort.xsd</DependentUpon>
+    </None>
     <None Include="ProjetHeroDataSetFKIdCivil.xsc">
       <DependentUpon>ProjetHeroDataSetFKIdCivil.xsd</DependentUpon>
     </None>
@@ -522,6 +571,28 @@
     <None Include="ProjetHeroDataSetFKIdCivil.xss">
       <DependentUpon>ProjetHeroDataSetFKIdCivil.xsd</DependentUpon>
     </None>
+    <None Include="ProjetHeroDataSetGridMission.xsc">
+      <DependentUpon>ProjetHeroDataSetGridMission.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetGridMission.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetGridMission.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetGridMission.xss">
+      <DependentUpon>ProjetHeroDataSetGridMission.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetHeroMission.xsc">
+      <DependentUpon>ProjetHeroDataSetHeroMission.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetHeroMission.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetHeroMission.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetHeroMission.xss">
+      <DependentUpon>ProjetHeroDataSetHeroMission.xsd</DependentUpon>
+    </None>
     <None Include="ProjetHeroDataSetlabraize.xsc">
       <DependentUpon>ProjetHeroDataSetlabraize.xsd</DependentUpon>
     </None>
@@ -532,6 +603,17 @@
     </None>
     <None Include="ProjetHeroDataSetlabraize.xss">
       <DependentUpon>ProjetHeroDataSetlabraize.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetMission.xsc">
+      <DependentUpon>ProjetHeroDataSetMission.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetMission.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetMission.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetMission.xss">
+      <DependentUpon>ProjetHeroDataSetMission.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSetnum.xsc">
       <DependentUpon>ProjetHeroDataSetnum.xsd</DependentUpon>

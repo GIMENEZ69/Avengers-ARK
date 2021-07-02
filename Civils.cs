@@ -100,5 +100,15 @@ namespace Avergers
         {
 
         }
+
+        private void Adresse_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DateTimeAjout_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -54,3 +54,6 @@ C:\Users\super\Desktop\POEC .Net\ProjetAvengers\Avengers-ARK\obj\Debug\Avengers.
 C:\Users\super\Desktop\POEC .Net\ProjetAvengers\Avengers-ARK\obj\Debug\Avergers.exe
 C:\Users\super\Desktop\POEC .Net\ProjetAvengers\Avengers-ARK\obj\Debug\Avergers.pdb
 C:\Users\super\Desktop\POEC .Net\ProjetAvengers\Avengers-ARK\bin\Debug\Avergers.exe.config
+C:\Users\super\Desktop\POEC .Net\ProjetAvengers\Avengers-ARK\obj\Debug\Avengers.csproj.AssemblyReference.cache
+C:\Users\super\Desktop\POEC .Net\ProjetAvengers\Avengers-ARK\obj\Debug\Avergers.AutoriteLocale.resources
+C:\Users\super\Desktop\POEC .Net\ProjetAvengers\Avengers-ARK\obj\Debug\Avergers.Rapport.resources

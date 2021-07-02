@@ -169,6 +169,7 @@ namespace Avergers
             this.DateTimeAjout.Name = "DateTimeAjout";
             this.DateTimeAjout.Size = new System.Drawing.Size(159, 20);
             this.DateTimeAjout.TabIndex = 40;
+            this.DateTimeAjout.ValueChanged += new System.EventHandler(this.DateTimeAjout_ValueChanged);
             // 
             // DateTimeNaissance
             // 
@@ -183,6 +184,7 @@ namespace Avergers
             this.Adresse.Name = "Adresse";
             this.Adresse.Size = new System.Drawing.Size(161, 20);
             this.Adresse.TabIndex = 22;
+            this.Adresse.TextChanged += new System.EventHandler(this.Adresse_TextChanged);
             // 
             // Prenom
             // 
