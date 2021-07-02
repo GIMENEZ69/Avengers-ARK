@@ -35,24 +35,19 @@ namespace Avergers
 
         private void Incident_Load(object sender, EventArgs e)
         {
-            
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet3IncidentGrdvCivil.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.civilTableAdapter.Fill(this.projetHeroDataSet3IncidentGrdvCivil.Civil);
+            cboColumn.SelectedIndex = 1;
         }
 
-        private void search_Click(object sender, EventArgs e)
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
         {
-            try
+            if(e.KeyCode==Keys.Enter)
             {
-                if(comboSearchBy.Text == "Id")
-                {
-                    conn.Open();
-                    string query = "SELECT Id_civil, Nom, Prenom, Adresse, Date_Naissance FROM Civil WHERE Prenom = '"+input+"'";
-                    SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
-
-                }
-            }
-            catch(Exception e1)
-            {
-                MessageBox.Show(e1.Message);
+                if (string.IsNullOrEmpty(txtSearch.Text))
+                    civilBindingSource.Filter = string.Empty;
+                else
+                    civilBindingSource.Filter = string.Format("{0}='{1}'", cboColumn.Text, txtSearch.Text);
             }
         }
     }

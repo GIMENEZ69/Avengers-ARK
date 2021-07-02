@@ -124,6 +124,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet3Form1Test.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSet3IncidentGrdvCivil.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet3IncidentGrdvCivil.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -315,6 +320,17 @@
     </None>
     <None Include="ProjetHeroDataSet3Form1Test.xss">
       <DependentUpon>ProjetHeroDataSet3Form1Test.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet3IncidentGrdvCivil.xsc">
+      <DependentUpon>ProjetHeroDataSet3IncidentGrdvCivil.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet3IncidentGrdvCivil.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet3IncidentGrdvCivil.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet3IncidentGrdvCivil.xss">
+      <DependentUpon>ProjetHeroDataSet3IncidentGrdvCivil.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.xsc">
       <DependentUpon>ProjetHeroDataSet3OrganisationComboIdCivilDirigeant.xsd</DependentUpon>
