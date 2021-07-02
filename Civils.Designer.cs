@@ -30,6 +30,7 @@ namespace Avergers
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Civils));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.CmdRead = new System.Windows.Forms.Button();
             this.CmdSupp = new System.Windows.Forms.Button();
@@ -303,7 +304,7 @@ namespace Avergers
             // idcivilDataGridViewTextBoxColumn
             // 
             this.idcivilDataGridViewTextBoxColumn.DataPropertyName = "Id_civil";
-            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id_civil";
+            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id civil";
             this.idcivilDataGridViewTextBoxColumn.Name = "idcivilDataGridViewTextBoxColumn";
             // 
             // nomDataGridViewTextBoxColumn
@@ -327,25 +328,25 @@ namespace Avergers
             // datenaissanceDataGridViewTextBoxColumn
             // 
             this.datenaissanceDataGridViewTextBoxColumn.DataPropertyName = "Date_naissance";
-            this.datenaissanceDataGridViewTextBoxColumn.HeaderText = "Date_naissance";
+            this.datenaissanceDataGridViewTextBoxColumn.HeaderText = "Date de naissance";
             this.datenaissanceDataGridViewTextBoxColumn.Name = "datenaissanceDataGridViewTextBoxColumn";
             // 
             // datedecesDataGridViewTextBoxColumn
             // 
             this.datedecesDataGridViewTextBoxColumn.DataPropertyName = "Date_deces";
-            this.datedecesDataGridViewTextBoxColumn.HeaderText = "Date_deces";
+            this.datedecesDataGridViewTextBoxColumn.HeaderText = "Date du déces";
             this.datedecesDataGridViewTextBoxColumn.Name = "datedecesDataGridViewTextBoxColumn";
             // 
             // dateajoutDataGridViewTextBoxColumn
             // 
             this.dateajoutDataGridViewTextBoxColumn.DataPropertyName = "Date_ajout";
-            this.dateajoutDataGridViewTextBoxColumn.HeaderText = "Date_ajout";
+            this.dateajoutDataGridViewTextBoxColumn.HeaderText = "Date de l\'ajout";
             this.dateajoutDataGridViewTextBoxColumn.Name = "dateajoutDataGridViewTextBoxColumn";
             // 
             // datemodificationDataGridViewTextBoxColumn
             // 
             this.datemodificationDataGridViewTextBoxColumn.DataPropertyName = "Date_modification";
-            this.datemodificationDataGridViewTextBoxColumn.HeaderText = "Date_modification";
+            this.datemodificationDataGridViewTextBoxColumn.HeaderText = "Date de la modification";
             this.datemodificationDataGridViewTextBoxColumn.Name = "datemodificationDataGridViewTextBoxColumn";
             // 
             // civilBindingSource
@@ -403,7 +404,9 @@ namespace Avergers
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Civils";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Création d\'un Civil";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
@@ -462,6 +465,12 @@ namespace Avergers
         private ProjetHeroDataSet projetHeroDataSet;
         private System.Windows.Forms.BindingSource civilBindingSource;
         private ProjetHeroDataSetTableAdapters.CivilTableAdapter civilTableAdapter;
+        private System.Windows.Forms.DateTimePicker Datemodif2;
+        private System.Windows.Forms.DateTimePicker Dateajout2;
+        private System.Windows.Forms.DateTimePicker Ddn2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridViewTextBoxColumn idcivilDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prenomDataGridViewTextBoxColumn;
@@ -470,12 +479,6 @@ namespace Avergers
         private System.Windows.Forms.DataGridViewTextBoxColumn datedecesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateajoutDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn datemodificationDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DateTimePicker Datemodif2;
-        private System.Windows.Forms.DateTimePicker Dateajout2;
-        private System.Windows.Forms.DateTimePicker Ddn2;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label9;
     }
 }
 

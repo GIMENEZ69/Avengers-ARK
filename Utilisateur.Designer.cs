@@ -29,6 +29,7 @@ namespace Avergers
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Utilisateur));
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -53,6 +54,7 @@ namespace Avergers
             this.button1.TabIndex = 4;
             this.button1.Text = "Déclarer un incident";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Utilisateur
             // 
@@ -64,7 +66,9 @@ namespace Avergers
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Utilisateur";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Utilisateur";
             this.ResumeLayout(false);
 

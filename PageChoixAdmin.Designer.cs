@@ -29,6 +29,7 @@ namespace Avergers
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageChoixAdmin));
             this.CmdQuitter = new System.Windows.Forms.Button();
             this.CmdGestion = new System.Windows.Forms.Button();
             this.CmdCreation = new System.Windows.Forms.Button();
@@ -52,8 +53,9 @@ namespace Avergers
             this.CmdGestion.Name = "CmdGestion";
             this.CmdGestion.Size = new System.Drawing.Size(165, 77);
             this.CmdGestion.TabIndex = 4;
-            this.CmdGestion.Text = "Gérer les missions et les incidents";
+            this.CmdGestion.Text = "Créer les missions ";
             this.CmdGestion.UseVisualStyleBackColor = true;
+            this.CmdGestion.Click += new System.EventHandler(this.CmdGestion_Click);
             // 
             // CmdCreation
             // 
@@ -77,7 +79,9 @@ namespace Avergers
             this.Controls.Add(this.CmdGestion);
             this.Controls.Add(this.CmdCreation);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PageChoixAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PageChoixAdmin";
             this.ResumeLayout(false);
 

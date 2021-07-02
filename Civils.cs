@@ -39,8 +39,8 @@ namespace Avergers
         private void CmdCréer_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "INSERT INTO Civil (Id_civil, Nom,Prenom,Adresse,Date_naissance, Date_ajout,Date_modification) " +
-                "VALUES(                      '" + Id.Text + "', '" + Nom.Text + "','" + Prenom.Text + "','" + Adresse.Text + "','" + Convert.ToDateTime(Ddn2.Text) + "', '" + Convert.ToDateTime(Dateajout2.Text) + "', '" + Convert.ToDateTime(Datemodif2.Text) + "')";
+            string query = "INSERT INTO Civil (Id_civil, Nom, Prenom, Adresse, Date_naissance, Date_ajout, Date_modification) " +
+                "VALUES(                      '" + Id.Text + "','" + Nom.Text + "','" + Prenom.Text + "','" + Adresse.Text + "','" + Convert.ToDateTime(Ddn2.Text) + "', '" + Convert.ToDateTime(Dateajout2.Text) + "', '" + Convert.ToDateTime(Datemodif2.Text) + "')";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();

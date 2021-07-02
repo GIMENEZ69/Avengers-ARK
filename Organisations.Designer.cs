@@ -30,6 +30,7 @@ namespace Avergers
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Organisations));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.CmdRead = new System.Windows.Forms.Button();
             this.CmdSupp = new System.Windows.Forms.Button();
@@ -326,7 +327,7 @@ namespace Avergers
             this.dataGridView1.DataSource = this.organisationBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(18, 374);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 246;
+            this.dataGridView1.RowHeadersWidth = 40;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(948, 182);
             this.dataGridView1.TabIndex = 14;
@@ -335,44 +336,51 @@ namespace Avergers
             // idorganisationDataGridViewTextBoxColumn
             // 
             this.idorganisationDataGridViewTextBoxColumn.DataPropertyName = "Id_organisation";
-            this.idorganisationDataGridViewTextBoxColumn.HeaderText = "Id_organisation";
+            this.idorganisationDataGridViewTextBoxColumn.HeaderText = "Id organisation";
             this.idorganisationDataGridViewTextBoxColumn.Name = "idorganisationDataGridViewTextBoxColumn";
+            this.idorganisationDataGridViewTextBoxColumn.Width = 125;
             // 
             // nomorgDataGridViewTextBoxColumn
             // 
             this.nomorgDataGridViewTextBoxColumn.DataPropertyName = "Nom_org";
-            this.nomorgDataGridViewTextBoxColumn.HeaderText = "Nom_org";
+            this.nomorgDataGridViewTextBoxColumn.HeaderText = "Nom ";
             this.nomorgDataGridViewTextBoxColumn.Name = "nomorgDataGridViewTextBoxColumn";
+            this.nomorgDataGridViewTextBoxColumn.Width = 130;
             // 
             // siegesocialDataGridViewTextBoxColumn
             // 
             this.siegesocialDataGridViewTextBoxColumn.DataPropertyName = "Siege_social";
-            this.siegesocialDataGridViewTextBoxColumn.HeaderText = "Siege_social";
+            this.siegesocialDataGridViewTextBoxColumn.HeaderText = "Siege social";
             this.siegesocialDataGridViewTextBoxColumn.Name = "siegesocialDataGridViewTextBoxColumn";
+            this.siegesocialDataGridViewTextBoxColumn.Width = 130;
             // 
             // idcivildirigeantDataGridViewTextBoxColumn
             // 
             this.idcivildirigeantDataGridViewTextBoxColumn.DataPropertyName = "Id_civil_dirigeant";
-            this.idcivildirigeantDataGridViewTextBoxColumn.HeaderText = "Id_civil_dirigeant";
+            this.idcivildirigeantDataGridViewTextBoxColumn.HeaderText = "Id civil du dirigeant";
             this.idcivildirigeantDataGridViewTextBoxColumn.Name = "idcivildirigeantDataGridViewTextBoxColumn";
+            this.idcivildirigeantDataGridViewTextBoxColumn.Width = 130;
             // 
             // membreDataGridViewTextBoxColumn
             // 
             this.membreDataGridViewTextBoxColumn.DataPropertyName = "Membre";
             this.membreDataGridViewTextBoxColumn.HeaderText = "Membre";
             this.membreDataGridViewTextBoxColumn.Name = "membreDataGridViewTextBoxColumn";
+            this.membreDataGridViewTextBoxColumn.Width = 130;
             // 
             // ajoutorgaDataGridViewTextBoxColumn
             // 
             this.ajoutorgaDataGridViewTextBoxColumn.DataPropertyName = "Ajout_orga";
-            this.ajoutorgaDataGridViewTextBoxColumn.HeaderText = "Ajout_orga";
+            this.ajoutorgaDataGridViewTextBoxColumn.HeaderText = "Ajout";
             this.ajoutorgaDataGridViewTextBoxColumn.Name = "ajoutorgaDataGridViewTextBoxColumn";
+            this.ajoutorgaDataGridViewTextBoxColumn.Width = 130;
             // 
             // modificationorgDataGridViewTextBoxColumn
             // 
             this.modificationorgDataGridViewTextBoxColumn.DataPropertyName = "Modification_org";
-            this.modificationorgDataGridViewTextBoxColumn.HeaderText = "Modification_org";
+            this.modificationorgDataGridViewTextBoxColumn.HeaderText = "Modification";
             this.modificationorgDataGridViewTextBoxColumn.Name = "modificationorgDataGridViewTextBoxColumn";
+            this.modificationorgDataGridViewTextBoxColumn.Width = 130;
             // 
             // organisationBindingSource
             // 
@@ -422,7 +430,9 @@ namespace Avergers
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Organisations";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Organisations";
             this.Load += new System.EventHandler(this.Organisations_Load);
             this.groupBox2.ResumeLayout(false);
@@ -491,6 +501,9 @@ namespace Avergers
         private ProjetHeroDataSet4 projetHeroDataSet4;
         private System.Windows.Forms.BindingSource organisationBindingSource;
         private ProjetHeroDataSet4TableAdapters.OrganisationTableAdapter organisationTableAdapter;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker datemodif;
+        private System.Windows.Forms.DateTimePicker dateajout;
         private System.Windows.Forms.DataGridViewTextBoxColumn idorganisationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomorgDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn siegesocialDataGridViewTextBoxColumn;
@@ -498,8 +511,5 @@ namespace Avergers
         private System.Windows.Forms.DataGridViewTextBoxColumn membreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ajoutorgaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn modificationorgDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker datemodif;
-        private System.Windows.Forms.DateTimePicker dateajout;
     }
 }

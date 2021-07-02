@@ -153,10 +153,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetIdIncident.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetIdIncident.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSet_incident.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet_incident.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rapport de missions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapport de missions.Designer.cs">
+      <DependentUpon>Rapport de missions.cs</DependentUpon>
     </Compile>
     <Compile Include="Satisfaction.cs">
       <SubType>Form</SubType>
@@ -216,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PageChoixAdmin.resx">
       <DependentUpon>PageChoixAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapport de missions.resx">
+      <DependentUpon>Rapport de missions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Satisfaction.resx">
       <DependentUpon>Satisfaction.cs</DependentUpon>
@@ -387,6 +411,39 @@
     </None>
     <None Include="ProjetHeroDataSet5.xss">
       <DependentUpon>ProjetHeroDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet6.xsc">
+      <DependentUpon>ProjetHeroDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet6.xss">
+      <DependentUpon>ProjetHeroDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet7.xsc">
+      <DependentUpon>ProjetHeroDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet7.xss">
+      <DependentUpon>ProjetHeroDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetIdIncident.xsc">
+      <DependentUpon>ProjetHeroDataSetIdIncident.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetIdIncident.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetIdIncident.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetIdIncident.xss">
+      <DependentUpon>ProjetHeroDataSetIdIncident.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSet_incident.xsc">
       <DependentUpon>ProjetHeroDataSet_incident.xsd</DependentUpon>

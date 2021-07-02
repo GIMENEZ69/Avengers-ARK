@@ -346,19 +346,19 @@ namespace Avergers
             // idsuperheroDataGridViewTextBoxColumn
             // 
             this.idsuperheroDataGridViewTextBoxColumn.DataPropertyName = "Id_super_hero";
-            this.idsuperheroDataGridViewTextBoxColumn.HeaderText = "Id_super_hero";
+            this.idsuperheroDataGridViewTextBoxColumn.HeaderText = "Id SuperHéros";
             this.idsuperheroDataGridViewTextBoxColumn.Name = "idsuperheroDataGridViewTextBoxColumn";
             // 
             // idcivilDataGridViewTextBoxColumn
             // 
             this.idcivilDataGridViewTextBoxColumn.DataPropertyName = "Id_civil";
-            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id_civil";
+            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id du civil";
             this.idcivilDataGridViewTextBoxColumn.Name = "idcivilDataGridViewTextBoxColumn";
             // 
             // nomheroDataGridViewTextBoxColumn
             // 
             this.nomheroDataGridViewTextBoxColumn.DataPropertyName = "Nom_hero";
-            this.nomheroDataGridViewTextBoxColumn.HeaderText = "Nom_hero";
+            this.nomheroDataGridViewTextBoxColumn.HeaderText = "Nom du Héros";
             this.nomheroDataGridViewTextBoxColumn.Name = "nomheroDataGridViewTextBoxColumn";
             // 
             // pouvoirDataGridViewTextBoxColumn
@@ -370,7 +370,7 @@ namespace Avergers
             // pointfaibleDataGridViewTextBoxColumn
             // 
             this.pointfaibleDataGridViewTextBoxColumn.DataPropertyName = "Point_faible";
-            this.pointfaibleDataGridViewTextBoxColumn.HeaderText = "Point_faible";
+            this.pointfaibleDataGridViewTextBoxColumn.HeaderText = "Point faible";
             this.pointfaibleDataGridViewTextBoxColumn.Name = "pointfaibleDataGridViewTextBoxColumn";
             // 
             // commentaireDataGridViewTextBoxColumn
@@ -439,6 +439,7 @@ namespace Avergers
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
             this.Name = "SuperHeros";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Super Heros";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
@@ -498,17 +499,17 @@ namespace Avergers
         private ProjetHeroDataSet1 projetHeroDataSet1;
         private System.Windows.Forms.BindingSource superheroBindingSource;
         private ProjetHeroDataSet1TableAdapters.Super_heroTableAdapter super_heroTableAdapter;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private ProjetHeroDataSet2FkIdCivil projetHeroDataSet2FkIdCivil;
+        private System.Windows.Forms.BindingSource civilBindingSource;
+        private ProjetHeroDataSet2FkIdCivilTableAdapters.CivilTableAdapter civilTableAdapter;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn idsuperheroDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idcivilDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomheroDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pouvoirDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pointfaibleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn commentaireDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private ProjetHeroDataSet2FkIdCivil projetHeroDataSet2FkIdCivil;
-        private System.Windows.Forms.BindingSource civilBindingSource;
-        private ProjetHeroDataSet2FkIdCivilTableAdapters.CivilTableAdapter civilTableAdapter;
-        private System.Windows.Forms.Label label3;
 
         //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         //private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

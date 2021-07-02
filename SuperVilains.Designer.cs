@@ -31,6 +31,7 @@ namespace Avergers
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.projetHeroDataSet2FkIdCivil_2 = new Avergers.ProjetHeroDataSet2FkIdCivil_2();
@@ -63,7 +64,6 @@ namespace Avergers
             this.superVilainsTableAdapter = new Avergers.AvengersDBDataSetTableAdapters.SuperVilainsTableAdapter();
             this.civilTableAdapter = new Avergers.ProjetHeroDataSet2FkIdCivil_2TableAdapters.CivilTableAdapter();
             this.super_vilainTableAdapter = new Avergers.ProjetHeroDataSet2TableAdapters.Super_vilainTableAdapter();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet2FkIdCivil_2)).BeginInit();
@@ -96,6 +96,16 @@ namespace Avergers
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Super Vilains";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(463, 63);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 16);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Id Civil :";
             // 
             // comboBox1
             // 
@@ -267,32 +277,35 @@ namespace Avergers
             // idsupervilainDataGridViewTextBoxColumn
             // 
             this.idsupervilainDataGridViewTextBoxColumn.DataPropertyName = "Id_super_vilain";
-            this.idsupervilainDataGridViewTextBoxColumn.HeaderText = "Id_super_vilain";
+            this.idsupervilainDataGridViewTextBoxColumn.HeaderText = "Id Super Vilain";
             this.idsupervilainDataGridViewTextBoxColumn.Name = "idsupervilainDataGridViewTextBoxColumn";
             // 
             // idcivilDataGridViewTextBoxColumn
             // 
             this.idcivilDataGridViewTextBoxColumn.DataPropertyName = "Id_civil";
-            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id_civil";
+            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id Du Civil";
             this.idcivilDataGridViewTextBoxColumn.Name = "idcivilDataGridViewTextBoxColumn";
             // 
             // nomvilainDataGridViewTextBoxColumn
             // 
             this.nomvilainDataGridViewTextBoxColumn.DataPropertyName = "Nom_vilain";
-            this.nomvilainDataGridViewTextBoxColumn.HeaderText = "Nom_vilain";
+            this.nomvilainDataGridViewTextBoxColumn.HeaderText = "Nom du Vilain";
             this.nomvilainDataGridViewTextBoxColumn.Name = "nomvilainDataGridViewTextBoxColumn";
+            this.nomvilainDataGridViewTextBoxColumn.Width = 187;
             // 
             // pouvoirDataGridViewTextBoxColumn
             // 
             this.pouvoirDataGridViewTextBoxColumn.DataPropertyName = "Pouvoir";
             this.pouvoirDataGridViewTextBoxColumn.HeaderText = "Pouvoir";
             this.pouvoirDataGridViewTextBoxColumn.Name = "pouvoirDataGridViewTextBoxColumn";
+            this.pouvoirDataGridViewTextBoxColumn.Width = 187;
             // 
             // commentaireDataGridViewTextBoxColumn
             // 
             this.commentaireDataGridViewTextBoxColumn.DataPropertyName = "Commentaire";
             this.commentaireDataGridViewTextBoxColumn.HeaderText = "Commentaire";
             this.commentaireDataGridViewTextBoxColumn.Name = "commentaireDataGridViewTextBoxColumn";
+            this.commentaireDataGridViewTextBoxColumn.Width = 187;
             // 
             // supervilainBindingSource
             // 
@@ -345,16 +358,6 @@ namespace Avergers
             // 
             this.super_vilainTableAdapter.ClearBeforeFill = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(463, 63);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 16);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Id Civil :";
-            // 
             // SuperVilains
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,6 +371,7 @@ namespace Avergers
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
             this.Name = "SuperVilains";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Création Super Vilains";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox1.ResumeLayout(false);
@@ -426,11 +430,11 @@ namespace Avergers
         private ProjetHeroDataSet2 projetHeroDataSet2;
         private System.Windows.Forms.BindingSource supervilainBindingSource;
         private ProjetHeroDataSet2TableAdapters.Super_vilainTableAdapter super_vilainTableAdapter;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn idsupervilainDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idcivilDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomvilainDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pouvoirDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn commentaireDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label label3;
     }
 }

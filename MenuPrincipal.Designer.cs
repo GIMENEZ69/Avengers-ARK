@@ -29,6 +29,7 @@ namespace Avergers
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.CmdAdmin = new System.Windows.Forms.Button();
             this.CmdQuitter = new System.Windows.Forms.Button();
             this.CmdUtilisateur = new System.Windows.Forms.Button();
@@ -64,7 +65,7 @@ namespace Avergers
             this.CmdUtilisateur.Name = "CmdUtilisateur";
             this.CmdUtilisateur.Size = new System.Drawing.Size(180, 59);
             this.CmdUtilisateur.TabIndex = 2;
-            this.CmdUtilisateur.Text = "Utilisateur";
+            this.CmdUtilisateur.Text = "Civil";
             this.CmdUtilisateur.UseVisualStyleBackColor = true;
             this.CmdUtilisateur.Click += new System.EventHandler(this.CmdUtilisateur_Click);
             // 
@@ -90,7 +91,9 @@ namespace Avergers
             this.Controls.Add(this.CmdQuitter);
             this.Controls.Add(this.CmdAdmin);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPrincipal";
             this.ResumeLayout(false);
             this.PerformLayout();

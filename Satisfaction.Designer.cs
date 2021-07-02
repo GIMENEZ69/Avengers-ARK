@@ -179,6 +179,7 @@ namespace Avergers
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Satisfaction";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Satisfaction";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

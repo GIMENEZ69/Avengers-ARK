@@ -27,5 +27,11 @@ namespace Avergers
         {
             Form.ActiveForm.Close();
         }
+
+        private void CmdGestion_Click(object sender, EventArgs e)
+        {
+            Missions mission = new Missions();
+            mission.ShowDialog();
+        }
     }
 }
