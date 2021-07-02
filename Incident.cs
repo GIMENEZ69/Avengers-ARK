@@ -21,16 +21,41 @@ namespace Avergers
 
         private void CmdValider_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    conn.Open();
-            //    string query = "INSERT INTO Incident(Id_incident, Id_Organisation_declarant, Id_super_hero_declarant, Adresse, Commentaire, Date_ajout, Flag_transforme_en_mission)"+
-            //        "VALUES('"+ IdDéclarant.Text+"','"+Nom.Text+"','"+Prenom.Text+"','"+
-            //}
-            //catch(Exception e1)
-            //{
-            //    MessageBox.Show(e1.Message);
-            //}
+            if(CmbSV.SelectedIndex==0)
+            {
+                //try
+                //{
+                //    conn.Open();
+                //    string query = "INSERT INTO Incident(Id_incident, Id_Organisation_declarant, Id_super_hero_declarant, Adresse, Commentaire, Date_ajout, Flag_transforme_en_mission)"+
+                //        "VALUES('"+ IdDéclarant.Text+"','"+Nom.Text+"','"+Prenom.Text+"','"+
+                //}
+                //catch(Exception e1)
+                //{
+                //    MessageBox.Show(e1.Message);
+                //}
+                try
+                {
+                    conn.Open();
+                    string query = "INSERT INTO Incident ( Nature, Adresse, Date_Ajout)"+
+                        "VALUES('"                          + CmbTypeIncident.Text + "','" + AdresseIncident.Text + "','"+Convert.ToDateTime(DateTimeIncident.Text)+ "')";
+                    SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
+                    SDA.SelectCommand.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("L'incident a bien été créé");
+                }
+                catch(Exception e1)
+                {
+                    MessageBox.Show(e1.Message);
+                }
+                Missions missions = new Missions();
+                missions.ShowDialog();
+            }
+            else
+            {
+                Autorite_Locale autorite_Locale = new Autorite_Locale();
+                autorite_Locale.ShowDialog();
+            }
+
         }
 
         private void Incident_Load(object sender, EventArgs e)
@@ -49,6 +74,11 @@ namespace Avergers
                 else
                     civilBindingSource.Filter = string.Format("{0}='{1}'", cboColumn.Text, txtSearch.Text);
             }
+        }
+
+        private void CmdQuitter_Click(object sender, EventArgs e)
+        {
+            Incident.ActiveForm.Close();
         }
     }
 }

@@ -56,3 +56,4 @@ C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avengers.csproj.CoreComp
 C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.exe
 C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.pdb
 C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.Form1.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.rapport.resources

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Avergers
 {
-    public partial class Missions : Form
+    public partial class Autorite_Locale : Form
     {
-        public Missions()
+        public Autorite_Locale()
         {
             InitializeComponent();
-        }
-
-        private void Missions_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
