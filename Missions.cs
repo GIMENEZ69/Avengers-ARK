@@ -34,7 +34,6 @@ namespace Avergers
             this.super_heoTableAdapter.Fill(this.projetHeroDataSet3superherocombobox.Super_heo);
 
             cboColumn.SelectedIndex = 1;
-
         }
 
         private void txtSearch_KeyDown(object sender, KeyEventArgs e)
