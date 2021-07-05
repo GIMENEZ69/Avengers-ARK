@@ -16,7 +16,7 @@ namespace Avergers
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new rapport());
+            Application.Run(new Missions());
         }
     }
 }

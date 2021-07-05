@@ -37,7 +37,6 @@ D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Missions.resources
 C:\Users\karim cesi\source\repos\Avengers-ARK\bin\Debug\Avergers.exe.config
 C:\Users\karim cesi\source\repos\Avengers-ARK\bin\Debug\Avergers.exe
 C:\Users\karim cesi\source\repos\Avengers-ARK\bin\Debug\Avergers.pdb
-C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avengers.csproj.AssemblyReference.cache
 C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.Civils.resources
 C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.Crise.resources
 C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.Incident.resources
@@ -57,3 +56,4 @@ C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.exe
 C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.pdb
 C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.Form1.resources
 C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avergers.rapport.resources
+C:\Users\karim cesi\source\repos\Avengers-ARK\obj\Debug\Avengers.csproj.AssemblyReference.cache

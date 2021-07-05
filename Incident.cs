@@ -36,8 +36,8 @@ namespace Avergers
                 try
                 {
                     conn.Open();
-                    string query = "INSERT INTO Incident ( Nature, Adresse, Date_Ajout)"+
-                        "VALUES('"                          + CmbTypeIncident.Text + "','" + AdresseIncident.Text + "','"+Convert.ToDateTime(DateTimeIncident.Text)+ "')";
+                    string query = "INSERT INTO Incident (Id_incident,          Id_civil_declarant, Id_organisation_declarant, Nature,              Flag_transforme_en_mission,                Adresse,                                                     Date_Ajout)" +
+                        "VALUES('"                        +        Convert.ToInt32(TxtIncident_Id.Text) + "','" + IdDeclarant.Text+"','"+Convert.ToInt32(txtIdOrga.Text)+ "','"+            CmbTypeIncident.Text + "','" +CmbSV.Text+"','" +           AdresseIncident.Text + "','"+Convert.ToDateTime(DateTimeIncident.Text)+ "')";
                     SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
                     SDA.SelectCommand.ExecuteNonQuery();
                     conn.Close();
@@ -53,9 +53,8 @@ namespace Avergers
             else
             {
                 Autorite_Locale autorite_Locale = new Autorite_Locale();
-                autorite_Locale.ShowDialog();
+                autorite_Locale.ShowDialog();  
             }
-
         }
 
         private void Incident_Load(object sender, EventArgs e)
@@ -79,6 +78,33 @@ namespace Avergers
         private void CmdQuitter_Click(object sender, EventArgs e)
         {
             Incident.ActiveForm.Close();
+        }
+
+        private void Extract_Id_Click(object sender, EventArgs e)
+        {
+            
+            foreach (DataGridViewRow dgvr in dataGridView1.Rows)
+            {
+                int id = Convert.ToInt32(dgvr.Cells[0].Value);
+                IdDeclarant.Text = id.ToString();
+                break;
+            }      
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void genIdOrg_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            //"SELECT Id_organisation FROM Organisation_civil WHERE Id_civil = '" + textBox1.Text + "'";
+
+            SqlCommand cmd = new SqlCommand("SELECT Id_organisation FROM Organisation_civil WHERE Id_civil = '" + IdDeclarant.Text + "'", conn);
+            int result = Convert.ToInt32(cmd.ExecuteScalar());
+            conn.Close();
+            txtIdOrga.Text=result.ToString();
         }
     }
 }

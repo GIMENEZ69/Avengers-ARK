@@ -57,6 +57,8 @@ namespace Avergers
             this.idcivilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prenomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet3test)).BeginInit();
@@ -66,6 +68,7 @@ namespace Avergers
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.CmbSHMort);
+            this.groupBox2.Controls.Add(this.comboBox2);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.CmbNbCivilSauve);
             this.groupBox2.Controls.Add(this.label13);
@@ -243,7 +246,7 @@ namespace Avergers
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(377, 253);
+            this.comboBox2.Location = new System.Drawing.Point(197, 100);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(163, 21);
             this.comboBox2.TabIndex = 33;
@@ -256,7 +259,9 @@ namespace Avergers
             this.Column1,
             this.idcivilDataGridViewTextBoxColumn,
             this.nomDataGridViewTextBoxColumn,
-            this.prenomDataGridViewTextBoxColumn});
+            this.prenomDataGridViewTextBoxColumn,
+            this.Column2,
+            this.Column3});
             this.dataGridView1.DataSource = this.civilBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(79, 33);
             this.dataGridView1.Name = "dataGridView1";
@@ -300,13 +305,23 @@ namespace Avergers
             this.prenomDataGridViewTextBoxColumn.HeaderText = "Prenom";
             this.prenomDataGridViewTextBoxColumn.Name = "prenomDataGridViewTextBoxColumn";
             // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Id_civil";
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
+            // 
             // rapport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 527);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.ValidRapport);
             this.Controls.Add(this.groupBox2);
             this.Name = "rapport";
@@ -350,5 +365,7 @@ namespace Avergers
         private System.Windows.Forms.DataGridViewTextBoxColumn idcivilDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prenomDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }

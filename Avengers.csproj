@@ -145,6 +145,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet3OrganisationIdCivilDirigeantCombobox.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSet3superherocombobox.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet3superherocombobox.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSet3SuperHeroGridView.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -174,6 +179,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetFKIdCivil.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetIncidentDatagridview.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetIncidentDatagridview.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetMissionComboboxSuperHero2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetMissionComboboxSuperHero2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetMissionComboNomSuperhero.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetMissionComboNomSuperhero.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProjetHeroDataSetOrganisationDataGridView.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -374,6 +394,17 @@
     <None Include="ProjetHeroDataSet3OrganisationIdCivilDirigeantCombobox.xss">
       <DependentUpon>ProjetHeroDataSet3OrganisationIdCivilDirigeantCombobox.xsd</DependentUpon>
     </None>
+    <None Include="ProjetHeroDataSet3superherocombobox.xsc">
+      <DependentUpon>ProjetHeroDataSet3superherocombobox.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet3superherocombobox.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet3superherocombobox.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet3superherocombobox.xss">
+      <DependentUpon>ProjetHeroDataSet3superherocombobox.xsd</DependentUpon>
+    </None>
     <None Include="ProjetHeroDataSet3SuperHeroGridView.xsc">
       <DependentUpon>ProjetHeroDataSet3SuperHeroGridView.xsd</DependentUpon>
     </None>
@@ -439,6 +470,39 @@
     </None>
     <None Include="ProjetHeroDataSetFKIdCivil.xss">
       <DependentUpon>ProjetHeroDataSetFKIdCivil.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetIncidentDatagridview.xsc">
+      <DependentUpon>ProjetHeroDataSetIncidentDatagridview.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetIncidentDatagridview.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetIncidentDatagridview.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetIncidentDatagridview.xss">
+      <DependentUpon>ProjetHeroDataSetIncidentDatagridview.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetMissionComboboxSuperHero2.xsc">
+      <DependentUpon>ProjetHeroDataSetMissionComboboxSuperHero2.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetMissionComboboxSuperHero2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetMissionComboboxSuperHero2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetMissionComboboxSuperHero2.xss">
+      <DependentUpon>ProjetHeroDataSetMissionComboboxSuperHero2.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetMissionComboNomSuperhero.xsc">
+      <DependentUpon>ProjetHeroDataSetMissionComboNomSuperhero.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetMissionComboNomSuperhero.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetMissionComboNomSuperhero.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetMissionComboNomSuperhero.xss">
+      <DependentUpon>ProjetHeroDataSetMissionComboNomSuperhero.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSetOrganisationDataGridView.xsc">
       <DependentUpon>ProjetHeroDataSetOrganisationDataGridView.xsd</DependentUpon>
