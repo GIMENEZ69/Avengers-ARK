@@ -33,5 +33,11 @@ namespace Avergers
             Missions mission = new Missions();
             mission.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RapportMissions rapport = new RapportMissions();
+            rapport.ShowDialog();
+        }
     }
 }

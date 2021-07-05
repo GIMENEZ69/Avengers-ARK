@@ -30,6 +30,7 @@ namespace Avergers
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Organisations));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.CmdRead = new System.Windows.Forms.Button();
             this.CmdSupp = new System.Windows.Forms.Button();
@@ -37,7 +38,8 @@ namespace Avergers
             this.CmdCréer = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.CmbIdCivil = new System.Windows.Forms.ComboBox();
-            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.civilBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSetCmbIdCivilOrg = new Avergers.ProjetHeroDataSetCmbIdCivilOrg();
             this.DateTimeModif = new System.Windows.Forms.DateTimePicker();
             this.DateTimeAjout = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,6 +53,7 @@ namespace Avergers
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.organisationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.CmdQuitter = new System.Windows.Forms.Button();
             this.organisationsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -63,28 +66,26 @@ namespace Avergers
             this.membreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ajoutorgaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modificationorgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.organisationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSetOrganisationGrdv = new Avergers.ProjetHeroDataSetOrganisationGrdv();
             this.organisationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.projetHeroDataSet = new Avergers.ProjetHeroDataSet();
             this.organisationTableAdapter = new Avergers.ProjetHeroDataSetTableAdapters.OrganisationTableAdapter();
-            this.projetHeroDataSetOrganisationGrdv = new Avergers.ProjetHeroDataSetOrganisationGrdv();
-            this.organisationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.organisationTableAdapter1 = new Avergers.ProjetHeroDataSetOrganisationGrdvTableAdapters.OrganisationTableAdapter();
-            this.projetHeroDataSetCmbIdCivilOrg = new Avergers.ProjetHeroDataSetCmbIdCivilOrg();
-            this.civilBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.civilTableAdapter1 = new Avergers.ProjetHeroDataSetCmbIdCivilOrgTableAdapters.CivilTableAdapter();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCmbIdCivilOrg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.organisationBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetOrganisationGrdv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetOrganisationGrdv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.organisationBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCmbIdCivilOrg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -174,12 +175,15 @@ namespace Avergers
             this.CmbIdCivil.TabIndex = 51;
             this.CmbIdCivil.ValueMember = "Id_civil";
             // 
-            // civilBindingSource
+            // civilBindingSource1
             // 
-            this.civilBindingSource.DataMember = "Civil";
+            this.civilBindingSource1.DataMember = "Civil";
+            this.civilBindingSource1.DataSource = this.projetHeroDataSetCmbIdCivilOrg;
             // 
-            // projetHeroDataSetCivilComboOrg
+            // projetHeroDataSetCmbIdCivilOrg
             // 
+            this.projetHeroDataSetCmbIdCivilOrg.DataSetName = "ProjetHeroDataSetCmbIdCivilOrg";
+            this.projetHeroDataSetCmbIdCivilOrg.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // DateTimeModif
             // 
@@ -286,6 +290,10 @@ namespace Avergers
             this.label1.TabIndex = 0;
             this.label1.Text = "Id :";
             // 
+            // civilBindingSource
+            // 
+            this.civilBindingSource.DataMember = "Civil";
+            // 
             // organisationsBindingSource
             // 
             this.organisationsBindingSource.DataMember = "Organisations";
@@ -310,7 +318,13 @@ namespace Avergers
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idorganisationDataGridViewTextBoxColumn,
@@ -370,6 +384,16 @@ namespace Avergers
             this.modificationorgDataGridViewTextBoxColumn.HeaderText = "Modification_org";
             this.modificationorgDataGridViewTextBoxColumn.Name = "modificationorgDataGridViewTextBoxColumn";
             // 
+            // organisationBindingSource1
+            // 
+            this.organisationBindingSource1.DataMember = "Organisation";
+            this.organisationBindingSource1.DataSource = this.projetHeroDataSetOrganisationGrdv;
+            // 
+            // projetHeroDataSetOrganisationGrdv
+            // 
+            this.projetHeroDataSetOrganisationGrdv.DataSetName = "ProjetHeroDataSetOrganisationGrdv";
+            this.projetHeroDataSetOrganisationGrdv.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // organisationBindingSource
             // 
             this.organisationBindingSource.DataMember = "Organisation";
@@ -384,32 +408,9 @@ namespace Avergers
             // 
             this.organisationTableAdapter.ClearBeforeFill = true;
             // 
-            // civilTableAdapter
-            // 
-            // 
-            // projetHeroDataSetOrganisationGrdv
-            // 
-            this.projetHeroDataSetOrganisationGrdv.DataSetName = "ProjetHeroDataSetOrganisationGrdv";
-            this.projetHeroDataSetOrganisationGrdv.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // organisationBindingSource1
-            // 
-            this.organisationBindingSource1.DataMember = "Organisation";
-            this.organisationBindingSource1.DataSource = this.projetHeroDataSetOrganisationGrdv;
-            // 
             // organisationTableAdapter1
             // 
             this.organisationTableAdapter1.ClearBeforeFill = true;
-            // 
-            // projetHeroDataSetCmbIdCivilOrg
-            // 
-            this.projetHeroDataSetCmbIdCivilOrg.DataSetName = "ProjetHeroDataSetCmbIdCivilOrg";
-            this.projetHeroDataSetCmbIdCivilOrg.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // civilBindingSource1
-            // 
-            this.civilBindingSource1.DataMember = "Civil";
-            this.civilBindingSource1.DataSource = this.projetHeroDataSetCmbIdCivilOrg;
             // 
             // civilTableAdapter1
             // 
@@ -424,23 +425,24 @@ namespace Avergers
             this.Controls.Add(this.CmdQuitter);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Organisations";
-            this.Text = "Organisations";
+            this.Text = "Création d\'une organisation";
             this.Load += new System.EventHandler(this.Organisations_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCmbIdCivilOrg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.organisationBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetOrganisationGrdv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.organisationBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetOrganisationGrdv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.organisationBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCmbIdCivilOrg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }

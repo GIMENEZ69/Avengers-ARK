@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Incident));
             this.GroupBoxInci = new System.Windows.Forms.GroupBox();
-            this.IdIncident = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.CmbNatureIncident = new System.Windows.Forms.ComboBox();
             this.CmbSV = new System.Windows.Forms.ComboBox();
             this.DateTimeIncident = new System.Windows.Forms.DateTimePicker();
@@ -56,6 +55,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.civilTableAdapter = new Avergers.ProjetHeroDataSetCivilDatagriedIncidentTableAdapters.CivilTableAdapter();
+            this.CmdValidDeclarant = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.IdCivilRattache = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.IdIncident = new System.Windows.Forms.TextBox();
             this.GroupBoxInci.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -66,6 +70,8 @@
             // GroupBoxInci
             // 
             this.GroupBoxInci.Controls.Add(this.IdIncident);
+            this.GroupBoxInci.Controls.Add(this.label4);
+            this.GroupBoxInci.Controls.Add(this.IdCivilRattache);
             this.GroupBoxInci.Controls.Add(this.label2);
             this.GroupBoxInci.Controls.Add(this.CmbNatureIncident);
             this.GroupBoxInci.Controls.Add(this.CmbSV);
@@ -75,28 +81,12 @@
             this.GroupBoxInci.Controls.Add(this.label8);
             this.GroupBoxInci.Controls.Add(this.label9);
             this.GroupBoxInci.Controls.Add(this.label11);
-            this.GroupBoxInci.Location = new System.Drawing.Point(12, 250);
+            this.GroupBoxInci.Location = new System.Drawing.Point(12, 298);
             this.GroupBoxInci.Name = "GroupBoxInci";
-            this.GroupBoxInci.Size = new System.Drawing.Size(685, 173);
+            this.GroupBoxInci.Size = new System.Drawing.Size(685, 207);
             this.GroupBoxInci.TabIndex = 14;
             this.GroupBoxInci.TabStop = false;
             this.GroupBoxInci.Text = "L\'incident";
-            // 
-            // IdIncident
-            // 
-            this.IdIncident.Location = new System.Drawing.Point(123, 19);
-            this.IdIncident.Name = "IdIncident";
-            this.IdIncident.Size = new System.Drawing.Size(139, 20);
-            this.IdIncident.TabIndex = 14;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Id incident :";
             // 
             // CmbNatureIncident
             // 
@@ -106,7 +96,7 @@
             "Braquage",
             "Coup de feu",
             "Autres"});
-            this.CmbNatureIncident.Location = new System.Drawing.Point(123, 60);
+            this.CmbNatureIncident.Location = new System.Drawing.Point(124, 97);
             this.CmbNatureIncident.Name = "CmbNatureIncident";
             this.CmbNatureIncident.Size = new System.Drawing.Size(139, 21);
             this.CmbNatureIncident.TabIndex = 12;
@@ -117,21 +107,21 @@
             this.CmbSV.Items.AddRange(new object[] {
             "Oui",
             "Non"});
-            this.CmbSV.Location = new System.Drawing.Point(469, 97);
+            this.CmbSV.Location = new System.Drawing.Point(470, 134);
             this.CmbSV.Name = "CmbSV";
             this.CmbSV.Size = new System.Drawing.Size(163, 21);
             this.CmbSV.TabIndex = 11;
             // 
             // DateTimeIncident
             // 
-            this.DateTimeIncident.Location = new System.Drawing.Point(469, 52);
+            this.DateTimeIncident.Location = new System.Drawing.Point(470, 89);
             this.DateTimeIncident.Name = "DateTimeIncident";
             this.DateTimeIncident.Size = new System.Drawing.Size(163, 20);
             this.DateTimeIncident.TabIndex = 10;
             // 
             // AdresseIncident
             // 
-            this.AdresseIncident.Location = new System.Drawing.Point(123, 101);
+            this.AdresseIncident.Location = new System.Drawing.Point(124, 138);
             this.AdresseIncident.Multiline = true;
             this.AdresseIncident.Name = "AdresseIncident";
             this.AdresseIncident.Size = new System.Drawing.Size(139, 53);
@@ -140,7 +130,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(283, 100);
+            this.label7.Location = new System.Drawing.Point(284, 137);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(180, 13);
             this.label7.TabIndex = 5;
@@ -149,7 +139,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(365, 58);
+            this.label8.Location = new System.Drawing.Point(366, 95);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(98, 13);
             this.label8.TabIndex = 4;
@@ -158,7 +148,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(63, 104);
+            this.label9.Location = new System.Drawing.Point(64, 141);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(54, 13);
             this.label9.TabIndex = 3;
@@ -167,7 +157,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(13, 63);
+            this.label11.Location = new System.Drawing.Point(14, 100);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(104, 13);
             this.label11.TabIndex = 1;
@@ -175,7 +165,7 @@
             // 
             // CmdValider
             // 
-            this.CmdValider.Location = new System.Drawing.Point(132, 429);
+            this.CmdValider.Location = new System.Drawing.Point(109, 524);
             this.CmdValider.Name = "CmdValider";
             this.CmdValider.Size = new System.Drawing.Size(125, 43);
             this.CmdValider.TabIndex = 13;
@@ -185,7 +175,7 @@
             // 
             // CmdQuitter
             // 
-            this.CmdQuitter.Location = new System.Drawing.Point(510, 429);
+            this.CmdQuitter.Location = new System.Drawing.Point(482, 524);
             this.CmdQuitter.Name = "CmdQuitter";
             this.CmdQuitter.Size = new System.Drawing.Size(125, 43);
             this.CmdQuitter.TabIndex = 12;
@@ -195,6 +185,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.CmdValidDeclarant);
             this.groupBox1.Controls.Add(this.CmbSelecRech);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.Recherche);
@@ -202,7 +193,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(685, 223);
+            this.groupBox1.Size = new System.Drawing.Size(685, 271);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Le déclarant";
@@ -243,7 +234,7 @@
             // idcivilDataGridViewTextBoxColumn
             // 
             this.idcivilDataGridViewTextBoxColumn.DataPropertyName = "Id_civil";
-            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id_civil";
+            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id du civil";
             this.idcivilDataGridViewTextBoxColumn.Name = "idcivilDataGridViewTextBoxColumn";
             // 
             // nomDataGridViewTextBoxColumn
@@ -267,7 +258,7 @@
             // datenaissanceDataGridViewTextBoxColumn
             // 
             this.datenaissanceDataGridViewTextBoxColumn.DataPropertyName = "Date_naissance";
-            this.datenaissanceDataGridViewTextBoxColumn.HeaderText = "Date_naissance";
+            this.datenaissanceDataGridViewTextBoxColumn.HeaderText = "Date de naissance";
             this.datenaissanceDataGridViewTextBoxColumn.Name = "datenaissanceDataGridViewTextBoxColumn";
             // 
             // civilBindingSource
@@ -310,15 +301,58 @@
             // 
             this.civilTableAdapter.ClearBeforeFill = true;
             // 
+            // CmdValidDeclarant
+            // 
+            this.CmdValidDeclarant.Location = new System.Drawing.Point(273, 222);
+            this.CmdValidDeclarant.Name = "CmdValidDeclarant";
+            this.CmdValidDeclarant.Size = new System.Drawing.Size(125, 43);
+            this.CmdValidDeclarant.TabIndex = 15;
+            this.CmdValidDeclarant.Text = "Valider le déclarant";
+            this.CmdValidDeclarant.UseVisualStyleBackColor = true;
+            this.CmdValidDeclarant.Click += new System.EventHandler(this.CmdValidDeclarant_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "ID du Civil rattaché :";
+            // 
+            // IdCivilRattache
+            // 
+            this.IdCivilRattache.Location = new System.Drawing.Point(122, 30);
+            this.IdCivilRattache.Name = "IdCivilRattache";
+            this.IdCivilRattache.Size = new System.Drawing.Size(138, 20);
+            this.IdCivilRattache.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(33, 65);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "ID de l\'incident :";
+            // 
+            // IdIncident
+            // 
+            this.IdIncident.Location = new System.Drawing.Point(122, 62);
+            this.IdIncident.Name = "IdIncident";
+            this.IdIncident.Size = new System.Drawing.Size(138, 20);
+            this.IdIncident.TabIndex = 16;
+            // 
             // Incident
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 484);
+            this.ClientSize = new System.Drawing.Size(707, 579);
             this.Controls.Add(this.GroupBoxInci);
             this.Controls.Add(this.CmdValider);
             this.Controls.Add(this.CmdQuitter);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Incident";
             this.Text = "Incident";
             this.Load += new System.EventHandler(this.Incident_Load);
@@ -361,6 +395,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn adresseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn datenaissanceDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox IdIncident;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox IdCivilRattache;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button CmdValidDeclarant;
     }
 }

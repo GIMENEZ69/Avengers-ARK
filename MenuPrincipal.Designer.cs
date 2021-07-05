@@ -29,6 +29,7 @@ namespace Avergers
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.CmdQuitter = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.CmdUtilisateur = new System.Windows.Forms.Button();
@@ -90,6 +91,7 @@ namespace Avergers
             this.Controls.Add(this.CmdUtilisateur);
             this.Controls.Add(this.CmdAdmin);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuPrincipal";
             this.Text = "Menu Principal";
             this.ResumeLayout(false);

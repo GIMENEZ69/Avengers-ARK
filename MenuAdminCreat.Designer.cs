@@ -29,6 +29,7 @@ namespace Avergers
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAdminCreat));
             this.CmdCivils = new System.Windows.Forms.Button();
             this.CmdSH = new System.Windows.Forms.Button();
             this.CmdOrg = new System.Windows.Forms.Button();
@@ -99,7 +100,7 @@ namespace Avergers
             this.CmdQuitter.UseVisualStyleBackColor = true;
             this.CmdQuitter.Click += new System.EventHandler(this.CmdQuitter_Click);
             // 
-            // Menu
+            // MenuAdminCreat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -112,7 +113,8 @@ namespace Avergers
             this.Controls.Add(this.CmdSH);
             this.Controls.Add(this.CmdCivils);
             this.DoubleBuffered = true;
-            this.Name = "Menu";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "MenuAdminCreat";
             this.Text = "Menu";
             this.ResumeLayout(false);
 

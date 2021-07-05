@@ -18,6 +18,8 @@ namespace Avergers
             InitializeComponent();
         }
 
+        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=ProjetHero;Integrated Security=True");
+
         private void Incident_Load(object sender, EventArgs e)
         {
             // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetCivilDatagriedIncident.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
@@ -41,24 +43,32 @@ namespace Avergers
             Form.ActiveForm.Close();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=ProjetHero;Integrated Security=True");
         private void CmdValider_Click(object sender, EventArgs e)
         {
             if (CmbSV.SelectedIndex==1)
             {
                 MessageBox.Show("Nous vous remercions pour votre déclaration. Votre demande a été transmises aux autorités locales.");
-                //AutoriteLocale autorite = new AutoriteLocale();
-                //autorite.ShowDialog();
+                
             } else
             {
                 conn.Open();
-                string query = "INSERT INTO Incident (Nature, Adresse, Date_ajout)" +
-                    "VALUES(   '" + CmbNatureIncident.Text + "', '" + AdresseIncident.Text + "', '" + Convert.ToDateTime(DateTimeIncident.Text) + "')";
+                string query = "INSERT INTO Incident (Id_civil_declarant, Nature, Adresse, Date_ajout)" +
+                    "VALUES(  '" + IdCivilRattache.Text + "', '" + CmbNatureIncident.Text + "', '" + AdresseIncident.Text + "', '" + Convert.ToDateTime(DateTimeIncident.Text) + "')";
                 SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
                 SDA.SelectCommand.ExecuteNonQuery();
                 conn.Close();
 
-                MessageBox.Show("Votre incident a bien été déclaré. Un Avenger va se rendre sur les lieux");
+                MessageBox.Show("Votre incident a bien été déclaré.");
+            }
+        }
+
+        private void CmdValidDeclarant_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow dgvr in dataGridView1.Rows)
+            {
+                int id = Convert.ToInt32(dgvr.Cells[0].Value);
+                IdCivilRattache.Text = id.ToString();
+                break;
             }
         }
     }

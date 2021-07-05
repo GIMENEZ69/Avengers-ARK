@@ -29,6 +29,7 @@ namespace Avergers
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Utilisateur));
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -65,6 +66,7 @@ namespace Avergers
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Utilisateur";
             this.Text = "Utilisateur";
             this.ResumeLayout(false);

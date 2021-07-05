@@ -30,6 +30,7 @@ namespace Avergers
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuperHeros));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.CmbIdCivils = new System.Windows.Forms.ComboBox();
             this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -282,7 +283,13 @@ namespace Avergers
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idsuperheroDataGridViewTextBoxColumn,
@@ -362,6 +369,7 @@ namespace Avergers
             this.Controls.Add(this.CmdQuitter);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SuperHeros";
             this.Text = "Création d\'un super héros";
             this.Load += new System.EventHandler(this.Form1_Load);

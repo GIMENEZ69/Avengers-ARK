@@ -29,9 +29,11 @@ namespace Avergers
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageChoixAdmin));
             this.CmdQuitter = new System.Windows.Forms.Button();
             this.CmdGestion = new System.Windows.Forms.Button();
             this.CmdCreation = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CmdQuitter
@@ -48,7 +50,7 @@ namespace Avergers
             // CmdGestion
             // 
             this.CmdGestion.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdGestion.Location = new System.Drawing.Point(423, 161);
+            this.CmdGestion.Location = new System.Drawing.Point(258, 161);
             this.CmdGestion.Name = "CmdGestion";
             this.CmdGestion.Size = new System.Drawing.Size(165, 77);
             this.CmdGestion.TabIndex = 4;
@@ -59,13 +61,24 @@ namespace Avergers
             // CmdCreation
             // 
             this.CmdCreation.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdCreation.Location = new System.Drawing.Point(134, 161);
+            this.CmdCreation.Location = new System.Drawing.Point(26, 161);
             this.CmdCreation.Name = "CmdCreation";
             this.CmdCreation.Size = new System.Drawing.Size(165, 77);
             this.CmdCreation.TabIndex = 3;
             this.CmdCreation.Text = "Créer dans la base de données";
             this.CmdCreation.UseVisualStyleBackColor = true;
             this.CmdCreation.Click += new System.EventHandler(this.CmdCreation_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(481, 161);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(165, 77);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Créer les rapports de missions";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // PageChoixAdmin
             // 
@@ -74,10 +87,12 @@ namespace Avergers
             this.BackgroundImage = global::Avergers.Properties.Resources.Avengerslogo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(658, 370);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.CmdQuitter);
             this.Controls.Add(this.CmdGestion);
             this.Controls.Add(this.CmdCreation);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PageChoixAdmin";
             this.Text = "PageChoixAdmin";
             this.ResumeLayout(false);
@@ -89,5 +104,6 @@ namespace Avergers
         private System.Windows.Forms.Button CmdQuitter;
         private System.Windows.Forms.Button CmdGestion;
         private System.Windows.Forms.Button CmdCreation;
+        private System.Windows.Forms.Button button1;
     }
 }

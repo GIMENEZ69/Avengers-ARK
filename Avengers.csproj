@@ -118,6 +118,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetCivilDatagriedIncident.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSetCivilmortRapport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetCivilmortRapport.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSetCmbIdCivilOrg.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -127,6 +132,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetDGVIncidentMission.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetFicheMissionDtgvIncident.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetFicheMissionDtgvIncident.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProjetHeroDataSetFKIdCivil.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -143,10 +153,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetIdIncidentMission.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSetNomSVRapportMission.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetNomSVRapportMission.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSetOrganisationGrdv.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetOrganisationGrdv.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetRapportMission.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetRapportMission.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProjetHeroDataSetVilain.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -306,6 +326,17 @@
     <None Include="ProjetHeroDataSetCivilDatagriedIncident.xss">
       <DependentUpon>ProjetHeroDataSetCivilDatagriedIncident.xsd</DependentUpon>
     </None>
+    <None Include="ProjetHeroDataSetCivilmortRapport.xsc">
+      <DependentUpon>ProjetHeroDataSetCivilmortRapport.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetCivilmortRapport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetCivilmortRapport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetCivilmortRapport.xss">
+      <DependentUpon>ProjetHeroDataSetCivilmortRapport.xsd</DependentUpon>
+    </None>
     <None Include="ProjetHeroDataSetCmbIdCivilOrg.xsc">
       <DependentUpon>ProjetHeroDataSetCmbIdCivilOrg.xsd</DependentUpon>
     </None>
@@ -327,6 +358,17 @@
     </None>
     <None Include="ProjetHeroDataSetDGVIncidentMission.xss">
       <DependentUpon>ProjetHeroDataSetDGVIncidentMission.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetFicheMissionDtgvIncident.xsc">
+      <DependentUpon>ProjetHeroDataSetFicheMissionDtgvIncident.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetFicheMissionDtgvIncident.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetFicheMissionDtgvIncident.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetFicheMissionDtgvIncident.xss">
+      <DependentUpon>ProjetHeroDataSetFicheMissionDtgvIncident.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSetFKIdCivil.xsc">
       <DependentUpon>ProjetHeroDataSetFKIdCivil.xsd</DependentUpon>
@@ -361,6 +403,17 @@
     <None Include="ProjetHeroDataSetIdIncidentMission.xss">
       <DependentUpon>ProjetHeroDataSetIdIncidentMission.xsd</DependentUpon>
     </None>
+    <None Include="ProjetHeroDataSetNomSVRapportMission.xsc">
+      <DependentUpon>ProjetHeroDataSetNomSVRapportMission.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetNomSVRapportMission.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetNomSVRapportMission.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetNomSVRapportMission.xss">
+      <DependentUpon>ProjetHeroDataSetNomSVRapportMission.xsd</DependentUpon>
+    </None>
     <None Include="ProjetHeroDataSetOrganisationGrdv.xsc">
       <DependentUpon>ProjetHeroDataSetOrganisationGrdv.xsd</DependentUpon>
     </None>
@@ -371,6 +424,17 @@
     </None>
     <None Include="ProjetHeroDataSetOrganisationGrdv.xss">
       <DependentUpon>ProjetHeroDataSetOrganisationGrdv.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetRapportMission.xsc">
+      <DependentUpon>ProjetHeroDataSetRapportMission.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetRapportMission.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetRapportMission.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetRapportMission.xss">
+      <DependentUpon>ProjetHeroDataSetRapportMission.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSetVilain.xsc">
       <DependentUpon>ProjetHeroDataSetVilain.xsd</DependentUpon>

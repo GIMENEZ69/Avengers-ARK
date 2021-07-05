@@ -30,6 +30,7 @@ namespace Avergers
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuperVilains));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.CmdRead = new System.Windows.Forms.Button();
             this.CmdSupp = new System.Windows.Forms.Button();
@@ -264,7 +265,13 @@ namespace Avergers
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idsupervilainDataGridViewTextBoxColumn,
@@ -337,6 +344,7 @@ namespace Avergers
             this.Controls.Add(this.CmdQuitter);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SuperVilains";
             this.Text = "Création d\'un Super-Vilain";
             this.Load += new System.EventHandler(this.SuperVilains_Load);
