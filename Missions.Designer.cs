@@ -42,7 +42,6 @@
             this.CmbNivGravite = new System.Windows.Forms.ComboBox();
             this.IdMission = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -78,6 +77,10 @@
             this.projetHeroDataSetMissionComboboxSuperHero2 = new Avergers.ProjetHeroDataSetMissionComboboxSuperHero2();
             this.superhero2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.super_hero2TableAdapter = new Avergers.ProjetHeroDataSetMissionComboboxSuperHero2TableAdapters.Super_hero2TableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
+            this.projetHeroDataSet3comboidsuperheroMission = new Avergers.ProjetHeroDataSet3comboidsuperheroMission();
+            this.superhero2BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.super_hero2TableAdapter1 = new Avergers.ProjetHeroDataSet3comboidsuperheroMissionTableAdapters.Super_hero2TableAdapter();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.superheoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet3superherocombobox)).BeginInit();
@@ -88,6 +91,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.superheoBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetMissionComboboxSuperHero2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superhero2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet3comboidsuperheroMission)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superhero2BindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // CmdAnnuler
@@ -112,6 +117,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.adresse);
             this.groupBox1.Controls.Add(this.label10);
@@ -128,7 +134,6 @@
             this.groupBox1.Controls.Add(this.CmbNivGravite);
             this.groupBox1.Controls.Add(this.IdMission);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -220,15 +225,6 @@
             this.label7.Size = new System.Drawing.Size(97, 13);
             this.label7.TabIndex = 6;
             this.label7.Text = "Niveau de gravité :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(343, 72);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Intervention Héros :";
             // 
             // label3
             // 
@@ -343,7 +339,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(343, 107);
+            this.label8.Location = new System.Drawing.Point(356, 143);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(37, 13);
             this.label8.TabIndex = 28;
@@ -351,7 +347,7 @@
             // 
             // id_civil
             // 
-            this.id_civil.Location = new System.Drawing.Point(400, 104);
+            this.id_civil.Location = new System.Drawing.Point(413, 140);
             this.id_civil.Name = "id_civil";
             this.id_civil.Size = new System.Drawing.Size(115, 20);
             this.id_civil.TabIndex = 27;
@@ -478,6 +474,30 @@
             // 
             this.super_hero2TableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(340, 67);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 25);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "Intervention Héros :";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // projetHeroDataSet3comboidsuperheroMission
+            // 
+            this.projetHeroDataSet3comboidsuperheroMission.DataSetName = "ProjetHeroDataSet3comboidsuperheroMission";
+            this.projetHeroDataSet3comboidsuperheroMission.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // superhero2BindingSource1
+            // 
+            this.superhero2BindingSource1.DataMember = "Super_hero2";
+            this.superhero2BindingSource1.DataSource = this.projetHeroDataSet3comboidsuperheroMission;
+            // 
+            // super_hero2TableAdapter1
+            // 
+            this.super_hero2TableAdapter1.ClearBeforeFill = true;
+            // 
             // Missions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -506,6 +526,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.superheoBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetMissionComboboxSuperHero2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superhero2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet3comboidsuperheroMission)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superhero2BindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -520,7 +542,6 @@
         private System.Windows.Forms.ComboBox CmbNivGravite;
         private System.Windows.Forms.TextBox IdMission;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -561,5 +582,9 @@
         private ProjetHeroDataSetMissionComboboxSuperHero2 projetHeroDataSetMissionComboboxSuperHero2;
         private System.Windows.Forms.BindingSource superhero2BindingSource;
         private ProjetHeroDataSetMissionComboboxSuperHero2TableAdapters.Super_hero2TableAdapter super_hero2TableAdapter;
+        private System.Windows.Forms.Button button1;
+        private ProjetHeroDataSet3comboidsuperheroMission projetHeroDataSet3comboidsuperheroMission;
+        private System.Windows.Forms.BindingSource superhero2BindingSource1;
+        private ProjetHeroDataSet3comboidsuperheroMissionTableAdapters.Super_hero2TableAdapter super_hero2TableAdapter1;
     }
 }

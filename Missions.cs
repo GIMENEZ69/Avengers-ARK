@@ -22,6 +22,8 @@ namespace Avergers
 
         private void Missions_Load(object sender, EventArgs e)
         {
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet3comboidsuperheroMission.Super_hero2'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.super_hero2TableAdapter1.Fill(this.projetHeroDataSet3comboidsuperheroMission.Super_hero2);
             // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetMissionComboboxSuperHero2.Super_hero2'. Vous pouvez la déplacer ou la supprimer selon les besoins.
             this.super_hero2TableAdapter.Fill(this.projetHeroDataSetMissionComboboxSuperHero2.Super_hero2);
             // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetMissionComboNomSuperhero.Super_heo'. Vous pouvez la déplacer ou la supprimer selon les besoins.
@@ -71,7 +73,7 @@ namespace Avergers
             try
             {
                 conn.Open();
-                string query = "INSERT INTO Mission (Id_Mission,                                        Id_incident,                                            Id_civil,                          Gravite,                                                  Itineraire,Nature,                                             Titre,                              Date_debut,                                               Date_fin, )" +
+                string query = "INSERT INTO Mission (Id_Mission,                                        Id_incident,                                            Id_civil,                          Gravite,                                                  Itineraire,Nature,                                             Titre,                                          Date_debut,                                                Date_fin,                                                    Nom_hero)" +
                     "VALUES('" +                                Convert.ToInt32(IdMission.Text) + "','" +Convert.ToInt32(idIncident.Text)+ "','" + Convert.ToInt32(id_civil.Text) + "','" + CmbNivGravite.Text + "','"+adresse.Text + "','" +txtNatureIncident.Text+ "','" +                  titreMission.Text +"','" + Convert.ToDateTime(dateDebut.Text) + "','" + Convert.ToDateTime(dateTimeFin.Text)+"','"+ CmbInterSH.Text+ "')";
                 SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
                 SDA.SelectCommand.ExecuteNonQuery();
@@ -82,6 +84,11 @@ namespace Avergers
             {
                 MessageBox.Show(e1.Message);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

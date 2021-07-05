@@ -125,6 +125,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet3ComboIdCivilSuperVilain.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSet3comboidsuperheroMission.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet3comboidsuperheroMission.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSet3Form1Test.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -349,6 +354,17 @@
     </None>
     <None Include="ProjetHeroDataSet3ComboIdCivilSuperVilain.xss">
       <DependentUpon>ProjetHeroDataSet3ComboIdCivilSuperVilain.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet3comboidsuperheroMission.xsc">
+      <DependentUpon>ProjetHeroDataSet3comboidsuperheroMission.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet3comboidsuperheroMission.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet3comboidsuperheroMission.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet3comboidsuperheroMission.xss">
+      <DependentUpon>ProjetHeroDataSet3comboidsuperheroMission.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSet3Form1Test.xsc">
       <DependentUpon>ProjetHeroDataSet3Form1Test.xsd</DependentUpon>
