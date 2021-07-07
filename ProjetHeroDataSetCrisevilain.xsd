@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProjetHeroDataSetCrisevilain" targetNamespace="http://tempuri.org/ProjetHeroDataSetCrisevilain.xsd" xmlns:mstns="http://tempuri.org/ProjetHeroDataSetCrisevilain.xsd" xmlns="http://tempuri.org/ProjetHeroDataSetCrisevilain.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProjetHeroConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProjetHeroConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Avergers.Properties.Settings.GlobalReference.Default.ProjetHeroConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Mission_supervilainTableAdapter" GeneratorDataComponentClassName="Mission_supervilainTableAdapter" Name="Mission_supervilain" UserDataComponentName="Mission_supervilainTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProjetHeroConnectionString (Settings)" DbObjectName="ProjetHero.dbo.Mission_supervilain" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id_super_vilain FROM dbo.Mission_supervilain</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_super_vilain" DataSetColumn="Id_super_vilain" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProjetHeroDataSetCrisevilain" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ProjetHeroDataSetCrisevilain" msprop:Generator_UserDSName="ProjetHeroDataSetCrisevilain">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Mission_supervilain" msprop:Generator_TableClassName="Mission_supervilainDataTable" msprop:Generator_TableVarName="tableMission_supervilain" msprop:Generator_TablePropName="Mission_supervilain" msprop:Generator_RowDeletingName="Mission_supervilainRowDeleting" msprop:Generator_RowChangingName="Mission_supervilainRowChanging" msprop:Generator_RowEvHandlerName="Mission_supervilainRowChangeEventHandler" msprop:Generator_RowDeletedName="Mission_supervilainRowDeleted" msprop:Generator_UserTableName="Mission_supervilain" msprop:Generator_RowChangedName="Mission_supervilainRowChanged" msprop:Generator_RowEvArgName="Mission_supervilainRowChangeEvent" msprop:Generator_RowClassName="Mission_supervilainRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_super_vilain" msprop:Generator_ColumnVarNameInTable="columnId_super_vilain" msprop:Generator_ColumnPropNameInRow="Id_super_vilain" msprop:Generator_ColumnPropNameInTable="Id_super_vilainColumn" msprop:Generator_UserColumnName="Id_super_vilain" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

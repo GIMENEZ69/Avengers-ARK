@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RapportMissions));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.DateFin = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.CBBCivilMort = new System.Windows.Forms.ComboBox();
             this.CmbSHDemasque = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -41,10 +43,6 @@
             this.NomDegats = new System.Windows.Forms.TextBox();
             this.CmbSVPresent = new System.Windows.Forms.ComboBox();
             this.CoutsDegats = new System.Windows.Forms.TextBox();
-            this.CmbSVArrete = new System.Windows.Forms.ComboBox();
-            this.Infos = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -59,17 +57,6 @@
             this.civilTableAdapter = new Avergers.ProjetHeroDataSetCivilTableAdapters.CivilTableAdapter();
             this.projetHeroDataSetCivilBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.civilTableAdapter1 = new Avergers.ProjetHeroDataSetCivilmortRapportTableAdapters.CivilTableAdapter();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idmissionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idincidentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idcivilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.natureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.titreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datedebutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datefinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itineraireDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.graviteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomheromissionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.missionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.projetHeroDataSetRapportMission = new Avergers.ProjetHeroDataSetRapportMission();
             this.missionTableAdapter = new Avergers.ProjetHeroDataSetRapportMissionTableAdapters.MissionTableAdapter();
@@ -79,6 +66,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.IdSH = new System.Windows.Forms.TextBox();
+            this.CmdGenerIdSH = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.HerosIntervenu = new System.Windows.Forms.TextBox();
             this.DateMission = new System.Windows.Forms.TextBox();
@@ -93,11 +82,18 @@
             this.Recherche = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.CmdGenerIdSH = new System.Windows.Forms.Button();
-            this.IdSH = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.DateFin = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.idmissionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idincidentDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idcivilDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.natureDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titreDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datedebutDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datefinDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itineraireDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.graviteDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomheromissionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.supervilainBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetNomSVRapportMission)).BeginInit();
@@ -106,10 +102,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivilBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetRapportMission)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -124,20 +120,32 @@
             this.groupBox2.Controls.Add(this.NomDegats);
             this.groupBox2.Controls.Add(this.CmbSVPresent);
             this.groupBox2.Controls.Add(this.CoutsDegats);
-            this.groupBox2.Controls.Add(this.CmbSVArrete);
-            this.groupBox2.Controls.Add(this.Infos);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Location = new System.Drawing.Point(16, 402);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1116, 206);
+            this.groupBox2.Size = new System.Drawing.Size(1116, 116);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Rapport de Mission :";
+            // 
+            // DateFin
+            // 
+            this.DateFin.Location = new System.Drawing.Point(920, 69);
+            this.DateFin.Name = "DateFin";
+            this.DateFin.Size = new System.Drawing.Size(129, 20);
+            this.DateFin.TabIndex = 45;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(812, 72);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(102, 13);
+            this.label18.TabIndex = 30;
+            this.label18.Text = "Date fin de mission :";
             // 
             // CBBCivilMort
             // 
@@ -225,43 +233,6 @@
             this.CoutsDegats.Size = new System.Drawing.Size(112, 20);
             this.CoutsDegats.TabIndex = 21;
             // 
-            // CmbSVArrete
-            // 
-            this.CmbSVArrete.FormattingEnabled = true;
-            this.CmbSVArrete.Items.AddRange(new object[] {
-            "Oui",
-            "Non"});
-            this.CmbSVArrete.Location = new System.Drawing.Point(675, 70);
-            this.CmbSVArrete.Name = "CmbSVArrete";
-            this.CmbSVArrete.Size = new System.Drawing.Size(127, 21);
-            this.CmbSVArrete.TabIndex = 19;
-            // 
-            // Infos
-            // 
-            this.Infos.Location = new System.Drawing.Point(138, 103);
-            this.Infos.Multiline = true;
-            this.Infos.Name = "Infos";
-            this.Infos.Size = new System.Drawing.Size(911, 81);
-            this.Infos.TabIndex = 17;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 103);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Description de la mission :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(567, 73);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 13);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Super Vilain arrêté ?";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -310,7 +281,7 @@
             // 
             // CmdAnnuler
             // 
-            this.CmdAnnuler.Location = new System.Drawing.Point(632, 630);
+            this.CmdAnnuler.Location = new System.Drawing.Point(623, 534);
             this.CmdAnnuler.Name = "CmdAnnuler";
             this.CmdAnnuler.Size = new System.Drawing.Size(149, 43);
             this.CmdAnnuler.TabIndex = 9;
@@ -320,7 +291,7 @@
             // 
             // CmdValiderRapport
             // 
-            this.CmdValiderRapport.Location = new System.Drawing.Point(358, 630);
+            this.CmdValiderRapport.Location = new System.Drawing.Point(349, 534);
             this.CmdValiderRapport.Name = "CmdValiderRapport";
             this.CmdValiderRapport.Size = new System.Drawing.Size(149, 43);
             this.CmdValiderRapport.TabIndex = 8;
@@ -354,89 +325,6 @@
             // civilTableAdapter1
             // 
             this.civilTableAdapter1.ClearBeforeFill = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idmissionDataGridViewTextBoxColumn,
-            this.idincidentDataGridViewTextBoxColumn,
-            this.idcivilDataGridViewTextBoxColumn,
-            this.natureDataGridViewTextBoxColumn,
-            this.titreDataGridViewTextBoxColumn,
-            this.datedebutDataGridViewTextBoxColumn,
-            this.datefinDataGridViewTextBoxColumn,
-            this.itineraireDataGridViewTextBoxColumn,
-            this.graviteDataGridViewTextBoxColumn,
-            this.nomheromissionDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.missionBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 64);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1116, 163);
-            this.dataGridView1.TabIndex = 11;
-            // 
-            // idmissionDataGridViewTextBoxColumn
-            // 
-            this.idmissionDataGridViewTextBoxColumn.DataPropertyName = "Id_mission";
-            this.idmissionDataGridViewTextBoxColumn.HeaderText = "Id_mission";
-            this.idmissionDataGridViewTextBoxColumn.Name = "idmissionDataGridViewTextBoxColumn";
-            this.idmissionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // idincidentDataGridViewTextBoxColumn
-            // 
-            this.idincidentDataGridViewTextBoxColumn.DataPropertyName = "Id_incident";
-            this.idincidentDataGridViewTextBoxColumn.HeaderText = "Id_incident";
-            this.idincidentDataGridViewTextBoxColumn.Name = "idincidentDataGridViewTextBoxColumn";
-            // 
-            // idcivilDataGridViewTextBoxColumn
-            // 
-            this.idcivilDataGridViewTextBoxColumn.DataPropertyName = "Id_civil";
-            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id_civil";
-            this.idcivilDataGridViewTextBoxColumn.Name = "idcivilDataGridViewTextBoxColumn";
-            // 
-            // natureDataGridViewTextBoxColumn
-            // 
-            this.natureDataGridViewTextBoxColumn.DataPropertyName = "Nature";
-            this.natureDataGridViewTextBoxColumn.HeaderText = "Nature";
-            this.natureDataGridViewTextBoxColumn.Name = "natureDataGridViewTextBoxColumn";
-            // 
-            // titreDataGridViewTextBoxColumn
-            // 
-            this.titreDataGridViewTextBoxColumn.DataPropertyName = "Titre";
-            this.titreDataGridViewTextBoxColumn.HeaderText = "Titre";
-            this.titreDataGridViewTextBoxColumn.Name = "titreDataGridViewTextBoxColumn";
-            // 
-            // datedebutDataGridViewTextBoxColumn
-            // 
-            this.datedebutDataGridViewTextBoxColumn.DataPropertyName = "Date_debut";
-            this.datedebutDataGridViewTextBoxColumn.HeaderText = "Date_debut";
-            this.datedebutDataGridViewTextBoxColumn.Name = "datedebutDataGridViewTextBoxColumn";
-            // 
-            // datefinDataGridViewTextBoxColumn
-            // 
-            this.datefinDataGridViewTextBoxColumn.DataPropertyName = "Date_fin";
-            this.datefinDataGridViewTextBoxColumn.HeaderText = "Date_fin";
-            this.datefinDataGridViewTextBoxColumn.Name = "datefinDataGridViewTextBoxColumn";
-            // 
-            // itineraireDataGridViewTextBoxColumn
-            // 
-            this.itineraireDataGridViewTextBoxColumn.DataPropertyName = "Itineraire";
-            this.itineraireDataGridViewTextBoxColumn.HeaderText = "Itineraire";
-            this.itineraireDataGridViewTextBoxColumn.Name = "itineraireDataGridViewTextBoxColumn";
-            // 
-            // graviteDataGridViewTextBoxColumn
-            // 
-            this.graviteDataGridViewTextBoxColumn.DataPropertyName = "Gravite";
-            this.graviteDataGridViewTextBoxColumn.HeaderText = "Gravite";
-            this.graviteDataGridViewTextBoxColumn.Name = "graviteDataGridViewTextBoxColumn";
-            // 
-            // nomheromissionDataGridViewTextBoxColumn
-            // 
-            this.nomheromissionDataGridViewTextBoxColumn.DataPropertyName = "Nom_hero_mission";
-            this.nomheromissionDataGridViewTextBoxColumn.HeaderText = "Nom_hero_mission";
-            this.nomheromissionDataGridViewTextBoxColumn.Name = "nomheromissionDataGridViewTextBoxColumn";
             // 
             // missionBindingSource
             // 
@@ -522,6 +410,23 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Rappel de l\'incident :";
+            // 
+            // IdSH
+            // 
+            this.IdSH.Location = new System.Drawing.Point(967, 56);
+            this.IdSH.Name = "IdSH";
+            this.IdSH.Size = new System.Drawing.Size(125, 20);
+            this.IdSH.TabIndex = 44;
+            // 
+            // CmdGenerIdSH
+            // 
+            this.CmdGenerIdSH.Location = new System.Drawing.Point(862, 56);
+            this.CmdGenerIdSH.Name = "CmdGenerIdSH";
+            this.CmdGenerIdSH.Size = new System.Drawing.Size(99, 23);
+            this.CmdGenerIdSH.TabIndex = 19;
+            this.CmdGenerIdSH.Text = "Génerer l\'id";
+            this.CmdGenerIdSH.UseVisualStyleBackColor = true;
+            this.CmdGenerIdSH.Click += new System.EventHandler(this.CmdGenerIdSH_Click);
             // 
             // label15
             // 
@@ -638,32 +543,6 @@
             this.label17.TabIndex = 15;
             this.label17.Text = "Rechercher par :";
             // 
-            // CmdGenerIdSH
-            // 
-            this.CmdGenerIdSH.Location = new System.Drawing.Point(862, 56);
-            this.CmdGenerIdSH.Name = "CmdGenerIdSH";
-            this.CmdGenerIdSH.Size = new System.Drawing.Size(99, 23);
-            this.CmdGenerIdSH.TabIndex = 19;
-            this.CmdGenerIdSH.Text = "Génerer l\'id";
-            this.CmdGenerIdSH.UseVisualStyleBackColor = true;
-            this.CmdGenerIdSH.Click += new System.EventHandler(this.CmdGenerIdSH_Click);
-            // 
-            // IdSH
-            // 
-            this.IdSH.Location = new System.Drawing.Point(967, 56);
-            this.IdSH.Name = "IdSH";
-            this.IdSH.Size = new System.Drawing.Size(125, 20);
-            this.IdSH.TabIndex = 44;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(812, 72);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(102, 13);
-            this.label18.TabIndex = 30;
-            this.label18.Text = "Date fin de mission :";
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(595, 242);
@@ -674,18 +553,94 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // DateFin
+            // dataGridView2
             // 
-            this.DateFin.Location = new System.Drawing.Point(920, 69);
-            this.DateFin.Name = "DateFin";
-            this.DateFin.Size = new System.Drawing.Size(129, 20);
-            this.DateFin.TabIndex = 45;
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idmissionDataGridViewTextBoxColumn1,
+            this.idincidentDataGridViewTextBoxColumn1,
+            this.idcivilDataGridViewTextBoxColumn1,
+            this.natureDataGridViewTextBoxColumn1,
+            this.titreDataGridViewTextBoxColumn1,
+            this.datedebutDataGridViewTextBoxColumn1,
+            this.datefinDataGridViewTextBoxColumn1,
+            this.itineraireDataGridViewTextBoxColumn1,
+            this.graviteDataGridViewTextBoxColumn1,
+            this.nomheromissionDataGridViewTextBoxColumn1});
+            this.dataGridView2.DataSource = this.missionBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(42, 61);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(1089, 175);
+            this.dataGridView2.TabIndex = 20;
+            // 
+            // idmissionDataGridViewTextBoxColumn1
+            // 
+            this.idmissionDataGridViewTextBoxColumn1.DataPropertyName = "Id_mission";
+            this.idmissionDataGridViewTextBoxColumn1.HeaderText = "Id_mission";
+            this.idmissionDataGridViewTextBoxColumn1.Name = "idmissionDataGridViewTextBoxColumn1";
+            this.idmissionDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // idincidentDataGridViewTextBoxColumn1
+            // 
+            this.idincidentDataGridViewTextBoxColumn1.DataPropertyName = "Id_incident";
+            this.idincidentDataGridViewTextBoxColumn1.HeaderText = "Id_incident";
+            this.idincidentDataGridViewTextBoxColumn1.Name = "idincidentDataGridViewTextBoxColumn1";
+            // 
+            // idcivilDataGridViewTextBoxColumn1
+            // 
+            this.idcivilDataGridViewTextBoxColumn1.DataPropertyName = "Id_civil";
+            this.idcivilDataGridViewTextBoxColumn1.HeaderText = "Id_civil";
+            this.idcivilDataGridViewTextBoxColumn1.Name = "idcivilDataGridViewTextBoxColumn1";
+            // 
+            // natureDataGridViewTextBoxColumn1
+            // 
+            this.natureDataGridViewTextBoxColumn1.DataPropertyName = "Nature";
+            this.natureDataGridViewTextBoxColumn1.HeaderText = "Nature";
+            this.natureDataGridViewTextBoxColumn1.Name = "natureDataGridViewTextBoxColumn1";
+            // 
+            // titreDataGridViewTextBoxColumn1
+            // 
+            this.titreDataGridViewTextBoxColumn1.DataPropertyName = "Titre";
+            this.titreDataGridViewTextBoxColumn1.HeaderText = "Titre";
+            this.titreDataGridViewTextBoxColumn1.Name = "titreDataGridViewTextBoxColumn1";
+            // 
+            // datedebutDataGridViewTextBoxColumn1
+            // 
+            this.datedebutDataGridViewTextBoxColumn1.DataPropertyName = "Date_debut";
+            this.datedebutDataGridViewTextBoxColumn1.HeaderText = "Date_debut";
+            this.datedebutDataGridViewTextBoxColumn1.Name = "datedebutDataGridViewTextBoxColumn1";
+            // 
+            // datefinDataGridViewTextBoxColumn1
+            // 
+            this.datefinDataGridViewTextBoxColumn1.DataPropertyName = "Date_fin";
+            this.datefinDataGridViewTextBoxColumn1.HeaderText = "Date_fin";
+            this.datefinDataGridViewTextBoxColumn1.Name = "datefinDataGridViewTextBoxColumn1";
+            // 
+            // itineraireDataGridViewTextBoxColumn1
+            // 
+            this.itineraireDataGridViewTextBoxColumn1.DataPropertyName = "Itineraire";
+            this.itineraireDataGridViewTextBoxColumn1.HeaderText = "Itineraire";
+            this.itineraireDataGridViewTextBoxColumn1.Name = "itineraireDataGridViewTextBoxColumn1";
+            // 
+            // graviteDataGridViewTextBoxColumn1
+            // 
+            this.graviteDataGridViewTextBoxColumn1.DataPropertyName = "Gravite";
+            this.graviteDataGridViewTextBoxColumn1.HeaderText = "Gravite";
+            this.graviteDataGridViewTextBoxColumn1.Name = "graviteDataGridViewTextBoxColumn1";
+            // 
+            // nomheromissionDataGridViewTextBoxColumn1
+            // 
+            this.nomheromissionDataGridViewTextBoxColumn1.DataPropertyName = "Nom_hero_mission";
+            this.nomheromissionDataGridViewTextBoxColumn1.HeaderText = "Nom_hero_mission";
+            this.nomheromissionDataGridViewTextBoxColumn1.Name = "nomheromissionDataGridViewTextBoxColumn1";
             // 
             // RapportMissions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1166, 686);
+            this.ClientSize = new System.Drawing.Size(1166, 595);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CmbSelecRech);
             this.Controls.Add(this.Recherche);
@@ -693,7 +648,6 @@
             this.Controls.Add(this.label17);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.SelectMission);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.CmdAnnuler);
             this.Controls.Add(this.CmdValiderRapport);
@@ -710,11 +664,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivilBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetRapportMission)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -730,10 +684,6 @@
         private System.Windows.Forms.TextBox NomDegats;
         private System.Windows.Forms.ComboBox CmbSVPresent;
         private System.Windows.Forms.TextBox CoutsDegats;
-        private System.Windows.Forms.ComboBox CmbSVArrete;
-        private System.Windows.Forms.TextBox Infos;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -750,21 +700,10 @@
         private ProjetHeroDataSetCivilmortRapport projetHeroDataSetCivilmortRapport;
         private System.Windows.Forms.BindingSource civilBindingSource1;
         private ProjetHeroDataSetCivilmortRapportTableAdapters.CivilTableAdapter civilTableAdapter1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private ProjetHeroDataSetRapportMission projetHeroDataSetRapportMission;
         private System.Windows.Forms.BindingSource missionBindingSource;
         private ProjetHeroDataSetRapportMissionTableAdapters.MissionTableAdapter missionTableAdapter;
         private System.Windows.Forms.ComboBox CBBCivilMort;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idmissionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idincidentDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idcivilDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn natureDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn titreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn datedebutDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn datefinDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn itineraireDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn graviteDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomheromissionDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button SelectMission;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -790,5 +729,16 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox DateFin;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idmissionDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idincidentDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idcivilDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn natureDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titreDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datedebutDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datefinDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itineraireDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn graviteDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomheromissionDataGridViewTextBoxColumn1;
     }
 }

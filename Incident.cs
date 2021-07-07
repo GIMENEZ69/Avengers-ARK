@@ -52,8 +52,8 @@ namespace Avergers
             } else
             {
                 conn.Open();
-                string query = "INSERT INTO Incident (Id_civil_declarant, Nature, Adresse, Date_ajout)" +
-                    "VALUES(  '" + IdCivilRattache.Text + "', '" + CmbNatureIncident.Text + "', '" + AdresseIncident.Text + "', '" + Convert.ToDateTime(DateTimeIncident.Text) + "')";
+                string query = "INSERT INTO Incident (Id_incident, Id_civil_declarant, Nature, Adresse, Date_ajout)" +
+                    "VALUES(  '" + IdIncident.Text + "','" + IdCivilRattache.Text + "', '" + CmbNatureIncident.Text + "', '" + AdresseIncident.Text + "', '" + Convert.ToDateTime(DateTimeIncident.Text) + "')";
                 SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
                 SDA.SelectCommand.ExecuteNonQuery();
                 conn.Close();
@@ -64,12 +64,13 @@ namespace Avergers
 
         private void CmdValidDeclarant_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow dgvr in dataGridView1.Rows)
+            foreach (DataGridViewRow dgvr in dataGridView2.Rows)
             {
                 int id = Convert.ToInt32(dgvr.Cells[0].Value);
                 IdCivilRattache.Text = id.ToString();
                 break;
             }
         }
+
     }
 }

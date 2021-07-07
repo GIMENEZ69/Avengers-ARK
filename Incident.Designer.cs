@@ -31,6 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Incident));
             this.GroupBoxInci = new System.Windows.Forms.GroupBox();
+            this.IdIncident = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.IdCivilRattache = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.CmbNatureIncident = new System.Windows.Forms.ComboBox();
             this.CmbSV = new System.Windows.Forms.ComboBox();
             this.DateTimeIncident = new System.Windows.Forms.DateTimePicker();
@@ -42,29 +46,29 @@
             this.CmdValider = new System.Windows.Forms.Button();
             this.CmdQuitter = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.CmbSelecRech = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idcivilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prenomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datenaissanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.idcivilDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prenomDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresseDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datenaissanceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.projetHeroDataSetCivilDatagriedIncident = new Avergers.ProjetHeroDataSetCivilDatagriedIncident();
+            this.CmdValidDeclarant = new System.Windows.Forms.Button();
+            this.CmbSelecRech = new System.Windows.Forms.ComboBox();
             this.Recherche = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.civilTableAdapter = new Avergers.ProjetHeroDataSetCivilDatagriedIncidentTableAdapters.CivilTableAdapter();
-            this.CmdValidDeclarant = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.IdCivilRattache = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.IdIncident = new System.Windows.Forms.TextBox();
+            this.projetHeroDataSetCivil = new Avergers.ProjetHeroDataSetCivil();
+            this.projetHeroDataSetCivilBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.GroupBoxInci.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivilDatagriedIncident)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivilBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // GroupBoxInci
@@ -88,6 +92,38 @@
             this.GroupBoxInci.TabStop = false;
             this.GroupBoxInci.Text = "L\'incident";
             // 
+            // IdIncident
+            // 
+            this.IdIncident.Location = new System.Drawing.Point(122, 62);
+            this.IdIncident.Name = "IdIncident";
+            this.IdIncident.Size = new System.Drawing.Size(138, 20);
+            this.IdIncident.TabIndex = 16;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(33, 65);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "ID de l\'incident :";
+            // 
+            // IdCivilRattache
+            // 
+            this.IdCivilRattache.Location = new System.Drawing.Point(122, 30);
+            this.IdCivilRattache.Name = "IdCivilRattache";
+            this.IdCivilRattache.Size = new System.Drawing.Size(138, 20);
+            this.IdCivilRattache.TabIndex = 14;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "ID du Civil rattaché :";
+            // 
             // CmbNatureIncident
             // 
             this.CmbNatureIncident.FormattingEnabled = true;
@@ -107,14 +143,14 @@
             this.CmbSV.Items.AddRange(new object[] {
             "Oui",
             "Non"});
-            this.CmbSV.Location = new System.Drawing.Point(470, 134);
+            this.CmbSV.Location = new System.Drawing.Point(470, 110);
             this.CmbSV.Name = "CmbSV";
             this.CmbSV.Size = new System.Drawing.Size(163, 21);
             this.CmbSV.TabIndex = 11;
             // 
             // DateTimeIncident
             // 
-            this.DateTimeIncident.Location = new System.Drawing.Point(470, 89);
+            this.DateTimeIncident.Location = new System.Drawing.Point(470, 65);
             this.DateTimeIncident.Name = "DateTimeIncident";
             this.DateTimeIncident.Size = new System.Drawing.Size(163, 20);
             this.DateTimeIncident.TabIndex = 10;
@@ -130,7 +166,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(284, 137);
+            this.label7.Location = new System.Drawing.Point(284, 113);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(180, 13);
             this.label7.TabIndex = 5;
@@ -139,7 +175,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(366, 95);
+            this.label8.Location = new System.Drawing.Point(366, 71);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(98, 13);
             this.label8.TabIndex = 4;
@@ -185,9 +221,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dataGridView2);
             this.groupBox1.Controls.Add(this.CmdValidDeclarant);
             this.groupBox1.Controls.Add(this.CmbSelecRech);
-            this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.Recherche);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
@@ -197,6 +233,73 @@
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Le déclarant";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idcivilDataGridViewTextBoxColumn1,
+            this.nomDataGridViewTextBoxColumn1,
+            this.prenomDataGridViewTextBoxColumn1,
+            this.adresseDataGridViewTextBoxColumn1,
+            this.datenaissanceDataGridViewTextBoxColumn1});
+            this.dataGridView2.DataSource = this.civilBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(6, 53);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(659, 163);
+            this.dataGridView2.TabIndex = 16;
+            // 
+            // idcivilDataGridViewTextBoxColumn1
+            // 
+            this.idcivilDataGridViewTextBoxColumn1.DataPropertyName = "Id_civil";
+            this.idcivilDataGridViewTextBoxColumn1.HeaderText = "Id_civil";
+            this.idcivilDataGridViewTextBoxColumn1.Name = "idcivilDataGridViewTextBoxColumn1";
+            // 
+            // nomDataGridViewTextBoxColumn1
+            // 
+            this.nomDataGridViewTextBoxColumn1.DataPropertyName = "Nom";
+            this.nomDataGridViewTextBoxColumn1.HeaderText = "Nom";
+            this.nomDataGridViewTextBoxColumn1.Name = "nomDataGridViewTextBoxColumn1";
+            // 
+            // prenomDataGridViewTextBoxColumn1
+            // 
+            this.prenomDataGridViewTextBoxColumn1.DataPropertyName = "Prenom";
+            this.prenomDataGridViewTextBoxColumn1.HeaderText = "Prenom";
+            this.prenomDataGridViewTextBoxColumn1.Name = "prenomDataGridViewTextBoxColumn1";
+            // 
+            // adresseDataGridViewTextBoxColumn1
+            // 
+            this.adresseDataGridViewTextBoxColumn1.DataPropertyName = "Adresse";
+            this.adresseDataGridViewTextBoxColumn1.HeaderText = "Adresse";
+            this.adresseDataGridViewTextBoxColumn1.Name = "adresseDataGridViewTextBoxColumn1";
+            // 
+            // datenaissanceDataGridViewTextBoxColumn1
+            // 
+            this.datenaissanceDataGridViewTextBoxColumn1.DataPropertyName = "Date_naissance";
+            this.datenaissanceDataGridViewTextBoxColumn1.HeaderText = "Date_naissance";
+            this.datenaissanceDataGridViewTextBoxColumn1.Name = "datenaissanceDataGridViewTextBoxColumn1";
+            // 
+            // civilBindingSource
+            // 
+            this.civilBindingSource.DataMember = "Civil";
+            this.civilBindingSource.DataSource = this.projetHeroDataSetCivilDatagriedIncident;
+            // 
+            // projetHeroDataSetCivilDatagriedIncident
+            // 
+            this.projetHeroDataSetCivilDatagriedIncident.DataSetName = "ProjetHeroDataSetCivilDatagriedIncident";
+            this.projetHeroDataSetCivilDatagriedIncident.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // CmdValidDeclarant
+            // 
+            this.CmdValidDeclarant.Location = new System.Drawing.Point(273, 222);
+            this.CmdValidDeclarant.Name = "CmdValidDeclarant";
+            this.CmdValidDeclarant.Size = new System.Drawing.Size(125, 43);
+            this.CmdValidDeclarant.TabIndex = 15;
+            this.CmdValidDeclarant.Text = "Valider le déclarant";
+            this.CmdValidDeclarant.UseVisualStyleBackColor = true;
+            this.CmdValidDeclarant.Click += new System.EventHandler(this.CmdValidDeclarant_Click);
             // 
             // CmbSelecRech
             // 
@@ -211,65 +314,6 @@
             this.CmbSelecRech.Name = "CmbSelecRech";
             this.CmbSelecRech.Size = new System.Drawing.Size(99, 21);
             this.CmbSelecRech.TabIndex = 10;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idcivilDataGridViewTextBoxColumn,
-            this.nomDataGridViewTextBoxColumn,
-            this.prenomDataGridViewTextBoxColumn,
-            this.adresseDataGridViewTextBoxColumn,
-            this.datenaissanceDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.civilBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 62);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(663, 150);
-            this.dataGridView1.TabIndex = 9;
-            // 
-            // idcivilDataGridViewTextBoxColumn
-            // 
-            this.idcivilDataGridViewTextBoxColumn.DataPropertyName = "Id_civil";
-            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id du civil";
-            this.idcivilDataGridViewTextBoxColumn.Name = "idcivilDataGridViewTextBoxColumn";
-            // 
-            // nomDataGridViewTextBoxColumn
-            // 
-            this.nomDataGridViewTextBoxColumn.DataPropertyName = "Nom";
-            this.nomDataGridViewTextBoxColumn.HeaderText = "Nom";
-            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
-            // 
-            // prenomDataGridViewTextBoxColumn
-            // 
-            this.prenomDataGridViewTextBoxColumn.DataPropertyName = "Prenom";
-            this.prenomDataGridViewTextBoxColumn.HeaderText = "Prenom";
-            this.prenomDataGridViewTextBoxColumn.Name = "prenomDataGridViewTextBoxColumn";
-            // 
-            // adresseDataGridViewTextBoxColumn
-            // 
-            this.adresseDataGridViewTextBoxColumn.DataPropertyName = "Adresse";
-            this.adresseDataGridViewTextBoxColumn.HeaderText = "Adresse";
-            this.adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
-            // 
-            // datenaissanceDataGridViewTextBoxColumn
-            // 
-            this.datenaissanceDataGridViewTextBoxColumn.DataPropertyName = "Date_naissance";
-            this.datenaissanceDataGridViewTextBoxColumn.HeaderText = "Date de naissance";
-            this.datenaissanceDataGridViewTextBoxColumn.Name = "datenaissanceDataGridViewTextBoxColumn";
-            // 
-            // civilBindingSource
-            // 
-            this.civilBindingSource.DataMember = "Civil";
-            this.civilBindingSource.DataSource = this.projetHeroDataSetCivilDatagriedIncident;
-            // 
-            // projetHeroDataSetCivilDatagriedIncident
-            // 
-            this.projetHeroDataSetCivilDatagriedIncident.DataSetName = "ProjetHeroDataSetCivilDatagriedIncident";
-            this.projetHeroDataSetCivilDatagriedIncident.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Recherche
             // 
@@ -301,47 +345,15 @@
             // 
             this.civilTableAdapter.ClearBeforeFill = true;
             // 
-            // CmdValidDeclarant
+            // projetHeroDataSetCivil
             // 
-            this.CmdValidDeclarant.Location = new System.Drawing.Point(273, 222);
-            this.CmdValidDeclarant.Name = "CmdValidDeclarant";
-            this.CmdValidDeclarant.Size = new System.Drawing.Size(125, 43);
-            this.CmdValidDeclarant.TabIndex = 15;
-            this.CmdValidDeclarant.Text = "Valider le déclarant";
-            this.CmdValidDeclarant.UseVisualStyleBackColor = true;
-            this.CmdValidDeclarant.Click += new System.EventHandler(this.CmdValidDeclarant_Click);
+            this.projetHeroDataSetCivil.DataSetName = "ProjetHeroDataSetCivil";
+            this.projetHeroDataSetCivil.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label2
+            // projetHeroDataSetCivilBindingSource
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 33);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 13);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "ID du Civil rattaché :";
-            // 
-            // IdCivilRattache
-            // 
-            this.IdCivilRattache.Location = new System.Drawing.Point(122, 30);
-            this.IdCivilRattache.Name = "IdCivilRattache";
-            this.IdCivilRattache.Size = new System.Drawing.Size(138, 20);
-            this.IdCivilRattache.TabIndex = 14;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 65);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 13);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "ID de l\'incident :";
-            // 
-            // IdIncident
-            // 
-            this.IdIncident.Location = new System.Drawing.Point(122, 62);
-            this.IdIncident.Name = "IdIncident";
-            this.IdIncident.Size = new System.Drawing.Size(138, 20);
-            this.IdIncident.TabIndex = 16;
+            this.projetHeroDataSetCivilBindingSource.DataSource = this.projetHeroDataSetCivil;
+            this.projetHeroDataSetCivilBindingSource.Position = 0;
             // 
             // Incident
             // 
@@ -360,9 +372,11 @@
             this.GroupBoxInci.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivilDatagriedIncident)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetCivilBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -385,19 +399,21 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox CmbSelecRech;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private ProjetHeroDataSetCivilDatagriedIncident projetHeroDataSetCivilDatagriedIncident;
         private System.Windows.Forms.BindingSource civilBindingSource;
         private ProjetHeroDataSetCivilDatagriedIncidentTableAdapters.CivilTableAdapter civilTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idcivilDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prenomDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adresseDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn datenaissanceDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox IdIncident;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox IdCivilRattache;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button CmdValidDeclarant;
+        private ProjetHeroDataSetCivil projetHeroDataSetCivil;
+        private System.Windows.Forms.BindingSource projetHeroDataSetCivilBindingSource;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idcivilDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenomDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adresseDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datenaissanceDataGridViewTextBoxColumn1;
     }
 }

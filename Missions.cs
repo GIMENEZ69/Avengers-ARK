@@ -18,6 +18,8 @@ namespace Avergers
             InitializeComponent();
         }
 
+        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=ProjetHero;Integrated Security=True");
+
         private void Missions_Load(object sender, EventArgs e)
         {
             // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetFicheMissionDtgvIncident.Incident'. Vous pouvez la déplacer ou la supprimer selon les besoins.
@@ -30,7 +32,7 @@ namespace Avergers
             this.incidentTableAdapter1.Fill(this.projetHeroDataSetIdIncidentMission.Incident);
             // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet3.Incident'. Vous pouvez la déplacer ou la supprimer selon les besoins.
             this.incidentTableAdapter.Fill(this.projetHeroDataSet3.Incident);
-            CmbSelecRech.SelectedIndex = 1;
+            CmbSelecRech.SelectedIndex = 0;
         }
 
         private void Recherche_KeyDown(object sender, KeyEventArgs e)
@@ -38,13 +40,13 @@ namespace Avergers
             if (e.KeyCode == Keys.Enter)
             {
                 if (string.IsNullOrEmpty(Recherche.Text))
-                    incidentBindingSource2.Filter = string.Empty;
+                    incidentBindingSource3.Filter = string.Empty;
                 else
-                    incidentBindingSource2.Filter = string.Format("{0}='{1}'", CmbSelecRech.Text, Recherche.Text);
+                    incidentBindingSource3.Filter = string.Format("{0}='{1}'", CmbSelecRech.Text, Recherche.Text);
             }
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=AUDREY;Initial Catalog=ProjetHero;Integrated Security=True");
+        
         private void CmdValiderMission_Click(object sender, EventArgs e)
         {
             conn.Open();

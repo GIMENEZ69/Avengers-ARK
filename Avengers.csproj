@@ -52,11 +52,23 @@
     <Compile Include="Civils.Designer.cs">
       <DependentUpon>Civils.cs</DependentUpon>
     </Compile>
-    <Compile Include="Crise.cs">
+    <Compile Include="Crise_Civil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Crise.Designer.cs">
-      <DependentUpon>Crise.cs</DependentUpon>
+    <Compile Include="Crise_Civil.Designer.cs">
+      <DependentUpon>Crise_Civil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crise_Heros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crise_Heros.Designer.cs">
+      <DependentUpon>Crise_Heros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crise_Vilain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crise_Vilain.Designer.cs">
+      <DependentUpon>Crise_Vilain.cs</DependentUpon>
     </Compile>
     <Compile Include="Incident.cs">
       <SubType>Form</SubType>
@@ -128,6 +140,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetCmbIdCivilOrg.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSetCriseHeros.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetCriseHeros.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetCriseSH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetCriseSH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetCriseSuperVilain.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetCriseSuperVilain.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSetDGVIncidentMission.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -152,6 +179,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetIdIncidentMission.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetlitige.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetlitige.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProjetHeroDataSetNomSVRapportMission.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -214,8 +246,14 @@
     <EmbeddedResource Include="Civils.resx">
       <DependentUpon>Civils.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Crise.resx">
-      <DependentUpon>Crise.cs</DependentUpon>
+    <EmbeddedResource Include="Crise_Civil.resx">
+      <DependentUpon>Crise_Civil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crise_Heros.resx">
+      <DependentUpon>Crise_Heros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crise_Vilain.resx">
+      <DependentUpon>Crise_Vilain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Incident.resx">
       <DependentUpon>Incident.cs</DependentUpon>
@@ -348,6 +386,39 @@
     <None Include="ProjetHeroDataSetCmbIdCivilOrg.xss">
       <DependentUpon>ProjetHeroDataSetCmbIdCivilOrg.xsd</DependentUpon>
     </None>
+    <None Include="ProjetHeroDataSetCriseHeros.xsc">
+      <DependentUpon>ProjetHeroDataSetCriseHeros.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetCriseHeros.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetCriseHeros.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetCriseHeros.xss">
+      <DependentUpon>ProjetHeroDataSetCriseHeros.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetCriseSH.xsc">
+      <DependentUpon>ProjetHeroDataSetCriseSH.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetCriseSH.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetCriseSH.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetCriseSH.xss">
+      <DependentUpon>ProjetHeroDataSetCriseSH.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetCriseSuperVilain.xsc">
+      <DependentUpon>ProjetHeroDataSetCriseSuperVilain.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetCriseSuperVilain.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetCriseSuperVilain.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetCriseSuperVilain.xss">
+      <DependentUpon>ProjetHeroDataSetCriseSuperVilain.xsd</DependentUpon>
+    </None>
     <None Include="ProjetHeroDataSetDGVIncidentMission.xsc">
       <DependentUpon>ProjetHeroDataSetDGVIncidentMission.xsd</DependentUpon>
     </None>
@@ -402,6 +473,17 @@
     </None>
     <None Include="ProjetHeroDataSetIdIncidentMission.xss">
       <DependentUpon>ProjetHeroDataSetIdIncidentMission.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetlitige.xsc">
+      <DependentUpon>ProjetHeroDataSetlitige.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetlitige.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetlitige.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetlitige.xss">
+      <DependentUpon>ProjetHeroDataSetlitige.xsd</DependentUpon>
     </None>
     <None Include="ProjetHeroDataSetNomSVRapportMission.xsc">
       <DependentUpon>ProjetHeroDataSetNomSVRapportMission.xsd</DependentUpon>

@@ -42,10 +42,10 @@ namespace Avergers
                 SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
                 SDA.SelectCommand.ExecuteNonQuery();
                 conn.Close();
-                MessageBox.Show("Enregistré");
+                //MessageBox.Show("Enregistré");
 
-                Crise crise = new Crise();
-                crise.ShowDialog();
+                Crise_Heros criseheros = new Crise_Heros();
+                criseheros.ShowDialog();
             } else
             {
                 //MessageBox.Show("rien");
@@ -58,28 +58,28 @@ namespace Avergers
                 SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
                 SDA.SelectCommand.ExecuteNonQuery();
                 conn.Close();
-                MessageBox.Show("La date de décès a bien été enregistré");
+                //MessageBox.Show("La date de décès a bien été enregistré");
 
-                Crise crise = new Crise();
-                crise.ShowDialog();
+                Crise_Civil crisecivil = new Crise_Civil();
+                crisecivil.ShowDialog();
             }
             else
             {
                 //MessageBox.Show("rien");
             }
 
-            if (CmbSVPresent.SelectedIndex == 0 || CmbSVArrete.SelectedIndex == 0)
+            if (CmbSVPresent.SelectedIndex == 1)
             {
                 conn.Open();
-                string query = "INSERT INTO Mission_supervilain (Id_mission, Flag_identifie, Flag_prison)" +
-                    "VALUES( '" + IdMission.Text + "', '" + CmbSVPresent.Text + "', '" + CmbSVArrete.Text + "')";
+                string query = "INSERT INTO Mission_supervilain (Id_mission, Flag_identifie)" +
+                    "VALUES( '" + IdMission.Text + "', '" + CmbSVPresent.Text + "')";
                 SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
                 SDA.SelectCommand.ExecuteNonQuery();
                 conn.Close();
-                MessageBox.Show("Super Vilain enregistré");
+                //MessageBox.Show("Super Vilain enregistré");
 
-                Crise crise = new Crise();
-                crise.ShowDialog();
+                Crise_Vilain crisevilain = new Crise_Vilain();
+                crisevilain.ShowDialog();
             }
             else
             {
@@ -89,7 +89,7 @@ namespace Avergers
 
         private void SelectMission_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow dgvr in dataGridView1.Rows)
+            foreach (DataGridViewRow dgvr in dataGridView2.Rows)
             {
                 int id = Convert.ToInt32(dgvr.Cells[0].Value);
                 IdMission.Text = id.ToString();
@@ -130,7 +130,7 @@ namespace Avergers
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow dgvr in dataGridView1.Rows)
+            foreach (DataGridViewRow dgvr in dataGridView2.Rows)
             {
                 dgvr.Cells[6].Value = DateFin.Text;
                 break;

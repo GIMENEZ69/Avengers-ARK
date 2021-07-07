@@ -29,8 +29,11 @@ D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.MenuPrincipal.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.PageChoixAdmin.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.MenuAdminCreat.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Utilisateur.resources
-D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Crise.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Incident.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Litige.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Missions.resources
 D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.RapportMissions.resources
+D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avengers.csprojAssemblyReference.cache
+D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Crise_Vilain.resources
+D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Crise_Civil.resources
+D:\Cours\POEC.NET\Avengers-ARK\obj\Debug\Avergers.Crise_Heros.resources
