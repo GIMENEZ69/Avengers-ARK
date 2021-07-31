@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿/**
+ * Titre : Avengers
+ * Créer par : RG / AS / DC / KT
+ * Date : 06/07/2021
+ **/
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
@@ -24,12 +23,17 @@ namespace Avergers
         private void CmdCreer_Clickk(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "INSERT INTO Super_vilain (Id_Super_vilain, Nom_vilain, Pouvoir, Commentaire, Id_civil) " +
-                "VALUES(                      '" + Id.Text + "', '" + Nom.Text + "','" + Pouvoir.Text +"','" + Commentaire.Text + "','" + comboBox1.Text + "')";
+            string query = "INSERT INTO Super_vilain ( Nom_vilain, Pouvoir, Commentaire, Id_civil) " +
+                "VALUES(                      '" + Nom.Text + "','" + Pouvoir.Text +"','" + Commentaire.Text + "','" + comboBox1.Text + "')";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("Le Super-Vilain a bien été créé");
+            Id.Text = "";
+            Nom.Text = "";
+            Pouvoir.Text = "";
+            comboBox1.Text = "";
+            Commentaire.Text = "";
         }
 
         private void CmdRead_Click(object sender, EventArgs e)
@@ -41,6 +45,11 @@ namespace Avergers
             SDA.Fill(dt);
             dataGridViewSuperVilains.DataSource = dt;
             conn.Close();
+            Id.Text = "";
+            Nom.Text = "";
+            Pouvoir.Text = "";
+            comboBox1.Text = "";
+            Commentaire.Text = "";
         }
 
         private void CmdMaj_Click(object sender, EventArgs e)
@@ -51,6 +60,11 @@ namespace Avergers
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("La modification a bien été prise en compte.");
+            Id.Text = "";
+            Nom.Text = "";
+            Pouvoir.Text = "";
+            comboBox1.Text = "";
+            Commentaire.Text = "";
         }
 
         private void CmdSupp_Click(object sender, EventArgs e)
@@ -61,6 +75,11 @@ namespace Avergers
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show(" L'identifiant a bien été supprimé");
+            Id.Text = "";
+            Nom.Text = "";
+            Pouvoir.Text = "";
+            comboBox1.Text = "";
+            Commentaire.Text = "";
         }
 
         private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -70,11 +89,6 @@ namespace Avergers
             Nom.Text = dataGridViewSuperVilains.SelectedRows[0].Cells[2].Value.ToString();
             Pouvoir.Text = dataGridViewSuperVilains.SelectedRows[0].Cells[3].Value.ToString();
             Commentaire.Text = dataGridViewSuperVilains.SelectedRows[0].Cells[4].Value.ToString();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿/**
+ * Titre : Avengers
+ * Créer par : RG / AS / DC / KT
+ * Date : 06/07/2021
+ **/
+using System;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Avergers
@@ -20,7 +18,8 @@ namespace Avergers
 
         private void CmdAnnuler_Click(object sender, EventArgs e)
         {
-            this.Close();
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.ShowDialog();
         }
 
         private void Missions_Load(object sender, EventArgs e)
@@ -46,12 +45,25 @@ namespace Avergers
         private void CmdValider_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "INSERT INTO Mission (Titre, Date_debut, Date_fin, Urgence, Gravite, Nom_hero_mission)" +
-                "VALUES(   '" + TitreIncident.Text + "', '" + Convert.ToDateTime(DateDebut.Text) + "', '" + Convert.ToDateTime(DateFin.Text) + "', '" + CmbUrgence.Text + "','" + CmbNivGravite.Text + "', '" + CmbInterSH.Text + "')";
+            string query = "INSERT INTO Mission (Titre, Id_incident, Date_debut, Date_fin, Urgence, Gravite, Nom_hero_mission)" +
+                "VALUES(   '" + TitreMission.Text + "','" + TitreIncident.Text + "', '" + Convert.ToDateTime(DateDebut.Text) + "', '" + Convert.ToDateTime(DateFin.Text) + "', '" + CmbUrgence.Text + "','" + CmbNivGravite.Text + "', '" + CmbInterSH.Text + "')";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("La mission a bien été créée");
+            Rapport_de_missions rapport = new Rapport_de_missions();
+            rapport.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            foreach (DataGridViewRow dataGridView in dataGridView1.Rows)
+            {
+                int id = Convert.ToInt32(dataGridView.Cells[0].Value);
+                TitreIncident.Text = id.ToString();
+                break;
+            }
         }
     }    
 }

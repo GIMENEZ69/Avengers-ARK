@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/**
+ * Titre : Avengers
+ * Créer par : RG / AS / DC / KT
+ * Date : 06/07/2021
+ **/
+using System;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
@@ -18,25 +16,55 @@ namespace Avergers
             InitializeComponent();
         }
 
-        private void Incident_Load(object sender, EventArgs e)
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-TKJHI8I;Initial Catalog=ProjetHero;Integrated Security=True");
+        
+        private void CmdValider_Click(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSetIdIncident.Incident'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.incidentTableAdapter.Fill(this.projetHeroDataSetIdIncident.Incident);
-            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet_incident.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.civilTableAdapter1.Fill(this.projetHeroDataSet_incident.Civil);
-            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet5.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            //this.civilTableAdapter.Fill(this.projetHeroDataSet.Civil);
-            
-            cboColonne.SelectedIndex = 1;
-
+            if (CmbSV.SelectedIndex == 0)
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "INSERT INTO Incident ( Id_civil_declarant, Id_organisation_declarant, Nature, Adresse, Date_Ajout)" +
+                        "VALUES('" + comboBox1.Text + "','" + txtIdOrga.Text + "','" + CmbTypeIncident.Text + "','" + AdresseIncident.Text + "','" + Convert.ToDateTime(DateTimeIncident.Text) + "')";
+                    SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
+                    SDA.SelectCommand.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("L'incident a bien été créé");
+                }
+                catch (Exception e1)
+                {
+                    MessageBox.Show(e1.Message);
+                }
+                Missions missions = new Missions();
+                missions.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Nous vous remercions pour votre declaration. Votre demande a été transmise aux autorités locales");
+            }
         }
 
-        private void textSearch_KeyDown(object sender, KeyEventArgs e)
+        private void Incident_Load(object sender, EventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet13.mefaits'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.mefaitsTableAdapter.Fill(this.projetHeroDataSet13.mefaits);
+            // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet3IncidentGrdvCivil.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.civilTableAdapter1.Fill(this.projetHeroDataSet_incident.Civil);
+            
+            cboColonne.SelectedIndex = 1;
+            cboColonne.Text = "";
+            comboBox1.Text = "";
+            textSearch.Text = "";
+            CmbTypeIncident.Text = "";
+        }
+
+        private void textSearch_KeyDownn(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
             {
                 if (string.IsNullOrEmpty(textSearch.Text))
-                    civilBindingSource1.Filter = string.Empty;
+                    civilBindingSource.Filter = string.Empty;
                 else
                     civilBindingSource1.Filter = string.Format("{0}='{1}'", cboColonne.Text, textSearch.Text);
             }
@@ -44,31 +72,36 @@ namespace Avergers
 
         private void CmdQuitter_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Incident.ActiveForm.Close();
         }
+        
 
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-TKJHI8I;Initial Catalog=ProjetHero;Integrated Security=True");
+        //private void Extract_Id_Click_1(object sender, EventArgs e)
+        //{
+            
+        //    foreach (DataGridViewRow dataGridView in dataGridView.Rows)
+        //    {
+        //        int id = Convert.ToInt32(dataGridView.Cells[0].Value);
+        //        txt_idDeclarant.Text = id.ToString();
+        //        break;
+        //    }
+        //}
 
-        private void CmdValider_Click(object sender, EventArgs e)
+        private void genIdOrg_Click_1(object sender, EventArgs e)
         {
-            if(CmbSV.SelectedIndex==1)
-            {
-                MessageBox.Show("Nous vous remercions pour votre declaration. Votre demande a été transmise aux autorités locales");
-            }
-            else
-            {
-                conn.Open();
-                string query = "INSERT INTO Incident ( Nature, Adresse, Date_ajout)"+
-                      "VALUES(                      '" + CmbNatureIncident.Text + "','" + AdresseIncident.Text + "','" + Convert.ToDateTime(DateTimeIncident.Text) + "')";
-                SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
-                SDA.SelectCommand.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show("L'incident a bien été declaré.");
-
-                
-            }
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT Id_organisation FROM Organisation_civil WHERE Id_civil = '" + comboBox1.Text + "'", conn);
+            int result = Convert.ToInt32(cmd.ExecuteScalar());
+            conn.Close();
+            txtIdOrga.Text = result.ToString();
         }
 
-       
+        private void dataGridView_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            textSearch.Text = dataGridView.SelectedRows[0].Cells[1].Value.ToString();
+        }
     }
 }
+
+
+

@@ -63,6 +63,26 @@ namespace Avergers.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0fba00db_1001 {
+            get {
+                object obj = ResourceManager.GetObject("0fba00db-1001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _0fba00db_10011 {
+            get {
+                object obj = ResourceManager.GetObject("0fba00db-10011", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Avengerslogo {
             get {
                 object obj = ResourceManager.GetObject("Avengerslogo", resourceCulture);
@@ -76,6 +96,16 @@ namespace Avergers.Properties {
         internal static System.Drawing.Bitmap Avengerslogo1 {
             get {
                 object obj = ResourceManager.GetObject("Avengerslogo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image0 {
+            get {
+                object obj = ResourceManager.GetObject("image0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

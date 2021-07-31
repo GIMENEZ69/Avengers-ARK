@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/**
+ * Titre : Avengers
+ * Créer par : RG / AS / DC / KT
+ * Date : 06/07/2021
+ **/
+using System;
 using System.Windows.Forms;
 
 namespace Avergers
@@ -19,7 +17,7 @@ namespace Avergers
 
         private void CmdQuitter_Click(object sender, EventArgs e)
         {
-            Form.ActiveForm.Close();
+            Application.Exit();
         }
 
         private void CmdUtilisateur_Click(object sender, EventArgs e)

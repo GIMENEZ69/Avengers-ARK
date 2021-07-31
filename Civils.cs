@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿/**
+ * Titre : Avengers
+ * Créer par : RG / AS / DJ / KT
+ * Date : 06/07/2021
+ **/
+using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Avergers
@@ -22,11 +21,6 @@ namespace Avergers
         {
             // TODO: cette ligne de code charge les données dans la table 'projetHeroDataSet.Civil'. Vous pouvez la déplacer ou la supprimer selon les besoins.
             this.civilTableAdapter.Fill(this.projetHeroDataSet.Civil);
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSetGridViewCivils.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            //this.civilsTableAdapter.Fill(this.avengersDBDataSetGridViewCivils.Civils);
-            // TODO: cette ligne de code charge les données dans la table 'avengersDBDataSet.Civils'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            //this.civilsTableAdapter.Fill(this.avengersDBDataSet.Civils);
-
         }
 
         private void CmdQuitter_Click(object sender, EventArgs e)
@@ -39,12 +33,17 @@ namespace Avergers
         private void CmdCréer_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string query = "INSERT INTO Civil (Id_civil, Nom, Prenom, Adresse, Date_naissance, Date_ajout, Date_modification) " +
-                "VALUES(                      '" + Id.Text + "','" + Nom.Text + "','" + Prenom.Text + "','" + Adresse.Text + "','" + Convert.ToDateTime(Ddn2.Text) + "', '" + Convert.ToDateTime(Dateajout2.Text) + "', '" + Convert.ToDateTime(Datemodif2.Text) + "')";
+            string query = "INSERT INTO Civil ( Nom, Prenom, Adresse, Date_naissance, Date_ajout, Date_modification) " +
+                "VALUES(                      '" + Nom.Text + "','" + Prenom.Text + "','" + Adresse.Text + "','" + Convert.ToDateTime(Ddn2.Text) + "', '" + Convert.ToDateTime(Dateajout2.Text) + "', '" + Convert.ToDateTime(Datemodif2.Text) + "')";
             SqlDataAdapter SDA = new SqlDataAdapter(query, conn);
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("Le civil a bien été créé");
+            Id.Text = "";
+            Nom.Text = "";
+            Prenom.Text = "";
+            Adresse.Text = "";
+            
         }
 
         private void CmdRead_Click(object sender, EventArgs e)
@@ -56,6 +55,10 @@ namespace Avergers
             SDA.Fill(dt);
             dataGridView1.DataSource = dt;
             conn.Close();
+            Id.Text = "";
+            Nom.Text = "";
+            Prenom.Text = "";
+            Adresse.Text = "";
         }
 
         private void CmdMaj_Click(object sender, EventArgs e)
@@ -66,6 +69,10 @@ namespace Avergers
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("La modification a bien été prise en compte.");
+            Id.Text = "";
+            Nom.Text = "";
+            Prenom.Text = "";
+            Adresse.Text = "";
         }
 
         private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -88,8 +95,10 @@ namespace Avergers
             SDA.SelectCommand.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("L'identifiant a bien été supprimé");
+            Id.Text = "";
+            Nom.Text = "";
+            Prenom.Text = "";
+            Adresse.Text = "";
         }
-
-        
     }
 }

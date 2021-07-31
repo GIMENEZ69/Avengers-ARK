@@ -123,6 +123,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet14.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -163,6 +188,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSet7.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProjetHeroDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSetDataGridviewsuperhero.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetHeroDataSetDataGridviewsuperhero.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProjetHeroDataSetIdIncident.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -172,6 +212,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjetHeroDataSetNomSVRapportMission.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetHeroDataSet_incident.cs">
+      <DependentUpon>ProjetHeroDataSet_incident.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProjetHeroDataSet_incident.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -351,6 +394,61 @@
     <None Include="ProjetHeroDataSet1.xss">
       <DependentUpon>ProjetHeroDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="ProjetHeroDataSet10.xsc">
+      <DependentUpon>ProjetHeroDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet10.xss">
+      <DependentUpon>ProjetHeroDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet11.xsc">
+      <DependentUpon>ProjetHeroDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet11.xss">
+      <DependentUpon>ProjetHeroDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet12.xsc">
+      <DependentUpon>ProjetHeroDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet12.xss">
+      <DependentUpon>ProjetHeroDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet13.xsc">
+      <DependentUpon>ProjetHeroDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet13.xss">
+      <DependentUpon>ProjetHeroDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet14.xsc">
+      <DependentUpon>ProjetHeroDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet14.xss">
+      <DependentUpon>ProjetHeroDataSet14.xsd</DependentUpon>
+    </None>
     <None Include="ProjetHeroDataSet2.xsc">
       <DependentUpon>ProjetHeroDataSet2.xsd</DependentUpon>
     </None>
@@ -439,6 +537,39 @@
     <None Include="ProjetHeroDataSet7.xss">
       <DependentUpon>ProjetHeroDataSet7.xsd</DependentUpon>
     </None>
+    <None Include="ProjetHeroDataSet8.xsc">
+      <DependentUpon>ProjetHeroDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet8.xss">
+      <DependentUpon>ProjetHeroDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet9.xsc">
+      <DependentUpon>ProjetHeroDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSet9.xss">
+      <DependentUpon>ProjetHeroDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetDataGridviewsuperhero.xsc">
+      <DependentUpon>ProjetHeroDataSetDataGridviewsuperhero.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetHeroDataSetDataGridviewsuperhero.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetHeroDataSetDataGridviewsuperhero.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetHeroDataSetDataGridviewsuperhero.xss">
+      <DependentUpon>ProjetHeroDataSetDataGridviewsuperhero.xsd</DependentUpon>
+    </None>
     <None Include="ProjetHeroDataSetIdIncident.xsc">
       <DependentUpon>ProjetHeroDataSetIdIncident.xsd</DependentUpon>
     </None>
@@ -490,6 +621,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Avengerslogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0fba00db-1001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0fba00db-10011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image0.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

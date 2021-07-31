@@ -30,11 +30,10 @@ namespace Avergers
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.projetHeroDataSet2FkIdCivil = new Avergers.ProjetHeroDataSet2FkIdCivil();
             this.Pouvoir = new System.Windows.Forms.TextBox();
             this.Commentaire = new System.Windows.Forms.TextBox();
             this.PointFaible = new System.Windows.Forms.TextBox();
@@ -45,6 +44,8 @@ namespace Avergers
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.civilBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet2FkIdCivil = new Avergers.ProjetHeroDataSet2FkIdCivil();
             this.civilsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.avengersDBDataSetCmbIdCivils = new Avergers.AvengersDBDataSetCmbIdCivils();
             this.civilsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -60,11 +61,14 @@ namespace Avergers
             this.civilsTableAdapter = new Avergers.AvengersDBDataSetGridViewCivilsTableAdapters.CivilsTableAdapter();
             this.dataGridViewSuperHeros = new System.Windows.Forms.DataGridView();
             this.idsuperheroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idcivilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomheroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pouvoirDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pointfaibleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.commentaireDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.superheroBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSet12 = new Avergers.ProjetHeroDataSet12();
+            this.superheroBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.projetHeroDataSetDataGridviewsuperhero = new Avergers.ProjetHeroDataSetDataGridviewsuperhero();
             this.superheroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.projetHeroDataSet1 = new Avergers.ProjetHeroDataSet1();
             this.superHerosBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -74,6 +78,9 @@ namespace Avergers
             this.button1 = new System.Windows.Forms.Button();
             this.super_heroTableAdapter = new Avergers.ProjetHeroDataSet1TableAdapters.Super_heroTableAdapter();
             this.civilTableAdapter = new Avergers.ProjetHeroDataSet2FkIdCivilTableAdapters.CivilTableAdapter();
+            this.super_heroTableAdapter1 = new Avergers.ProjetHeroDataSetDataGridviewsuperheroTableAdapters.Super_heroTableAdapter();
+            this.avengersDBDataSetGridViewCivils2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.super_heroTableAdapter2 = new Avergers.ProjetHeroDataSet12TableAdapters.Super_heroTableAdapter();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.civilBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet2FkIdCivil)).BeginInit();
@@ -86,16 +93,20 @@ namespace Avergers
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSuperHeros)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superheroBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superheroBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetDataGridviewsuperhero)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superheroBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetGridViewCivils2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetGridViewCivils2BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(65)))), ((int)(((byte)(91)))));
             this.groupBox1.Controls.Add(this.Pouvoir);
             this.groupBox1.Controls.Add(this.Commentaire);
             this.groupBox1.Controls.Add(this.PointFaible);
@@ -112,38 +123,6 @@ namespace Avergers
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Super-Héros";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(378, 165);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "Id Civil :";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DataSource = this.civilBindingSource;
-            this.comboBox1.DisplayMember = "Id_civil";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(438, 162);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(161, 21);
-            this.comboBox1.TabIndex = 37;
-            this.comboBox1.ValueMember = "Id_Civils";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // civilBindingSource
-            // 
-            this.civilBindingSource.DataMember = "Civil";
-            this.civilBindingSource.DataSource = this.projetHeroDataSet2FkIdCivil;
-            // 
-            // projetHeroDataSet2FkIdCivil
-            // 
-            this.projetHeroDataSet2FkIdCivil.DataSetName = "ProjetHeroDataSet2FkIdCivil";
-            this.projetHeroDataSet2FkIdCivil.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Pouvoir
             // 
@@ -175,6 +154,7 @@ namespace Avergers
             // 
             // Id
             // 
+            this.Id.Enabled = false;
             this.Id.Location = new System.Drawing.Point(89, 39);
             this.Id.Name = "Id";
             this.Id.Size = new System.Drawing.Size(161, 20);
@@ -184,6 +164,7 @@ namespace Avergers
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(345, 106);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(87, 13);
@@ -194,6 +175,7 @@ namespace Avergers
             // 
             this.labelPointfaible.AutoSize = true;
             this.labelPointfaible.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPointfaible.ForeColor = System.Drawing.Color.White;
             this.labelPointfaible.Location = new System.Drawing.Point(350, 43);
             this.labelPointfaible.Name = "labelPointfaible";
             this.labelPointfaible.Size = new System.Drawing.Size(82, 13);
@@ -204,6 +186,7 @@ namespace Avergers
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(34, 165);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 13);
@@ -214,6 +197,7 @@ namespace Avergers
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(48, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
@@ -224,11 +208,22 @@ namespace Avergers
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(61, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Id :";
+            // 
+            // civilBindingSource
+            // 
+            this.civilBindingSource.DataMember = "Civil";
+            this.civilBindingSource.DataSource = this.projetHeroDataSet2FkIdCivil;
+            // 
+            // projetHeroDataSet2FkIdCivil
+            // 
+            this.projetHeroDataSet2FkIdCivil.DataSetName = "ProjetHeroDataSet2FkIdCivil";
+            this.projetHeroDataSet2FkIdCivil.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // civilsBindingSource2
             // 
@@ -256,6 +251,7 @@ namespace Avergers
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(65)))), ((int)(((byte)(91)))));
             this.groupBox2.Controls.Add(this.CmdRead);
             this.groupBox2.Controls.Add(this.CmdSupp);
             this.groupBox2.Controls.Add(this.CmdMaj);
@@ -328,17 +324,44 @@ namespace Avergers
             this.dataGridViewSuperHeros.AllowUserToOrderColumns = true;
             this.dataGridViewSuperHeros.AutoGenerateColumns = false;
             this.dataGridViewSuperHeros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewSuperHeros.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(65)))), ((int)(((byte)(91)))));
+            this.dataGridViewSuperHeros.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewSuperHeros.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSuperHeros.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewSuperHeros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSuperHeros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idsuperheroDataGridViewTextBoxColumn,
-            this.idcivilDataGridViewTextBoxColumn,
             this.nomheroDataGridViewTextBoxColumn,
             this.pouvoirDataGridViewTextBoxColumn,
             this.pointfaibleDataGridViewTextBoxColumn,
             this.commentaireDataGridViewTextBoxColumn});
-            this.dataGridViewSuperHeros.DataSource = this.superheroBindingSource;
+            this.dataGridViewSuperHeros.DataSource = this.superheroBindingSource2;
+            this.dataGridViewSuperHeros.EnableHeadersVisualStyles = false;
+            this.dataGridViewSuperHeros.GridColor = System.Drawing.Color.SteelBlue;
             this.dataGridViewSuperHeros.Location = new System.Drawing.Point(16, 444);
             this.dataGridViewSuperHeros.Name = "dataGridViewSuperHeros";
+            this.dataGridViewSuperHeros.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSuperHeros.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewSuperHeros.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewSuperHeros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewSuperHeros.Size = new System.Drawing.Size(641, 161);
             this.dataGridViewSuperHeros.TabIndex = 39;
@@ -347,14 +370,10 @@ namespace Avergers
             // idsuperheroDataGridViewTextBoxColumn
             // 
             this.idsuperheroDataGridViewTextBoxColumn.DataPropertyName = "Id_super_hero";
-            this.idsuperheroDataGridViewTextBoxColumn.HeaderText = "Id SuperHéros";
+            this.idsuperheroDataGridViewTextBoxColumn.HeaderText = "Id_super_hero";
             this.idsuperheroDataGridViewTextBoxColumn.Name = "idsuperheroDataGridViewTextBoxColumn";
-            // 
-            // idcivilDataGridViewTextBoxColumn
-            // 
-            this.idcivilDataGridViewTextBoxColumn.DataPropertyName = "Id_civil";
-            this.idcivilDataGridViewTextBoxColumn.HeaderText = "Id du civil";
-            this.idcivilDataGridViewTextBoxColumn.Name = "idcivilDataGridViewTextBoxColumn";
+            this.idsuperheroDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idsuperheroDataGridViewTextBoxColumn.Visible = false;
             // 
             // nomheroDataGridViewTextBoxColumn
             // 
@@ -379,6 +398,26 @@ namespace Avergers
             this.commentaireDataGridViewTextBoxColumn.DataPropertyName = "Commentaire";
             this.commentaireDataGridViewTextBoxColumn.HeaderText = "Commentaire";
             this.commentaireDataGridViewTextBoxColumn.Name = "commentaireDataGridViewTextBoxColumn";
+            // 
+            // superheroBindingSource2
+            // 
+            this.superheroBindingSource2.DataMember = "Super_hero";
+            this.superheroBindingSource2.DataSource = this.projetHeroDataSet12;
+            // 
+            // projetHeroDataSet12
+            // 
+            this.projetHeroDataSet12.DataSetName = "ProjetHeroDataSet12";
+            this.projetHeroDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // superheroBindingSource1
+            // 
+            this.superheroBindingSource1.DataMember = "Super_hero";
+            this.superheroBindingSource1.DataSource = this.projetHeroDataSetDataGridviewsuperhero;
+            // 
+            // projetHeroDataSetDataGridviewsuperhero
+            // 
+            this.projetHeroDataSetDataGridviewsuperhero.DataSetName = "ProjetHeroDataSetDataGridviewsuperhero";
+            this.projetHeroDataSetDataGridviewsuperhero.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // superheroBindingSource
             // 
@@ -427,6 +466,19 @@ namespace Avergers
             // 
             this.civilTableAdapter.ClearBeforeFill = true;
             // 
+            // super_heroTableAdapter1
+            // 
+            this.super_heroTableAdapter1.ClearBeforeFill = true;
+            // 
+            // avengersDBDataSetGridViewCivils2BindingSource
+            // 
+            this.avengersDBDataSetGridViewCivils2BindingSource.DataSource = this.avengersDBDataSetGridViewCivils2;
+            this.avengersDBDataSetGridViewCivils2BindingSource.Position = 0;
+            // 
+            // super_heroTableAdapter2
+            // 
+            this.super_heroTableAdapter2.ClearBeforeFill = true;
+            // 
             // SuperHeros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -456,10 +508,15 @@ namespace Avergers
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSuperHeros)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superheroBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.superheroBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSetDataGridviewsuperhero)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superheroBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projetHeroDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superHerosBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetGridViewCivils2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avengersDBDataSetGridViewCivils2BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -500,13 +557,17 @@ namespace Avergers
         private ProjetHeroDataSet1 projetHeroDataSet1;
         private System.Windows.Forms.BindingSource superheroBindingSource;
         private ProjetHeroDataSet1TableAdapters.Super_heroTableAdapter super_heroTableAdapter;
-        private System.Windows.Forms.ComboBox comboBox1;
         private ProjetHeroDataSet2FkIdCivil projetHeroDataSet2FkIdCivil;
         private System.Windows.Forms.BindingSource civilBindingSource;
         private ProjetHeroDataSet2FkIdCivilTableAdapters.CivilTableAdapter civilTableAdapter;
-        private System.Windows.Forms.Label label3;
+        private ProjetHeroDataSetDataGridviewsuperhero projetHeroDataSetDataGridviewsuperhero;
+        private System.Windows.Forms.BindingSource superheroBindingSource1;
+        private ProjetHeroDataSetDataGridviewsuperheroTableAdapters.Super_heroTableAdapter super_heroTableAdapter1;
+        private System.Windows.Forms.BindingSource avengersDBDataSetGridViewCivils2BindingSource;
+        private ProjetHeroDataSet12 projetHeroDataSet12;
+        private System.Windows.Forms.BindingSource superheroBindingSource2;
+        private ProjetHeroDataSet12TableAdapters.Super_heroTableAdapter super_heroTableAdapter2;
         private System.Windows.Forms.DataGridViewTextBoxColumn idsuperheroDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idcivilDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomheroDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pouvoirDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pointfaibleDataGridViewTextBoxColumn;
